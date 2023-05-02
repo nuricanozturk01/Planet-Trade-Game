@@ -4,9 +4,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>nuricanozturk.dev</groupId>
-    <artifactId>game-of-planet-project</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <groupId>gameofplanet.dev</groupId>
+    <artifactId>GameOfPlanetProject</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>GameOfPlanet</module>
+        <module>GameEngine</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -14,4 +20,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+
+    </dependencies>
 </project>
