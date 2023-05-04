@@ -2,8 +2,7 @@ package nuricanozturk.dev.generator.name;
 
 public enum NameType
 {
-    BlackHole("B"), Galaxy("G"), Planet("P"), Market("M");
-
+    BlackHole("BlackHole"), Galaxy("G"), Planet("P"), Market("M"), Commodity("C"), SpaceShip("S");
     private final String m_name;
     NameType(String name)
     {

@@ -9,4 +9,10 @@ public final class NameGeneratorFactory
         return nameType.getName() + "-" + NAME_COUNT++;
     }
 
+    public static String create(NameType nameType, int count)
+    {
+        return nameType.getName() + "-" + count;
+    }
+
+
 }

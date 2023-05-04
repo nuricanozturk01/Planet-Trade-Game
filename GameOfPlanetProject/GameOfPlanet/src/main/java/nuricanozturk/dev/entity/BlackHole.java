@@ -3,14 +3,10 @@ package nuricanozturk.dev.entity;
 
 import project.gameengine.base.GameContext;
 
-
-import java.util.logging.Logger;
-
 import static nuricanozturk.dev.factory.GalaxyFactory.createGalaxy;
 
 public class BlackHole implements GameContext
 {
-    Logger m_logger = Logger.getLogger(BlackHole.class.getName());
     private final String m_name;
 
     public BlackHole(String name)
@@ -25,9 +21,7 @@ public class BlackHole implements GameContext
 
     public Galaxy explode()
     {
-        m_logger.info("safsaf");
-        System.exit(1);
+        System.out.println("Blackhole is created...");
         return createGalaxy();
-
     }
 }

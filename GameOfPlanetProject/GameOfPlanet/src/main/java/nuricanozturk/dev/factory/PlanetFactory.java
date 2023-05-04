@@ -4,39 +4,33 @@
 package nuricanozturk.dev.factory;
 
 import nuricanozturk.dev.entity.Planet;
+import nuricanozturk.dev.generator.name.NameGeneratorFactory;
 import nuricanozturk.dev.generator.name.NameType;
 
-import java.security.SecureRandom;
-import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.IntStream;
+
+import static nuricanozturk.dev.config.RandomConfig.getRandomInstance;
+import static nuricanozturk.dev.util.Constants.*;
 
 public final class PlanetFactory
 {
-    private static final SecureRandom m_random = new SecureRandom();
-    private static int NAME_COUNT = 1;
-    private static int COMMODITIES_COUNT = 1;
     private PlanetFactory()
     {
     }
 
     public static List<Planet> createPlanets(int count)
     {
-        var list = new ArrayList<Planet>();
-
-
-        NAME_COUNT++;
-        COMMODITIES_COUNT = 1;
-
-        return list;
+        return IntStream.range(0, count)
+                .mapToObj(PlanetFactory::createPlanet)
+                .toList();
     }
 
-    private static String createName(NameType nameType)
+    public static Planet createPlanet(int count)
     {
-        return nameType.getName() + "-" + NAME_COUNT;
-    }
-
-    private static int createPlanet()
-    {
-        return 0;
+        return new Planet(NameGeneratorFactory.create(NameType.Planet, count + 1),
+                getRandomInstance().nextDouble(MIN_UNIT_FUEL_PRICE, MAX_UNIT_FUEL_PRICE),
+                getRandomInstance().nextDouble(MIN_TURN_PARKING_PRICE, MAX_TURN_PARKING_PRICE),
+                MarketFactory.createMarket());
     }
 }

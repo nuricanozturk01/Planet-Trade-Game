@@ -7,19 +7,19 @@ public class Commodity implements GameContext
     private final String m_name;
     private final int m_unitVolume;
     private final double m_delayRatio;
-    private final double m_currentSupplyAmount;
+    private final int m_currentSupplyAmount;
     private final double m_unitBuyPrice;
     private final double m_unitSellPrice;
 
-    public Commodity(String name, int unitVolume, double delayRatio, double currentSupplyAmount,
-                     double unitBuyPrice, double unitSellPrice)
+    public Commodity(String name, int unitVolume, double delayRatio, int currentSupplyAmount,
+                     double unitBuyPrice)
     {
         m_name = name;
         m_unitVolume = unitVolume;
         m_delayRatio = delayRatio;
         m_currentSupplyAmount = currentSupplyAmount;
         m_unitBuyPrice = unitBuyPrice;
-        m_unitSellPrice = unitSellPrice;
+        m_unitSellPrice = unitBuyPrice + 500;
     }
 
     public String getName()
@@ -37,7 +37,7 @@ public class Commodity implements GameContext
         return m_delayRatio;
     }
 
-    public double getCurrentSupplyAmount()
+    public int getCurrentSupplyAmount()
     {
         return m_currentSupplyAmount;
     }
@@ -51,4 +51,5 @@ public class Commodity implements GameContext
     {
         return m_unitSellPrice;
     }
+
 }
