@@ -10,6 +10,7 @@ import project.gameengine.base.Game;
 import project.gameengine.base.GameContext;
 import project.gameengine.base.Player;
 
+
 import java.util.List;
 
 import static nuricanozturk.dev.util.Constants.MAX_PLAYER;
@@ -26,9 +27,9 @@ public class GameOfPlanet implements Game
     @Override
     public void init(List<Player> players)
     {
-        //A blackhole explodes and a galaxy is created randomly
-        //A list of commodities with arbitrary names and properties generated.
-        //A list of spaceships is crated randomly by a spaceship factory
+        //A blackhole explodes and a galaxy is created randomly +
+        //A list of commodities with arbitrary names and properties generated.+
+        //A list of spaceships is crated randomly by a spaceship factory +
         //Each player is placed at a random planet in the galaxy
 
         /*
@@ -47,6 +48,7 @@ public class GameOfPlanet implements Game
         var commodities = CommodityFactory.createCommodities();
         var spaceships = SpaceshipFactory.createSpaceships();
         players.forEach(p -> p.prepareForGame(galaxy));
+
     }
 
     @Override

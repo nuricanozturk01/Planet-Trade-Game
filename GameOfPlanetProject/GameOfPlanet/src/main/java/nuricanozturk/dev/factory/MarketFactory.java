@@ -13,6 +13,7 @@ public final class MarketFactory
 
     public static Market createMarket()
     {
+        System.out.println("Market are created");
         return new Market(MARKET_NAME, createCommodities());
     }
 }

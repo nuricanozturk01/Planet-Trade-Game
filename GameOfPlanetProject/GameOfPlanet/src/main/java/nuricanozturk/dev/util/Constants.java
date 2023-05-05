@@ -25,7 +25,7 @@ public final class Constants
     public static final int MIN_UNIT_VOLUME = 5;
     public static final int MAX_UNIT_VOLUME = 15;
 
-    public static final double MIN_DELAY_RATIO = .5D;
+    public static final double MIN_DELAY_RATIO = 0.5;
     public static final double MAX_DELAY_RATIO = 1.5D;
 
     public static final int MIN_CURRENT_SUPPLY_AMOUNT = 5;
@@ -35,6 +35,15 @@ public final class Constants
     public static final double MIN_UNIT_BUY_PRICE = 150D;
     public static final double MAX_UNIT_BUY_PRICE = 1500D;
 
+    public static final int DEFAULT_INIT_FUEL_CAPACITY = 500;
+    public static final int MIN_FUEL_CAPACITY = 1000;
+    public static final int MAX_FUEL_CAPACITY = 2000;
+
+    public static final int MAX_SPEED = 1500;
+    public static final int MIN_SPEED = 100;
+
+    public static final int MIN_VOLUME = 500;
+    public static final int MAX_VOLUME = 1000;
     public static final String MARKET_NAME = "MARKET";
 
     public static final List<String> COMMODITY_NAME =

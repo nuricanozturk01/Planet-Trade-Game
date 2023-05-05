@@ -4,19 +4,49 @@ import project.gameengine.base.GameContext;
 
 public class Planet implements GameContext
 {
-    private final String m_name;
-    private final double m_unitFuelPrice;
-    private final double m_parkingPricePerTurn; // For spaceship
-    private final Market m_market;
+    private String m_name;
+    private double m_unitFuelPrice;
+    private double m_parkingPricePerTurn;
+    private Market m_market;
 
-    public Planet(String name, double unitFuelPrice, double parkingPricePerTurn, Market market)
+    private Planet() {}
+
+    public static class Builder
     {
-        m_name = name;
-        m_unitFuelPrice = unitFuelPrice;
-        m_market = market;
-        m_parkingPricePerTurn = parkingPricePerTurn;
-    }
+        private final Planet m_planet;
 
+        public Builder()
+        {
+            m_planet = new Planet();
+        }
+
+        public Builder setName(String name)
+        {
+            m_planet.m_name = name;
+            return this;
+        }
+
+        public Builder setUnitFuelPrice(double unitFuelPrice)
+        {
+            m_planet.m_unitFuelPrice = unitFuelPrice;
+            return this;
+        }
+        public Builder setParkingPricePerTurn(double parkingPricePerTurn)
+        {
+            m_planet.m_parkingPricePerTurn = parkingPricePerTurn;
+            return this;
+        }
+        public Builder setMarket(Market market)
+        {
+            m_planet.m_market = market;
+            return this;
+        }
+
+        public Planet build()
+        {
+            return m_planet;
+        }
+    }
     public String getName()
     {
         return m_name;
