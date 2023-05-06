@@ -1,7 +1,8 @@
 package nuricanozturk.dev;
 
 import nuricanozturk.dev.entity.BlackHole;
-import nuricanozturk.dev.factory.CommodityFactory;
+import nuricanozturk.dev.entity.Galaxy;
+import nuricanozturk.dev.entity.SpaceShip;
 import nuricanozturk.dev.factory.SpaceshipFactory;
 import nuricanozturk.dev.generator.name.NameGeneratorFactory;
 import nuricanozturk.dev.generator.name.NameType;
@@ -10,23 +11,22 @@ import project.gameengine.base.Game;
 import project.gameengine.base.GameContext;
 import project.gameengine.base.Player;
 
-
 import java.util.List;
 
 import static nuricanozturk.dev.util.Constants.MAX_PLAYER;
 import static nuricanozturk.dev.util.Constants.MIN_PLAYER;
 
-public class GameOfPlanet implements Game
-{
+public class GameOfPlanet implements Game {
+    private List<SpaceShip> m_spaceShips;
+    private Galaxy m_galaxy;
+
     @Override
-    public boolean isOver()
-    {
+    public boolean isOver() {
         return false;
     }
 
     @Override
-    public void init(List<Player> players)
-    {
+    public void init(List<Player> players) {
         //A blackhole explodes and a galaxy is created randomly +
         //A list of commodities with arbitrary names and properties generated.+
         //A list of spaceships is crated randomly by a spaceship factory +
@@ -44,34 +44,29 @@ public class GameOfPlanet implements Game
 
         var blackhole = new BlackHole(NameGeneratorFactory.create(NameType.BlackHole, 1));
         blackhole.explode();
-        var galaxy = blackhole.explode();
-        var commodities = CommodityFactory.createCommodities();
-        var spaceships = SpaceshipFactory.createSpaceships();
-        players.forEach(p -> p.prepareForGame(galaxy));
-
+        m_galaxy = blackhole.explode();
+        m_spaceShips = SpaceshipFactory.createSpaceships();
+        players.forEach(p -> p.prepareForGame(m_galaxy));
+        players.forEach(player -> player.play(m_galaxy));
     }
 
     @Override
-    public GameContext getContext()
-    {
+    public GameContext getContext() {
         return null;
     }
 
     @Override
-    public void update(Action action)
-    {
+    public void update(Action action) {
 
     }
 
     @Override
-    public int minimumPlayerCount()
-    {
+    public int minimumPlayerCount() {
         return MIN_PLAYER;
     }
 
     @Override
-    public int maximumPlayerCount()
-    {
+    public int maximumPlayerCount() {
         return MAX_PLAYER;
     }
 }

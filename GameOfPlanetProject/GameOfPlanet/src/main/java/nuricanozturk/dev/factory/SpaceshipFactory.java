@@ -10,24 +10,23 @@ import static nuricanozturk.dev.config.RandomConfig.getRandomInstance;
 import static nuricanozturk.dev.generator.name.NameGeneratorFactory.create;
 import static nuricanozturk.dev.util.Constants.*;
 import static nuricanozturk.dev.util.Util.getBigFormattedNumber;
-import static nuricanozturk.dev.util.Util.getFormattedNumber;
 
 public final class SpaceshipFactory {
-    private SpaceshipFactory() {}
+    private SpaceshipFactory() {
+    }
 
-    public static List<SpaceShip> createSpaceships()
-    {
+    public static List<SpaceShip> createSpaceships() {
         System.out.println("Spaceships are created!");
         return IntStream
                 .range(0, getRandomInstance().nextInt(MIN_SPACESHIP_COUNT, MAX_SPACESHIP_COUNT))
                 .mapToObj(SpaceshipFactory::createSpaceShip)
                 .toList();
     }
+
     /*
 
      */
-    private static int createSpeed(double price)
-    {
+    private static int createSpeed(double price) {
         // MIN: 3_500
         // MAX 50_000
         var range1 = MIN_SPACESHIP_COST + 10_000D; // 13_500
@@ -50,38 +49,17 @@ public final class SpaceshipFactory {
         return MAX_SPEED;
     }
 
-    private static int createFuelUsagePerLightYear(int fuelCapacity, double speed, double price)
-    {
-        if (fuelCapacity < 1000 || fuelCapacity > 2000) {
-        System.out.println("Invalid fuel capacity. Please enter a value between 1000 and 2000.");
-        return -1;
+    private static int createFuelUsagePerLightYear(int fuelCapacity) {
+
+        return (fuelCapacity / 100) * getRandomInstance().nextInt(2, 4);
     }
 
-        // Check if speed and price are valid
-        if (speed <= 0 || price <= 0) {
-            System.out.println("Speed and price must be positive and non-zero.");
-            return -1;
-        }
-
-        double maxDistance = fuelCapacity * speed;
-        double fuelConsumption = price / speed;
-        double fuelUsagePerLightYear = (maxDistance * fuelConsumption) / 9.461e+12;
-
-        // Check if fuel usage is valid
-        if (fuelUsagePerLightYear <= 0) {
-            System.out.println("Invalid fuel usage per light year.");
-            return -1;
-        }
-
-        return (int) fuelUsagePerLightYear;
-    }
-    private static SpaceShip createSpaceShip(int i)
-    {
+    private static SpaceShip createSpaceShip(int i) {
         var price = getBigFormattedNumber(getRandomInstance().nextDouble(MIN_SPACESHIP_COST, MAX_SPACESHIP_COST));
         var fuelCapacity = getRandomInstance().nextInt(MIN_FUEL_CAPACITY, MAX_FUEL_CAPACITY);
         var speed = createSpeed(price);
 
-        var fuelUsagePerLightYear = createFuelUsagePerLightYear(fuelCapacity, speed, price);
+        var fuelUsagePerLightYear = createFuelUsagePerLightYear(fuelCapacity);
         var volumeCapacity = getRandomInstance().nextInt(MIN_VOLUME, MAX_VOLUME);
 
 

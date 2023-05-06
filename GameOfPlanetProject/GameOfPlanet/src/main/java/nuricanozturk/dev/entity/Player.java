@@ -12,22 +12,10 @@ public class Player implements project.gameengine.base.Player
     private SpaceShip m_spaceShip;
     private Planet m_currentPlanet;
 
-    public Player(String name, double currentMoney, SpaceShip spaceShip, Planet currentPlanet)
+    public Player(String name, double initPrice)
     {
         m_name = name;
-        m_currentMoney = currentMoney;
-        m_spaceShip = spaceShip;
-        m_currentPlanet = currentPlanet;
-    }
-
-    public Player(String name, Planet currentPlanet)
-    {
-        this(name, 0.0, null, currentPlanet);
-    }
-
-    public Player(String name)
-    {
-        this(name, null);
+        m_currentMoney = initPrice;
     }
 
     @Override

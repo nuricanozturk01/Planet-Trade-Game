@@ -4,15 +4,18 @@ package nuricanozturk.dev;
 import nuricanozturk.dev.entity.BlackHole;
 import nuricanozturk.dev.entity.Player;
 import nuricanozturk.dev.factory.SpaceshipFactory;
+import nuricanozturk.dev.util.Constants;
 import project.gameengine.BasicConsolRenderer;
 import project.gameengine.TurnBasedGameEngine;
+
+import static nuricanozturk.dev.util.Constants.PLAYER_INITIAL_MONEY;
 
 public class Main
 {
     public static void main(String[] args)
     {
-        var player1 = new Player("Nuri Can");
-        var player2 = new Player("John");
+        var player1 = new Player("Nuri Can", PLAYER_INITIAL_MONEY);
+        var player2 = new Player("John", PLAYER_INITIAL_MONEY);
 
         /*var game = new GameOfPlanet();
         var gameEngine = new TurnBasedGameEngine(game, new BasicConsolRenderer());
