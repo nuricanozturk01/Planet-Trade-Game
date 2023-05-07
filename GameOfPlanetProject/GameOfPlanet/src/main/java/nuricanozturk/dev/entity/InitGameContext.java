@@ -19,6 +19,7 @@ public class InitGameContext implements GameContext
     private final IAction m_buyAction;
     private final IAction m_soldAction;
 
+
     public InitGameContext(List<SpaceShip> spaceShips, Galaxy galaxy, List<Planet> planets)
     {
         m_buyAction = new BuyItem();
@@ -48,6 +49,15 @@ public class InitGameContext implements GameContext
     public List<Planet> getPlanets()
     {
         return m_planets;
+    }
+    public void buyItem(IVendable vendable)
+    {
+        m_buyAction.apply(vendable);
+    }
+
+    public void soldItem(IVendable vendable)
+    {
+        m_soldAction.apply(vendable);
     }
 
     public void updateItems()

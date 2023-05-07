@@ -26,9 +26,6 @@ public final class SpaceshipFactory
                 .toList();
     }
 
-    /*
-
-     */
     private static int createSpeed(double price)
     {
         // MIN: 3_500

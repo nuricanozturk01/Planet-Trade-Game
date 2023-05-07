@@ -16,101 +16,76 @@ public class SpaceShip implements GameContext, IVendable
     private int m_currentFuel;
     private int m_fuelCapacity;
     private int fuelUsagePerLightYear;
+    private boolean isSold;
 
-    public SpaceShip() {
+    public SpaceShip()
+    {
         m_cargos = new ArrayList<>();
     }
 
-    public void addCargo(Cargo cargo) {
+    public void addCargo(Cargo cargo)
+    {
         m_cargos.add(cargo);
     }
 
-    public List<Cargo> getSortedCargos() {
+    public List<Cargo> getSortedCargos()
+    {
         return m_cargos.stream().sorted().toList();
     }
 
-    public String getName() {
+    public String getName()
+    {
         return m_name;
     }
 
-    public double getPrice() {
+    public double getPrice()
+    {
         return m_price;
     }
 
-    public List<Cargo> getCargos() {
+    public List<Cargo> getCargos()
+    {
         return m_cargos;
     }
 
-    public int getVolumeCapacity() {
+    public int getVolumeCapacity()
+    {
         return m_volumeCapacity;
     }
 
-    public int getSpeed() {
+    public int getSpeed()
+    {
         return m_speed;
     }
 
-    public int getCurrentFuel() {
+    public int getCurrentFuel()
+    {
         return m_currentFuel;
     }
 
-    public int getFuelCapacity() {
+    public int getFuelCapacity()
+    {
         return m_fuelCapacity;
     }
 
-    public int getFuelUsagePerLightYear() {
+    public int getFuelUsagePerLightYear()
+    {
         return fuelUsagePerLightYear;
     }
 
-    /**
-     * Builder class for Spaceships
-     */
-    public static class Builder {
-        private final SpaceShip m_spaceShip;
+    public void setIsSold(boolean isSold)
+    {
+        this.isSold = isSold;
+    }
 
-        public Builder() {
-            m_spaceShip = new SpaceShip();
-        }
-
-        public Builder setName(String name) {
-            m_spaceShip.m_name = name;
-            return this;
-        }
-
-        public Builder setPrice(double price) {
-            m_spaceShip.m_price = price;
-            return this;
-        }
-
-        public Builder setVolumeCapacity(int volumeCapacity) {
-            m_spaceShip.m_volumeCapacity = volumeCapacity;
-            return this;
-        }
-
-        public Builder setSpeed(int speed) {
-            m_spaceShip.m_speed = speed;
-            return this;
-        }
-
-        public Builder setFuelCapacity(int fuelCapacity) {
-            m_spaceShip.m_fuelCapacity = fuelCapacity;
-            return this;
-        }
-        public Builder setCurrentFuel(int currentFuel)
-        {
-            m_spaceShip.m_currentFuel = currentFuel;
-            return this;
-        }
-        public Builder setFuelUsagePerLightYear(int fuelUsagePerLightYear) {
-            m_spaceShip.fuelUsagePerLightYear = fuelUsagePerLightYear;
-            return this;
-        }
-        public SpaceShip build() {
-            return m_spaceShip;
-        }
+    public boolean isSold()
+    {
+        return isSold;
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return "SpaceShip{" +
                 "m_cargos=" + m_cargos +
                 ", m_name='" + m_name + '\'' +
@@ -121,5 +96,65 @@ public class SpaceShip implements GameContext, IVendable
                 ", m_fuelCapacity=" + m_fuelCapacity +
                 ", fuelUsagePerLightYear=" + fuelUsagePerLightYear +
                 '}';
+    }
+
+    /**
+     * Builder class for Spaceship
+     */
+    public static class Builder
+    {
+        private final SpaceShip m_spaceShip;
+
+        public Builder()
+        {
+            m_spaceShip = new SpaceShip();
+        }
+
+        public Builder setName(String name)
+        {
+            m_spaceShip.m_name = name;
+            return this;
+        }
+
+        public Builder setPrice(double price)
+        {
+            m_spaceShip.m_price = price;
+            return this;
+        }
+
+        public Builder setVolumeCapacity(int volumeCapacity)
+        {
+            m_spaceShip.m_volumeCapacity = volumeCapacity;
+            return this;
+        }
+
+        public Builder setSpeed(int speed)
+        {
+            m_spaceShip.m_speed = speed;
+            return this;
+        }
+
+        public Builder setFuelCapacity(int fuelCapacity)
+        {
+            m_spaceShip.m_fuelCapacity = fuelCapacity;
+            return this;
+        }
+
+        public Builder setCurrentFuel(int currentFuel)
+        {
+            m_spaceShip.m_currentFuel = currentFuel;
+            return this;
+        }
+
+        public Builder setFuelUsagePerLightYear(int fuelUsagePerLightYear)
+        {
+            m_spaceShip.fuelUsagePerLightYear = fuelUsagePerLightYear;
+            return this;
+        }
+
+        public SpaceShip build()
+        {
+            return m_spaceShip;
+        }
     }
 }

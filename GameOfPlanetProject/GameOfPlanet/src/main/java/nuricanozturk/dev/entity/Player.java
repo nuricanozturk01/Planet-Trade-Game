@@ -1,9 +1,13 @@
 package nuricanozturk.dev.entity;
 
+import nuricanozturk.dev.action.BuySpaceship;
+import nuricanozturk.dev.action.IAction;
 import project.gameengine.base.Action;
 import project.gameengine.base.GameContext;
 
-import static nuricanozturk.dev.config.RandomConfig.getRandomInstance;
+import java.util.List;
+
+import static nuricanozturk.dev.util.Util.getBigFormattedNumber;
 
 public class Player implements project.gameengine.base.Player
 {
@@ -31,7 +35,7 @@ public class Player implements project.gameengine.base.Player
 
     public void setCurrentMoney(double currentMoney)
     {
-        m_currentMoney = currentMoney;
+        m_currentMoney = getBigFormattedNumber(currentMoney);
     }
 
     public SpaceShip getSpaceShip()
@@ -60,13 +64,34 @@ public class Player implements project.gameengine.base.Player
         throw new UnsupportedOperationException("TODO: ");
     }
 
+    private void buySpaceship(List<SpaceShip> spaceships)
+    {
+        var spaceship = spaceships.stream().filter(this::select).findAny();
+
+        if (spaceship.isPresent())
+        {
+            setSpaceShip(spaceship.get());
+            setCurrentMoney(getCurrentMoney() - spaceship.get().getPrice());
+
+            IAction action = new BuySpaceship(spaceship.get(), this);
+            action.apply(spaceship.get());
+        }
+    }
+
     @Override
+    @SuppressWarnings("all") // Planets always not null
     public void prepareForGame(GameContext context)
     {
         var planets = ((InitGameContext) context).getPlanets();
         var spaceships = ((InitGameContext) context).getSpaceShips();
 
-        setCurrentPlanet(planets.get(getRandomInstance().nextInt(0, planets.size())));
-        setSpaceShip(spaceships.get(getRandomInstance().nextInt(0, spaceships.size())));
+        setCurrentPlanet(planets.stream().findAny().get());
+
+        buySpaceship(spaceships);
+    }
+
+    private boolean select(SpaceShip spaceShip)
+    {
+        return m_currentMoney >= spaceShip.getPrice() && !spaceShip.isSold();
     }
 }

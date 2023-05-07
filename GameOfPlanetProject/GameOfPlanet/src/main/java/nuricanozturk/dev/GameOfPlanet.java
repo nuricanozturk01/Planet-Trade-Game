@@ -44,6 +44,7 @@ public class GameOfPlanet implements Game
 
         // Each planet create own market and each market creates own commodities
         ((InitGameContext) m_gameContext).init(players);
+        System.exit(1);
     }
 
     @Override
@@ -57,18 +58,18 @@ public class GameOfPlanet implements Game
     {
         if (m_currentTurn == m_turnCount - 1)
             isOver = true;
+
         if (!isOver())
         {
             m_currentTurn++;
             updateMarkets();
             //.....
         }
-
     }
 
     private void updateMarkets()
     {
-        ((InitGameContext)getContext()).updateItems();
+        ((InitGameContext) getContext()).updateItems();
     }
 
     @Override
