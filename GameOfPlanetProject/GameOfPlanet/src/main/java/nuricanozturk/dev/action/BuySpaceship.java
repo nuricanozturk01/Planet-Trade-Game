@@ -26,10 +26,16 @@ public class BuySpaceship implements IAction
     public void apply(IVendable vendable)
     {
         m_spaceShip.setIsSold(true);
-        System.out.println(m_spaceShip.getName() + " - " +
+        /*System.out.println(m_spaceShip.getName() + " - " +
                 format("%.2f", m_spaceShip.getPrice()) +
                 " selled to " + m_player.getName() +
-                " Current Money: " + format("%.2f", m_player.getCurrentMoney()));
+                " Current Money: " + format("%.2f", m_player.getCurrentMoney()));*/
+    }
+
+    @Override
+    public String toString()
+    {
+        return "SS";
     }
 
 }

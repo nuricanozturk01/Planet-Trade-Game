@@ -2,11 +2,13 @@ package nuricanozturk.dev.entity;
 
 import nuricanozturk.dev.action.BuySpaceship;
 import nuricanozturk.dev.action.IAction;
+import nuricanozturk.dev.config.RandomConfig;
 import project.gameengine.base.Action;
 import project.gameengine.base.GameContext;
 
 import java.util.List;
 
+import static nuricanozturk.dev.config.RandomConfig.getRandomInstance;
 import static nuricanozturk.dev.util.Util.getBigFormattedNumber;
 
 public class Player implements project.gameengine.base.Player
@@ -61,8 +63,11 @@ public class Player implements project.gameengine.base.Player
     @Override
     public Action play(GameContext context)
     {
-        throw new UnsupportedOperationException("TODO: ");
+        var actions = ((InitGameContext)context).getActions();
+
+        return actions.get(getRandomInstance().nextInt(0, actions.size()));
     }
+
 
     private void buySpaceship(List<SpaceShip> spaceships)
     {
@@ -79,7 +84,7 @@ public class Player implements project.gameengine.base.Player
     }
 
     @Override
-    @SuppressWarnings("all") // Planets always not null
+    @SuppressWarnings("all") // Planets cannot be null
     public void prepareForGame(GameContext context)
     {
         var planets = ((InitGameContext) context).getPlanets();

@@ -10,6 +10,7 @@ import static nuricanozturk.dev.util.Constants.PLAYER_INITIAL_MONEY;
 public class Main
 {
     private final static int TURN_COUNT = 5;
+
     public static void main(String[] args)
     {
         var player1 = new Player("Nuri Can", PLAYER_INITIAL_MONEY);

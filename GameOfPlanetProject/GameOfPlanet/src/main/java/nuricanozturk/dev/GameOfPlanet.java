@@ -1,5 +1,10 @@
 package nuricanozturk.dev;
 
+import jdk.jshell.Snippet;
+import nuricanozturk.dev.action.BuyFuel;
+import nuricanozturk.dev.action.BuyItem;
+import nuricanozturk.dev.action.PlanTravelling;
+import nuricanozturk.dev.action.SoldItem;
 import nuricanozturk.dev.entity.BlackHole;
 import nuricanozturk.dev.entity.InitGameContext;
 import nuricanozturk.dev.generator.name.NameType;
@@ -8,6 +13,7 @@ import project.gameengine.base.Game;
 import project.gameengine.base.GameContext;
 import project.gameengine.base.Player;
 
+import java.util.Arrays;
 import java.util.List;
 
 import static nuricanozturk.dev.factory.SpaceshipFactory.createSpaceships;
@@ -18,14 +24,17 @@ import static nuricanozturk.dev.util.Constants.MIN_PLAYER;
 public class GameOfPlanet implements Game
 {
     private final int m_turnCount;
-    private GameContext m_gameContext;
+    private final List<Action> m_actionList;
+    private InitGameContext m_gameContext;
+    private List<Player> m_players;
     private int m_currentTurn;
-    private boolean isOver; // default false
+    private volatile boolean isOver = false; // default false
 
     public GameOfPlanet(int turnCount)
     {
         m_turnCount = turnCount;
         m_currentTurn = 0;
+        m_actionList = Arrays.asList(new BuyItem(), new SoldItem(), new BuyFuel(), new PlanTravelling());
     }
 
     @Override
@@ -39,12 +48,11 @@ public class GameOfPlanet implements Game
     {
         var blackhole = new BlackHole(createName(NameType.BlackHole, 1));
         var galaxy = blackhole.explode();
-
-        m_gameContext = new InitGameContext(createSpaceships(), galaxy, galaxy.getPlanets());
+        m_players = players;
+        m_gameContext = new InitGameContext(createSpaceships(), galaxy, galaxy.getPlanets(), m_actionList);
 
         // Each planet create own market and each market creates own commodities
-        ((InitGameContext) m_gameContext).init(players);
-        System.exit(1);
+        m_gameContext.init(players);
     }
 
     @Override
@@ -59,17 +67,18 @@ public class GameOfPlanet implements Game
         if (m_currentTurn == m_turnCount - 1)
             isOver = true;
 
-        if (!isOver())
-        {
-            m_currentTurn++;
-            updateMarkets();
-            //.....
-        }
+        m_players.forEach(p -> p.play(m_gameContext));
+
+        m_currentTurn++;
+
+        if (isOver)
+            finishGame();
     }
 
-    private void updateMarkets()
+    private void finishGame()
     {
-        ((InitGameContext) getContext()).updateItems();
+        System.out.printf("%nGame is finish!");
+        System.exit(0);
     }
 
     @Override
@@ -82,5 +91,11 @@ public class GameOfPlanet implements Game
     public int maximumPlayerCount()
     {
         return MAX_PLAYER;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "GAME";
     }
 }
