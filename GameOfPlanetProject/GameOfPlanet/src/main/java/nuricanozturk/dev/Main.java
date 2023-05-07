@@ -1,10 +1,7 @@
 package nuricanozturk.dev;
 
 
-import nuricanozturk.dev.entity.BlackHole;
 import nuricanozturk.dev.entity.Player;
-import nuricanozturk.dev.factory.SpaceshipFactory;
-import nuricanozturk.dev.util.Constants;
 import project.gameengine.BasicConsolRenderer;
 import project.gameengine.TurnBasedGameEngine;
 
@@ -12,30 +9,20 @@ import static nuricanozturk.dev.util.Constants.PLAYER_INITIAL_MONEY;
 
 public class Main
 {
+    private final static int TURN_COUNT = 5;
     public static void main(String[] args)
     {
         var player1 = new Player("Nuri Can", PLAYER_INITIAL_MONEY);
         var player2 = new Player("John", PLAYER_INITIAL_MONEY);
+        var player3 = new Player("Anastasia", PLAYER_INITIAL_MONEY);
 
-        /*var game = new GameOfPlanet();
+        var game = new GameOfPlanet(TURN_COUNT);
         var gameEngine = new TurnBasedGameEngine(game, new BasicConsolRenderer());
 
         gameEngine.addPlayer(player1);
         gameEngine.addPlayer(player2);
+        gameEngine.addPlayer(player3);
 
-        gameEngine.playARound();*/
-
-        var b = new BlackHole("B");
-        var g = b.explode();
-        g.getPlanets().forEach(p -> System.out.println(p.getName()));
-        g.getPlanets().forEach(m -> System.out.println(m.getMarket().getName()));
-        g.getPlanets().forEach(gg -> {
-            gg.getMarket().getCommodities().forEach(System.out::println);
-            System.out.println();
-        });
-        var ss = SpaceshipFactory.createSpaceships();
-        ss.forEach(s -> System.out.println(s));
-
-
+        gameEngine.playARound();
     }
 }

@@ -2,7 +2,8 @@ package nuricanozturk.dev.entity;
 
 import project.gameengine.base.GameContext;
 
-public class Commodity implements GameContext {
+public class Commodity implements GameContext
+{
     private String m_name;
     private int m_unitVolume;
     private double m_delayRatio;
@@ -10,35 +11,41 @@ public class Commodity implements GameContext {
     private double m_unitBuyPrice;
     private double m_unitSellPrice;
 
-    private Commodity() {
-    }
+    private Commodity() {}
 
-    public String getName() {
+    public String getName()
+    {
         return m_name;
     }
 
-    public int getUnitVolume() {
+    public int getUnitVolume()
+    {
         return m_unitVolume;
     }
 
-    public double getDelayRatio() {
+    public double getDelayRatio()
+    {
         return m_delayRatio;
     }
 
-    public int getCurrentSupplyAmount() {
+    public int getCurrentSupplyAmount()
+    {
         return m_currentSupplyAmount;
     }
 
-    public double getUnitBuyPrice() {
+    public double getUnitBuyPrice()
+    {
         return m_unitBuyPrice;
     }
 
-    public double getUnitSellPrice() {
+    public double getUnitSellPrice()
+    {
         return m_unitSellPrice;
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return "Commodity{" +
                 "m_name='" + m_name + '\'' +
                 ", m_unitVolume=" + m_unitVolume +
@@ -49,40 +56,48 @@ public class Commodity implements GameContext {
                 '}';
     }
 
-    public static class Builder {
+    public static class Builder
+    {
         private final Commodity m_commodity;
 
-        public Builder() {
+        public Builder()
+        {
             m_commodity = new Commodity();
         }
 
-        public Builder setName(String name) {
+        public Builder setName(String name)
+        {
             m_commodity.m_name = name;
             return this;
         }
 
-        public Builder setUnitVolume(int unitVolume) {
+        public Builder setUnitVolume(int unitVolume)
+        {
             m_commodity.m_unitVolume = unitVolume;
             return this;
         }
 
-        public Builder setDelayRatio(double delayRatio) {
+        public Builder setDelayRatio(double delayRatio)
+        {
             m_commodity.m_delayRatio = delayRatio;
             return this;
         }
 
-        public Builder setCurrentSupplyAmount(int supplyAmount) {
+        public Builder setCurrentSupplyAmount(int supplyAmount)
+        {
             m_commodity.m_currentSupplyAmount = supplyAmount;
             return this;
         }
 
-        public Builder setUnitBuyPrice(double unitBuyPrice) {
+        public Builder setUnitBuyPrice(double unitBuyPrice)
+        {
             m_commodity.m_unitBuyPrice = unitBuyPrice;
             m_commodity.m_unitSellPrice = m_commodity.m_unitBuyPrice + 500;
             return this;
         }
 
-        public Commodity build() {
+        public Commodity build()
+        {
             return m_commodity;
         }
     }

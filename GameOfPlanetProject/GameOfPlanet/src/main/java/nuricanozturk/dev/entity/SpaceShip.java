@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class SpaceShip implements GameContext
+public class SpaceShip implements GameContext, IVendable
 {
     private final List<Cargo> m_cargos;
     private String m_name;

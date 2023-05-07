@@ -11,6 +11,26 @@ public class Planet implements GameContext
 
     private Planet() {}
 
+    public String getName()
+    {
+        return m_name;
+    }
+
+    public Market getMarket()
+    {
+        return m_market;
+    }
+
+    public double getUnitFuelPrice()
+    {
+        return m_unitFuelPrice;
+    }
+
+    public double getParkingPricePerTurn()
+    {
+        return m_parkingPricePerTurn;
+    }
+
     public static class Builder
     {
         private final Planet m_planet;
@@ -31,11 +51,13 @@ public class Planet implements GameContext
             m_planet.m_unitFuelPrice = unitFuelPrice;
             return this;
         }
+
         public Builder setParkingPricePerTurn(double parkingPricePerTurn)
         {
             m_planet.m_parkingPricePerTurn = parkingPricePerTurn;
             return this;
         }
+
         public Builder setMarket(Market market)
         {
             m_planet.m_market = market;
@@ -46,24 +68,5 @@ public class Planet implements GameContext
         {
             return m_planet;
         }
-    }
-    public String getName()
-    {
-        return m_name;
-    }
-
-    public Market getMarket()
-    {
-        return m_market;
-    }
-
-    public double getUnitFuelPrice()
-    {
-        return m_unitFuelPrice;
-    }
-
-    public double getParkingPricePerTurn()
-    {
-        return m_parkingPricePerTurn;
     }
 }

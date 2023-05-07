@@ -9,11 +9,13 @@ import static nuricanozturk.dev.config.RandomConfig.getRandomInstance;
 import static nuricanozturk.dev.util.Constants.*;
 import static nuricanozturk.dev.util.Util.getBigFormattedNumber;
 
-public final class CommodityFactory {
+public final class CommodityFactory
+{
 
     private CommodityFactory() {}
 
-    public static List<Commodity> createCommodities() {
+    public static List<Commodity> createCommodities()
+    {
         System.out.println("Commodities are created");
         return IntStream
                 .range(0, getRandomInstance().nextInt(MIN_COMMODITY_COUNT, MAX_COMMODITY_COUNT))
@@ -21,7 +23,8 @@ public final class CommodityFactory {
                 .toList();
     }
 
-    private static Commodity createCommodity(int i) {
+    private static Commodity createCommodity(int i)
+    {
         return new Commodity.Builder()
                 .setName(COMMODITY_NAME.get(i))
                 .setUnitVolume(getRandomInstance().nextInt(MIN_UNIT_VOLUME, MAX_UNIT_VOLUME))

@@ -59,10 +59,14 @@ public class Player implements project.gameengine.base.Player
     {
         throw new UnsupportedOperationException("TODO: ");
     }
+
     @Override
     public void prepareForGame(GameContext context)
     {
-        var planets = ((Galaxy) context).getPlanets();
+        var planets = ((InitGameContext) context).getPlanets();
+        var spaceships = ((InitGameContext) context).getSpaceShips();
+
         setCurrentPlanet(planets.get(getRandomInstance().nextInt(0, planets.size())));
+        setSpaceShip(spaceships.get(getRandomInstance().nextInt(0, spaceships.size())));
     }
 }

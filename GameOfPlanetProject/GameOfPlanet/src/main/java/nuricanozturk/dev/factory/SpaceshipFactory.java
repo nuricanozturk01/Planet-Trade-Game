@@ -1,21 +1,24 @@
 package nuricanozturk.dev.factory;
 
 import nuricanozturk.dev.entity.SpaceShip;
+import nuricanozturk.dev.generator.name.NameGeneratorFactory;
 import nuricanozturk.dev.generator.name.NameType;
 
 import java.util.List;
 import java.util.stream.IntStream;
 
 import static nuricanozturk.dev.config.RandomConfig.getRandomInstance;
-import static nuricanozturk.dev.generator.name.NameGeneratorFactory.create;
 import static nuricanozturk.dev.util.Constants.*;
 import static nuricanozturk.dev.util.Util.getBigFormattedNumber;
 
-public final class SpaceshipFactory {
-    private SpaceshipFactory() {
+public final class SpaceshipFactory
+{
+    private SpaceshipFactory()
+    {
     }
 
-    public static List<SpaceShip> createSpaceships() {
+    public static List<SpaceShip> createSpaceships()
+    {
         System.out.println("Spaceships are created!");
         return IntStream
                 .range(0, getRandomInstance().nextInt(MIN_SPACESHIP_COUNT, MAX_SPACESHIP_COUNT))
@@ -26,7 +29,8 @@ public final class SpaceshipFactory {
     /*
 
      */
-    private static int createSpeed(double price) {
+    private static int createSpeed(double price)
+    {
         // MIN: 3_500
         // MAX 50_000
         var range1 = MIN_SPACESHIP_COST + 10_000D; // 13_500
@@ -49,12 +53,14 @@ public final class SpaceshipFactory {
         return MAX_SPEED;
     }
 
-    private static int createFuelUsagePerLightYear(int fuelCapacity) {
+    private static int createFuelUsagePerLightYear(int fuelCapacity)
+    {
 
         return (fuelCapacity / 100) * getRandomInstance().nextInt(2, 4);
     }
 
-    private static SpaceShip createSpaceShip(int i) {
+    private static SpaceShip createSpaceShip(int i)
+    {
         var price = getBigFormattedNumber(getRandomInstance().nextDouble(MIN_SPACESHIP_COST, MAX_SPACESHIP_COST));
         var fuelCapacity = getRandomInstance().nextInt(MIN_FUEL_CAPACITY, MAX_FUEL_CAPACITY);
         var speed = createSpeed(price);
@@ -64,7 +70,7 @@ public final class SpaceshipFactory {
 
 
         return new SpaceShip.Builder()
-                .setName(create(NameType.SpaceShip, i + 1))
+                .setName(NameGeneratorFactory.createName(NameType.SpaceShip, i + 1))
                 .setFuelCapacity(fuelCapacity)
                 .setFuelUsagePerLightYear(fuelUsagePerLightYear)
                 .setVolumeCapacity(volumeCapacity)
