@@ -23,7 +23,7 @@ public final class PlanetFactory
 
     public static List<Planet> createPlanets(int count)
     {
-        System.out.println("Planets are created");
+       // System.out.println("Planets are created");
         return IntStream
                 .range(0, count)
                 .mapToObj(PlanetFactory::createPlanet)

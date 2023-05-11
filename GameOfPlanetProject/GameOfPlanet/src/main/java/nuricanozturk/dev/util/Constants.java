@@ -37,15 +37,24 @@ public final class Constants
     public static final int MAX_VOLUME = 1000;
     public static final String MARKET_NAME = "MARKET";
     public static final List<String> COMMODITY_NAME =
-            Arrays.asList("Lithium", "Titanium", "Platinum", "Gold", "Silver", "Helium-3", "Water", "Food", "Oxygen", "Hydrogen",
-                    "Carbon", "Iron", "Copper", "Nickel", "Aluminum", "Tungsten", "Palladium", "Rhodium", "Iridium", "Cobalt",
-                    "Mercury", "Lead", "Zinc", "Tin", "Beryllium", "Uranium", "Thorium", "Plutonium", "Neptunium", "Radium",
-                    "Neon", "Argon", "Krypton", "Xenon", "Nitrogen", "Carbon Dioxide", "Methane", "Ammonia", "Sulfur", "Chlorine",
-                    "Sodium", "Potassium", "Magnesium", "Calcium", "Phosphorus", "Selenium", "Fluorine", "Bromine", "Iodine", "Lithium",
-                    "Rubidium", "Cesium", "Boron", "Silicon", "Germanium", "Arsenic", "Antimony", "Bismuth", "Cadmium", "Gallium",
-                    "Indium", "Thallium", "Lanthanum", "Cerium", "Praseodymium", "Neodymium", "Promethium", "Samarium", "Europium", "Gadolinium",
-                    "Terbium", "Dysprosium", "Holmium", "Erbium", "Thulium", "Ytterbium", "Lutetium", "Hafnium", "Tantalum", "Niobium",
-                    "Rhenium", "Osmium", "Ruthenium", "Technetium", "Molybdenum", "Boron Nitride", "Graphene", "Fullerenes", "Carbon Nanotubes", "Quantum Dots");
+            Arrays.asList("Lithium", "Titanium", "Platinum", "Gold", "Silver", "Helium-3", "Water", "Food", "Oxygen",
+                    "Hydrogen",
+                    "Carbon", "Iron", "Copper", "Nickel", "Aluminum", "Tungsten", "Palladium", "Rhodium", "Iridium",
+                    "Cobalt",
+                    "Mercury", "Lead", "Zinc", "Tin", "Beryllium", "Uranium", "Thorium", "Plutonium", "Neptunium",
+                    "Radium",
+                    "Neon", "Argon", "Krypton", "Xenon", "Nitrogen", "Carbon Dioxide", "Methane", "Ammonia", "Sulfur",
+                    "Chlorine",
+                    "Sodium", "Potassium", "Magnesium", "Calcium", "Phosphorus", "Selenium", "Fluorine", "Bromine",
+                    "Iodine", "Lithium",
+                    "Rubidium", "Cesium", "Boron", "Silicon", "Germanium", "Arsenic", "Antimony", "Bismuth", "Cadmium",
+                    "Gallium",
+                    "Indium", "Thallium", "Lanthanum", "Cerium", "Praseodymium", "Neodymium", "Promethium", "Samarium",
+                    "Europium", "Gadolinium",
+                    "Terbium", "Dysprosium", "Holmium", "Erbium", "Thulium", "Ytterbium", "Lutetium", "Hafnium",
+                    "Tantalum", "Niobium",
+                    "Rhenium", "Osmium", "Ruthenium", "Technetium", "Molybdenum", "Boron Nitride", "Graphene",
+                    "Fullerenes", "Carbon Nanotubes", "Quantum Dots");
 
     private Constants()
     {

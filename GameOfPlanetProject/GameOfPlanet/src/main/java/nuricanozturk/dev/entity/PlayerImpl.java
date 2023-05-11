@@ -1,24 +1,23 @@
 package nuricanozturk.dev.entity;
 
-import nuricanozturk.dev.action.BuySpaceship;
+import nuricanozturk.dev.action.ActionType;
 import nuricanozturk.dev.action.IAction;
 import project.gameengine.base.Action;
 import project.gameengine.base.GameContext;
+import project.gameengine.base.Player;
 
-import java.util.List;
-import java.util.Optional;
-
-import static nuricanozturk.dev.config.RandomConfig.getRandomInstance;
+import static nuricanozturk.dev.action.ActionGenerator.getActionGenerator;
+import static nuricanozturk.dev.action.ActionType.BUY_SPACESHIP;
 import static nuricanozturk.dev.util.Util.getBigFormattedNumber;
 
-public class Player implements project.gameengine.base.Player
+public class PlayerImpl implements Player
 {
     private final String m_name;
     private double m_currentMoney;
     private SpaceShip m_spaceShip;
     private Planet m_currentPlanet;
 
-    public Player(String name, double initPrice)
+    public PlayerImpl(String name, double initPrice)
     {
         m_name = name;
         m_currentMoney = initPrice;
@@ -63,43 +62,33 @@ public class Player implements project.gameengine.base.Player
     @Override
     public Action play(GameContext context)
     {
-        var actions = ((InitGameContext) context).getActions();
-        var action = Optional.of((IAction) actions.get(getRandomInstance().nextInt(0, actions.size())));
-
-        action.get().apply(this);
-
-        return action.get();
+        var action = (IAction) getActionGenerator().getRandomAction();
+        action.apply(this, context);
+        return action;
     }
 
-
-    private void buySpaceship(List<SpaceShip> spaceships)
+    private void buySpaceship(GameContext context)
     {
-        var spaceship = spaceships.stream().filter(this::select).findAny();
+        var action = (IAction) getActionGenerator().getBuySpacehipAction();
 
-        if (spaceship.isPresent())
-        {
-            setSpaceShip(spaceship.get());
-            setCurrentMoney(getCurrentMoney() - spaceship.get().getPrice());
+        action.apply(this, context);
 
-            IAction action = new BuySpaceship(spaceship.get(), this);
-            action.apply(this);
-        }
     }
 
     @Override
     @SuppressWarnings("all") // Planets cannot be null
     public void prepareForGame(GameContext context)
     {
-        var planets = ((InitGameContext) context).getPlanets();
-        var spaceships = ((InitGameContext) context).getSpaceShips();
+        selectPlanet(context);
 
-        setCurrentPlanet(planets.stream().findAny().get());
+        buySpaceship(context);
 
-        buySpaceship(spaceships);
+        System.out.println(m_name + " is " + m_spaceShip.getName());
     }
 
-    private boolean select(SpaceShip spaceShip)
+    private void selectPlanet(GameContext context)
     {
-        return m_currentMoney >= spaceShip.getPrice() && !spaceShip.isSold();
+        var setPlanetAction = (IAction) getActionGenerator().getAction(ActionType.SELECT_PLANET);
+        setPlanetAction.apply(this, context);
     }
 }

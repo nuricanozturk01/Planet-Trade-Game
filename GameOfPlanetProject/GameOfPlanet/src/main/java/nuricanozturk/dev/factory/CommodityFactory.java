@@ -16,7 +16,7 @@ public final class CommodityFactory
 
     public static List<Commodity> createCommodities()
     {
-        System.out.println("Commodities are created");
+        //System.out.println("Commodities are created");
         return IntStream
                 .range(0, getRandomInstance().nextInt(MIN_COMMODITY_COUNT, MAX_COMMODITY_COUNT))
                 .mapToObj(CommodityFactory::createCommodity)

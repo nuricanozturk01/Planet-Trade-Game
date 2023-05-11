@@ -23,7 +23,7 @@ public final class GalaxyFactory
      */
     public static Galaxy createGalaxy()
     {
-        System.out.println("Galaxy Created....");
+        //System.out.println("Galaxy Created....");
         var planetCount = getRandomInstance().nextInt(MIN_PLANET_SIZE, MAX_PLANET_SIZE);
 
         var galaxy = new Galaxy(NameGeneratorFactory.createName(NameType.Galaxy, 1), planetCount);

@@ -1,5 +1,6 @@
 package nuricanozturk.dev;
 
+import jdk.jshell.Snippet;
 import nuricanozturk.dev.action.BuyFuel;
 import nuricanozturk.dev.action.BuyItem;
 import nuricanozturk.dev.action.PlanTravelling;
@@ -12,10 +13,9 @@ import project.gameengine.base.Game;
 import project.gameengine.base.GameContext;
 import project.gameengine.base.Player;
 
+import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
 
-import static java.util.Arrays.asList;
 import static nuricanozturk.dev.factory.SpaceshipFactory.createSpaceships;
 import static nuricanozturk.dev.generator.name.NameGeneratorFactory.createName;
 import static nuricanozturk.dev.util.Constants.MAX_PLAYER;
@@ -24,7 +24,6 @@ import static nuricanozturk.dev.util.Constants.MIN_PLAYER;
 public class GameOfPlanet implements Game
 {
     private final int m_turnCount;
-    private final List<Action> m_actionList;
     private InitGameContext m_gameContext;
     private List<Player> m_players;
     private int m_currentTurn;
@@ -34,7 +33,6 @@ public class GameOfPlanet implements Game
     {
         m_turnCount = turnCount;
         m_currentTurn = 0;
-        m_actionList = asList(new BuyItem(), new SoldItem(), new BuyFuel(), new PlanTravelling());
     }
 
     @Override
@@ -49,7 +47,7 @@ public class GameOfPlanet implements Game
         var blackhole = new BlackHole(createName(NameType.BlackHole, 1));
         var galaxy = blackhole.explode();
         m_players = players;
-        m_gameContext = new InitGameContext(createSpaceships(), galaxy, galaxy.getPlanets(), m_actionList);
+        m_gameContext = new InitGameContext(createSpaceships(), galaxy, galaxy.getPlanets());
 
         // Each planet create own market and each market creates own commodities
         m_gameContext.init(players);

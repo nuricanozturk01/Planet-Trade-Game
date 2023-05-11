@@ -21,7 +21,7 @@ public class BlackHole implements GameContext
 
     public Galaxy explode()
     {
-        System.out.println("Blackhole is created...");
+       // System.out.println("Blackhole is created...");
         return createGalaxy();
     }
 }

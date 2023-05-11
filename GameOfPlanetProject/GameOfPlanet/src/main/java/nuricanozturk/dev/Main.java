@@ -1,7 +1,7 @@
 package nuricanozturk.dev;
 
 
-import nuricanozturk.dev.entity.Player;
+import nuricanozturk.dev.entity.PlayerImpl;
 import project.gameengine.BasicConsolRenderer;
 import project.gameengine.TurnBasedGameEngine;
 
@@ -13,9 +13,9 @@ public class Main
 
     public static void main(String[] args)
     {
-        var player1 = new Player("Nuri Can", PLAYER_INITIAL_MONEY);
-        var player2 = new Player("John", PLAYER_INITIAL_MONEY);
-        var player3 = new Player("Anastasia", PLAYER_INITIAL_MONEY);
+        var player1 = new PlayerImpl("Nuri Can", PLAYER_INITIAL_MONEY);
+        var player2 = new PlayerImpl("John", PLAYER_INITIAL_MONEY);
+        var player3 = new PlayerImpl("Anastasia", PLAYER_INITIAL_MONEY);
 
         var game = new GameOfPlanet(TURN_COUNT);
         var gameEngine = new TurnBasedGameEngine(game, new BasicConsolRenderer());
