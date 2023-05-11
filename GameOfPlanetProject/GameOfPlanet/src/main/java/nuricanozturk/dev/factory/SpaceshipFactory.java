@@ -19,7 +19,6 @@ public final class SpaceshipFactory
 
     public static List<SpaceShip> createSpaceships()
     {
-        //System.out.println("Spaceships are created!");
         return IntStream
                 .range(0, getRandomInstance().nextInt(MIN_SPACESHIP_COUNT, MAX_SPACESHIP_COUNT))
                 .mapToObj(SpaceshipFactory::createSpaceShip)
