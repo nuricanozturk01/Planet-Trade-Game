@@ -15,7 +15,7 @@ import static nuricanozturk.dev.generator.name.NameGeneratorFactory.createName;
 import static nuricanozturk.dev.util.Constants.MAX_PLAYER;
 import static nuricanozturk.dev.util.Constants.MIN_PLAYER;
 
-public class GameOfPlanet implements Game
+public class PlanetTradeGame implements Game
 {
     private final int m_turnCount;
     private InitGameContext m_gameContext;
@@ -23,7 +23,7 @@ public class GameOfPlanet implements Game
     private int m_currentTurn;
     private boolean isOver = false; // default false
 
-    public GameOfPlanet(int turnCount)
+    public PlanetTradeGame(int turnCount)
     {
         m_turnCount = turnCount;
         m_currentTurn = 0;
@@ -56,7 +56,7 @@ public class GameOfPlanet implements Game
     @Override
     public void update(Action action)
     {
-        if (m_currentTurn == m_turnCount - 1)
+        if (m_currentTurn == m_turnCount)
             finishGame();
 
         m_players.forEach(p -> p.play(m_gameContext));

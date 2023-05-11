@@ -8,7 +8,7 @@ public class SoldItem implements IAction
     @Override
     public void apply(Player player, GameContext context)
     {
-        System.out.println("SOLD ITEM");
+        //System.out.println("SOLD ITEM");
     }
 
     @Override

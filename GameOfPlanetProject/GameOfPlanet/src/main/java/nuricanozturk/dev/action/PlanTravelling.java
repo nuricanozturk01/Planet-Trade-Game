@@ -8,7 +8,7 @@ public class PlanTravelling implements IAction
     @Override
     public void apply(Player player, GameContext context)
     {
-        System.out.println("Travel");
+       // System.out.println("Travel");
     }
 
     @Override
