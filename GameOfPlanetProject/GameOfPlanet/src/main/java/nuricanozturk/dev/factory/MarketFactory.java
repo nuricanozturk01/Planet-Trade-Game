@@ -4,6 +4,7 @@ import nuricanozturk.dev.entity.Market;
 
 import static nuricanozturk.dev.factory.CommodityFactory.createCommodities;
 import static nuricanozturk.dev.util.Constants.MARKET_NAME;
+import static nuricanozturk.dev.util.ExceptionUtil.handleException;
 
 public final class MarketFactory
 {
@@ -11,9 +12,16 @@ public final class MarketFactory
     {
     }
 
+
     public static Market createMarket()
     {
-        //System.out.println("Market are created");
+        return handleException(MarketFactory::create,
+                NotCreatedException.class,
+                "Market and commodities are not Created...");
+    }
+
+    private static Market create()
+    {
         return new Market(MARKET_NAME, createCommodities());
     }
 }

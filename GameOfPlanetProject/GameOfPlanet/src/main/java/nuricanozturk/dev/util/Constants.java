@@ -5,6 +5,7 @@ import java.util.List;
 
 public final class Constants
 {
+    public static final String LOGGER_FILE_NAME = "/Users/nuricanozturk/Desktop/log.txt";
     public static final int MIN_PLAYER = 2;
     public static final int MAX_PLAYER = 5;
     public static final double MIN_UNIT_FUEL_PRICE = 5D;
