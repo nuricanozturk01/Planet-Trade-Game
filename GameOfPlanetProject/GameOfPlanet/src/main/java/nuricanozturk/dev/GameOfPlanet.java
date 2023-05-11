@@ -1,10 +1,5 @@
 package nuricanozturk.dev;
 
-import jdk.jshell.Snippet;
-import nuricanozturk.dev.action.BuyFuel;
-import nuricanozturk.dev.action.BuyItem;
-import nuricanozturk.dev.action.PlanTravelling;
-import nuricanozturk.dev.action.SoldItem;
 import nuricanozturk.dev.entity.BlackHole;
 import nuricanozturk.dev.entity.InitGameContext;
 import nuricanozturk.dev.generator.name.NameType;
@@ -13,7 +8,6 @@ import project.gameengine.base.Game;
 import project.gameengine.base.GameContext;
 import project.gameengine.base.Player;
 
-import java.util.Arrays;
 import java.util.List;
 
 import static nuricanozturk.dev.factory.SpaceshipFactory.createSpaceships;
@@ -63,18 +57,16 @@ public class GameOfPlanet implements Game
     public void update(Action action)
     {
         if (m_currentTurn == m_turnCount - 1)
-            isOver = true;
+            finishGame();
 
         m_players.forEach(p -> p.play(m_gameContext));
 
         m_currentTurn++;
-
-        if (isOver)
-            finishGame();
     }
 
     private void finishGame()
     {
+        isOver = true;
         System.out.printf("%nGame is finish!");
         System.exit(0);
     }

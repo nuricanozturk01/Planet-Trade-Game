@@ -12,6 +12,7 @@ public class BuyFuel implements IAction
     private int currentFuel;
     private int newFuel;
     private SpaceShip spaceship;
+
     @Override
     public void apply(Player player, GameContext context)
     {

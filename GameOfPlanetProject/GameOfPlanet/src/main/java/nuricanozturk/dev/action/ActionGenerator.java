@@ -7,13 +7,9 @@ import static nuricanozturk.dev.config.RandomConfig.getRandomInstance;
 public class ActionGenerator
 {
     private static ActionGenerator m_actionGenerator;
-    private final Action m_buyFuelAction;
-    private final Action m_buyItemAction;
-    private final Action m_buySpaceShipAction;
-    private final Action m_soldItemAction;
-    private final Action m_planTravellingAction;
-    private final Action m_selectPlanetAction;
     private final ActionType[] m_actionTypes;
+    private final Action m_buyFuelAction, m_buyItemAction, m_buySpaceShipAction,
+            m_soldItemAction, m_planTravellingAction, m_selectPlanetAction;
 
     private ActionGenerator()
     {
@@ -26,7 +22,12 @@ public class ActionGenerator
         m_planTravellingAction = new PlanTravelling();
     }
 
-    public ActionType getRandomActionType()
+    public static ActionGenerator getActionGeneratorInstance()
+    {
+        return m_actionGenerator == null ? new ActionGenerator() : m_actionGenerator;
+    }
+//------------------------------------------------------------------------------------------
+    private ActionType getRandomActionType()
     {
         return m_actionTypes[getRandomInstance().nextInt(0, m_actionTypes.length)];
     }
@@ -39,10 +40,6 @@ public class ActionGenerator
     public Action getBuySpacehipAction()
     {
         return m_buySpaceShipAction;
-    }
-    public static ActionGenerator getActionGenerator()
-    {
-        return m_actionGenerator == null ? new ActionGenerator() : m_actionGenerator;
     }
 
     public Action getAction(ActionType actionType)

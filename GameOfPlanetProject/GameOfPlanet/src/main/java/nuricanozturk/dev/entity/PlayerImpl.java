@@ -6,8 +6,7 @@ import project.gameengine.base.Action;
 import project.gameengine.base.GameContext;
 import project.gameengine.base.Player;
 
-import static nuricanozturk.dev.action.ActionGenerator.getActionGenerator;
-import static nuricanozturk.dev.action.ActionType.BUY_SPACESHIP;
+import static nuricanozturk.dev.action.ActionGenerator.getActionGeneratorInstance;
 import static nuricanozturk.dev.util.Util.getBigFormattedNumber;
 
 public class PlayerImpl implements Player
@@ -62,14 +61,14 @@ public class PlayerImpl implements Player
     @Override
     public Action play(GameContext context)
     {
-        var action = (IAction) getActionGenerator().getRandomAction();
+        var action = (IAction) getActionGeneratorInstance().getRandomAction();
         action.apply(this, context);
         return action;
     }
 
     private void buySpaceship(GameContext context)
     {
-        var action = (IAction) getActionGenerator().getBuySpacehipAction();
+        var action = (IAction) getActionGeneratorInstance().getBuySpacehipAction();
 
         action.apply(this, context);
 
@@ -88,7 +87,7 @@ public class PlayerImpl implements Player
 
     private void selectPlanet(GameContext context)
     {
-        var setPlanetAction = (IAction) getActionGenerator().getAction(ActionType.SELECT_PLANET);
+        var setPlanetAction = (IAction) getActionGeneratorInstance().getAction(ActionType.SELECT_PLANET);
         setPlanetAction.apply(this, context);
     }
 }
