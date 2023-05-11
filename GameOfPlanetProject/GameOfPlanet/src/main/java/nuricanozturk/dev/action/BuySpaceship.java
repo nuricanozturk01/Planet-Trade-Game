@@ -1,6 +1,5 @@
 package nuricanozturk.dev.action;
 
-import nuricanozturk.dev.entity.IVendable;
 import nuricanozturk.dev.entity.Player;
 import nuricanozturk.dev.entity.SpaceShip;
 
@@ -23,7 +22,7 @@ public class BuySpaceship implements IAction
     }
 
     @Override
-    public void apply(IVendable vendable)
+    public void apply(project.gameengine.base.Player player)
     {
         m_spaceShip.setIsSold(true);
         /*System.out.println(m_spaceShip.getName() + " - " +

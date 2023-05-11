@@ -1,6 +1,5 @@
 package nuricanozturk.dev;
 
-import jdk.jshell.Snippet;
 import nuricanozturk.dev.action.BuyFuel;
 import nuricanozturk.dev.action.BuyItem;
 import nuricanozturk.dev.action.PlanTravelling;
@@ -13,9 +12,10 @@ import project.gameengine.base.Game;
 import project.gameengine.base.GameContext;
 import project.gameengine.base.Player;
 
-import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
+import static java.util.Arrays.asList;
 import static nuricanozturk.dev.factory.SpaceshipFactory.createSpaceships;
 import static nuricanozturk.dev.generator.name.NameGeneratorFactory.createName;
 import static nuricanozturk.dev.util.Constants.MAX_PLAYER;
@@ -28,13 +28,13 @@ public class GameOfPlanet implements Game
     private InitGameContext m_gameContext;
     private List<Player> m_players;
     private int m_currentTurn;
-    private volatile boolean isOver = false; // default false
+    private boolean isOver = false; // default false
 
     public GameOfPlanet(int turnCount)
     {
         m_turnCount = turnCount;
         m_currentTurn = 0;
-        m_actionList = Arrays.asList(new BuyItem(), new SoldItem(), new BuyFuel(), new PlanTravelling());
+        m_actionList = asList(new BuyItem(), new SoldItem(), new BuyFuel(), new PlanTravelling());
     }
 
     @Override

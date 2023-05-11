@@ -1,10 +1,10 @@
 package nuricanozturk.dev.action;
 
-import nuricanozturk.dev.entity.IVendable;
 import project.gameengine.base.Action;
+import project.gameengine.base.Player;
 
 @FunctionalInterface
 public interface IAction extends Action
 {
-    void apply(IVendable vendable);
+    void apply(Player player);
 }

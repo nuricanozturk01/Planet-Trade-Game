@@ -1,11 +1,11 @@
 package nuricanozturk.dev.action;
 
-import nuricanozturk.dev.entity.IVendable;
+import project.gameengine.base.Player;
 
 public class PlanTravelling implements IAction
 {
     @Override
-    public void apply(IVendable vendable)
+    public void apply(Player player)
     {
         System.out.println("Travel");
     }

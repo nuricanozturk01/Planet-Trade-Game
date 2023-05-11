@@ -83,6 +83,46 @@ public class SpaceShip implements GameContext, IVendable
         return isSold;
     }
 
+    public void setName(String name)
+    {
+        m_name = name;
+    }
+
+    public void setPrice(double price)
+    {
+        m_price = price;
+    }
+
+    public void setVolumeCapacity(int volumeCapacity)
+    {
+        m_volumeCapacity = volumeCapacity;
+    }
+
+    public void setSpeed(int speed)
+    {
+        m_speed = speed;
+    }
+
+    public void setCurrentFuel(int currentFuel)
+    {
+        m_currentFuel = currentFuel;
+    }
+
+    public void setFuelCapacity(int fuelCapacity)
+    {
+        m_fuelCapacity = fuelCapacity;
+    }
+
+    public void setFuelUsagePerLightYear(int fuelUsagePerLightYear)
+    {
+        this.fuelUsagePerLightYear = fuelUsagePerLightYear;
+    }
+
+    public void setSold(boolean sold)
+    {
+        isSold = sold;
+    }
+
     @Override
     public String toString()
     {
