@@ -5,6 +5,8 @@ import project.gameengine.base.GameContext;
 import java.util.ArrayList;
 import java.util.List;
 
+import static nuricanozturk.dev.util.Util.LOGGER;
+
 public class Market implements GameContext
 {
     private final String m_name;
@@ -18,8 +20,10 @@ public class Market implements GameContext
 
     public Market(String name, List<Commodity> commodities)
     {
+        LOGGER.log("\n\n");
         m_commodities = commodities;
         m_name = name;
+        LOGGER.log("---------Market " + m_name + " is created...");
     }
 
     @Override

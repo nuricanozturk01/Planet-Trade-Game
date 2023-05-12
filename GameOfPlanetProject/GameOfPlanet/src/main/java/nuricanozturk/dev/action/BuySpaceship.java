@@ -6,8 +6,15 @@ import nuricanozturk.dev.entity.SpaceShip;
 import project.gameengine.base.GameContext;
 import project.gameengine.base.Player;
 
+import static nuricanozturk.dev.util.Util.LOGGER;
+
 public class BuySpaceship implements IAction
 {
+    public BuySpaceship()
+    {
+        LOGGER.log("Action: Select Spaceship create...");
+    }
+
     @Override
     public void apply(Player player, GameContext context)
     {

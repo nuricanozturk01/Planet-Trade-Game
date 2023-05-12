@@ -6,9 +6,15 @@ import project.gameengine.base.GameContext;
 import project.gameengine.base.Player;
 
 import static java.lang.String.format;
+import static nuricanozturk.dev.util.Util.LOGGER;
 
 public class BuyFuel implements IAction
 {
+    public BuyFuel()
+    {
+        LOGGER.log("Action: Buy Fuel create...");
+    }
+
     private int currentFuel;
     private int newFuel;
     private SpaceShip spaceship;

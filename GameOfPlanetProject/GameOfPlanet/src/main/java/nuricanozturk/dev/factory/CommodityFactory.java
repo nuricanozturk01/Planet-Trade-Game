@@ -17,7 +17,6 @@ public final class CommodityFactory
 
     public static List<Commodity> createCommodities()
     {
-        //System.out.println("Commodities are created");
         return IntStream
                 .range(0, getRandomInstance().nextInt(MIN_COMMODITY_COUNT, MAX_COMMODITY_COUNT))
                 .mapToObj(CommodityFactory::createCommodity)
@@ -33,7 +32,9 @@ public final class CommodityFactory
                 .setUnitBuyPrice(getBigFormattedNumber(getRandomInstance().nextDouble(MIN_UNIT_BUY_PRICE, MAX_UNIT_BUY_PRICE)))
                 .setDelayRatio(getBigFormattedNumber(getRandomInstance().nextDouble(MIN_DELAY_RATIO, MAX_DELAY_RATIO)))
                 .build();
+
         LOGGER.log(commodity + " is created...");
+
         return commodity;
     }
 }

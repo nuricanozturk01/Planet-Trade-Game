@@ -19,6 +19,32 @@ public class LinkedList<T> implements Iterable<T>, Collection<T>
         m_currentIndex = 0;
     }
 
+    public LinkedList(Collection<? extends T> collection)
+    {
+        m_head = new Node<>(null);
+        m_head.setNext(null);
+        m_size = 0;
+        m_currentIndex = 0;
+
+        collection.forEach(this::insertFirst);
+    }
+
+    public static void main(String[] args)
+    {
+        var ll = new LinkedList<String>();
+
+        ll.insertFirst("nuri");
+        ll.insertFirst("can");
+        ll.insertFirst("ozturk");
+        ll.insertFirst("ali");
+        ll.insertFirst("veli");
+
+        for (int i = 0; i < 15; i++)
+        {
+            System.out.println(ll.next());
+        }
+    }
+
     public Node<T> getHead()
     {
         return m_head;
@@ -41,7 +67,7 @@ public class LinkedList<T> implements Iterable<T>, Collection<T>
 
         T item = null;
 
-        for (int i = 0; i <= m_currentIndex; item = p.getData(), p = p.getNext(), i++);
+        for (int i = 0; i <= m_currentIndex; item = p.getData(), p = p.getNext(), i++) ;
 
         m_currentIndex = m_currentIndex == m_size - 1 ? 0 : m_currentIndex + 1;
 
@@ -75,12 +101,11 @@ public class LinkedList<T> implements Iterable<T>, Collection<T>
         return new Iterator<>()
         {
             final Node<T> emptyNode = new Node<>(m_head.getData());
+            Node<T> p = emptyNode;
 
             {
                 emptyNode.setNext(m_head);
             } //non static initializer
-
-            Node<T> p = emptyNode;
 
             @Override
             public boolean hasNext()
@@ -107,13 +132,13 @@ public class LinkedList<T> implements Iterable<T>, Collection<T>
         for (T t : this)
             action.accept(t);
     }
+//--------------------------------------------------------------------------------------------------------------------
 
     @Override
     public boolean contains(Object o)
     {
         return stream().anyMatch(l -> l.equals(o));
     }
-//--------------------------------------------------------------------------------------------------------------------
 
     @Override
     public Object[] toArray()
@@ -167,22 +192,5 @@ public class LinkedList<T> implements Iterable<T>, Collection<T>
     public void clear()
     {
         throw new UnsupportedOperationException("NOT IMPLEMENTED YET...");
-    }
-
-
-    public static void main(String[] args)
-    {
-        var ll = new LinkedList<String>();
-
-        ll.insertFirst("nuri");
-        ll.insertFirst("can");
-        ll.insertFirst("ozturk");
-        ll.insertFirst("ali");
-        ll.insertFirst("veli");
-
-        for (int i = 0; i < 15; i++)
-        {
-            System.out.println(ll.next());
-        }
     }
 }

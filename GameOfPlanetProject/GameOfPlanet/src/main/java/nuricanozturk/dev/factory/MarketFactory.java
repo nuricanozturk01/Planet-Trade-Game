@@ -3,9 +3,8 @@ package nuricanozturk.dev.factory;
 import nuricanozturk.dev.entity.Market;
 
 import static nuricanozturk.dev.factory.CommodityFactory.createCommodities;
-import static nuricanozturk.dev.util.Constants.MARKET_NAME;
+import static nuricanozturk.dev.util.Constants.MARKET_NAMES;
 import static nuricanozturk.dev.util.ExceptionUtil.handleException;
-import static nuricanozturk.dev.util.Util.LOGGER;
 
 public final class MarketFactory
 {
@@ -16,14 +15,12 @@ public final class MarketFactory
 
     public static Market createMarket()
     {
-        return handleException(MarketFactory::create,
-                NotCreatedException.class,
+        return handleException(MarketFactory::create, NotCreatedException.class,
                 "Market and commodities are not Created...");
     }
 
     private static Market create()
     {
-        LOGGER.log("---------Market " + MARKET_NAME + " is created...");
-        return new Market(MARKET_NAME, createCommodities());
+        return new Market(MARKET_NAMES.next(), createCommodities());
     }
 }

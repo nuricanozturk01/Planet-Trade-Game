@@ -20,10 +20,14 @@ public final class SpaceshipFactory
 
     public static List<SpaceShip> createSpaceships()
     {
-        return IntStream
+        var list = IntStream
                 .range(0, getRandomInstance().nextInt(MIN_SPACESHIP_COUNT, MAX_SPACESHIP_COUNT))
                 .mapToObj(SpaceshipFactory::createSpaceShip)
                 .toList();
+
+        LOGGER.log("\n\n");
+
+        return list;
     }
 
     private static int createSpeed(double price)
@@ -66,7 +70,7 @@ public final class SpaceshipFactory
         var volumeCapacity = getRandomInstance().nextInt(MIN_VOLUME, MAX_VOLUME);
 
         var spaceShip = new SpaceShip.Builder()
-                .setName(NameGeneratorFactory.createName(NameType.SpaceShip, i + 1))
+                .setName(SPACESHIP_NAMES.next())
                 .setFuelCapacity(fuelCapacity)
                 .setFuelUsagePerLightYear(fuelUsagePerLightYear)
                 .setVolumeCapacity(volumeCapacity)

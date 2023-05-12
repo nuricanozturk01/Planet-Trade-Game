@@ -6,7 +6,6 @@ import project.gameengine.base.Action;
 
 import static nuricanozturk.dev.action.ActionGenerator.getActionGeneratorInstance;
 import static nuricanozturk.dev.util.Constants.LOGGER_FILE_NAME;
-import static nuricanozturk.dev.util.Constants.LOGGER_SYSTEM_FILE_NAME;
 import static nuricanozturk.dev.util.logger.Logger.getLoggerInstance;
 
 public class Util

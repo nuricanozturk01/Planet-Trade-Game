@@ -7,30 +7,31 @@ import java.util.Arrays;
 import java.util.List;
 
 import static nuricanozturk.dev.config.RandomConfig.getRandomInstance;
+import static nuricanozturk.dev.util.Util.LOGGER;
 
 public class ActionGenerator
 {
+    private final static Action m_buyFuelAction = new BuyFuel();
+    private final static Action m_buyItemAction = new BuyItem();
+    private final static Action m_buySpaceShipAction = new BuySpaceship();
+    private final static Action m_soldItemAction = new SoldItem();
+    private final static Action m_planTravellingAction = new PlanTravelling();
+    private final static Action m_selectPlanetAction = new SelectPlanet();
     private static ActionGenerator m_actionGenerator;
     private final ActionType[] m_actionTypes;
-    private final Action m_buyFuelAction, m_buyItemAction, m_buySpaceShipAction,
-            m_soldItemAction, m_planTravellingAction, m_selectPlanetAction;
 
     private ActionGenerator()
     {
-        m_selectPlanetAction = new SelectPlanet();
         m_actionTypes = ActionType.values();
-        m_buyFuelAction = new BuyFuel();
-        m_buyItemAction = new BuyItem();
-        m_buySpaceShipAction = new BuySpaceship();
-        m_soldItemAction = new SoldItem();
-        m_planTravellingAction = new PlanTravelling();
+        LOGGER.log("\n");
     }
 
     public static ActionGenerator getActionGeneratorInstance()
     {
         return m_actionGenerator == null ? new ActionGenerator() : m_actionGenerator;
     }
-//------------------------------------------------------------------------------------------
+
+    //------------------------------------------------------------------------------------------
     private ActionType getRandomActionType()
     {
         return m_actionTypes[getRandomInstance().nextInt(0, m_actionTypes.length)];
@@ -59,14 +60,14 @@ public class ActionGenerator
 
     public LinkedList<Action> getActionLinkedList()
     {
-        var ll = new LinkedList<Action>();
+        var actionLinkedList = new LinkedList<Action>();
 
-        ll.insertFirst(m_planTravellingAction);
-        ll.insertFirst(m_buyFuelAction);
-        ll.insertFirst(m_soldItemAction);
-        ll.insertFirst(m_buyItemAction);
+        actionLinkedList.insertFirst(m_planTravellingAction);
+        actionLinkedList.insertFirst(m_buyFuelAction);
+        actionLinkedList.insertFirst(m_soldItemAction);
+        actionLinkedList.insertFirst(m_buyItemAction);
 
-        return ll;
+        return actionLinkedList;
     }
 
     public Action getAction(ActionType actionType)

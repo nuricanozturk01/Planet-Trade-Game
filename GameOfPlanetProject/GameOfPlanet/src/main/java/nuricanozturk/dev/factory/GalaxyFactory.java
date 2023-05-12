@@ -27,7 +27,9 @@ public final class GalaxyFactory
         var planetCount = getRandomInstance().nextInt(MIN_PLANET_SIZE, MAX_PLANET_SIZE);
 
         var galaxy = new Galaxy(NameGeneratorFactory.createName(NameType.Galaxy, 1), planetCount);
-        LOGGER.log("Galaxy " + galaxy.getName() + " is created...");
+
+        LOGGER.log("Galaxy " + galaxy.getName() + " is created...\n");
+
         var planets = createPlanets(planetCount);
 
         planets.forEach(galaxy::addPlanet);

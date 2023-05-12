@@ -23,7 +23,7 @@ public class BlackHole implements GameContext
 
     public Galaxy explode()
     {
-        LOGGER.log("Blackhole " + m_name + " is created....");
+        LOGGER.log("\nBlackhole " + m_name + " is created....\n");
         return createGalaxy();
     }
 }

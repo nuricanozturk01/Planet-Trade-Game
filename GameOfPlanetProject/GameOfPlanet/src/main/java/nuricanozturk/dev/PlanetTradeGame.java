@@ -2,9 +2,7 @@ package nuricanozturk.dev;
 
 import nuricanozturk.dev.entity.BlackHole;
 import nuricanozturk.dev.entity.InitGameContext;
-import nuricanozturk.dev.entity.PlayerImpl;
 import nuricanozturk.dev.generator.name.NameType;
-import nuricanozturk.dev.util.Util;
 import project.gameengine.base.Action;
 import project.gameengine.base.Game;
 import project.gameengine.base.GameContext;

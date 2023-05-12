@@ -1,12 +1,12 @@
 package nuricanozturk.dev.util;
 
-import java.util.Arrays;
 import java.util.List;
+
+import static java.util.Arrays.asList;
 
 public final class Constants
 {
     public static final String LOGGER_FILE_NAME = "log.txt";
-    public static final String LOGGER_SYSTEM_FILE_NAME = "sys.txt";
     public static final int MIN_PLAYER = 2;
     public static final int MAX_PLAYER = 5;
     public static final double MIN_UNIT_FUEL_PRICE = 5D;
@@ -38,25 +38,60 @@ public final class Constants
     public static final int MIN_VOLUME = 500;
     public static final int MAX_VOLUME = 1000;
     public static final String MARKET_NAME = "MARKET";
-    public static final List<String> COMMODITY_NAME =
-            Arrays.asList("Lithium", "Titanium", "Platinum", "Gold", "Silver", "Helium-3", "Water", "Food", "Oxygen",
-                    "Hydrogen",
-                    "Carbon", "Iron", "Copper", "Nickel", "Aluminum", "Tungsten", "Palladium", "Rhodium", "Iridium",
-                    "Cobalt",
-                    "Mercury", "Lead", "Zinc", "Tin", "Beryllium", "Uranium", "Thorium", "Plutonium", "Neptunium",
-                    "Radium",
-                    "Neon", "Argon", "Krypton", "Xenon", "Nitrogen", "Carbon Dioxide", "Methane", "Ammonia", "Sulfur",
-                    "Chlorine",
-                    "Sodium", "Potassium", "Magnesium", "Calcium", "Phosphorus", "Selenium", "Fluorine", "Bromine",
-                    "Iodine", "Lithium",
-                    "Rubidium", "Cesium", "Boron", "Silicon", "Germanium", "Arsenic", "Antimony", "Bismuth", "Cadmium",
-                    "Gallium",
-                    "Indium", "Thallium", "Lanthanum", "Cerium", "Praseodymium", "Neodymium", "Promethium", "Samarium",
-                    "Europium", "Gadolinium",
-                    "Terbium", "Dysprosium", "Holmium", "Erbium", "Thulium", "Ytterbium", "Lutetium", "Hafnium",
-                    "Tantalum", "Niobium",
-                    "Rhenium", "Osmium", "Ruthenium", "Technetium", "Molybdenum", "Boron Nitride", "Graphene",
-                    "Fullerenes", "Carbon Nanotubes", "Quantum Dots");
+    public static final List<String> COMMODITY_NAME = asList("Lithium", "Titanium", "Platinum", "Gold",
+            "Silver", "Helium-3", "Water", "Food", "Oxygen", "Hydrogen",
+            "Carbon", "Iron", "Copper", "Nickel", "Aluminum", "Tungsten", "Palladium", "Rhodium", "Iridium",
+            "Cobalt",
+            "Mercury", "Lead", "Zinc", "Tin", "Beryllium", "Uranium", "Thorium", "Plutonium", "Neptunium",
+            "Radium",
+            "Neon", "Argon", "Krypton", "Xenon", "Nitrogen", "Carbon Dioxide", "Methane", "Ammonia", "Sulfur",
+            "Chlorine",
+            "Sodium", "Potassium", "Magnesium", "Calcium", "Phosphorus", "Selenium", "Fluorine", "Bromine",
+            "Iodine", "Lithium",
+            "Rubidium", "Cesium", "Boron", "Silicon", "Germanium", "Arsenic", "Antimony", "Bismuth", "Cadmium",
+            "Gallium",
+            "Indium", "Thallium", "Lanthanum", "Cerium", "Praseodymium", "Neodymium", "Promethium", "Samarium",
+            "Europium", "Gadolinium",
+            "Terbium", "Dysprosium", "Holmium", "Erbium", "Thulium", "Ytterbium", "Lutetium", "Hafnium",
+            "Tantalum", "Niobium",
+            "Rhenium", "Osmium", "Ruthenium", "Technetium", "Molybdenum", "Boron Nitride", "Graphene",
+            "Fullerenes", "Carbon Nanotubes", "Quantum Dots");
+
+    public static final LinkedList<String> PLANET_NAMES = new LinkedList<>(
+            asList("Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune",
+                    "Pluto", "Eris", "Haumea", "Makemake", "Ceres", "Orcus", "Quaoar", "Sedna", "Varuna",
+                    "Ixion", "Chaos", "Nessus", "Huya", "Salacia", "Gonggong", "Varda", "Tyche"));
+
+    public static final LinkedList<String> SPACESHIP_NAMES = new LinkedList<>(
+            asList("Apollo", "Discovery", "Enterprise", "Falcon", "Galaxy", "Hermes", "Infinity", "Jupiter",
+                    "Nova", "Orion", "Pioneer", "Raptor", "Serenity", "Titan", "Voyager", "Zenith", "Aurora",
+                    "Celestial", "Cosmos", "Eclipse", "Firefly", "Goliath", "Hawkeye", "Interceptor", "Liberty",
+                    "Meteor", "Nebula", "Odyssey", "Pathfinder", "Quantum", "Ranger", "Stardust", "Trident",
+                    "Utopia", "Vanguard", "Wanderer", "Xenon", "Yamato", "Zenon", "Aegis", "Blackhawk", "Comet",
+                    "Defiant", "Endeavor", "Fury", "Genesis", "Horizon", "Intrepid", "Javelin", "Kestrel",
+                    "Liberator", "Magellan", "Nimbus", "Omega", "Phoenix", "Quest", "Radiant", "Sentinel",
+                    "Tempest", "Unity", "Valiant", "Warp", "Xplorer", "Yonder", "Zeus", "Astro", "Blaze",
+                    "Cosmic", "Dragonfly", "Equinox", "Hawk", "Jetstream", "Lunar", "Meteorite", "Nebula",
+                    "Orbit", "Pulsar", "Quasar", "Rocket", "Stellar", "Traverse", "Vortex", "Warp", "Xenith",
+                    "Yosemite", "Zero-G"));
+    public static final LinkedList<String> MARKET_NAMES = new LinkedList<>(
+            asList("Alpha Market", "Beta Bazaar", "Gamma Mart", "Delta Trade", "Epsilon Emporium", "Zeta Shop",
+                    "Eta Exchange", "Theta Mall", "Iota Depot", "Kappa Store", "Lambda Outlet", "Mu Market",
+                    "Nu Boutique", "Xi Superstore", "Omicron Market", "Pi Plaza", "Rho Market", "Sigma Mart",
+                    "Tau Trade", "Upsilon Shop", "Phi Bazaar", "Chi Mall", "Psi Store", "Omega Emporium",
+                    "Aurora Market", "Celestial Bazaar", "Stellar Mart", "Cosmos Trade", "Galaxy Emporium",
+                    "Nebula Shop", "Solar Exchange", "Lunar Mall", "Meteor Depot", "Supernova Store",
+                    "Voyager Market", "Starship Bazaar", "Infinity Mart", "Galactic Trade", "Zenith Emporium",
+                    "Astro Shop", "Nova Outlet", "Orion Market", "Pioneer Plaza", "Mercury Market", "Venus Bazaar",
+                    "Mars Mart", "Jupiter Trade", "Saturn Shop", "Uranus Mall", "Neptune Depot", "Pluto Store",
+                    "Cosmic Market", "Nebula Bazaar", "Stardust Mart", "Comet Trade", "Meteorite Shop",
+                    "Quasar Mall", "Asteroid Depot", "Galaxy Store", "Starlight Market", "Luminous Bazaar",
+                    "Eclipse Mart", "Solar Trade", "Lunar Shop", "Celestial Mall", "Infinity Depot",
+                    "Galactic Store", "Zenith Market", "Aurora Bazaar", "Cosmos Mart", "Stellar Trade",
+                    "Supernova Shop", "Voyager Mall", "Astro Market", "Nova Bazaar", "Orion Mart", "Pioneer Trade",
+                    "Mercury Shop", "Venus Mall", "Mars Depot", "Jupiter Store", "Saturn Market", "Uranus Bazaar",
+                    "Neptune Mart", "Pluto Trade", "Nebula Shop", "Stardust Mall", "Comet Depot", "Meteorite Store")
+    );
 
     private Constants()
     {

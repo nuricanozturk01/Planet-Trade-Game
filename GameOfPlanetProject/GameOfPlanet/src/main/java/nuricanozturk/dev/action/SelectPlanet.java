@@ -7,9 +7,15 @@ import project.gameengine.base.GameContext;
 import project.gameengine.base.Player;
 
 import static nuricanozturk.dev.config.RandomConfig.getRandomInstance;
+import static nuricanozturk.dev.util.Util.LOGGER;
 
 public class SelectPlanet implements IAction
 {
+    public SelectPlanet()
+    {
+        LOGGER.log("Action: Select Planet created...");
+    }
+
     @Override
     public void apply(Player player, GameContext context)
     {

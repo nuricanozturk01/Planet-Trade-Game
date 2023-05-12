@@ -6,6 +6,7 @@ package nuricanozturk.dev.factory;
 import nuricanozturk.dev.entity.Planet;
 import nuricanozturk.dev.generator.name.NameGeneratorFactory;
 import nuricanozturk.dev.generator.name.NameType;
+import nuricanozturk.dev.util.Constants;
 
 import java.util.List;
 import java.util.stream.IntStream;
@@ -24,7 +25,7 @@ public final class PlanetFactory
 
     public static List<Planet> createPlanets(int count)
     {
-       LOGGER.log("-----Planets are creating...");
+       LOGGER.log("-----Planets are creating...\n");
         return IntStream
                 .range(0, count)
                 .mapToObj(PlanetFactory::createPlanet)
@@ -34,12 +35,13 @@ public final class PlanetFactory
     public static Planet createPlanet(int count)
     {
         var planet = new Planet.Builder()
-                .setName(NameGeneratorFactory.createName(NameType.Planet, count + 1))
+                .setName(PLANET_NAMES.next())
                 .setUnitFuelPrice(getBigFormattedNumber(getRandomInstance().nextDouble(MIN_UNIT_FUEL_PRICE, MAX_UNIT_FUEL_PRICE)))
                 .setParkingPricePerTurn(getBigFormattedNumber(getRandomInstance().nextDouble(MIN_TURN_PARKING_PRICE, MAX_TURN_PARKING_PRICE)))
                 .setMarket(createMarket())
                 .build();
-        LOGGER.log("Planet " + planet.getName() + " is created...");
+        LOGGER.log("\n");
+        LOGGER.log("Planet " + planet.getName() + " is created...\n");
         return planet;
     }
 }

@@ -1,14 +1,12 @@
 package nuricanozturk.dev.entity;
 
 import nuricanozturk.dev.action.IAction;
-import nuricanozturk.dev.util.Util;
 import project.gameengine.base.Action;
 import project.gameengine.base.GameContext;
 import project.gameengine.base.Player;
 
 import static nuricanozturk.dev.action.ActionGenerator.getActionGeneratorInstance;
-import static nuricanozturk.dev.util.Util.LOGGER;
-import static nuricanozturk.dev.util.Util.getBigFormattedNumber;
+import static nuricanozturk.dev.util.Util.*;
 
 public class PlayerImpl implements Player
 {
@@ -16,14 +14,13 @@ public class PlayerImpl implements Player
     private double m_currentMoney;
     private SpaceShip m_spaceShip;
     private Planet m_currentPlanet;
-    private Action m_currentAction;
 
     public PlayerImpl(String name, double initPrice)
     {
         m_name = name;
         m_currentMoney = initPrice;
         LOGGER.log("Player " + name + " is created...");
-        LOGGER.log(String.format("---[%s]", this));
+        LOGGER.log(String.format("---[%s]\n", this));
     }
 
     @Override
@@ -65,8 +62,10 @@ public class PlayerImpl implements Player
     @Override
     public Action play(GameContext context)
     {
-        var action = (IAction) Util.actions.next();
+        var action = (IAction) actions.next();
+
         action.apply(this, context);
+
         return action;
     }
 
