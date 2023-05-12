@@ -1,6 +1,10 @@
 package nuricanozturk.dev.action;
 
+import nuricanozturk.dev.util.LinkedList;
 import project.gameengine.base.Action;
+
+import java.util.Arrays;
+import java.util.List;
 
 import static nuricanozturk.dev.config.RandomConfig.getRandomInstance;
 
@@ -42,6 +46,29 @@ public class ActionGenerator
         return m_buySpaceShipAction;
     }
 
+    public Action getSelectPlanetAction()
+    {
+        return m_selectPlanetAction;
+    }
+
+    public List<Action> getActions()
+    {
+
+        return Arrays.asList(m_buyItemAction, m_soldItemAction, m_buyFuelAction, m_planTravellingAction);
+    }
+
+    public LinkedList<Action> getActionLinkedList()
+    {
+        var ll = new LinkedList<Action>();
+
+        ll.insertFirst(m_planTravellingAction);
+        ll.insertFirst(m_buyFuelAction);
+        ll.insertFirst(m_soldItemAction);
+        ll.insertFirst(m_buyItemAction);
+
+        return ll;
+    }
+
     public Action getAction(ActionType actionType)
     {
         return switch (actionType)
@@ -49,7 +76,6 @@ public class ActionGenerator
             case BUY_FUEL -> m_buyFuelAction;
             case BUY_ITEM -> m_buyItemAction;
             case SOLD_ITEM -> m_soldItemAction;
-            case SELECT_PLANET -> m_selectPlanetAction;
 
             default -> m_planTravellingAction;
         };

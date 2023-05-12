@@ -1,18 +1,19 @@
 package nuricanozturk.dev.config;
 
 import java.security.SecureRandom;
+import java.util.Random;
 
 /**
  * SecureRandom class represented with Singleton Pattern
  */
 public final class RandomConfig
 {
-    private final static SecureRandom ms_secureRandom = new SecureRandom();
+    private static final Random m_secureRandom = new SecureRandom();
 
     private RandomConfig() {}
 
-    public static SecureRandom getRandomInstance()
+    public static Random getRandomInstance()
     {
-        return ms_secureRandom;
+        return m_secureRandom;
     }
 }

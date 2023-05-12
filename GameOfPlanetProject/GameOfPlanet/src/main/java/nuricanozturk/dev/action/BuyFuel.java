@@ -32,6 +32,6 @@ public class BuyFuel implements IAction
     @Override
     public String toString()
     {
-        return format("FUEL bought [%d] %d/%d", 1000, spaceship.getCurrentFuel(), spaceship.getFuelCapacity());
+        return spaceship.getCurrentFuel() + "/" + spaceship.getCurrentFuel();
     }
 }

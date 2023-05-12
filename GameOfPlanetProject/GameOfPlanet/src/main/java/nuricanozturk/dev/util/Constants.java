@@ -5,7 +5,8 @@ import java.util.List;
 
 public final class Constants
 {
-    public static final String LOGGER_FILE_NAME = "/Users/nuricanozturk/Desktop/log.txt";
+    public static final String LOGGER_FILE_NAME = "log.txt";
+    public static final String LOGGER_SYSTEM_FILE_NAME = "sys.txt";
     public static final int MIN_PLAYER = 2;
     public static final int MAX_PLAYER = 5;
     public static final double MIN_UNIT_FUEL_PRICE = 5D;
@@ -19,7 +20,7 @@ public final class Constants
     public static final int MAX_SPACESHIP_COUNT = 20;
     public static final int MIN_COMMODITY_COUNT = 15;
     public static final int MAX_COMMODITY_COUNT = 25;
-    public static final int MAX_PLANET_SIZE = 8;
+    public static final int MAX_PLANET_SIZE = 10;
     public static final int MIN_PLANET_SIZE = 2;
     public static final int MIN_UNIT_VOLUME = 5;
     public static final int MAX_UNIT_VOLUME = 15;

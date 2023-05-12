@@ -8,6 +8,7 @@ import static nuricanozturk.dev.config.RandomConfig.getRandomInstance;
 import static nuricanozturk.dev.factory.PlanetFactory.createPlanets;
 import static nuricanozturk.dev.util.Constants.MAX_PLANET_SIZE;
 import static nuricanozturk.dev.util.Constants.MIN_PLANET_SIZE;
+import static nuricanozturk.dev.util.Util.LOGGER;
 
 public final class GalaxyFactory
 {
@@ -23,11 +24,10 @@ public final class GalaxyFactory
      */
     public static Galaxy createGalaxy()
     {
-        //System.out.println("Galaxy Created....");
         var planetCount = getRandomInstance().nextInt(MIN_PLANET_SIZE, MAX_PLANET_SIZE);
 
         var galaxy = new Galaxy(NameGeneratorFactory.createName(NameType.Galaxy, 1), planetCount);
-
+        LOGGER.log("Galaxy " + galaxy.getName() + " is created...");
         var planets = createPlanets(planetCount);
 
         planets.forEach(galaxy::addPlanet);

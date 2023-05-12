@@ -2,7 +2,9 @@ package nuricanozturk.dev;
 
 import nuricanozturk.dev.entity.BlackHole;
 import nuricanozturk.dev.entity.InitGameContext;
+import nuricanozturk.dev.entity.PlayerImpl;
 import nuricanozturk.dev.generator.name.NameType;
+import nuricanozturk.dev.util.Util;
 import project.gameengine.base.Action;
 import project.gameengine.base.Game;
 import project.gameengine.base.GameContext;
@@ -14,6 +16,7 @@ import static nuricanozturk.dev.factory.SpaceshipFactory.createSpaceships;
 import static nuricanozturk.dev.generator.name.NameGeneratorFactory.createName;
 import static nuricanozturk.dev.util.Constants.MAX_PLAYER;
 import static nuricanozturk.dev.util.Constants.MIN_PLAYER;
+import static nuricanozturk.dev.util.Util.actions;
 
 public class PlanetTradeGame implements Game
 {
@@ -22,6 +25,7 @@ public class PlanetTradeGame implements Game
     private List<Player> m_players;
     private int m_currentTurn;
     private boolean isOver = false; // default false
+
 
     public PlanetTradeGame(int turnCount)
     {
@@ -47,6 +51,7 @@ public class PlanetTradeGame implements Game
         m_gameContext.init(players);
     }
 
+
     @Override
     public GameContext getContext()
     {
@@ -56,8 +61,10 @@ public class PlanetTradeGame implements Game
     @Override
     public void update(Action action)
     {
-        if (m_currentTurn == m_turnCount)
+        if (m_currentTurn == m_turnCount * m_players.size())
             finishGame();
+
+        action = actions.next();
 
         m_players.forEach(p -> p.play(m_gameContext));
 

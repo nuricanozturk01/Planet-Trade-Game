@@ -9,6 +9,7 @@ import java.util.stream.IntStream;
 
 import static nuricanozturk.dev.config.RandomConfig.getRandomInstance;
 import static nuricanozturk.dev.util.Constants.*;
+import static nuricanozturk.dev.util.Util.LOGGER;
 import static nuricanozturk.dev.util.Util.getBigFormattedNumber;
 
 public final class SpaceshipFactory
@@ -64,8 +65,7 @@ public final class SpaceshipFactory
         var fuelUsagePerLightYear = createFuelUsagePerLightYear(fuelCapacity);
         var volumeCapacity = getRandomInstance().nextInt(MIN_VOLUME, MAX_VOLUME);
 
-
-        return new SpaceShip.Builder()
+        var spaceShip = new SpaceShip.Builder()
                 .setName(NameGeneratorFactory.createName(NameType.SpaceShip, i + 1))
                 .setFuelCapacity(fuelCapacity)
                 .setFuelUsagePerLightYear(fuelUsagePerLightYear)
@@ -74,5 +74,7 @@ public final class SpaceshipFactory
                 .setPrice(price)
                 .setSpeed(speed)
                 .build();
+        LOGGER.log(spaceShip + " is created...");
+        return spaceShip;
     }
 }

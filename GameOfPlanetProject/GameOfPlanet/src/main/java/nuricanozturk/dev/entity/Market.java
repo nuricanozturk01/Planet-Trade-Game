@@ -22,6 +22,12 @@ public class Market implements GameContext
         m_name = name;
     }
 
+    @Override
+    public String toString()
+    {
+        return m_name;
+    }
+
     public void addCommodity(Commodity commodity)
     {
         m_commodities.add(commodity);

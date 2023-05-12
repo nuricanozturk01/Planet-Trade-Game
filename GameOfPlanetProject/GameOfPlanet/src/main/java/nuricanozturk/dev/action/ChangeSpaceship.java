@@ -3,18 +3,11 @@ package nuricanozturk.dev.action;
 import project.gameengine.base.GameContext;
 import project.gameengine.base.Player;
 
-public class BuyItem implements IAction
+public class ChangeSpaceship implements IAction
 {
-
     @Override
     public void apply(Player player, GameContext context)
     {
-
-    }
-
-    @Override
-    public String toString()
-    {
-        return "BUY ITEM";
+        ;
     }
 }

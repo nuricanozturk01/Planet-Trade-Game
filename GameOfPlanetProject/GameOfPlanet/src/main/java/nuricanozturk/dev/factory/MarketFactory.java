@@ -5,6 +5,7 @@ import nuricanozturk.dev.entity.Market;
 import static nuricanozturk.dev.factory.CommodityFactory.createCommodities;
 import static nuricanozturk.dev.util.Constants.MARKET_NAME;
 import static nuricanozturk.dev.util.ExceptionUtil.handleException;
+import static nuricanozturk.dev.util.Util.LOGGER;
 
 public final class MarketFactory
 {
@@ -22,6 +23,7 @@ public final class MarketFactory
 
     private static Market create()
     {
+        LOGGER.log("---------Market " + MARKET_NAME + " is created...");
         return new Market(MARKET_NAME, createCommodities());
     }
 }

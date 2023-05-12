@@ -1,12 +1,13 @@
 package nuricanozturk.dev.entity;
 
-import nuricanozturk.dev.action.ActionType;
 import nuricanozturk.dev.action.IAction;
+import nuricanozturk.dev.util.Util;
 import project.gameengine.base.Action;
 import project.gameengine.base.GameContext;
 import project.gameengine.base.Player;
 
 import static nuricanozturk.dev.action.ActionGenerator.getActionGeneratorInstance;
+import static nuricanozturk.dev.util.Util.LOGGER;
 import static nuricanozturk.dev.util.Util.getBigFormattedNumber;
 
 public class PlayerImpl implements Player
@@ -15,11 +16,14 @@ public class PlayerImpl implements Player
     private double m_currentMoney;
     private SpaceShip m_spaceShip;
     private Planet m_currentPlanet;
+    private Action m_currentAction;
 
     public PlayerImpl(String name, double initPrice)
     {
         m_name = name;
         m_currentMoney = initPrice;
+        LOGGER.log("Player " + name + " is created...");
+        LOGGER.log(String.format("---[%s]", this));
     }
 
     @Override
@@ -61,7 +65,7 @@ public class PlayerImpl implements Player
     @Override
     public Action play(GameContext context)
     {
-        var action = (IAction) getActionGeneratorInstance().getRandomAction();
+        var action = (IAction) Util.actions.next();
         action.apply(this, context);
         return action;
     }
@@ -71,7 +75,17 @@ public class PlayerImpl implements Player
         var action = (IAction) getActionGeneratorInstance().getBuySpacehipAction();
 
         action.apply(this, context);
+    }
 
+    @Override
+    public String toString()
+    {
+        return "PlayerImpl{" +
+                "m_name='" + m_name + '\'' +
+                ", m_currentMoney=" + m_currentMoney +
+                ", m_spaceShip=" + m_spaceShip +
+                ", m_currentPlanet=" + m_currentPlanet +
+                '}';
     }
 
     @Override
@@ -82,12 +96,13 @@ public class PlayerImpl implements Player
 
         buySpaceship(context);
 
-        System.out.println(m_name + " is " + m_spaceShip.getName());
+        LOGGER.log("Player " + m_name + " is prepared for game");
+        LOGGER.log("---- Current Planet: " + m_currentPlanet + ", SpaceShip: " + m_spaceShip);
     }
 
     private void selectPlanet(GameContext context)
     {
-        var setPlanetAction = (IAction) getActionGeneratorInstance().getAction(ActionType.SELECT_PLANET);
+        var setPlanetAction = (IAction) getActionGeneratorInstance().getSelectPlanetAction();
         setPlanetAction.apply(this, context);
     }
 }

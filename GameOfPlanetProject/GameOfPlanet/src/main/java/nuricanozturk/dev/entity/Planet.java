@@ -31,6 +31,17 @@ public class Planet implements GameContext
         return m_parkingPricePerTurn;
     }
 
+    @Override
+    public String toString()
+    {
+        return "Planet{" +
+                "m_name='" + m_name + '\'' +
+                ", m_unitFuelPrice=" + m_unitFuelPrice +
+                ", m_parkingPricePerTurn=" + m_parkingPricePerTurn +
+                ", m_market=" + m_market +
+                '}';
+    }
+
     public static class Builder
     {
         private final Planet m_planet;
