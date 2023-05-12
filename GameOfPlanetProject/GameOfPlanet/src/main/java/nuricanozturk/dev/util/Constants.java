@@ -36,7 +36,7 @@ public final class Constants
     public static final int MAX_SPEED = 1500;
     public static final int MIN_SPEED = 100;
     public static final int MIN_VOLUME = 500;
-    public static final int MAX_VOLUME = 1000;
+    public static final int MAX_VOLUME = 11_000;
     public static final String MARKET_NAME = "MARKET";
     public static final List<String> COMMODITY_NAME = asList("Lithium", "Titanium", "Platinum", "Gold",
             "Silver", "Helium-3", "Water", "Food", "Oxygen", "Hydrogen",

@@ -2,7 +2,7 @@ package nuricanozturk.dev.entity;
 
 import project.gameengine.base.GameContext;
 
-public class Commodity implements GameContext
+public class Commodity implements GameContext, Comparable<Commodity>
 {
     private String m_name;
     private int m_unitVolume;
@@ -54,6 +54,12 @@ public class Commodity implements GameContext
                 ", m_unitBuyPrice=" + m_unitBuyPrice +
                 ", m_unitSellPrice=" + m_unitSellPrice +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Commodity o)
+    {
+        return Double.compare(m_unitSellPrice, o.getUnitSellPrice());
     }
 
     public static class Builder
