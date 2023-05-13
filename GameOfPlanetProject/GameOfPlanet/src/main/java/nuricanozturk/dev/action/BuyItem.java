@@ -1,5 +1,6 @@
 package nuricanozturk.dev.action;
 
+import nuricanozturk.dev.entity.Cargo;
 import nuricanozturk.dev.entity.Commodity;
 import nuricanozturk.dev.entity.PlayerImpl;
 import nuricanozturk.dev.entity.SpaceShip;
@@ -7,16 +8,15 @@ import project.gameengine.base.GameContext;
 import project.gameengine.base.Player;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import static java.util.Comparator.comparingDouble;
-import static java.util.Comparator.comparingInt;
 import static nuricanozturk.dev.util.Util.LOGGER;
 
 public class BuyItem implements IAction
 {
+    private double totalCost = 0.0;
+    private int totalVolume = 0;
 
     public BuyItem()
     {
@@ -27,73 +27,60 @@ public class BuyItem implements IAction
     public void apply(Player player, GameContext context)
     {
         var p = (PlayerImpl) player;
+        System.out.println("MONEY: " + p.getCurrentMoney());
         var market = p.getCurrentPlanet().getMarket();
-        var commodities = market.getCommodities();
+        var commodities = market.getCommodities().stream().sorted(comparingDouble(Commodity::getUnitBuyPrice)).toList();
 
-        var selectedItems = chooseItem(commodities, p.getSpaceShip(), p.getCurrentMoney());
+        System.out.println("-----------------------------");
+        commodities.forEach(System.out::println);
+        System.out.println("-----------------------------");
+        var cargos = chooseItem(commodities, p.getSpaceShip(), p.getCurrentMoney());
 
+        cargos.forEach(System.out::println);
 
-        selectedItems.forEach(System.out::println);
-        update(p, selectedItems);
-    }
-
-    private void update(PlayerImpl player, List<Commodity> selectedItems)
-    {
-        var totalCost = selectedItems.stream()
-                .mapToDouble(c -> c.getCurrentSupplyAmount() * c.getUnitSellPrice())
-                .sum();
-
-        var totalVolume = selectedItems.stream().mapToInt(c -> c.getUnitVolume() * c.getCurrentSupplyAmount()).sum();
-
-        player.setCurrentMoney(player.getCurrentMoney() - totalCost);
-        player.getSpaceShip().setVolumeCapacity(player.getSpaceShip().getVolumeCapacity() - totalVolume);
-
-        System.out.println("totalCost: " + totalCost);
-        System.out.println("totalVolume: " + totalVolume);
-        System.out.println("Player Current Money: " + ((PlayerImpl) player).getCurrentMoney());
-        System.out.println("VOLUME: " + ((PlayerImpl) player).getSpaceShip().getVolumeCapacity());
+        update(p);
+        cargos.forEach(p.getSpaceShip()::addCargo);
         System.exit(1);
     }
 
-    // Marketin izin verdiği ölçüde ve uzay gemisinin alabileceği kadar ürün topla
-    private List<Commodity> chooseItem(List<Commodity> commodities, SpaceShip spaceShip, double currentMoney)
+    private void update(PlayerImpl player)
     {
-        // Oyuncunun parasından az ürünleri getir ve sırala
-        var sortedCommoditiesByMoney = commodities.stream()
-                .filter(c -> c.getUnitSellPrice() <= currentMoney)
-                .sorted(comparingDouble(Commodity::getUnitSellPrice))
-                .sorted(comparingInt(Commodity::getUnitVolume))
-                .toList();
+        player.setCurrentMoney(player.getCurrentMoney() - totalCost);
+        player.getSpaceShip().setVolumeCapacity(player.getSpaceShip().getVolumeCapacity() - totalVolume);
 
-        if (sortedCommoditiesByMoney.isEmpty())
-            return Collections.emptyList();
-
-        return decideCommodities(sortedCommoditiesByMoney, spaceShip, currentMoney);
     }
 
-
-    private List<Commodity> decideCommodities(List<Commodity> commoditiesByVolumeAndCost, SpaceShip spaceShip,
-                                              double currentMoney)
+    private List<Cargo> chooseItem(List<Commodity> commodities, SpaceShip spaceShip, double currentMoney)
     {
-        var list = new ArrayList<Commodity>();
-        var sumOfVolume = 0;
-        for (var item : commoditiesByVolumeAndCost)
+        var cargoList = new ArrayList<Cargo>();
+        //System.out.println("CURRENT MONEY: " + currentMoney);
+        var remainingMoney = currentMoney;
+        var remainingVolume = spaceShip.getVolumeCapacity();
+
+        for (Commodity commodity : commodities)
         {
-            sumOfVolume += item.getUnitVolume() * item.getCurrentSupplyAmount();
-            var totalCost = item.getUnitSellPrice() * item.getCurrentSupplyAmount();
+            var unitBuyPrice = commodity.getUnitBuyPrice();
+            var unitVolume = commodity.getUnitVolume();
 
-            if (sumOfVolume <= spaceShip.getVolumeCapacity() && totalCost <= currentMoney)
-                list.add(item);
+            if (unitBuyPrice <= remainingMoney && unitVolume <= remainingVolume && commodity.getCurrentSupplyAmount() > 0)
+            {
+                var maxQuantity = Math.min(remainingVolume / unitVolume, commodity.getCurrentSupplyAmount());
+
+                if (remainingMoney - (unitBuyPrice * maxQuantity) < 0 || remainingVolume - (unitVolume * maxQuantity) < 0)
+                    break;
+
+                cargoList.add(new Cargo(commodity, maxQuantity));
+
+                remainingMoney -= unitBuyPrice * maxQuantity;
+                remainingVolume -= unitVolume * maxQuantity;
+
+                commodity.setCurrentSupplyAmount(commodity.getCurrentSupplyAmount() - maxQuantity);
+            }
         }
-        return list;
-    }
-
-    private boolean filterItems(Commodity item, int volumeCapacity, double currentMoney)
-    {
-        var totalVolume = item.getUnitVolume() * item.getCurrentSupplyAmount();
-        var totalCost = item.getUnitSellPrice() * item.getCurrentSupplyAmount();
-
-        return totalVolume <= volumeCapacity && totalCost <= currentMoney;
+       /*cargoList.forEach(c -> System.out.println(c.getCommodity().getName() + " - " + c.getCommodity().getCurrentSupplyAmount()));
+        System.out.println("RM: " + remainingMoney);
+        System.out.println("RV: " + remainingVolume);*/
+        return cargoList;
     }
 
     @Override

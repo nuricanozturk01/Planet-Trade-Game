@@ -22,4 +22,13 @@ public class Cargo implements GameContext
     {
         return quantityOfCommodity;
     }
+
+    @Override
+    public String toString()
+    {
+        return "Cargo{" +
+                "m_commodity=" + m_commodity +
+                ", quantityOfCommodity=" + quantityOfCommodity +
+                '}';
+    }
 }

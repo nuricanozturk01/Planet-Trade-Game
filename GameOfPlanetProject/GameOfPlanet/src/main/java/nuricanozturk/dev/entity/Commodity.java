@@ -43,6 +43,11 @@ public class Commodity implements GameContext, Comparable<Commodity>
         return m_unitSellPrice;
     }
 
+    public void setCurrentSupplyAmount(int currentSupplyAmount)
+    {
+        m_currentSupplyAmount = currentSupplyAmount;
+    }
+
     @Override
     public String toString()
     {
