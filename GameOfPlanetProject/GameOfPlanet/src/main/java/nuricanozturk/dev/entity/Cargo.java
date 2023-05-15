@@ -30,6 +30,6 @@ public class Cargo implements GameContext
         return "Cargo{" +
                 "m_commodity=" + m_commodity +
                 ", quantityOfCommodity=" + quantityOfCommodity +
-                '}';
+                "}\n";
     }
 }

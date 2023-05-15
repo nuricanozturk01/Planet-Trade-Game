@@ -18,7 +18,8 @@ public class FileLogger implements ILogger
         {
             writer.write(msg);
             writer.newLine();
-        } catch (IOException e)
+        }
+        catch (IOException ignored)
         {
 
         }

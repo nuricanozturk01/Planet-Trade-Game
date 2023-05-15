@@ -3,6 +3,7 @@ package nuricanozturk.dev.entity;
 import project.gameengine.base.GameContext;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 
@@ -27,6 +28,12 @@ public class SpaceShip implements ISpaceship, GameContext
     public void addCargo(Cargo cargo)
     {
         m_cargos.add(cargo);
+    }
+
+    @Override
+    public void addAllCargo(Collection<? extends Cargo> cargos)
+    {
+        m_cargos.addAll(cargos);
     }
 
     public List<Cargo> getSortedCargos()
@@ -128,7 +135,6 @@ public class SpaceShip implements ISpaceship, GameContext
     public String toString()
     {
         return "SpaceShip{" +
-                "m_cargos=" + m_cargos +
                 ", m_name='" + m_name + '\'' +
                 ", m_price=" + m_price +
                 ", m_volumeCapacity=" + m_volumeCapacity +
@@ -136,6 +142,7 @@ public class SpaceShip implements ISpaceship, GameContext
                 ", m_currentFuel=" + m_currentFuel +
                 ", m_fuelCapacity=" + m_fuelCapacity +
                 ", fuelUsagePerLightYear=" + fuelUsagePerLightYear +
+                "\nm_cargos=" + m_cargos+
                 '}';
     }
 

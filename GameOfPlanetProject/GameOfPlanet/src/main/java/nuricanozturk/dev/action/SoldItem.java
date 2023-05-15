@@ -23,9 +23,9 @@ public class SoldItem implements IAction
         var market = p.getCurrentPlanet().getMarket();
 
         var earningMoney = soldItems(p, market, spaceship);
-        System.out.println("PPPPP: " + p.getCurrentMoney());
+
         updatePlayer(p, earningMoney);
-        System.out.println("AAAAA: " + p.getCurrentMoney());
+
     }
 
     private void updatePlayer(PlayerImpl p, double earningMoney)

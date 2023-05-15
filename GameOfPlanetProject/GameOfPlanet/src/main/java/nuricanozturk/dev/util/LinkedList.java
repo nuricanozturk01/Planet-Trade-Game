@@ -29,6 +29,13 @@ public class LinkedList<T> implements Iterable<T>, Collection<T>
         collection.forEach(this::insertFirst);
     }
 
+    @Override
+    public boolean addAll(Collection<? extends T> c)
+    {
+        c.forEach(this::insertFirst);
+        return true;
+    }
+
     public Node<T> getHead()
     {
         return m_head;
@@ -51,7 +58,7 @@ public class LinkedList<T> implements Iterable<T>, Collection<T>
 
         T item = null;
 
-        for (int i = 0; i <= m_currentIndex; item = p.getData(), p = p.getNext(), i++);
+        for (int i = 0; i <= m_currentIndex; item = p.getData(), p = p.getNext(), i++) ;
 
         m_currentIndex = m_currentIndex == m_size - 1 ? 0 : m_currentIndex + 1;
 
@@ -87,9 +94,11 @@ public class LinkedList<T> implements Iterable<T>, Collection<T>
             final Node<T> emptyNode = new Node<>(m_head.getData());
             Node<T> p = emptyNode;
 
+            //non static initializer
             {
                 emptyNode.setNext(m_head);
-            } //non static initializer
+            }
+
 
             @Override
             public boolean hasNext()
@@ -116,12 +125,20 @@ public class LinkedList<T> implements Iterable<T>, Collection<T>
         for (T t : this)
             action.accept(t);
     }
+
+
 //--------------------------------------------------------------------------------------------------------------------
 
     @Override
     public boolean contains(Object o)
     {
-        return stream().anyMatch(l -> l.equals(o));
+        throw new UnsupportedOperationException("NOT SUPPORTED");
+    }
+
+    @Override
+    public boolean containsAll(Collection<?> c)
+    {
+        throw new UnsupportedOperationException("NOT SUPPORTED");
     }
 
     @Override
@@ -148,17 +165,6 @@ public class LinkedList<T> implements Iterable<T>, Collection<T>
         throw new UnsupportedOperationException("NOT SUPPORTED");
     }
 
-    @Override
-    public boolean containsAll(Collection<?> c)
-    {
-        throw new UnsupportedOperationException("NOT IMPLEMENTED YET...");
-    }
-
-    @Override
-    public boolean addAll(Collection<? extends T> c)
-    {
-        throw new UnsupportedOperationException("NOT IMPLEMENTED YET...");
-    }
 
     @Override
     public boolean removeAll(Collection<?> c)

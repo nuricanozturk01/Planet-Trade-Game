@@ -82,8 +82,8 @@ public class PlayerImpl implements Player
         return "PlayerImpl{" +
                 "m_name='" + m_name + '\'' +
                 ", m_currentMoney=" + m_currentMoney +
-                ", m_spaceShip=" + m_spaceShip +
-                ", m_currentPlanet=" + m_currentPlanet +
+                "\nm_spaceShip=" + m_spaceShip +
+                "\nm_currentPlanet=" + m_currentPlanet +
                 '}';
     }
 

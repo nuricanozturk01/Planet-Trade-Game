@@ -3,20 +3,21 @@ package nuricanozturk.dev.action;
 import nuricanozturk.dev.entity.Cargo;
 import nuricanozturk.dev.entity.Commodity;
 import nuricanozturk.dev.entity.PlayerImpl;
-import nuricanozturk.dev.entity.SpaceShip;
 import project.gameengine.base.GameContext;
 import project.gameengine.base.Player;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.IntStream;
 
 import static java.util.Comparator.comparingDouble;
 import static nuricanozturk.dev.util.Util.LOGGER;
 
 public final class BuyItem implements IAction
 {
-    private double totalCost = 0.0;
+    private double totalCost = 0D;
     private int totalVolume = 0;
+    private int spaceshipVolumeCapacity;
+    private double playerMoney = 0D;
 
     public BuyItem()
     {
@@ -27,61 +28,68 @@ public final class BuyItem implements IAction
     public void apply(Player player, GameContext context)
     {
         var p = (PlayerImpl) player;
-        System.out.println("MONEY: " + p.getCurrentMoney());
+
+        LOGGER.log("\n############### Player [" + p.getName() + "] bought new items... ###############\n");
+        LOGGER.log("------- Player INFORMATIONS -------");
+        LOGGER.log(p.toString());
+        LOGGER.log("------- Player INFORMATIONS -------");
+        playerMoney = p.getCurrentMoney();
+        spaceshipVolumeCapacity = p.getSpaceShip().getVolumeCapacity();
+
         var market = p.getCurrentPlanet().getMarket();
+
+        // Sorted by unit buy price
         var commodities = market.getCommodities().stream().sorted(comparingDouble(Commodity::getUnitBuyPrice)).toList();
 
-        System.out.println("-----------------------------");
-        commodities.forEach(System.out::println);
-        System.out.println("-----------------------------");
-        var cargos = chooseItem(commodities, p.getSpaceShip(), p.getCurrentMoney());
-
-        cargos.forEach(System.out::println);
-
+        var cargos = chooseItem(commodities);
+        cargos.forEach(c -> LOGGER.log(c.toString()));
         update(p);
-        cargos.forEach(p.getSpaceShip()::addCargo);
-        //System.exit(1);
+
+        p.getSpaceShip().addAllCargo(cargos);
     }
 
     private void update(PlayerImpl player)
     {
         player.setCurrentMoney(player.getCurrentMoney() - totalCost);
-        player.getSpaceShip().setVolumeCapacity(player.getSpaceShip().getVolumeCapacity() - totalVolume);
 
+        player.getSpaceShip().setVolumeCapacity(spaceshipVolumeCapacity - totalVolume);
     }
 
-    private List<Cargo> chooseItem(List<Commodity> commodities, SpaceShip spaceShip, double currentMoney)
+    private List<Cargo> chooseItem(List<Commodity> commodities)
     {
-        var cargoList = new ArrayList<Cargo>();
-        //System.out.println("CURRENT MONEY: " + currentMoney);
-        var remainingMoney = currentMoney;
-        var remainingVolume = spaceShip.getVolumeCapacity();
+        return commodities.stream().map(this::createCargo).toList();
+    }
 
-        for (Commodity commodity : commodities)
-        {
-            var unitBuyPrice = commodity.getUnitBuyPrice();
-            var unitVolume = commodity.getUnitVolume();
+    private Cargo createCargo(Commodity commodity)
+    {
+        var quantityAmount = getQuantityAmount(commodity);
 
-            if (unitBuyPrice <= remainingMoney && unitVolume <= remainingVolume && commodity.getCurrentSupplyAmount() > 0)
-            {
-                var maxQuantity = Math.min(remainingVolume / unitVolume, commodity.getCurrentSupplyAmount());
+        commodity.setCurrentSupplyAmount(commodity.getCurrentSupplyAmount() - quantityAmount);
 
-                if (remainingMoney - (unitBuyPrice * maxQuantity) < 0 || remainingVolume - (unitVolume * maxQuantity) < 0)
-                    break;
+        return new Cargo(commodity, quantityAmount);
+    }
 
-                cargoList.add(new Cargo(commodity, maxQuantity));
+    private int getQuantityAmount(Commodity commodity)
+    {
+        var unitPrice = commodity.getUnitBuyPrice();
+        var unitVolume = commodity.getUnitVolume();
+        var amount = commodity.getCurrentSupplyAmount();
 
-                remainingMoney -= unitBuyPrice * maxQuantity;
-                remainingVolume -= unitVolume * maxQuantity;
+        return (int) IntStream.rangeClosed(1, commodity.getCurrentSupplyAmount())
+                .takeWhile(i -> findQuantity(i, unitPrice, unitVolume, amount))
+                .peek(i -> updateCostAndVolume(i, unitPrice, unitVolume))
+                .count();
+    }
 
-                commodity.setCurrentSupplyAmount(commodity.getCurrentSupplyAmount() - maxQuantity);
-            }
-        }
+    private void updateCostAndVolume(int ignored, double unitBuyPrice, int unitVolume)
+    {
+        totalCost += unitBuyPrice;
+        totalVolume += unitVolume;
+    }
 
-       /*cargoList.forEach(c -> System.out.println(c.getCommodity().getName() + " - " + c.getCommodity().getCurrentSupplyAmount()));
-        System.out.println("RM: " + remainingMoney);
-        System.out.println("RV: " + remainingVolume);*/
-        return cargoList;
+    private boolean findQuantity(int i, double unitBuyPrice, int unitVolume, int amount)
+    {
+        return totalCost + unitBuyPrice <= playerMoney && totalVolume + unitVolume <= spaceshipVolumeCapacity && i <= amount;
     }
 
     @Override
