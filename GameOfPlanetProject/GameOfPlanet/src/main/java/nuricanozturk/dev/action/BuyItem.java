@@ -40,7 +40,7 @@ public class BuyItem implements IAction
 
         update(p);
         cargos.forEach(p.getSpaceShip()::addCargo);
-        System.exit(1);
+        //System.exit(1);
     }
 
     private void update(PlayerImpl player)

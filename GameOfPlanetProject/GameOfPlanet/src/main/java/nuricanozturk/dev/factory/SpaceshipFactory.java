@@ -1,8 +1,6 @@
 package nuricanozturk.dev.factory;
 
 import nuricanozturk.dev.entity.SpaceShip;
-import nuricanozturk.dev.generator.name.NameGeneratorFactory;
-import nuricanozturk.dev.generator.name.NameType;
 
 import java.util.List;
 import java.util.stream.IntStream;
@@ -56,7 +54,6 @@ public final class SpaceshipFactory
 
     private static int createFuelUsagePerLightYear(int fuelCapacity)
     {
-
         return (fuelCapacity / 100) * getRandomInstance().nextInt(2, 4);
     }
 

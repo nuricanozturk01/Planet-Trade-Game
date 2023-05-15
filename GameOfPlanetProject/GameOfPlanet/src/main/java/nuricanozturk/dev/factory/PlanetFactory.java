@@ -4,9 +4,6 @@
 package nuricanozturk.dev.factory;
 
 import nuricanozturk.dev.entity.Planet;
-import nuricanozturk.dev.generator.name.NameGeneratorFactory;
-import nuricanozturk.dev.generator.name.NameType;
-import nuricanozturk.dev.util.Constants;
 
 import java.util.List;
 import java.util.stream.IntStream;
@@ -25,7 +22,7 @@ public final class PlanetFactory
 
     public static List<Planet> createPlanets(int count)
     {
-       LOGGER.log("-----Planets are creating...\n");
+        LOGGER.log("-----Planets are creating...\n");
         return IntStream
                 .range(0, count)
                 .mapToObj(PlanetFactory::createPlanet)
