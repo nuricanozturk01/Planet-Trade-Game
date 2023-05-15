@@ -8,6 +8,6 @@ public class ChangeSpaceship implements IAction
     @Override
     public void apply(Player player, GameContext context)
     {
-        ;
+
     }
 }

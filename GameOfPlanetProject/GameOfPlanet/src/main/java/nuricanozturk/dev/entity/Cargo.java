@@ -13,6 +13,7 @@ public class Cargo implements GameContext
         this.quantityOfCommodity = quantityOfCommodity;
     }
 
+
     public Commodity getCommodity()
     {
         return m_commodity;

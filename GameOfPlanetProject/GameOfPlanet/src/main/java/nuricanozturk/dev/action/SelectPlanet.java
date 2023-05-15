@@ -1,6 +1,5 @@
 package nuricanozturk.dev.action;
 
-import nuricanozturk.dev.config.RandomConfig;
 import nuricanozturk.dev.entity.InitGameContext;
 import nuricanozturk.dev.entity.PlayerImpl;
 import project.gameengine.base.GameContext;
@@ -19,9 +18,9 @@ public class SelectPlanet implements IAction
     @Override
     public void apply(Player player, GameContext context)
     {
-        var planets = ((InitGameContext)context).getPlanets();
+        var planets = ((InitGameContext) context).getPlanets();
 
-        ((PlayerImpl)player).setCurrentPlanet(planets.get(getRandomInstance().nextInt(0, planets.size())));
+        ((PlayerImpl) player).setCurrentPlanet(planets.get(getRandomInstance().nextInt(0, planets.size())));
     }
 
     @Override

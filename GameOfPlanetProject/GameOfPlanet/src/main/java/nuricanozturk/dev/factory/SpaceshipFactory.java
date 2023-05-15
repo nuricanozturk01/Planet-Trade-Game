@@ -10,7 +10,7 @@ import static nuricanozturk.dev.util.Constants.*;
 import static nuricanozturk.dev.util.Util.LOGGER;
 import static nuricanozturk.dev.util.Util.getBigFormattedNumber;
 
-public final class SpaceshipFactory
+public class SpaceshipFactory
 {
     private SpaceshipFactory()
     {
@@ -57,7 +57,7 @@ public final class SpaceshipFactory
         return (fuelCapacity / 100) * getRandomInstance().nextInt(2, 4);
     }
 
-    private static SpaceShip createSpaceShip(int i)
+    private static SpaceShip createSpaceShip(int ignore)
     {
         var price = getBigFormattedNumber(getRandomInstance().nextDouble(MIN_SPACESHIP_COST, MAX_SPACESHIP_COST));
         var fuelCapacity = getRandomInstance().nextInt(MIN_FUEL_CAPACITY, MAX_FUEL_CAPACITY);
@@ -75,7 +75,9 @@ public final class SpaceshipFactory
                 .setPrice(price)
                 .setSpeed(speed)
                 .build();
+
         LOGGER.log(spaceShip + " is created...");
+
         return spaceShip;
     }
 }

@@ -1,6 +1,3 @@
-/**
- * Create planet randomly
- */
 package nuricanozturk.dev.factory;
 
 import nuricanozturk.dev.entity.Planet;
@@ -23,6 +20,7 @@ public final class PlanetFactory
     public static List<Planet> createPlanets(int count)
     {
         LOGGER.log("-----Planets are creating...\n");
+
         return IntStream
                 .range(0, count)
                 .mapToObj(PlanetFactory::createPlanet)
@@ -37,8 +35,9 @@ public final class PlanetFactory
                 .setParkingPricePerTurn(getBigFormattedNumber(getRandomInstance().nextDouble(MIN_TURN_PARKING_PRICE, MAX_TURN_PARKING_PRICE)))
                 .setMarket(createMarket())
                 .build();
-        LOGGER.log("\n");
-        LOGGER.log("Planet " + planet.getName() + " is created...\n");
+
+        LOGGER.log("\nPlanet " + planet.getName() + " is created...\n");
+
         return planet;
     }
 }

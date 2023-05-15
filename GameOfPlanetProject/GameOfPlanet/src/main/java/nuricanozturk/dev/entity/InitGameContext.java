@@ -11,7 +11,6 @@ public class InitGameContext implements GameContext
     private final Galaxy m_galaxy;
     private final List<Planet> m_planets;
 
-
     public InitGameContext(List<SpaceShip> spaceShips, Galaxy galaxy, List<Planet> planets)
     {
         m_spaceShips = spaceShips;
@@ -38,5 +37,10 @@ public class InitGameContext implements GameContext
     public List<Planet> getPlanets()
     {
         return m_planets;
+    }
+
+    public void updateTurn()
+    {
+        // updated each turn... R-(20, 21, 22)
     }
 }

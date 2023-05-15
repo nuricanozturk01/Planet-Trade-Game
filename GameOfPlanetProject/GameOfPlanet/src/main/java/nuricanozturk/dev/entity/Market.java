@@ -10,7 +10,7 @@ import static nuricanozturk.dev.util.Util.LOGGER;
 public class Market implements GameContext
 {
     private final String m_name;
-    private List<Commodity> m_commodities;
+    private final List<Commodity> m_commodities;
 
     public Market(String name)
     {
@@ -45,10 +45,5 @@ public class Market implements GameContext
     public List<Commodity> getCommodities()
     {
         return m_commodities;
-    }
-
-    public void setCommodities(List<Commodity> commodities)
-    {
-        m_commodities = commodities;
     }
 }

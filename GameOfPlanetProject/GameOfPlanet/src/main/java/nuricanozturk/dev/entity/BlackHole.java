@@ -6,10 +6,9 @@ import project.gameengine.base.GameContext;
 import static nuricanozturk.dev.factory.GalaxyFactory.createGalaxy;
 import static nuricanozturk.dev.util.Util.LOGGER;
 
-public class BlackHole implements GameContext
+public class BlackHole implements IBlackhole, GameContext
 {
     private final String m_name;
-
 
     public BlackHole(String name)
     {
@@ -21,7 +20,8 @@ public class BlackHole implements GameContext
         return m_name;
     }
 
-    public Galaxy explode()
+    @Override
+    public IGalaxy explode()
     {
         LOGGER.log("\nBlackhole " + m_name + " is created....\n");
         return createGalaxy();

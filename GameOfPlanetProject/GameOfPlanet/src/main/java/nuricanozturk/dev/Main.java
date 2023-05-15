@@ -1,6 +1,5 @@
 package nuricanozturk.dev;
 
-
 import nuricanozturk.dev.entity.PlayerImpl;
 import project.gameengine.BasicConsolRenderer;
 import project.gameengine.TurnBasedGameEngine;

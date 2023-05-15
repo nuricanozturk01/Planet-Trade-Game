@@ -1,35 +1,46 @@
 package nuricanozturk.dev.util;
 
+import java.util.Arrays;
 import java.util.List;
 
 import static java.util.Arrays.asList;
 
 public final class Constants
 {
+
+
+    // ############################## LOGGER START ##############################
     public static final String LOGGER_FILE_NAME = "log.txt";
+    // ############################## LOGGER END ##############################
+
+
+    // ############################## GALAXY START ##############################
+    public static final LinkedList<String> GALAXY_NAMES = new LinkedList<>(
+            asList("Andromeda", "Milky Way", "Triangulum", "Centaurus A", "Whirlpool", "Sombrero", "Pinwheel", "Cigar",
+                    "Bode's", "Cartwheel")
+    );
+
+    // ############################## GALAXY END ##############################
+
+
+    // ############################## BLACKHOLE START ##############################
+    public static final LinkedList<String> BLACKHOLE_NAMES = new LinkedList<>(
+            Arrays.asList("Sagittarius A*", "M87", "Cygnus X-1", "V404 Cygni", "GRO J1655-40", "NGC 1365", "NGC 1277",
+                    "A0620-00", "IC 310", "PKS B1424-418")
+    );
+    // ############################## BLACKHOLE END ##############################
+
+
+    // ############################## PLAYER START ##############################
     public static final int MIN_PLAYER = 2;
     public static final int MAX_PLAYER = 5;
-    public static final double MIN_UNIT_FUEL_PRICE = 5D;
-    public static final double MAX_UNIT_FUEL_PRICE = 50D;
-    public static final double MIN_TURN_PARKING_PRICE = 10D;
-    public static final double MAX_TURN_PARKING_PRICE = 30D;
     public static final double PLAYER_INITIAL_MONEY = 30_000D;
-    public static final double MIN_SPACESHIP_COST = 3_500D;
-    public static final double MAX_SPACESHIP_COST = 50_000D;
+    // ############################## PLAYER END ##############################
+
+
+    // ############################## SPACESHIP START ##############################
     public static final int MIN_SPACESHIP_COUNT = 10;
-    public static final int MAX_SPACESHIP_COUNT = 20;
-    public static final int MIN_COMMODITY_COUNT = 15;
-    public static final int MAX_COMMODITY_COUNT = 25;
-    public static final int MAX_PLANET_SIZE = 10;
-    public static final int MIN_PLANET_SIZE = 2;
-    public static final int MIN_UNIT_VOLUME = 5;
-    public static final int MAX_UNIT_VOLUME = 15;
-    public static final double MIN_DELAY_RATIO = 0.5;
-    public static final double MAX_DELAY_RATIO = 1.5D;
-    public static final int MIN_CURRENT_SUPPLY_AMOUNT = 5;
-    public static final int MAX_CURRENT_SUPPLY_AMOUNT = 30;
-    public static final double MIN_UNIT_BUY_PRICE = 150D;
-    public static final double MAX_UNIT_BUY_PRICE = 1500D;
+    public static final int MAX_SPACESHIP_COUNT = 30;
     public static final int DEFAULT_INIT_FUEL_CAPACITY = 500;
     public static final int MIN_FUEL_CAPACITY = 1000;
     public static final int MAX_FUEL_CAPACITY = 2000;
@@ -37,7 +48,51 @@ public final class Constants
     public static final int MIN_SPEED = 100;
     public static final int MIN_VOLUME = 500;
     public static final int MAX_VOLUME = 11_000;
-    public static final String MARKET_NAME = "MARKET";
+    public static final double MIN_SPACESHIP_COST = 3_500D;
+    public static final double MAX_SPACESHIP_COST = 50_000D;
+    public static final LinkedList<String> SPACESHIP_NAMES = new LinkedList<>(
+            asList("Apollo", "Discovery", "Enterprise", "Falcon", "Galaxy", "Hermes", "Infinity", "Jupiter",
+                    "Nova", "Orion", "Pioneer", "Raptor", "Serenity", "Titan", "Voyager", "Zenith", "Aurora",
+                    "Celestial", "Cosmos", "Eclipse", "Firefly", "Goliath", "Hawkeye", "Interceptor", "Liberty",
+                    "Meteor", "Nebula", "Odyssey", "Pathfinder", "Quantum", "Ranger", "Stardust", "Trident",
+                    "Utopia", "Vanguard", "Wanderer", "Xenon", "Yamato", "Zenon", "Aegis", "Blackhawk", "Comet",
+                    "Defiant", "Endeavor", "Fury", "Genesis", "Horizon", "Intrepid", "Javelin", "Kestrel",
+                    "Liberator", "Magellan", "Nimbus", "Omega", "Phoenix", "Quest", "Radiant", "Sentinel",
+                    "Tempest", "Unity", "Valiant", "Warp", "Xplorer", "Yonder", "Zeus", "Astro", "Blaze",
+                    "Cosmic", "Dragonfly", "Equinox", "Hawk", "Jetstream", "Lunar", "Meteorite", "Nebula",
+                    "Orbit", "Pulsar", "Quasar", "Rocket", "Stellar", "Traverse", "Vortex", "Warp", "Xenith",
+                    "Yosemite", "Zero-G"));
+    // ############################## SPACESHIP END ##############################
+
+
+    // ############################## PLANET START ##############################
+
+    public static final int MAX_PLANET_SIZE = 10;
+    public static final int MIN_PLANET_SIZE = 2;
+    public static final double MIN_UNIT_FUEL_PRICE = 5D;
+    public static final double MAX_UNIT_FUEL_PRICE = 50D;
+    public static final double MIN_TURN_PARKING_PRICE = 10D;
+    public static final double MAX_TURN_PARKING_PRICE = 30D;
+    public static final LinkedList<String> PLANET_NAMES = new LinkedList<>(
+            asList("Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune",
+                    "Pluto", "Eris", "Haumea", "Makemake", "Ceres", "Orcus", "Quaoar", "Sedna", "Varuna",
+                    "Ixion", "Chaos", "Nessus", "Huya", "Salacia", "Gonggong", "Varda", "Tyche"));
+
+    // ############################## PLANET END ##############################
+
+
+    // ############################## COMMODITY START ##############################
+
+    public static final int MIN_COMMODITY_COUNT = 15;
+    public static final int MAX_COMMODITY_COUNT = 25;
+    public static final int MIN_UNIT_VOLUME = 5;
+    public static final int MAX_UNIT_VOLUME = 15;
+    public static final int MIN_CURRENT_SUPPLY_AMOUNT = 5;
+    public static final int MAX_CURRENT_SUPPLY_AMOUNT = 30;
+    public static final double MIN_UNIT_BUY_PRICE = 150D;
+    public static final double MAX_UNIT_BUY_PRICE = 1500D;
+    public static final double MAX_DELAY_RATIO = 1.5D;
+    public static final double MIN_DELAY_RATIO = 0.5;
     public static final List<String> COMMODITY_NAME = asList("Lithium", "Titanium", "Platinum", "Gold",
             "Silver", "Helium-3", "Water", "Food", "Oxygen", "Hydrogen",
             "Carbon", "Iron", "Copper", "Nickel", "Aluminum", "Tungsten", "Palladium", "Rhodium", "Iridium",
@@ -57,23 +112,10 @@ public final class Constants
             "Rhenium", "Osmium", "Ruthenium", "Technetium", "Molybdenum", "Boron Nitride", "Graphene",
             "Fullerenes", "Carbon Nanotubes", "Quantum Dots");
 
-    public static final LinkedList<String> PLANET_NAMES = new LinkedList<>(
-            asList("Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune",
-                    "Pluto", "Eris", "Haumea", "Makemake", "Ceres", "Orcus", "Quaoar", "Sedna", "Varuna",
-                    "Ixion", "Chaos", "Nessus", "Huya", "Salacia", "Gonggong", "Varda", "Tyche"));
+    // ############################## COMMODITY END ##############################
 
-    public static final LinkedList<String> SPACESHIP_NAMES = new LinkedList<>(
-            asList("Apollo", "Discovery", "Enterprise", "Falcon", "Galaxy", "Hermes", "Infinity", "Jupiter",
-                    "Nova", "Orion", "Pioneer", "Raptor", "Serenity", "Titan", "Voyager", "Zenith", "Aurora",
-                    "Celestial", "Cosmos", "Eclipse", "Firefly", "Goliath", "Hawkeye", "Interceptor", "Liberty",
-                    "Meteor", "Nebula", "Odyssey", "Pathfinder", "Quantum", "Ranger", "Stardust", "Trident",
-                    "Utopia", "Vanguard", "Wanderer", "Xenon", "Yamato", "Zenon", "Aegis", "Blackhawk", "Comet",
-                    "Defiant", "Endeavor", "Fury", "Genesis", "Horizon", "Intrepid", "Javelin", "Kestrel",
-                    "Liberator", "Magellan", "Nimbus", "Omega", "Phoenix", "Quest", "Radiant", "Sentinel",
-                    "Tempest", "Unity", "Valiant", "Warp", "Xplorer", "Yonder", "Zeus", "Astro", "Blaze",
-                    "Cosmic", "Dragonfly", "Equinox", "Hawk", "Jetstream", "Lunar", "Meteorite", "Nebula",
-                    "Orbit", "Pulsar", "Quasar", "Rocket", "Stellar", "Traverse", "Vortex", "Warp", "Xenith",
-                    "Yosemite", "Zero-G"));
+
+    // ############################## MARKET START ##############################
     public static final LinkedList<String> MARKET_NAMES = new LinkedList<>(
             asList("Alpha Market", "Beta Bazaar", "Gamma Mart", "Delta Trade", "Epsilon Emporium", "Zeta Shop",
                     "Eta Exchange", "Theta Mall", "Iota Depot", "Kappa Store", "Lambda Outlet", "Mu Market",
@@ -92,6 +134,9 @@ public final class Constants
                     "Mercury Shop", "Venus Mall", "Mars Depot", "Jupiter Store", "Saturn Market", "Uranus Bazaar",
                     "Neptune Mart", "Pluto Trade", "Nebula Shop", "Stardust Mall", "Comet Depot", "Meteorite Store")
     );
+
+    // ############################## MARKET END ##############################
+
 
     private Constants()
     {

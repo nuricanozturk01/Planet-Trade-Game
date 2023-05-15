@@ -13,7 +13,7 @@ import java.util.List;
 import static java.util.Comparator.comparingDouble;
 import static nuricanozturk.dev.util.Util.LOGGER;
 
-public class BuyItem implements IAction
+public final class BuyItem implements IAction
 {
     private double totalCost = 0.0;
     private int totalVolume = 0;
@@ -77,6 +77,7 @@ public class BuyItem implements IAction
                 commodity.setCurrentSupplyAmount(commodity.getCurrentSupplyAmount() - maxQuantity);
             }
         }
+
        /*cargoList.forEach(c -> System.out.println(c.getCommodity().getName() + " - " + c.getCommodity().getCurrentSupplyAmount()));
         System.out.println("RM: " + remainingMoney);
         System.out.println("RV: " + remainingVolume);*/

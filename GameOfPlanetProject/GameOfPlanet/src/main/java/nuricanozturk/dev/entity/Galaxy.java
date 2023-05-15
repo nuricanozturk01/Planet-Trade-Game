@@ -7,7 +7,7 @@ import java.util.List;
 
 import static nuricanozturk.dev.util.Util.LOGGER;
 
-public class Galaxy implements GameContext
+public class Galaxy implements IGalaxy, GameContext
 {
     private final String m_name;
     private final List<Planet> m_planets;
@@ -30,6 +30,7 @@ public class Galaxy implements GameContext
         return m_planetCount;
     }
 
+    @Override
     public void addPlanet(Planet planet)
     {
         m_planets.add(planet);

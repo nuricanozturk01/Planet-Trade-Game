@@ -3,13 +3,10 @@ package nuricanozturk.dev.action;
 import nuricanozturk.dev.util.LinkedList;
 import project.gameengine.base.Action;
 
-import java.util.Arrays;
-import java.util.List;
-
 import static nuricanozturk.dev.config.RandomConfig.getRandomInstance;
 import static nuricanozturk.dev.util.Util.LOGGER;
 
-public class ActionGenerator
+public final class ActionGenerator
 {
     private final static Action m_buyFuelAction = new BuyFuel();
     private final static Action m_buyItemAction = new BuyItem();
@@ -52,11 +49,11 @@ public class ActionGenerator
         return m_selectPlanetAction;
     }
 
-    public List<Action> getActions()
+    /*public List<Action> getActions()
     {
 
         return Arrays.asList(m_buyItemAction, m_soldItemAction, m_buyFuelAction, m_planTravellingAction);
-    }
+    }*/
 
     public LinkedList<Action> getActionLinkedList()
     {

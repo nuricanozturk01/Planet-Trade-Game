@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class SpaceShip implements GameContext
+public class SpaceShip implements ISpaceship, GameContext
 {
     private final List<Cargo> m_cargos;
     private String m_name;
@@ -23,6 +23,7 @@ public class SpaceShip implements GameContext
         m_cargos = new ArrayList<>();
     }
 
+    @Override
     public void addCargo(Cargo cargo)
     {
         m_cargos.add(cargo);
@@ -38,9 +39,19 @@ public class SpaceShip implements GameContext
         return m_name;
     }
 
+    public void setName(String name)
+    {
+        m_name = name;
+    }
+
     public double getPrice()
     {
         return m_price;
+    }
+
+    public void setPrice(double price)
+    {
+        m_price = price;
     }
 
     public List<Cargo> getCargos()
@@ -53,9 +64,19 @@ public class SpaceShip implements GameContext
         return m_volumeCapacity;
     }
 
+    public void setVolumeCapacity(int volumeCapacity)
+    {
+        m_volumeCapacity = volumeCapacity;
+    }
+
     public int getSpeed()
     {
         return m_speed;
+    }
+
+    public void setSpeed(int speed)
+    {
+        m_speed = speed;
     }
 
     public int getCurrentFuel()
@@ -63,14 +84,29 @@ public class SpaceShip implements GameContext
         return m_currentFuel;
     }
 
+    public void setCurrentFuel(int currentFuel)
+    {
+        m_currentFuel = currentFuel;
+    }
+
     public int getFuelCapacity()
     {
         return m_fuelCapacity;
     }
 
+    public void setFuelCapacity(int fuelCapacity)
+    {
+        m_fuelCapacity = fuelCapacity;
+    }
+
     public int getFuelUsagePerLightYear()
     {
         return fuelUsagePerLightYear;
+    }
+
+    public void setFuelUsagePerLightYear(int fuelUsagePerLightYear)
+    {
+        this.fuelUsagePerLightYear = fuelUsagePerLightYear;
     }
 
     public void setIsSold(boolean isSold)
@@ -81,41 +117,6 @@ public class SpaceShip implements GameContext
     public boolean isSold()
     {
         return isSold;
-    }
-
-    public void setName(String name)
-    {
-        m_name = name;
-    }
-
-    public void setPrice(double price)
-    {
-        m_price = price;
-    }
-
-    public void setVolumeCapacity(int volumeCapacity)
-    {
-        m_volumeCapacity = volumeCapacity;
-    }
-
-    public void setSpeed(int speed)
-    {
-        m_speed = speed;
-    }
-
-    public void setCurrentFuel(int currentFuel)
-    {
-        m_currentFuel = currentFuel;
-    }
-
-    public void setFuelCapacity(int fuelCapacity)
-    {
-        m_fuelCapacity = fuelCapacity;
-    }
-
-    public void setFuelUsagePerLightYear(int fuelUsagePerLightYear)
-    {
-        this.fuelUsagePerLightYear = fuelUsagePerLightYear;
     }
 
     public void setSold(boolean sold)

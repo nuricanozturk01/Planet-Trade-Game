@@ -1,8 +1,8 @@
 package nuricanozturk.dev;
 
 import nuricanozturk.dev.entity.BlackHole;
+import nuricanozturk.dev.entity.Galaxy;
 import nuricanozturk.dev.entity.InitGameContext;
-import nuricanozturk.dev.generator.name.NameType;
 import project.gameengine.base.Action;
 import project.gameengine.base.Game;
 import project.gameengine.base.GameContext;
@@ -11,9 +11,7 @@ import project.gameengine.base.Player;
 import java.util.List;
 
 import static nuricanozturk.dev.factory.SpaceshipFactory.createSpaceships;
-import static nuricanozturk.dev.generator.name.NameGeneratorFactory.createName;
-import static nuricanozturk.dev.util.Constants.MAX_PLAYER;
-import static nuricanozturk.dev.util.Constants.MIN_PLAYER;
+import static nuricanozturk.dev.util.Constants.*;
 import static nuricanozturk.dev.util.Util.actions;
 
 public class PlanetTradeGame implements Game
@@ -40,10 +38,11 @@ public class PlanetTradeGame implements Game
     @Override
     public void init(List<Player> players)
     {
-        var blackhole = new BlackHole(createName(NameType.BlackHole, 1));
+        var blackhole = new BlackHole(BLACKHOLE_NAMES.next());
         var galaxy = blackhole.explode();
+
         m_players = players;
-        m_gameContext = new InitGameContext(createSpaceships(), galaxy, galaxy.getPlanets());
+        m_gameContext = new InitGameContext(createSpaceships(), (Galaxy) galaxy, ((Galaxy) galaxy).getPlanets());
 
         // Each planet create own market and each market creates own commodities
         m_gameContext.init(players);
@@ -65,6 +64,7 @@ public class PlanetTradeGame implements Game
         action = actions.next();
 
         m_players.forEach(p -> p.play(m_gameContext));
+        m_gameContext.updateTurn();
 
         m_currentTurn++;
     }

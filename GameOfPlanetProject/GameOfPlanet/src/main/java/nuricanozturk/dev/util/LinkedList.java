@@ -29,22 +29,6 @@ public class LinkedList<T> implements Iterable<T>, Collection<T>
         collection.forEach(this::insertFirst);
     }
 
-    public static void main(String[] args)
-    {
-        var ll = new LinkedList<String>();
-
-        ll.insertFirst("nuri");
-        ll.insertFirst("can");
-        ll.insertFirst("ozturk");
-        ll.insertFirst("ali");
-        ll.insertFirst("veli");
-
-        for (int i = 0; i < 15; i++)
-        {
-            System.out.println(ll.next());
-        }
-    }
-
     public Node<T> getHead()
     {
         return m_head;
@@ -67,7 +51,7 @@ public class LinkedList<T> implements Iterable<T>, Collection<T>
 
         T item = null;
 
-        for (int i = 0; i <= m_currentIndex; item = p.getData(), p = p.getNext(), i++) ;
+        for (int i = 0; i <= m_currentIndex; item = p.getData(), p = p.getNext(), i++);
 
         m_currentIndex = m_currentIndex == m_size - 1 ? 0 : m_currentIndex + 1;
 
