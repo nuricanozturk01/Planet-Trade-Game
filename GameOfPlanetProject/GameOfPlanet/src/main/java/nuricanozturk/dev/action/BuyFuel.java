@@ -9,9 +9,10 @@ import static nuricanozturk.dev.util.Util.LOGGER;
 
 public final class BuyFuel implements IAction
 {
-    private int currentFuel;
-    private int newFuel;
-    private SpaceShip spaceship;
+    private PlayerImpl m_player;
+    private SpaceShip m_spaceship;
+    private int buyFuel;
+    private int fuelPrice;
 
     public BuyFuel()
     {
@@ -21,22 +22,42 @@ public final class BuyFuel implements IAction
     @Override
     public void apply(Player player, GameContext context)
     {
-        spaceship = ((PlayerImpl) player).getSpaceShip();
+        m_player = (PlayerImpl) player;
+        m_spaceship = m_player.getSpaceShip();
 
-        currentFuel = spaceship.getCurrentFuel();
+        var fuel = buyFuel();
 
-        buyFuel();
+        buyFuel = fuel;
+        fuelPrice = (int) (m_player.getCurrentPlanet().getUnitFuelPrice() * fuel);
+
+        update(fuelPrice, m_spaceship, m_player);
     }
 
-    private void buyFuel()
+    private void update(int fuel, SpaceShip spaceship, PlayerImpl player)
     {
-        newFuel = currentFuel + 1000;
-        spaceship.setCurrentFuel(newFuel);
+        spaceship.setCurrentFuel(spaceship.getCurrentFuel() + fuel);
+        player.setCurrentMoney(player.getCurrentMoney() - fuelPrice);
+    }
+
+    private int buyFuel()
+    {
+        var playerMoney = m_player.getCurrentMoney();
+        var unitPrice = m_player.getCurrentPlanet().getUnitFuelPrice();
+
+        if (playerMoney < unitPrice)
+            return 0;
+
+        var fuelCapacity = m_spaceship.getFuelCapacity();
+        var currentFuel = m_spaceship.getCurrentFuel();
+
+        int necessaryAmount = (int) ((fuelCapacity - currentFuel) / unitPrice);
+
+        return (int) Math.min(necessaryAmount, playerMoney / unitPrice);
     }
 
     @Override
     public String toString()
     {
-        return spaceship.getCurrentFuel() + "/" + spaceship.getCurrentFuel();
+        return "FUEL";
     }
 }

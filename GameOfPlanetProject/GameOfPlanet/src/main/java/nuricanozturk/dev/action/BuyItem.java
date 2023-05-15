@@ -16,8 +16,9 @@ public final class BuyItem implements IAction
 {
     private double totalCost = 0D;
     private int totalVolume = 0;
-    private int spaceshipVolumeCapacity;
-    private double playerMoney = 0D;
+    private int volumeCapacity;
+    private double playerMoney;
+    private List<Commodity> Commodities;
 
     public BuyItem()
     {
@@ -33,26 +34,31 @@ public final class BuyItem implements IAction
         LOGGER.log("------- Player INFORMATIONS -------");
         LOGGER.log(p.toString());
         LOGGER.log("------- Player INFORMATIONS -------");
+
         playerMoney = p.getCurrentMoney();
-        spaceshipVolumeCapacity = p.getSpaceShip().getVolumeCapacity();
+        volumeCapacity = p.getSpaceShip().getVolumeCapacity();
 
         var market = p.getCurrentPlanet().getMarket();
-
+        Commodities = market.getCommodities();
         // Sorted by unit buy price
-        var commodities = market.getCommodities().stream().sorted(comparingDouble(Commodity::getUnitBuyPrice)).toList();
+        var commodities = market.getCommodities().stream()
+                .filter(c -> c.getCurrentSupplyAmount() > 0)
+                .sorted(comparingDouble(Commodity::getUnitBuyPrice)).toList();
 
         var cargos = chooseItem(commodities);
-        cargos.forEach(c -> LOGGER.log(c.toString()));
+        //cargos.forEach(c -> LOGGER.log(c.toString()));
         update(p);
 
         p.getSpaceShip().addAllCargo(cargos);
+
+        System.out.println("Buyed item");
     }
 
     private void update(PlayerImpl player)
     {
         player.setCurrentMoney(player.getCurrentMoney() - totalCost);
 
-        player.getSpaceShip().setVolumeCapacity(spaceshipVolumeCapacity - totalVolume);
+        player.getSpaceShip().setVolumeCapacity(volumeCapacity - totalVolume);
     }
 
     private List<Cargo> chooseItem(List<Commodity> commodities)
@@ -64,9 +70,16 @@ public final class BuyItem implements IAction
     {
         var quantityAmount = getQuantityAmount(commodity);
 
-        commodity.setCurrentSupplyAmount(commodity.getCurrentSupplyAmount() - quantityAmount);
+        var cargo = new Cargo(commodity, quantityAmount);
 
-        return new Cargo(commodity, quantityAmount);
+        if (quantityAmount == commodity.getCurrentSupplyAmount())
+            Commodities.remove(commodity);
+        else commodity.setCurrentSupplyAmount(commodity.getCurrentSupplyAmount() - quantityAmount);
+
+       // System.out.println("QA: " + quantityAmount);
+
+
+        return cargo;
     }
 
     private int getQuantityAmount(Commodity commodity)
@@ -89,7 +102,7 @@ public final class BuyItem implements IAction
 
     private boolean findQuantity(int i, double unitBuyPrice, int unitVolume, int amount)
     {
-        return totalCost + unitBuyPrice <= playerMoney && totalVolume + unitVolume <= spaceshipVolumeCapacity && i <= amount;
+        return totalCost + unitBuyPrice <= playerMoney && totalVolume + unitVolume <= volumeCapacity && i <= amount;
     }
 
     @Override

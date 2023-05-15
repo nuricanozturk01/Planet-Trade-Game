@@ -9,6 +9,7 @@ import project.gameengine.base.GameContext;
 import project.gameengine.base.Player;
 
 import java.util.List;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 import static nuricanozturk.dev.factory.SpaceshipFactory.createSpaceships;
 import static nuricanozturk.dev.util.Constants.*;
@@ -20,7 +21,7 @@ public class PlanetTradeGame implements Game
     private InitGameContext m_gameContext;
     private List<Player> m_players;
     private int m_currentTurn;
-    private boolean isOver = false; // default false
+    private boolean isOver; // default false
 
 
     public PlanetTradeGame(int turnCount)

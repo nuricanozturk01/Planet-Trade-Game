@@ -12,7 +12,7 @@ public class PlayerImpl implements Player
 {
     private final String m_name;
     private double m_currentMoney;
-    private SpaceShip m_spaceShip;
+    private ISpaceship m_spaceShip;
     private Planet m_currentPlanet;
 
     public PlayerImpl(String name, double initPrice)
@@ -41,7 +41,7 @@ public class PlayerImpl implements Player
 
     public SpaceShip getSpaceShip()
     {
-        return m_spaceShip;
+        return (SpaceShip) m_spaceShip;
     }
 
     public void setSpaceShip(SpaceShip spaceShip)

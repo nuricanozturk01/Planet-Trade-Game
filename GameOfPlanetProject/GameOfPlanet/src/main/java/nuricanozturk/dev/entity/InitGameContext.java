@@ -4,6 +4,7 @@ import project.gameengine.base.GameContext;
 import project.gameengine.base.Player;
 
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class InitGameContext implements GameContext
 {

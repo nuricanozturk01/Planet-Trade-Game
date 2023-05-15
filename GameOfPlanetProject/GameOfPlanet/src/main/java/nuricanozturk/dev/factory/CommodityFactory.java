@@ -2,9 +2,12 @@ package nuricanozturk.dev.factory;
 
 import nuricanozturk.dev.entity.Commodity;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+import static java.util.stream.Collectors.toCollection;
 import static nuricanozturk.dev.config.RandomConfig.getRandomInstance;
 import static nuricanozturk.dev.util.Constants.*;
 import static nuricanozturk.dev.util.Util.LOGGER;
@@ -20,7 +23,7 @@ public final class CommodityFactory
         return IntStream
                 .range(0, getRandomInstance().nextInt(MIN_COMMODITY_COUNT, MAX_COMMODITY_COUNT))
                 .mapToObj(CommodityFactory::createCommodity)
-                .toList();
+                .collect(toCollection(ArrayList::new)); // For modifiable list.
     }
 
     private static Commodity createCommodity(int i)
