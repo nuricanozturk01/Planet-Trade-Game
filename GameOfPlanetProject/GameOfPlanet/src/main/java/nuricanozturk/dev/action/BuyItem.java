@@ -14,11 +14,13 @@ import static nuricanozturk.dev.util.Util.LOGGER;
 
 public final class BuyItem implements IAction
 {
-    private double totalCost = 0D;
+    private PlayerImpl m_player;
+    private List<Cargo> m_cargos;
+    private List<Commodity> Commodities;
     private int totalVolume = 0;
     private int volumeCapacity;
     private double playerMoney;
-    private List<Commodity> Commodities;
+    private double totalCost = 0D;
 
     public BuyItem()
     {
@@ -28,56 +30,51 @@ public final class BuyItem implements IAction
     @Override
     public void apply(Player player, GameContext context)
     {
-        var p = (PlayerImpl) player;
+        m_player = (PlayerImpl) player;
+        playerMoney = m_player.getCurrentMoney();
+        volumeCapacity = m_player.getSpaceShip().getVolumeCapacity();
+        Commodities = m_player.getCurrentPlanet().getMarket().getCommodities();
 
-        LOGGER.log("\n############### Player [" + p.getName() + "] bought new items... ###############\n");
-        LOGGER.log("------- Player INFORMATIONS -------");
-        LOGGER.log(p.toString());
-        LOGGER.log("------- Player INFORMATIONS -------");
-
-        playerMoney = p.getCurrentMoney();
-        volumeCapacity = p.getSpaceShip().getVolumeCapacity();
-
-        var market = p.getCurrentPlanet().getMarket();
-        Commodities = market.getCommodities();
         // Sorted by unit buy price
-        var commodities = market.getCommodities().stream()
+        var commodities = Commodities.stream()
                 .filter(c -> c.getCurrentSupplyAmount() > 0)
-                .sorted(comparingDouble(Commodity::getUnitBuyPrice)).toList();
+                .sorted(comparingDouble(Commodity::getUnitBuyPrice))
+                .toList();
 
-        var cargos = chooseItem(commodities);
-        //cargos.forEach(c -> LOGGER.log(c.toString()));
-        update(p);
+        m_cargos = chooseItem(commodities);
 
-        p.getSpaceShip().addAllCargo(cargos);
-
-        System.out.println("Buyed item");
+        update(m_player);
     }
 
     private void update(PlayerImpl player)
     {
+        m_player.getSpaceShip().addAllCargo(m_cargos);
         player.setCurrentMoney(player.getCurrentMoney() - totalCost);
-
         player.getSpaceShip().setVolumeCapacity(volumeCapacity - totalVolume);
     }
 
     private List<Cargo> chooseItem(List<Commodity> commodities)
     {
-        return commodities.stream().map(this::createCargo).toList();
+        return commodities.stream()
+                .map(this::createCargo)
+                .filter(c -> c.getQuantityOfCommodity() != 0)
+                .toList();
+    }
+
+    private boolean findQuantity(int i, double unitBuyPrice, int unitVolume, int amount)
+    {
+        return totalCost + unitBuyPrice <= playerMoney && totalVolume + unitVolume <= volumeCapacity && i <= amount;
     }
 
     private Cargo createCargo(Commodity commodity)
     {
         var quantityAmount = getQuantityAmount(commodity);
-
         var cargo = new Cargo(commodity, quantityAmount);
 
         if (quantityAmount == commodity.getCurrentSupplyAmount())
             Commodities.remove(commodity);
+
         else commodity.setCurrentSupplyAmount(commodity.getCurrentSupplyAmount() - quantityAmount);
-
-       // System.out.println("QA: " + quantityAmount);
-
 
         return cargo;
     }
@@ -100,14 +97,18 @@ public final class BuyItem implements IAction
         totalVolume += unitVolume;
     }
 
-    private boolean findQuantity(int i, double unitBuyPrice, int unitVolume, int amount)
-    {
-        return totalCost + unitBuyPrice <= playerMoney && totalVolume + unitVolume <= volumeCapacity && i <= amount;
-    }
 
     @Override
     public String toString()
     {
-        return "BUY ITEM";
+        var sb = new StringBuilder();
+
+        sb.append("\n").append(m_player.getName()).append(" on ")
+                .append(m_player.getCurrentPlanet().getName()).append(" Planet [")
+                .append(m_player.getCurrentPlanet().getMarket().getName()).append("] Market")
+                .append(" buy items:\n");
+        m_cargos.forEach(sb::append);
+
+        return sb.toString();
     }
 }
