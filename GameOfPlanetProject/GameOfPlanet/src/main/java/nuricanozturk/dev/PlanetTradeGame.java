@@ -2,14 +2,13 @@ package nuricanozturk.dev;
 
 import nuricanozturk.dev.entity.BlackHole;
 import nuricanozturk.dev.entity.Galaxy;
-import nuricanozturk.dev.entity.InitGameContext;
+import nuricanozturk.dev.entity.PlanetTradeGameContext;
 import project.gameengine.base.Action;
 import project.gameengine.base.Game;
 import project.gameengine.base.GameContext;
 import project.gameengine.base.Player;
 
 import java.util.List;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 import static nuricanozturk.dev.factory.SpaceshipFactory.createSpaceships;
 import static nuricanozturk.dev.util.Constants.*;
@@ -18,7 +17,7 @@ import static nuricanozturk.dev.util.Util.actions;
 public class PlanetTradeGame implements Game
 {
     private final int m_turnCount;
-    private InitGameContext m_gameContext;
+    private PlanetTradeGameContext m_gameContext;
     private List<Player> m_players;
     private int m_currentTurn;
     private boolean isOver; // default false
@@ -43,7 +42,7 @@ public class PlanetTradeGame implements Game
         var galaxy = blackhole.explode();
 
         m_players = players;
-        m_gameContext = new InitGameContext(createSpaceships(), (Galaxy) galaxy, ((Galaxy) galaxy).getPlanets());
+        m_gameContext = new PlanetTradeGameContext(createSpaceships(), (Galaxy) galaxy, ((Galaxy) galaxy).getPlanets());
 
         // Each planet create own market and each market creates own commodities
         m_gameContext.init(players);

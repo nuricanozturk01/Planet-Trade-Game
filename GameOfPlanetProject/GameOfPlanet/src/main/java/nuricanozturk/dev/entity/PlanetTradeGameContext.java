@@ -4,15 +4,14 @@ import project.gameengine.base.GameContext;
 import project.gameengine.base.Player;
 
 import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
 
-public class InitGameContext implements GameContext
+public class PlanetTradeGameContext implements GameContext
 {
     private final List<SpaceShip> m_spaceShips;
     private final Galaxy m_galaxy;
     private final List<Planet> m_planets;
 
-    public InitGameContext(List<SpaceShip> spaceShips, Galaxy galaxy, List<Planet> planets)
+    public PlanetTradeGameContext(List<SpaceShip> spaceShips, Galaxy galaxy, List<Planet> planets)
     {
         m_spaceShips = spaceShips;
         m_galaxy = galaxy;

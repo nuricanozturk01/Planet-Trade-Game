@@ -1,21 +1,24 @@
 package nuricanozturk.dev.action;
 
-import nuricanozturk.dev.entity.*;
+import nuricanozturk.dev.entity.Cargo;
+import nuricanozturk.dev.entity.Commodity;
+import nuricanozturk.dev.entity.Market;
+import nuricanozturk.dev.entity.PlayerImpl;
 import project.gameengine.base.GameContext;
 import project.gameengine.base.Player;
 
+import java.util.List;
 import java.util.stream.IntStream;
 
+import static nuricanozturk.dev.config.RandomConfig.getRandomInstance;
 import static nuricanozturk.dev.util.Util.LOGGER;
 
-/*
-Sell any cargo in the spaceship. The sell operation causes increase in the current money
-with amount calculated by the cargo amount and unit sell price of the commodity in the
-market
- */
 public class SoldItem implements IAction
 {
-    private double earnedMoney;
+    private Market m_market;
+    private PlayerImpl m_player;
+    private List<Cargo> m_cargos;
+
     public SoldItem()
     {
         LOGGER.log("Action: Sell Item created...");
@@ -24,39 +27,56 @@ public class SoldItem implements IAction
     @Override
     public void apply(Player player, GameContext context)
     {
-        var p = (PlayerImpl) player;
-        var spaceship = p.getSpaceShip();
-        var market = p.getCurrentPlanet().getMarket();
+        m_player = (PlayerImpl) player;
+
+        var spaceship = m_player.getSpaceShip();
+        m_market = m_player.getCurrentPlanet().getMarket();
+        m_cargos = spaceship.getCargos();
+
 
         if (spaceship.getCargos().isEmpty() || spaceship.getCargos() == null)
             return;
-        soldItems(p, market, spaceship);
 
-        updatePlayer(p);
-
+        soldItems();
     }
 
-    private void updatePlayer(PlayerImpl p)
+    private void updatePlayer(double earnedMoney)
     {
-        p.setCurrentMoney(p.getCurrentMoney() + earnedMoney);
+        m_player.setCurrentMoney(m_player.getCurrentMoney() + earnedMoney);
     }
 
-    private void soldItems(PlayerImpl p, Market market, SpaceShip spaceship)
+    private void soldItems()
     {
-        var cargoSize = spaceship.getCargos().size();
-
-        IntStream.range(0, cargoSize).forEach(i -> sellItem(i, spaceship.getCargos().stream().findAny().get(), market));
+        var sellCount = getRandomInstance().nextInt(0, m_cargos.size()) / 2;
+        IntStream.range(0, sellCount).forEach(this::startSell);
     }
 
-    private void sellItem(int ignored, Cargo cargo, Market market)
+    private void startSell(int ignored)
     {
-        System.out.println("asfasf");
-        var soldCommodity = cargo.getCommodity();
-        soldCommodity.setCurrentSupplyAmount(cargo.getQuantityOfCommodity());
-        System.out.println(cargo);
-        //System.exit(1);
-        earnedMoney = soldCommodity.getUnitSellPrice() * cargo.getQuantityOfCommodity();
+        var randomCargo = m_cargos.stream().findAny();
+        randomCargo.ifPresent(c -> sellItem(randomCargo.get()));
+    }
 
-        market.addCommodity(soldCommodity);
+    private void sellItem(Cargo cargo)
+    {
+        m_market.getCommodities().stream()
+                .filter(c -> c.getName().equals(cargo.getCommodity().getName()))
+                .findFirst()
+                .ifPresentOrElse(c -> existsItemOnMarket(c, cargo), () -> notExistsItemOnMarket(cargo));
+
+        m_cargos.remove(cargo);
+
+        updatePlayer(cargo.getQuantityOfCommodity() * cargo.getCommodity().getUnitSellPrice());
+    }
+
+    private void notExistsItemOnMarket(Cargo cargo)
+    {
+        cargo.getCommodity().setCurrentSupplyAmount(cargo.getQuantityOfCommodity());
+        m_market.addCommodity(cargo.getCommodity());
+    }
+
+    private void existsItemOnMarket(Commodity commodityOnMarket, Cargo cargo)
+    {
+        commodityOnMarket.setCurrentSupplyAmount(commodityOnMarket.getCurrentSupplyAmount() + cargo.getQuantityOfCommodity());
     }
 }

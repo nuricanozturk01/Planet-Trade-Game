@@ -36,11 +36,6 @@ public class SpaceShip implements ISpaceship, GameContext
         m_cargos.addAll(cargos);
     }
 
-    public List<Cargo> getSortedCargos()
-    {
-        return m_cargos.stream().sorted().toList();
-    }
-
     public String getName()
     {
         return m_name;
@@ -142,7 +137,7 @@ public class SpaceShip implements ISpaceship, GameContext
                 ", m_currentFuel=" + m_currentFuel +
                 ", m_fuelCapacity=" + m_fuelCapacity +
                 ", fuelUsagePerLightYear=" + fuelUsagePerLightYear +
-                "\nm_cargos=" + m_cargos+
+                "\nm_cargos=" + m_cargos +
                 '}';
     }
 

@@ -34,7 +34,7 @@ public final class Constants
     // ############################## PLAYER START ##############################
     public static final int MIN_PLAYER = 2;
     public static final int MAX_PLAYER = 5;
-    public static final double PLAYER_INITIAL_MONEY = 50_000D;
+    public static final double PLAYER_INITIAL_MONEY = 500_000D;
     // ############################## PLAYER END ##############################
 
 

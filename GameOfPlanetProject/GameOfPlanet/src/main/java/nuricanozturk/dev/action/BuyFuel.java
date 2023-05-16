@@ -2,12 +2,13 @@ package nuricanozturk.dev.action;
 
 import nuricanozturk.dev.entity.PlayerImpl;
 import nuricanozturk.dev.entity.SpaceShip;
+import nuricanozturk.dev.util.logger.ILogger;
 import project.gameengine.base.GameContext;
 import project.gameengine.base.Player;
 
 import static nuricanozturk.dev.util.Util.LOGGER;
 
-public final class BuyFuel implements IAction
+public final class BuyFuel extends AbstractAction
 {
     private PlayerImpl m_player;
     private SpaceShip m_spaceship;
@@ -20,7 +21,7 @@ public final class BuyFuel implements IAction
     }
 
     @Override
-    public void apply(Player player, GameContext context)
+    protected void applyAction(Player player, GameContext context)
     {
         m_player = (PlayerImpl) player;
         m_spaceship = m_player.getSpaceShip();
@@ -29,16 +30,25 @@ public final class BuyFuel implements IAction
 
         buyFuel = fuel;
         fuelPrice = (int) (m_player.getCurrentPlanet().getUnitFuelPrice() * fuel);
-
-        update(fuelPrice, m_spaceship, m_player);
     }
 
-    private void update(int fuel, SpaceShip spaceship, PlayerImpl player)
+    @Override
+    protected void startActionLog(ILogger logger)
     {
-        spaceship.setCurrentFuel(spaceship.getCurrentFuel() + fuel);
-        player.setCurrentMoney(player.getCurrentMoney() - fuelPrice);
+
+    }
+    @Override
+    protected void finishActionLog(ILogger logger)
+    {
+
     }
 
+    @Override
+    protected void update()
+    {
+        m_spaceship.setCurrentFuel(m_spaceship.getCurrentFuel() + fuelPrice);
+        m_player.setCurrentMoney(m_player.getCurrentMoney() - fuelPrice);
+    }
     private int buyFuel()
     {
         var playerMoney = m_player.getCurrentMoney();

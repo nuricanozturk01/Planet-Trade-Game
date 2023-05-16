@@ -103,7 +103,8 @@ public class Commodity implements GameContext, Comparable<Commodity>
         public Builder setUnitBuyPrice(double unitBuyPrice)
         {
             m_commodity.m_unitBuyPrice = unitBuyPrice;
-            m_commodity.m_unitSellPrice = m_commodity.m_unitBuyPrice - 500;
+            var p = m_commodity.m_unitBuyPrice - 100;
+            m_commodity.m_unitSellPrice = p <= 10 ? 20 : p;
             return this;
         }
 
