@@ -2,14 +2,21 @@ package nuricanozturk.dev.entity;
 
 import project.gameengine.base.GameContext;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Planet implements GameContext
 {
     private String m_name;
     private double m_unitFuelPrice;
     private double m_parkingPricePerTurn;
     private Market m_market;
+    private Map<Planet, Integer> m_distanceMap;
 
-    private Planet() {}
+    private Planet()
+    {
+        m_distanceMap = new HashMap<>();
+    }
 
     public String getName()
     {
@@ -24,6 +31,16 @@ public class Planet implements GameContext
     public double getUnitFuelPrice()
     {
         return m_unitFuelPrice;
+    }
+
+    public Map<Planet, Integer> getDistanceMap()
+    {
+        return m_distanceMap;
+    }
+
+    public void setDistanceMap(Map<Planet, Integer> distanceMap)
+    {
+        m_distanceMap = distanceMap;
     }
 
     public double getParkingPricePerTurn()

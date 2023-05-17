@@ -1,5 +1,6 @@
-package nuricanozturk.dev.action;
+package nuricanozturk.dev.action.actions;
 
+import nuricanozturk.dev.action.IAction;
 import nuricanozturk.dev.entity.PlanetTradeGameContext;
 import nuricanozturk.dev.entity.PlayerImpl;
 import nuricanozturk.dev.entity.SpaceShip;

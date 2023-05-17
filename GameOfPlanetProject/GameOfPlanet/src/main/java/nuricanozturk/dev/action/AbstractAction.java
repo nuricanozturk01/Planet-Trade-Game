@@ -11,9 +11,9 @@ public abstract class AbstractAction implements IAction
     {
     }
 
-    protected abstract void startActionLog(ILogger logger);
+    protected abstract void startActionLog();
 
-    protected abstract void finishActionLog(ILogger logger);
+    protected abstract void finishActionLog();
 
     protected abstract void update();
 

@@ -1,6 +1,5 @@
 package nuricanozturk.dev;
 
-import nuricanozturk.dev.action.PlanTravelling;
 import nuricanozturk.dev.entity.BlackHole;
 import nuricanozturk.dev.entity.Galaxy;
 import nuricanozturk.dev.entity.PlanetTradeGameContext;

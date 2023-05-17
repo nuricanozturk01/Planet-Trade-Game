@@ -1,5 +1,6 @@
-package nuricanozturk.dev.action;
+package nuricanozturk.dev.action.actions;
 
+import nuricanozturk.dev.action.IAction;
 import nuricanozturk.dev.entity.Planet;
 import nuricanozturk.dev.entity.PlanetTradeGameContext;
 import nuricanozturk.dev.entity.PlayerImpl;
@@ -46,8 +47,11 @@ public class SelectPlanet implements IAction
     public void apply(Player player, GameContext context)
     {
         m_player = (PlayerImpl) player;
+
         var planets = ((PlanetTradeGameContext) context).getPlanets();
+
         m_selectedPlanet = planets.get(getRandomInstance().nextInt(0, planets.size() - 1));
+
         update();
     }
 }

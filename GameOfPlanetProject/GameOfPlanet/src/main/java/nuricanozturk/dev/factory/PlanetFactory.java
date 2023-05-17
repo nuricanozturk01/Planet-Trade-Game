@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.stream.IntStream;
 
 import static nuricanozturk.dev.config.RandomConfig.getRandomInstance;
+import static nuricanozturk.dev.factory.DistanceBetweenPlanetsFactory.createDistanceBetweenPlanets;
 import static nuricanozturk.dev.factory.MarketFactory.createMarket;
 import static nuricanozturk.dev.util.Constants.*;
 import static nuricanozturk.dev.util.Util.LOGGER;
@@ -21,10 +22,11 @@ public final class PlanetFactory
     {
         LOGGER.log("-----Planets are creating...\n");
 
-        return IntStream
-                .range(0, count)
-                .mapToObj(PlanetFactory::createPlanet)
-                .toList();
+        var planets = IntStream.range(0, count).mapToObj(PlanetFactory::createPlanet).toList();
+
+        IntStream.range(0, planets.size()).forEach(i -> createDistanceBetweenPlanets(planets, planets.get(i)));
+
+        return planets;
     }
 
     public static Planet createPlanet(int count)

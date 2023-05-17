@@ -34,7 +34,7 @@ public final class Constants
     // ############################## PLAYER START ##############################
     public static final int MIN_PLAYER = 2;
     public static final int MAX_PLAYER = 5;
-    public static final double PLAYER_INITIAL_MONEY = 150_000D;
+    public static final double PLAYER_INITIAL_MONEY = 1000_000D;
     // ############################## PLAYER END ##############################
 
 
@@ -83,12 +83,12 @@ public final class Constants
 
     // ############################## COMMODITY START ##############################
 
-    public static final int MIN_COMMODITY_COUNT = 30;
-    public static final int MAX_COMMODITY_COUNT = 50;
+    public static final int MIN_COMMODITY_COUNT = 50;
+    public static final int MAX_COMMODITY_COUNT = 90;
     public static final int MIN_UNIT_VOLUME = 5;
     public static final int MAX_UNIT_VOLUME = 15;
-    public static final int MIN_CURRENT_SUPPLY_AMOUNT = 5;
-    public static final int MAX_CURRENT_SUPPLY_AMOUNT = 30;
+    public static final int MIN_CURRENT_SUPPLY_AMOUNT = 150;
+    public static final int MAX_CURRENT_SUPPLY_AMOUNT = 300;
     public static final double MIN_UNIT_BUY_PRICE = 150D;
     public static final double MAX_UNIT_BUY_PRICE = 1500D;
     public static final double MAX_DELAY_RATIO = 1.5D;

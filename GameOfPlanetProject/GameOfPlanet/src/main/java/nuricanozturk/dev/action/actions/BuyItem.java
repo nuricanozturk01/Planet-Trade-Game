@@ -1,5 +1,6 @@
-package nuricanozturk.dev.action;
+package nuricanozturk.dev.action.actions;
 
+import nuricanozturk.dev.action.IAction;
 import nuricanozturk.dev.entity.Cargo;
 import nuricanozturk.dev.entity.Commodity;
 import nuricanozturk.dev.entity.PlayerImpl;
@@ -70,7 +71,7 @@ public class BuyItem implements IAction
             LOGGER.log(m_player.getName() + " on shopping but who not have enough money!");
             return;
         }
-        if (m_player.getCurrentPlanet().getMarket().getCommodities().isEmpty())
+        else if (m_player.getCurrentPlanet().getMarket().getCommodities().isEmpty())
         {
             LOGGER.log(m_player.getName() + " on shopping but market is empty");
             return;
@@ -142,11 +143,12 @@ public class BuyItem implements IAction
         var sb = new StringBuilder();
 
         if (initialMoney <= MIN_UNIT_BUY_PRICE)
-            sb.append(m_player.getName() + " on shopping but who not have enough money!");
+            sb.append(m_player.getName()).append(" on shopping but who not have enough money!");
         else if (m_player.getCurrentPlanet().getMarket().getCommodities().isEmpty())
-            sb.append(m_player.getName() + " on shopping but market is empty" + m_player.getCurrentPlanet().getName());
-
-        else
+        {
+            sb.append(m_player.getName()).append(" on shopping but market is empty")
+                    .append(m_player.getCurrentPlanet().getName());
+        } else
         {
             sb.append("\n----------------------SHOPPING------------------------------\n");
             sb.append(format(START_MESSAGE, m_player.getName(), m_player.getCurrentPlanet().getName(),

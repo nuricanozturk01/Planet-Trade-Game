@@ -1,13 +1,11 @@
 package nuricanozturk.dev.entity;
 
 import nuricanozturk.dev.action.IAction;
-import nuricanozturk.dev.action.PlanTravelling;
 import project.gameengine.base.Action;
 import project.gameengine.base.GameContext;
 import project.gameengine.base.Player;
 
 import static nuricanozturk.dev.action.ActionGenerator.getActionGeneratorInstance;
-import static nuricanozturk.dev.action.PlanTravelling.COUNTER;
 import static nuricanozturk.dev.util.Util.*;
 
 public class PlayerImpl implements Player

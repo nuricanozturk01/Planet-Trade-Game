@@ -1,5 +1,6 @@
-package nuricanozturk.dev.action;
+package nuricanozturk.dev.action.actions;
 
+import nuricanozturk.dev.action.IAction;
 import nuricanozturk.dev.entity.Cargo;
 import nuricanozturk.dev.entity.Commodity;
 import nuricanozturk.dev.entity.Market;
@@ -15,7 +16,7 @@ import static java.lang.String.format;
 import static nuricanozturk.dev.config.RandomConfig.getRandomInstance;
 import static nuricanozturk.dev.util.Util.LOGGER;
 
-public class SoldItem implements IAction
+public class SellItem implements IAction
 {
     private final List<Cargo> m_sellItems = new ArrayList<>();
     private final String START_MESSAGE = "%s on market for sell something with $%.2f";
@@ -25,7 +26,7 @@ public class SoldItem implements IAction
     private List<Cargo> m_cargos;
     private double initialMoney;
 
-    public SoldItem()
+    public SellItem()
     {
         LOGGER.log("Action: Sell Item created...");
     }
