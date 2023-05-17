@@ -10,7 +10,7 @@ import project.gameengine.base.Player;
 import static nuricanozturk.dev.config.RandomConfig.getRandomInstance;
 import static nuricanozturk.dev.util.Util.LOGGER;
 
-public class SelectPlanet extends AbstractAction
+public class SelectPlanet implements IAction
 {
     private PlayerImpl m_player;
     private Planet m_selectedPlanet;
@@ -20,35 +20,34 @@ public class SelectPlanet extends AbstractAction
         LOGGER.log("Action: Select Planet created...");
     }
 
-    @Override
-    protected void startActionLog(ILogger logger)
+    private void startActionLog(ILogger logger)
     {
         logger.log(m_player.getName() + " selecting the planet...");
     }
 
-    @Override
-    protected void finishActionLog(ILogger logger)
+    private void finishActionLog(ILogger logger)
     {
         logger.log(m_player.getName() + " on " + m_selectedPlanet.getName());
     }
 
-    @Override
-    protected void update()
+    private void update()
     {
         m_player.setCurrentPlanet(m_selectedPlanet);
     }
 
-    @Override
-    protected void applyAction(Player player, GameContext context)
-    {
-        m_player = (PlayerImpl) player;
-        var planets = ((PlanetTradeGameContext) context).getPlanets();
-        m_selectedPlanet = planets.get(getRandomInstance().nextInt(0, planets.size()));
-    }
 
     @Override
     public String toString()
     {
         return "SELECT PLANET";
+    }
+
+    @Override
+    public void apply(Player player, GameContext context)
+    {
+        m_player = (PlayerImpl) player;
+        var planets = ((PlanetTradeGameContext) context).getPlanets();
+        m_selectedPlanet = planets.get(getRandomInstance().nextInt(0, planets.size() - 1));
+        update();
     }
 }

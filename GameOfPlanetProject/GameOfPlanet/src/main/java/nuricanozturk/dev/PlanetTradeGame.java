@@ -1,5 +1,6 @@
 package nuricanozturk.dev;
 
+import nuricanozturk.dev.action.PlanTravelling;
 import nuricanozturk.dev.entity.BlackHole;
 import nuricanozturk.dev.entity.Galaxy;
 import nuricanozturk.dev.entity.PlanetTradeGameContext;
@@ -26,7 +27,7 @@ public class PlanetTradeGame implements Game
     public PlanetTradeGame(int turnCount)
     {
         m_turnCount = turnCount;
-        m_currentTurn = 0;
+        m_currentTurn = 1;
     }
 
     @Override
@@ -58,12 +59,12 @@ public class PlanetTradeGame implements Game
     @Override
     public void update(Action action)
     {
-        if (m_currentTurn == m_turnCount * m_players.size())
+        if (m_currentTurn == m_turnCount * m_players.size() * actions.size())
             finishGame();
 
-        action = actions.next();
+        //action = actions.next();
 
-        m_players.forEach(p -> p.play(m_gameContext));
+        //m_players.forEach(p -> p.play(m_gameContext));
         m_gameContext.updateTurn();
 
         m_currentTurn++;
@@ -91,6 +92,6 @@ public class PlanetTradeGame implements Game
     @Override
     public String toString()
     {
-        return "GAME";
+        return "";
     }
 }

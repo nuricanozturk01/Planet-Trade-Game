@@ -3,7 +3,6 @@ package nuricanozturk.dev.action;
 import nuricanozturk.dev.entity.Cargo;
 import nuricanozturk.dev.entity.Commodity;
 import nuricanozturk.dev.entity.PlayerImpl;
-import nuricanozturk.dev.util.Constants;
 import nuricanozturk.dev.util.logger.ILogger;
 import project.gameengine.base.GameContext;
 import project.gameengine.base.Player;
@@ -11,18 +10,22 @@ import project.gameengine.base.Player;
 import java.util.List;
 import java.util.stream.IntStream;
 
+import static java.lang.String.format;
 import static java.util.Comparator.comparingDouble;
 import static nuricanozturk.dev.util.Constants.MIN_UNIT_BUY_PRICE;
 import static nuricanozturk.dev.util.Util.LOGGER;
 
 public class BuyItem implements IAction
 {
+    private final String START_MESSAGE = "%s on shopping on %s planet with $%.2f";
+    private final String END_MESSAGE = "[%s] bought something: Rest Of Amount: $%.2f\nShopping List:";
     private PlayerImpl m_player;
     private List<Cargo> m_cargos;
     private List<Commodity> Commodities;
     private int totalVolume = 0;
     private int volumeCapacity;
     private double playerMoney;
+    private double initialMoney;
     private double totalCost = 0D;
 
     public BuyItem()
@@ -33,14 +36,18 @@ public class BuyItem implements IAction
 
     private void startActionLog(ILogger logger)
     {
-        logger.log(m_player.getName() + " buyed some item with " + m_player.getCurrentMoney() + " money");
+        logger.log("\n--------------------SHOPPING--------------------------------");
+        logger.log(format(START_MESSAGE, m_player.getName(), m_player.getCurrentPlanet().getName(),
+                m_player.getCurrentMoney()));
     }
 
 
     private void finishActionLog(ILogger logger)
     {
-        //logger.log(m_player.getName() + " buyed items are: ");
-        logger.log(toString());
+        logger.log(format(END_MESSAGE, m_player.getName(), m_player.getCurrentMoney()));
+        m_cargos.stream().map(Cargo::toString).forEach(logger::log);
+        logger.log("--------------------SHOPPING--------------------------------\n");
+
     }
 
 
@@ -57,14 +64,17 @@ public class BuyItem implements IAction
         m_player = (PlayerImpl) player;
 
         playerMoney = m_player.getCurrentMoney();
-
-        LOGGER.log(m_player.getName() + " have not enough money for shopping");
+        initialMoney = m_player.getCurrentMoney();
         if (m_player.getCurrentMoney() <= MIN_UNIT_BUY_PRICE)
         {
-
+            LOGGER.log(m_player.getName() + " on shopping but who not have enough money!");
             return;
         }
-
+        if (m_player.getCurrentPlanet().getMarket().getCommodities().isEmpty())
+        {
+            LOGGER.log(m_player.getName() + " on shopping but market is empty");
+            return;
+        }
         startActionLog(LOGGER);
 
         volumeCapacity = m_player.getSpaceShip().getVolumeCapacity();
@@ -129,17 +139,23 @@ public class BuyItem implements IAction
     @Override
     public String toString()
     {
-        /*var sb = new StringBuilder();
+        var sb = new StringBuilder();
 
-        if (m_cargos.isEmpty())
-            return sb.append(m_player.getName()).append(" Not enough Money....").toString();
+        if (initialMoney <= MIN_UNIT_BUY_PRICE)
+            sb.append(m_player.getName() + " on shopping but who not have enough money!");
+        else if (m_player.getCurrentPlanet().getMarket().getCommodities().isEmpty())
+            sb.append(m_player.getName() + " on shopping but market is empty" + m_player.getCurrentPlanet().getName());
 
-        sb.append("\n").append(m_player.getName()).append(" on ")
-                .append(m_player.getCurrentPlanet().getName()).append(" Planet [")
-                .append(m_player.getCurrentPlanet().getMarket().getName()).append("] Market")
-                .append(" buy items:\n");
-        m_cargos.forEach(sb::append);*/
-
-        return "";
+        else
+        {
+            sb.append("\n----------------------SHOPPING------------------------------\n");
+            sb.append(format(START_MESSAGE, m_player.getName(), m_player.getCurrentPlanet().getName(),
+                    initialMoney)).append("\n");
+            sb.append(format(END_MESSAGE, m_player.getName(), m_player.getCurrentMoney())).append("\n");
+            m_cargos.stream().map(Cargo::toString).forEach(sb::append);
+            sb.append("----------------------SHOPPING------------------------------\n");
+        }
+        //sb.append(m_player.getName()).append(" ").append(getClass().getSimpleName());
+        return sb.toString();
     }
 }

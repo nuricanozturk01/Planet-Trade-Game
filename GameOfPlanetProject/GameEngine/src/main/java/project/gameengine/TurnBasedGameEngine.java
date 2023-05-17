@@ -42,7 +42,7 @@ public class TurnBasedGameEngine implements GameEngine {
     private void playATurn() {
         Player p = currentPlayer();
         Optional<Action> action = getPlayerAction(p,game);
-        System.out.println(action);
+        System.out.println(action.get());
 
         action.ifPresent(game::update);
         renderer.render(game);

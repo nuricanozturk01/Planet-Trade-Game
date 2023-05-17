@@ -10,6 +10,8 @@ public class LinkedList<T> implements Iterable<T>, Collection<T>
     private Node<T> m_head;
     private int m_size;
     private int m_currentIndex;
+    private T currentItem;
+    private int m_count;
 
     public LinkedList()
     {
@@ -52,6 +54,13 @@ public class LinkedList<T> implements Iterable<T>, Collection<T>
         return m_head == null;
     }
 
+    public T Next()
+    {
+        if (m_count++ % 3 == 0)
+            return next();
+
+        return currentItem;
+    }
     public T next()
     {
         var p = m_head;
@@ -61,7 +70,7 @@ public class LinkedList<T> implements Iterable<T>, Collection<T>
         for (int i = 0; i <= m_currentIndex; item = p.getData(), p = p.getNext(), i++) ;
 
         m_currentIndex = m_currentIndex == m_size - 1 ? 0 : m_currentIndex + 1;
-
+        currentItem = item;
         return item;
     }
 

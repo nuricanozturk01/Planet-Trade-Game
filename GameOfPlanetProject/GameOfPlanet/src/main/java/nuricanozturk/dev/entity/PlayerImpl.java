@@ -1,11 +1,13 @@
 package nuricanozturk.dev.entity;
 
 import nuricanozturk.dev.action.IAction;
+import nuricanozturk.dev.action.PlanTravelling;
 import project.gameengine.base.Action;
 import project.gameengine.base.GameContext;
 import project.gameengine.base.Player;
 
 import static nuricanozturk.dev.action.ActionGenerator.getActionGeneratorInstance;
+import static nuricanozturk.dev.action.PlanTravelling.COUNTER;
 import static nuricanozturk.dev.util.Util.*;
 
 public class PlayerImpl implements Player
@@ -62,7 +64,8 @@ public class PlayerImpl implements Player
     @Override
     public Action play(GameContext context)
     {
-        var action = (IAction) actions.next();
+        var action = (IAction) actions.Next();
+
 
         action.apply(this, context);
 

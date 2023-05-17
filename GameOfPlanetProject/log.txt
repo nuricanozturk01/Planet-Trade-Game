@@ -10,17 +10,17 @@ Action: Select Planet created...
 [Planet Trade Game Logs about creating objects and game informations]
 
 Player Nuri Can is created...
----[PlayerImpl{m_name='Nuri Can', m_currentMoney=500000.0
+---[PlayerImpl{m_name='Nuri Can', m_currentMoney=150000.0
 m_spaceShip=null
 m_currentPlanet=null}]
 
 Player John is created...
----[PlayerImpl{m_name='John', m_currentMoney=500000.0
+---[PlayerImpl{m_name='John', m_currentMoney=150000.0
 m_spaceShip=null
 m_currentPlanet=null}]
 
 Player Anastasia is created...
----[PlayerImpl{m_name='Anastasia', m_currentMoney=500000.0
+---[PlayerImpl{m_name='Anastasia', m_currentMoney=150000.0
 m_spaceShip=null
 m_currentPlanet=null}]
 
@@ -31,28 +31,47 @@ Galaxy Cartwheel is created...
 
 -----Planets are creating...
 
-Commodity{m_name='Lithium', m_unitVolume=8, m_delayRatio=1.11, m_currentSupplyAmount=16, m_unitBuyPrice=1343.24, m_unitSellPrice=1243.24} is created...
-Commodity{m_name='Titanium', m_unitVolume=13, m_delayRatio=0.87, m_currentSupplyAmount=7, m_unitBuyPrice=1271.15, m_unitSellPrice=1171.15} is created...
-Commodity{m_name='Platinum', m_unitVolume=5, m_delayRatio=1.15, m_currentSupplyAmount=12, m_unitBuyPrice=1323.71, m_unitSellPrice=1223.71} is created...
-Commodity{m_name='Gold', m_unitVolume=10, m_delayRatio=1.32, m_currentSupplyAmount=25, m_unitBuyPrice=873.14, m_unitSellPrice=773.14} is created...
-Commodity{m_name='Silver', m_unitVolume=12, m_delayRatio=0.95, m_currentSupplyAmount=12, m_unitBuyPrice=832.83, m_unitSellPrice=732.83} is created...
-Commodity{m_name='Helium-3', m_unitVolume=9, m_delayRatio=1.17, m_currentSupplyAmount=10, m_unitBuyPrice=954.21, m_unitSellPrice=854.21} is created...
-Commodity{m_name='Water', m_unitVolume=5, m_delayRatio=0.61, m_currentSupplyAmount=18, m_unitBuyPrice=1435.71, m_unitSellPrice=1335.71} is created...
-Commodity{m_name='Food', m_unitVolume=12, m_delayRatio=1.27, m_currentSupplyAmount=10, m_unitBuyPrice=1215.07, m_unitSellPrice=1115.07} is created...
-Commodity{m_name='Oxygen', m_unitVolume=7, m_delayRatio=0.98, m_currentSupplyAmount=6, m_unitBuyPrice=491.88, m_unitSellPrice=391.88} is created...
-Commodity{m_name='Hydrogen', m_unitVolume=8, m_delayRatio=1.42, m_currentSupplyAmount=13, m_unitBuyPrice=1156.46, m_unitSellPrice=1056.46} is created...
-Commodity{m_name='Carbon', m_unitVolume=12, m_delayRatio=1.45, m_currentSupplyAmount=29, m_unitBuyPrice=164.06, m_unitSellPrice=64.06} is created...
-Commodity{m_name='Iron', m_unitVolume=5, m_delayRatio=1.37, m_currentSupplyAmount=25, m_unitBuyPrice=688.69, m_unitSellPrice=588.69} is created...
-Commodity{m_name='Copper', m_unitVolume=5, m_delayRatio=0.72, m_currentSupplyAmount=11, m_unitBuyPrice=946.61, m_unitSellPrice=846.61} is created...
-Commodity{m_name='Nickel', m_unitVolume=7, m_delayRatio=1.33, m_currentSupplyAmount=19, m_unitBuyPrice=1288.05, m_unitSellPrice=1188.05} is created...
-Commodity{m_name='Aluminum', m_unitVolume=12, m_delayRatio=0.95, m_currentSupplyAmount=9, m_unitBuyPrice=969.9, m_unitSellPrice=869.9} is created...
-Commodity{m_name='Tungsten', m_unitVolume=10, m_delayRatio=1.46, m_currentSupplyAmount=15, m_unitBuyPrice=1319.52, m_unitSellPrice=1219.52} is created...
-Commodity{m_name='Palladium', m_unitVolume=6, m_delayRatio=0.76, m_currentSupplyAmount=25, m_unitBuyPrice=609.48, m_unitSellPrice=509.48} is created...
-Commodity{m_name='Rhodium', m_unitVolume=10, m_delayRatio=0.57, m_currentSupplyAmount=19, m_unitBuyPrice=546.08, m_unitSellPrice=446.08000000000004} is created...
-Commodity{m_name='Iridium', m_unitVolume=11, m_delayRatio=1.14, m_currentSupplyAmount=14, m_unitBuyPrice=804.08, m_unitSellPrice=704.08} is created...
-Commodity{m_name='Cobalt', m_unitVolume=7, m_delayRatio=0.81, m_currentSupplyAmount=9, m_unitBuyPrice=404.86, m_unitSellPrice=304.86} is created...
-Commodity{m_name='Mercury', m_unitVolume=5, m_delayRatio=0.57, m_currentSupplyAmount=21, m_unitBuyPrice=1226.63, m_unitSellPrice=1126.63} is created...
-Commodity{m_name='Lead', m_unitVolume=11, m_delayRatio=0.61, m_currentSupplyAmount=10, m_unitBuyPrice=213.45, m_unitSellPrice=113.44999999999999} is created...
+Commodity{m_name='Lithium', m_unitVolume=6, m_delayRatio=0.8, m_currentSupplyAmount=25, m_unitBuyPrice=889.36, m_unitSellPrice=789.36} is created...
+Commodity{m_name='Titanium', m_unitVolume=5, m_delayRatio=0.87, m_currentSupplyAmount=8, m_unitBuyPrice=1226.36, m_unitSellPrice=1126.36} is created...
+Commodity{m_name='Platinum', m_unitVolume=7, m_delayRatio=1.38, m_currentSupplyAmount=8, m_unitBuyPrice=1477.59, m_unitSellPrice=1377.59} is created...
+Commodity{m_name='Gold', m_unitVolume=6, m_delayRatio=0.5, m_currentSupplyAmount=20, m_unitBuyPrice=1088.8, m_unitSellPrice=988.8} is created...
+Commodity{m_name='Silver', m_unitVolume=5, m_delayRatio=0.89, m_currentSupplyAmount=19, m_unitBuyPrice=808.62, m_unitSellPrice=708.62} is created...
+Commodity{m_name='Helium-3', m_unitVolume=11, m_delayRatio=0.69, m_currentSupplyAmount=25, m_unitBuyPrice=591.89, m_unitSellPrice=491.89} is created...
+Commodity{m_name='Water', m_unitVolume=12, m_delayRatio=1.44, m_currentSupplyAmount=23, m_unitBuyPrice=313.59, m_unitSellPrice=213.58999999999997} is created...
+Commodity{m_name='Food', m_unitVolume=12, m_delayRatio=0.51, m_currentSupplyAmount=12, m_unitBuyPrice=302.96, m_unitSellPrice=202.95999999999998} is created...
+Commodity{m_name='Oxygen', m_unitVolume=13, m_delayRatio=0.63, m_currentSupplyAmount=10, m_unitBuyPrice=1352.08, m_unitSellPrice=1252.08} is created...
+Commodity{m_name='Hydrogen', m_unitVolume=10, m_delayRatio=0.73, m_currentSupplyAmount=8, m_unitBuyPrice=785.01, m_unitSellPrice=685.01} is created...
+Commodity{m_name='Carbon', m_unitVolume=14, m_delayRatio=1.15, m_currentSupplyAmount=5, m_unitBuyPrice=397.96, m_unitSellPrice=297.96} is created...
+Commodity{m_name='Iron', m_unitVolume=12, m_delayRatio=0.96, m_currentSupplyAmount=21, m_unitBuyPrice=1124.86, m_unitSellPrice=1024.86} is created...
+Commodity{m_name='Copper', m_unitVolume=8, m_delayRatio=0.64, m_currentSupplyAmount=24, m_unitBuyPrice=1073.33, m_unitSellPrice=973.3299999999999} is created...
+Commodity{m_name='Nickel', m_unitVolume=6, m_delayRatio=1.3, m_currentSupplyAmount=6, m_unitBuyPrice=227.17, m_unitSellPrice=127.16999999999999} is created...
+Commodity{m_name='Aluminum', m_unitVolume=11, m_delayRatio=1.17, m_currentSupplyAmount=15, m_unitBuyPrice=1246.26, m_unitSellPrice=1146.26} is created...
+Commodity{m_name='Tungsten', m_unitVolume=8, m_delayRatio=1.44, m_currentSupplyAmount=25, m_unitBuyPrice=1356.61, m_unitSellPrice=1256.61} is created...
+Commodity{m_name='Palladium', m_unitVolume=6, m_delayRatio=0.79, m_currentSupplyAmount=11, m_unitBuyPrice=464.39, m_unitSellPrice=364.39} is created...
+Commodity{m_name='Rhodium', m_unitVolume=10, m_delayRatio=1.4, m_currentSupplyAmount=15, m_unitBuyPrice=1075.85, m_unitSellPrice=975.8499999999999} is created...
+Commodity{m_name='Iridium', m_unitVolume=6, m_delayRatio=1.03, m_currentSupplyAmount=18, m_unitBuyPrice=1483.91, m_unitSellPrice=1383.91} is created...
+Commodity{m_name='Cobalt', m_unitVolume=6, m_delayRatio=0.53, m_currentSupplyAmount=8, m_unitBuyPrice=1037.26, m_unitSellPrice=937.26} is created...
+Commodity{m_name='Mercury', m_unitVolume=7, m_delayRatio=0.85, m_currentSupplyAmount=17, m_unitBuyPrice=1337.06, m_unitSellPrice=1237.06} is created...
+Commodity{m_name='Lead', m_unitVolume=5, m_delayRatio=0.88, m_currentSupplyAmount=19, m_unitBuyPrice=1195.51, m_unitSellPrice=1095.51} is created...
+Commodity{m_name='Zinc', m_unitVolume=8, m_delayRatio=0.74, m_currentSupplyAmount=21, m_unitBuyPrice=1488.3, m_unitSellPrice=1388.3} is created...
+Commodity{m_name='Tin', m_unitVolume=8, m_delayRatio=0.92, m_currentSupplyAmount=10, m_unitBuyPrice=670.24, m_unitSellPrice=570.24} is created...
+Commodity{m_name='Beryllium', m_unitVolume=9, m_delayRatio=0.82, m_currentSupplyAmount=16, m_unitBuyPrice=1013.71, m_unitSellPrice=913.71} is created...
+Commodity{m_name='Uranium', m_unitVolume=14, m_delayRatio=0.84, m_currentSupplyAmount=29, m_unitBuyPrice=185.33, m_unitSellPrice=85.33000000000001} is created...
+Commodity{m_name='Thorium', m_unitVolume=13, m_delayRatio=0.64, m_currentSupplyAmount=5, m_unitBuyPrice=479.98, m_unitSellPrice=379.98} is created...
+Commodity{m_name='Plutonium', m_unitVolume=11, m_delayRatio=0.57, m_currentSupplyAmount=11, m_unitBuyPrice=1434.38, m_unitSellPrice=1334.38} is created...
+Commodity{m_name='Neptunium', m_unitVolume=7, m_delayRatio=0.57, m_currentSupplyAmount=10, m_unitBuyPrice=1076.22, m_unitSellPrice=976.22} is created...
+Commodity{m_name='Radium', m_unitVolume=8, m_delayRatio=0.89, m_currentSupplyAmount=27, m_unitBuyPrice=713.76, m_unitSellPrice=613.76} is created...
+Commodity{m_name='Neon', m_unitVolume=6, m_delayRatio=0.65, m_currentSupplyAmount=11, m_unitBuyPrice=1024.03, m_unitSellPrice=924.03} is created...
+Commodity{m_name='Argon', m_unitVolume=9, m_delayRatio=0.65, m_currentSupplyAmount=26, m_unitBuyPrice=528.83, m_unitSellPrice=428.83000000000004} is created...
+Commodity{m_name='Krypton', m_unitVolume=13, m_delayRatio=0.75, m_currentSupplyAmount=11, m_unitBuyPrice=1109.48, m_unitSellPrice=1009.48} is created...
+Commodity{m_name='Xenon', m_unitVolume=9, m_delayRatio=0.58, m_currentSupplyAmount=5, m_unitBuyPrice=242.76, m_unitSellPrice=142.76} is created...
+Commodity{m_name='Nitrogen', m_unitVolume=9, m_delayRatio=0.62, m_currentSupplyAmount=7, m_unitBuyPrice=1270.77, m_unitSellPrice=1170.77} is created...
+Commodity{m_name='Carbon Dioxide', m_unitVolume=13, m_delayRatio=0.52, m_currentSupplyAmount=27, m_unitBuyPrice=1345.12, m_unitSellPrice=1245.12} is created...
+Commodity{m_name='Methane', m_unitVolume=6, m_delayRatio=0.58, m_currentSupplyAmount=28, m_unitBuyPrice=805.45, m_unitSellPrice=705.45} is created...
+Commodity{m_name='Ammonia', m_unitVolume=9, m_delayRatio=0.84, m_currentSupplyAmount=15, m_unitBuyPrice=302.24, m_unitSellPrice=202.24} is created...
+Commodity{m_name='Sulfur', m_unitVolume=9, m_delayRatio=1.4, m_currentSupplyAmount=13, m_unitBuyPrice=390.01, m_unitSellPrice=290.01} is created...
+Commodity{m_name='Chlorine', m_unitVolume=8, m_delayRatio=0.54, m_currentSupplyAmount=8, m_unitBuyPrice=1057.28, m_unitSellPrice=957.28} is created...
+Commodity{m_name='Sodium', m_unitVolume=11, m_delayRatio=0.71, m_currentSupplyAmount=5, m_unitBuyPrice=307.9, m_unitSellPrice=207.89999999999998} is created...
 
 
 
@@ -60,23 +79,41 @@ Commodity{m_name='Lead', m_unitVolume=11, m_delayRatio=0.61, m_currentSupplyAmou
 
 Planet Tyche is created...
 
-Commodity{m_name='Lithium', m_unitVolume=11, m_delayRatio=0.86, m_currentSupplyAmount=22, m_unitBuyPrice=1484.58, m_unitSellPrice=1384.58} is created...
-Commodity{m_name='Titanium', m_unitVolume=11, m_delayRatio=0.61, m_currentSupplyAmount=5, m_unitBuyPrice=462.09, m_unitSellPrice=362.09} is created...
-Commodity{m_name='Platinum', m_unitVolume=9, m_delayRatio=0.6, m_currentSupplyAmount=7, m_unitBuyPrice=730.9, m_unitSellPrice=630.9} is created...
-Commodity{m_name='Gold', m_unitVolume=9, m_delayRatio=0.54, m_currentSupplyAmount=23, m_unitBuyPrice=496.85, m_unitSellPrice=396.85} is created...
-Commodity{m_name='Silver', m_unitVolume=8, m_delayRatio=1.08, m_currentSupplyAmount=16, m_unitBuyPrice=1400.76, m_unitSellPrice=1300.76} is created...
-Commodity{m_name='Helium-3', m_unitVolume=10, m_delayRatio=1.39, m_currentSupplyAmount=10, m_unitBuyPrice=1050.82, m_unitSellPrice=950.8199999999999} is created...
-Commodity{m_name='Water', m_unitVolume=6, m_delayRatio=1.38, m_currentSupplyAmount=9, m_unitBuyPrice=151.51, m_unitSellPrice=51.50999999999999} is created...
-Commodity{m_name='Food', m_unitVolume=11, m_delayRatio=0.57, m_currentSupplyAmount=19, m_unitBuyPrice=412.06, m_unitSellPrice=312.06} is created...
-Commodity{m_name='Oxygen', m_unitVolume=7, m_delayRatio=1.21, m_currentSupplyAmount=8, m_unitBuyPrice=1009.34, m_unitSellPrice=909.34} is created...
-Commodity{m_name='Hydrogen', m_unitVolume=12, m_delayRatio=0.89, m_currentSupplyAmount=23, m_unitBuyPrice=645.72, m_unitSellPrice=545.72} is created...
-Commodity{m_name='Carbon', m_unitVolume=12, m_delayRatio=0.93, m_currentSupplyAmount=7, m_unitBuyPrice=974.89, m_unitSellPrice=874.89} is created...
-Commodity{m_name='Iron', m_unitVolume=12, m_delayRatio=1.43, m_currentSupplyAmount=14, m_unitBuyPrice=1491.9, m_unitSellPrice=1391.9} is created...
-Commodity{m_name='Copper', m_unitVolume=12, m_delayRatio=1.14, m_currentSupplyAmount=6, m_unitBuyPrice=1098.04, m_unitSellPrice=998.04} is created...
-Commodity{m_name='Nickel', m_unitVolume=11, m_delayRatio=1.02, m_currentSupplyAmount=15, m_unitBuyPrice=887.25, m_unitSellPrice=787.25} is created...
-Commodity{m_name='Aluminum', m_unitVolume=6, m_delayRatio=0.61, m_currentSupplyAmount=9, m_unitBuyPrice=1078.27, m_unitSellPrice=978.27} is created...
-Commodity{m_name='Tungsten', m_unitVolume=5, m_delayRatio=1.3, m_currentSupplyAmount=26, m_unitBuyPrice=910.39, m_unitSellPrice=810.39} is created...
-Commodity{m_name='Palladium', m_unitVolume=12, m_delayRatio=0.52, m_currentSupplyAmount=10, m_unitBuyPrice=923.38, m_unitSellPrice=823.38} is created...
+Commodity{m_name='Lithium', m_unitVolume=12, m_delayRatio=0.72, m_currentSupplyAmount=25, m_unitBuyPrice=571.57, m_unitSellPrice=471.57000000000005} is created...
+Commodity{m_name='Titanium', m_unitVolume=9, m_delayRatio=0.89, m_currentSupplyAmount=8, m_unitBuyPrice=1121.77, m_unitSellPrice=1021.77} is created...
+Commodity{m_name='Platinum', m_unitVolume=14, m_delayRatio=0.81, m_currentSupplyAmount=23, m_unitBuyPrice=239.25, m_unitSellPrice=139.25} is created...
+Commodity{m_name='Gold', m_unitVolume=11, m_delayRatio=0.57, m_currentSupplyAmount=25, m_unitBuyPrice=1315.22, m_unitSellPrice=1215.22} is created...
+Commodity{m_name='Silver', m_unitVolume=9, m_delayRatio=1.44, m_currentSupplyAmount=10, m_unitBuyPrice=1024.34, m_unitSellPrice=924.3399999999999} is created...
+Commodity{m_name='Helium-3', m_unitVolume=9, m_delayRatio=1.33, m_currentSupplyAmount=18, m_unitBuyPrice=547.93, m_unitSellPrice=447.92999999999995} is created...
+Commodity{m_name='Water', m_unitVolume=8, m_delayRatio=0.87, m_currentSupplyAmount=28, m_unitBuyPrice=653.59, m_unitSellPrice=553.59} is created...
+Commodity{m_name='Food', m_unitVolume=14, m_delayRatio=0.95, m_currentSupplyAmount=27, m_unitBuyPrice=307.57, m_unitSellPrice=207.57} is created...
+Commodity{m_name='Oxygen', m_unitVolume=12, m_delayRatio=0.88, m_currentSupplyAmount=8, m_unitBuyPrice=223.0, m_unitSellPrice=123.0} is created...
+Commodity{m_name='Hydrogen', m_unitVolume=13, m_delayRatio=0.88, m_currentSupplyAmount=16, m_unitBuyPrice=1428.61, m_unitSellPrice=1328.61} is created...
+Commodity{m_name='Carbon', m_unitVolume=9, m_delayRatio=1.47, m_currentSupplyAmount=28, m_unitBuyPrice=916.18, m_unitSellPrice=816.18} is created...
+Commodity{m_name='Iron', m_unitVolume=11, m_delayRatio=0.51, m_currentSupplyAmount=18, m_unitBuyPrice=286.96, m_unitSellPrice=186.95999999999998} is created...
+Commodity{m_name='Copper', m_unitVolume=7, m_delayRatio=0.74, m_currentSupplyAmount=11, m_unitBuyPrice=1184.36, m_unitSellPrice=1084.36} is created...
+Commodity{m_name='Nickel', m_unitVolume=9, m_delayRatio=0.54, m_currentSupplyAmount=7, m_unitBuyPrice=1171.9, m_unitSellPrice=1071.9} is created...
+Commodity{m_name='Aluminum', m_unitVolume=8, m_delayRatio=0.86, m_currentSupplyAmount=5, m_unitBuyPrice=1253.03, m_unitSellPrice=1153.03} is created...
+Commodity{m_name='Tungsten', m_unitVolume=13, m_delayRatio=0.82, m_currentSupplyAmount=15, m_unitBuyPrice=286.01, m_unitSellPrice=186.01} is created...
+Commodity{m_name='Palladium', m_unitVolume=11, m_delayRatio=1.28, m_currentSupplyAmount=26, m_unitBuyPrice=695.25, m_unitSellPrice=595.25} is created...
+Commodity{m_name='Rhodium', m_unitVolume=12, m_delayRatio=1.08, m_currentSupplyAmount=25, m_unitBuyPrice=1197.61, m_unitSellPrice=1097.61} is created...
+Commodity{m_name='Iridium', m_unitVolume=12, m_delayRatio=0.98, m_currentSupplyAmount=6, m_unitBuyPrice=1444.76, m_unitSellPrice=1344.76} is created...
+Commodity{m_name='Cobalt', m_unitVolume=13, m_delayRatio=0.93, m_currentSupplyAmount=5, m_unitBuyPrice=453.58, m_unitSellPrice=353.58} is created...
+Commodity{m_name='Mercury', m_unitVolume=13, m_delayRatio=0.69, m_currentSupplyAmount=26, m_unitBuyPrice=1469.82, m_unitSellPrice=1369.82} is created...
+Commodity{m_name='Lead', m_unitVolume=9, m_delayRatio=1.31, m_currentSupplyAmount=29, m_unitBuyPrice=283.78, m_unitSellPrice=183.77999999999997} is created...
+Commodity{m_name='Zinc', m_unitVolume=14, m_delayRatio=0.79, m_currentSupplyAmount=8, m_unitBuyPrice=822.13, m_unitSellPrice=722.13} is created...
+Commodity{m_name='Tin', m_unitVolume=8, m_delayRatio=0.78, m_currentSupplyAmount=15, m_unitBuyPrice=337.33, m_unitSellPrice=237.32999999999998} is created...
+Commodity{m_name='Beryllium', m_unitVolume=10, m_delayRatio=1.41, m_currentSupplyAmount=12, m_unitBuyPrice=1339.72, m_unitSellPrice=1239.72} is created...
+Commodity{m_name='Uranium', m_unitVolume=13, m_delayRatio=0.96, m_currentSupplyAmount=7, m_unitBuyPrice=374.25, m_unitSellPrice=274.25} is created...
+Commodity{m_name='Thorium', m_unitVolume=5, m_delayRatio=0.79, m_currentSupplyAmount=6, m_unitBuyPrice=539.37, m_unitSellPrice=439.37} is created...
+Commodity{m_name='Plutonium', m_unitVolume=11, m_delayRatio=0.64, m_currentSupplyAmount=11, m_unitBuyPrice=659.44, m_unitSellPrice=559.44} is created...
+Commodity{m_name='Neptunium', m_unitVolume=9, m_delayRatio=1.34, m_currentSupplyAmount=27, m_unitBuyPrice=1366.7, m_unitSellPrice=1266.7} is created...
+Commodity{m_name='Radium', m_unitVolume=7, m_delayRatio=0.75, m_currentSupplyAmount=15, m_unitBuyPrice=1472.77, m_unitSellPrice=1372.77} is created...
+Commodity{m_name='Neon', m_unitVolume=10, m_delayRatio=0.91, m_currentSupplyAmount=27, m_unitBuyPrice=1473.51, m_unitSellPrice=1373.51} is created...
+Commodity{m_name='Argon', m_unitVolume=9, m_delayRatio=0.61, m_currentSupplyAmount=5, m_unitBuyPrice=396.52, m_unitSellPrice=296.52} is created...
+Commodity{m_name='Krypton', m_unitVolume=5, m_delayRatio=0.97, m_currentSupplyAmount=27, m_unitBuyPrice=1323.69, m_unitSellPrice=1223.69} is created...
+Commodity{m_name='Xenon', m_unitVolume=7, m_delayRatio=1.29, m_currentSupplyAmount=10, m_unitBuyPrice=1292.04, m_unitSellPrice=1192.04} is created...
+Commodity{m_name='Nitrogen', m_unitVolume=12, m_delayRatio=1.45, m_currentSupplyAmount=14, m_unitBuyPrice=216.77, m_unitSellPrice=116.77000000000001} is created...
 
 
 
@@ -84,111 +121,747 @@ Commodity{m_name='Palladium', m_unitVolume=12, m_delayRatio=0.52, m_currentSuppl
 
 Planet Varda is created...
 
-SpaceShip{, m_name='Zero-G', m_price=45853.48, m_volumeCapacity=1527, m_speed=1500, m_currentFuel=500, m_fuelCapacity=1730, fuelUsagePerLightYear=51
+Commodity{m_name='Lithium', m_unitVolume=14, m_delayRatio=1.49, m_currentSupplyAmount=19, m_unitBuyPrice=474.6, m_unitSellPrice=374.6} is created...
+Commodity{m_name='Titanium', m_unitVolume=9, m_delayRatio=1.17, m_currentSupplyAmount=29, m_unitBuyPrice=1188.82, m_unitSellPrice=1088.82} is created...
+Commodity{m_name='Platinum', m_unitVolume=8, m_delayRatio=0.76, m_currentSupplyAmount=21, m_unitBuyPrice=1035.88, m_unitSellPrice=935.8800000000001} is created...
+Commodity{m_name='Gold', m_unitVolume=12, m_delayRatio=0.88, m_currentSupplyAmount=12, m_unitBuyPrice=1225.85, m_unitSellPrice=1125.85} is created...
+Commodity{m_name='Silver', m_unitVolume=7, m_delayRatio=1.46, m_currentSupplyAmount=21, m_unitBuyPrice=1354.49, m_unitSellPrice=1254.49} is created...
+Commodity{m_name='Helium-3', m_unitVolume=11, m_delayRatio=1.05, m_currentSupplyAmount=28, m_unitBuyPrice=287.44, m_unitSellPrice=187.44} is created...
+Commodity{m_name='Water', m_unitVolume=11, m_delayRatio=0.86, m_currentSupplyAmount=22, m_unitBuyPrice=1041.89, m_unitSellPrice=941.8900000000001} is created...
+Commodity{m_name='Food', m_unitVolume=10, m_delayRatio=0.85, m_currentSupplyAmount=26, m_unitBuyPrice=912.8, m_unitSellPrice=812.8} is created...
+Commodity{m_name='Oxygen', m_unitVolume=11, m_delayRatio=1.03, m_currentSupplyAmount=14, m_unitBuyPrice=670.08, m_unitSellPrice=570.08} is created...
+Commodity{m_name='Hydrogen', m_unitVolume=6, m_delayRatio=1.14, m_currentSupplyAmount=27, m_unitBuyPrice=1160.87, m_unitSellPrice=1060.87} is created...
+Commodity{m_name='Carbon', m_unitVolume=11, m_delayRatio=0.78, m_currentSupplyAmount=8, m_unitBuyPrice=1370.07, m_unitSellPrice=1270.07} is created...
+Commodity{m_name='Iron', m_unitVolume=8, m_delayRatio=1.28, m_currentSupplyAmount=26, m_unitBuyPrice=397.38, m_unitSellPrice=297.38} is created...
+Commodity{m_name='Copper', m_unitVolume=6, m_delayRatio=0.84, m_currentSupplyAmount=24, m_unitBuyPrice=1050.23, m_unitSellPrice=950.23} is created...
+Commodity{m_name='Nickel', m_unitVolume=11, m_delayRatio=1.19, m_currentSupplyAmount=9, m_unitBuyPrice=892.17, m_unitSellPrice=792.17} is created...
+Commodity{m_name='Aluminum', m_unitVolume=13, m_delayRatio=0.58, m_currentSupplyAmount=25, m_unitBuyPrice=478.64, m_unitSellPrice=378.64} is created...
+Commodity{m_name='Tungsten', m_unitVolume=6, m_delayRatio=0.78, m_currentSupplyAmount=10, m_unitBuyPrice=1231.82, m_unitSellPrice=1131.82} is created...
+Commodity{m_name='Palladium', m_unitVolume=10, m_delayRatio=1.36, m_currentSupplyAmount=26, m_unitBuyPrice=220.31, m_unitSellPrice=120.31} is created...
+Commodity{m_name='Rhodium', m_unitVolume=13, m_delayRatio=0.55, m_currentSupplyAmount=22, m_unitBuyPrice=492.02, m_unitSellPrice=392.02} is created...
+Commodity{m_name='Iridium', m_unitVolume=5, m_delayRatio=0.56, m_currentSupplyAmount=26, m_unitBuyPrice=732.27, m_unitSellPrice=632.27} is created...
+Commodity{m_name='Cobalt', m_unitVolume=7, m_delayRatio=0.52, m_currentSupplyAmount=21, m_unitBuyPrice=1195.64, m_unitSellPrice=1095.64} is created...
+Commodity{m_name='Mercury', m_unitVolume=14, m_delayRatio=0.59, m_currentSupplyAmount=29, m_unitBuyPrice=241.41, m_unitSellPrice=141.41} is created...
+Commodity{m_name='Lead', m_unitVolume=13, m_delayRatio=0.85, m_currentSupplyAmount=7, m_unitBuyPrice=405.4, m_unitSellPrice=305.4} is created...
+Commodity{m_name='Zinc', m_unitVolume=9, m_delayRatio=1.22, m_currentSupplyAmount=25, m_unitBuyPrice=1166.34, m_unitSellPrice=1066.34} is created...
+Commodity{m_name='Tin', m_unitVolume=12, m_delayRatio=0.65, m_currentSupplyAmount=16, m_unitBuyPrice=651.9, m_unitSellPrice=551.9} is created...
+Commodity{m_name='Beryllium', m_unitVolume=7, m_delayRatio=1.31, m_currentSupplyAmount=5, m_unitBuyPrice=939.17, m_unitSellPrice=839.17} is created...
+Commodity{m_name='Uranium', m_unitVolume=5, m_delayRatio=0.53, m_currentSupplyAmount=13, m_unitBuyPrice=531.83, m_unitSellPrice=431.83000000000004} is created...
+Commodity{m_name='Thorium', m_unitVolume=8, m_delayRatio=1.04, m_currentSupplyAmount=6, m_unitBuyPrice=981.81, m_unitSellPrice=881.81} is created...
+Commodity{m_name='Plutonium', m_unitVolume=7, m_delayRatio=0.73, m_currentSupplyAmount=29, m_unitBuyPrice=924.07, m_unitSellPrice=824.07} is created...
+Commodity{m_name='Neptunium', m_unitVolume=11, m_delayRatio=0.83, m_currentSupplyAmount=6, m_unitBuyPrice=1034.04, m_unitSellPrice=934.04} is created...
+Commodity{m_name='Radium', m_unitVolume=11, m_delayRatio=0.95, m_currentSupplyAmount=11, m_unitBuyPrice=1158.95, m_unitSellPrice=1058.95} is created...
+Commodity{m_name='Neon', m_unitVolume=5, m_delayRatio=0.77, m_currentSupplyAmount=5, m_unitBuyPrice=1070.55, m_unitSellPrice=970.55} is created...
+Commodity{m_name='Argon', m_unitVolume=13, m_delayRatio=0.68, m_currentSupplyAmount=14, m_unitBuyPrice=680.18, m_unitSellPrice=580.18} is created...
+Commodity{m_name='Krypton', m_unitVolume=14, m_delayRatio=1.16, m_currentSupplyAmount=26, m_unitBuyPrice=630.88, m_unitSellPrice=530.88} is created...
+Commodity{m_name='Xenon', m_unitVolume=7, m_delayRatio=1.16, m_currentSupplyAmount=12, m_unitBuyPrice=715.87, m_unitSellPrice=615.87} is created...
+Commodity{m_name='Nitrogen', m_unitVolume=11, m_delayRatio=1.26, m_currentSupplyAmount=10, m_unitBuyPrice=262.6, m_unitSellPrice=162.60000000000002} is created...
+Commodity{m_name='Carbon Dioxide', m_unitVolume=12, m_delayRatio=1.38, m_currentSupplyAmount=17, m_unitBuyPrice=1303.27, m_unitSellPrice=1203.27} is created...
+Commodity{m_name='Methane', m_unitVolume=14, m_delayRatio=1.08, m_currentSupplyAmount=16, m_unitBuyPrice=332.06, m_unitSellPrice=232.06} is created...
+Commodity{m_name='Ammonia', m_unitVolume=10, m_delayRatio=1.31, m_currentSupplyAmount=22, m_unitBuyPrice=702.52, m_unitSellPrice=602.52} is created...
+Commodity{m_name='Sulfur', m_unitVolume=5, m_delayRatio=0.78, m_currentSupplyAmount=16, m_unitBuyPrice=878.73, m_unitSellPrice=778.73} is created...
+Commodity{m_name='Chlorine', m_unitVolume=10, m_delayRatio=1.03, m_currentSupplyAmount=25, m_unitBuyPrice=1304.81, m_unitSellPrice=1204.81} is created...
+Commodity{m_name='Sodium', m_unitVolume=14, m_delayRatio=1.37, m_currentSupplyAmount=23, m_unitBuyPrice=900.32, m_unitSellPrice=800.32} is created...
+Commodity{m_name='Potassium', m_unitVolume=11, m_delayRatio=0.94, m_currentSupplyAmount=13, m_unitBuyPrice=205.98, m_unitSellPrice=105.97999999999999} is created...
+Commodity{m_name='Magnesium', m_unitVolume=12, m_delayRatio=1.07, m_currentSupplyAmount=6, m_unitBuyPrice=164.1, m_unitSellPrice=64.1} is created...
+Commodity{m_name='Calcium', m_unitVolume=7, m_delayRatio=0.56, m_currentSupplyAmount=13, m_unitBuyPrice=780.69, m_unitSellPrice=680.69} is created...
+Commodity{m_name='Phosphorus', m_unitVolume=7, m_delayRatio=1.22, m_currentSupplyAmount=9, m_unitBuyPrice=1112.79, m_unitSellPrice=1012.79} is created...
+Commodity{m_name='Selenium', m_unitVolume=8, m_delayRatio=0.8, m_currentSupplyAmount=29, m_unitBuyPrice=974.63, m_unitSellPrice=874.63} is created...
+Commodity{m_name='Fluorine', m_unitVolume=10, m_delayRatio=0.84, m_currentSupplyAmount=18, m_unitBuyPrice=262.25, m_unitSellPrice=162.25} is created...
+
+
+
+---------Market Stardust Mall is created...
+
+Planet Gonggong is created...
+
+Commodity{m_name='Lithium', m_unitVolume=6, m_delayRatio=0.76, m_currentSupplyAmount=20, m_unitBuyPrice=863.45, m_unitSellPrice=763.45} is created...
+Commodity{m_name='Titanium', m_unitVolume=8, m_delayRatio=0.85, m_currentSupplyAmount=14, m_unitBuyPrice=367.27, m_unitSellPrice=267.27} is created...
+Commodity{m_name='Platinum', m_unitVolume=5, m_delayRatio=0.75, m_currentSupplyAmount=16, m_unitBuyPrice=605.64, m_unitSellPrice=505.64} is created...
+Commodity{m_name='Gold', m_unitVolume=11, m_delayRatio=0.97, m_currentSupplyAmount=12, m_unitBuyPrice=390.81, m_unitSellPrice=290.81} is created...
+Commodity{m_name='Silver', m_unitVolume=12, m_delayRatio=1.33, m_currentSupplyAmount=17, m_unitBuyPrice=822.04, m_unitSellPrice=722.04} is created...
+Commodity{m_name='Helium-3', m_unitVolume=6, m_delayRatio=1.4, m_currentSupplyAmount=22, m_unitBuyPrice=1409.4, m_unitSellPrice=1309.4} is created...
+Commodity{m_name='Water', m_unitVolume=8, m_delayRatio=0.8, m_currentSupplyAmount=24, m_unitBuyPrice=638.11, m_unitSellPrice=538.11} is created...
+Commodity{m_name='Food', m_unitVolume=6, m_delayRatio=0.87, m_currentSupplyAmount=21, m_unitBuyPrice=865.29, m_unitSellPrice=765.29} is created...
+Commodity{m_name='Oxygen', m_unitVolume=12, m_delayRatio=1.04, m_currentSupplyAmount=28, m_unitBuyPrice=439.88, m_unitSellPrice=339.88} is created...
+Commodity{m_name='Hydrogen', m_unitVolume=5, m_delayRatio=0.99, m_currentSupplyAmount=18, m_unitBuyPrice=1400.07, m_unitSellPrice=1300.07} is created...
+Commodity{m_name='Carbon', m_unitVolume=5, m_delayRatio=1.38, m_currentSupplyAmount=6, m_unitBuyPrice=828.58, m_unitSellPrice=728.58} is created...
+Commodity{m_name='Iron', m_unitVolume=7, m_delayRatio=0.54, m_currentSupplyAmount=8, m_unitBuyPrice=665.39, m_unitSellPrice=565.39} is created...
+Commodity{m_name='Copper', m_unitVolume=10, m_delayRatio=1.38, m_currentSupplyAmount=8, m_unitBuyPrice=1191.24, m_unitSellPrice=1091.24} is created...
+Commodity{m_name='Nickel', m_unitVolume=10, m_delayRatio=0.82, m_currentSupplyAmount=19, m_unitBuyPrice=635.63, m_unitSellPrice=535.63} is created...
+Commodity{m_name='Aluminum', m_unitVolume=14, m_delayRatio=1.24, m_currentSupplyAmount=13, m_unitBuyPrice=1211.0, m_unitSellPrice=1111.0} is created...
+Commodity{m_name='Tungsten', m_unitVolume=9, m_delayRatio=0.61, m_currentSupplyAmount=5, m_unitBuyPrice=541.82, m_unitSellPrice=441.82000000000005} is created...
+Commodity{m_name='Palladium', m_unitVolume=7, m_delayRatio=1.18, m_currentSupplyAmount=29, m_unitBuyPrice=1120.34, m_unitSellPrice=1020.3399999999999} is created...
+Commodity{m_name='Rhodium', m_unitVolume=11, m_delayRatio=0.81, m_currentSupplyAmount=14, m_unitBuyPrice=980.06, m_unitSellPrice=880.06} is created...
+Commodity{m_name='Iridium', m_unitVolume=9, m_delayRatio=1.33, m_currentSupplyAmount=8, m_unitBuyPrice=1258.15, m_unitSellPrice=1158.15} is created...
+Commodity{m_name='Cobalt', m_unitVolume=14, m_delayRatio=0.59, m_currentSupplyAmount=24, m_unitBuyPrice=652.62, m_unitSellPrice=552.62} is created...
+Commodity{m_name='Mercury', m_unitVolume=13, m_delayRatio=0.96, m_currentSupplyAmount=13, m_unitBuyPrice=804.12, m_unitSellPrice=704.12} is created...
+Commodity{m_name='Lead', m_unitVolume=6, m_delayRatio=0.69, m_currentSupplyAmount=6, m_unitBuyPrice=1202.08, m_unitSellPrice=1102.08} is created...
+Commodity{m_name='Zinc', m_unitVolume=12, m_delayRatio=1.32, m_currentSupplyAmount=19, m_unitBuyPrice=308.59, m_unitSellPrice=208.58999999999997} is created...
+Commodity{m_name='Tin', m_unitVolume=6, m_delayRatio=0.84, m_currentSupplyAmount=12, m_unitBuyPrice=912.41, m_unitSellPrice=812.41} is created...
+Commodity{m_name='Beryllium', m_unitVolume=6, m_delayRatio=0.94, m_currentSupplyAmount=28, m_unitBuyPrice=186.48, m_unitSellPrice=86.47999999999999} is created...
+Commodity{m_name='Uranium', m_unitVolume=8, m_delayRatio=0.95, m_currentSupplyAmount=10, m_unitBuyPrice=981.15, m_unitSellPrice=881.15} is created...
+Commodity{m_name='Thorium', m_unitVolume=12, m_delayRatio=0.57, m_currentSupplyAmount=23, m_unitBuyPrice=1212.42, m_unitSellPrice=1112.42} is created...
+Commodity{m_name='Plutonium', m_unitVolume=7, m_delayRatio=0.86, m_currentSupplyAmount=12, m_unitBuyPrice=1389.78, m_unitSellPrice=1289.78} is created...
+Commodity{m_name='Neptunium', m_unitVolume=14, m_delayRatio=1.43, m_currentSupplyAmount=14, m_unitBuyPrice=270.2, m_unitSellPrice=170.2} is created...
+Commodity{m_name='Radium', m_unitVolume=9, m_delayRatio=0.62, m_currentSupplyAmount=5, m_unitBuyPrice=382.56, m_unitSellPrice=282.56} is created...
+Commodity{m_name='Neon', m_unitVolume=5, m_delayRatio=1.06, m_currentSupplyAmount=16, m_unitBuyPrice=616.05, m_unitSellPrice=516.05} is created...
+Commodity{m_name='Argon', m_unitVolume=11, m_delayRatio=1.31, m_currentSupplyAmount=10, m_unitBuyPrice=1161.94, m_unitSellPrice=1061.94} is created...
+
+
+
+---------Market Nebula Shop is created...
+
+Planet Salacia is created...
+
+SpaceShip{, m_name='Zero-G', m_price=26917.2, m_volumeCapacity=2440, m_speed=809, m_currentFuel=500, m_fuelCapacity=1751, fuelUsagePerLightYear=34
 m_cargos=[]} is created...
-SpaceShip{, m_name='Yosemite', m_price=24110.8, m_volumeCapacity=7464, m_speed=585, m_currentFuel=500, m_fuelCapacity=1440, fuelUsagePerLightYear=28
+SpaceShip{, m_name='Yosemite', m_price=9039.1, m_volumeCapacity=4473, m_speed=102, m_currentFuel=500, m_fuelCapacity=1783, fuelUsagePerLightYear=34
 m_cargos=[]} is created...
-SpaceShip{, m_name='Xenith', m_price=23836.12, m_volumeCapacity=10953, m_speed=626, m_currentFuel=500, m_fuelCapacity=1447, fuelUsagePerLightYear=28
+SpaceShip{, m_name='Xenith', m_price=36650.34, m_volumeCapacity=10190, m_speed=778, m_currentFuel=500, m_fuelCapacity=1771, fuelUsagePerLightYear=34
 m_cargos=[]} is created...
-SpaceShip{, m_name='Warp', m_price=19786.17, m_volumeCapacity=3324, m_speed=335, m_currentFuel=500, m_fuelCapacity=1651, fuelUsagePerLightYear=48
+SpaceShip{, m_name='Warp', m_price=44348.81, m_volumeCapacity=6769, m_speed=1050, m_currentFuel=500, m_fuelCapacity=1905, fuelUsagePerLightYear=57
 m_cargos=[]} is created...
-SpaceShip{, m_name='Vortex', m_price=35824.25, m_volumeCapacity=1822, m_speed=710, m_currentFuel=500, m_fuelCapacity=1881, fuelUsagePerLightYear=54
+SpaceShip{, m_name='Vortex', m_price=41825.76, m_volumeCapacity=2771, m_speed=1012, m_currentFuel=500, m_fuelCapacity=1528, fuelUsagePerLightYear=30
 m_cargos=[]} is created...
-SpaceShip{, m_name='Traverse', m_price=33454.51, m_volumeCapacity=6223, m_speed=767, m_currentFuel=500, m_fuelCapacity=1599, fuelUsagePerLightYear=45
+SpaceShip{, m_name='Traverse', m_price=7658.67, m_volumeCapacity=1124, m_speed=208, m_currentFuel=500, m_fuelCapacity=1087, fuelUsagePerLightYear=20
 m_cargos=[]} is created...
-SpaceShip{, m_name='Stellar', m_price=14981.29, m_volumeCapacity=3447, m_speed=457, m_currentFuel=500, m_fuelCapacity=1127, fuelUsagePerLightYear=22
+SpaceShip{, m_name='Stellar', m_price=33315.47, m_volumeCapacity=9572, m_speed=893, m_currentFuel=500, m_fuelCapacity=1522, fuelUsagePerLightYear=30
 m_cargos=[]} is created...
-SpaceShip{, m_name='Rocket', m_price=45955.42, m_volumeCapacity=1634, m_speed=1500, m_currentFuel=500, m_fuelCapacity=1179, fuelUsagePerLightYear=33
+SpaceShip{, m_name='Rocket', m_price=37017.9, m_volumeCapacity=8961, m_speed=823, m_currentFuel=500, m_fuelCapacity=1205, fuelUsagePerLightYear=36
 m_cargos=[]} is created...
-SpaceShip{, m_name='Quasar', m_price=43216.12, m_volumeCapacity=6334, m_speed=1229, m_currentFuel=500, m_fuelCapacity=1289, fuelUsagePerLightYear=36
+SpaceShip{, m_name='Quasar', m_price=16791.42, m_volumeCapacity=1759, m_speed=452, m_currentFuel=500, m_fuelCapacity=1990, fuelUsagePerLightYear=57
 m_cargos=[]} is created...
-SpaceShip{, m_name='Pulsar', m_price=45197.53, m_volumeCapacity=10478, m_speed=1500, m_currentFuel=500, m_fuelCapacity=1942, fuelUsagePerLightYear=38
+SpaceShip{, m_name='Pulsar', m_price=49952.4, m_volumeCapacity=1853, m_speed=1500, m_currentFuel=500, m_fuelCapacity=1926, fuelUsagePerLightYear=38
 m_cargos=[]} is created...
-SpaceShip{, m_name='Orbit', m_price=48725.38, m_volumeCapacity=7515, m_speed=1500, m_currentFuel=500, m_fuelCapacity=1052, fuelUsagePerLightYear=20
+SpaceShip{, m_name='Orbit', m_price=18354.99, m_volumeCapacity=9422, m_speed=348, m_currentFuel=500, m_fuelCapacity=1175, fuelUsagePerLightYear=22
 m_cargos=[]} is created...
-SpaceShip{, m_name='Nebula', m_price=31005.4, m_volumeCapacity=7926, m_speed=871, m_currentFuel=500, m_fuelCapacity=1046, fuelUsagePerLightYear=20
+SpaceShip{, m_name='Nebula', m_price=8391.71, m_volumeCapacity=4854, m_speed=190, m_currentFuel=500, m_fuelCapacity=1469, fuelUsagePerLightYear=28
 m_cargos=[]} is created...
-SpaceShip{, m_name='Meteorite', m_price=22822.67, m_volumeCapacity=8684, m_speed=468, m_currentFuel=500, m_fuelCapacity=1450, fuelUsagePerLightYear=28
+SpaceShip{, m_name='Meteorite', m_price=45803.16, m_volumeCapacity=2430, m_speed=1500, m_currentFuel=500, m_fuelCapacity=1236, fuelUsagePerLightYear=36
 m_cargos=[]} is created...
-SpaceShip{, m_name='Lunar', m_price=34833.05, m_volumeCapacity=8524, m_speed=834, m_currentFuel=500, m_fuelCapacity=1907, fuelUsagePerLightYear=38
+SpaceShip{, m_name='Lunar', m_price=44073.75, m_volumeCapacity=1686, m_speed=1079, m_currentFuel=500, m_fuelCapacity=1259, fuelUsagePerLightYear=36
 m_cargos=[]} is created...
-SpaceShip{, m_name='Jetstream', m_price=38074.31, m_volumeCapacity=4886, m_speed=700, m_currentFuel=500, m_fuelCapacity=1349, fuelUsagePerLightYear=26
+SpaceShip{, m_name='Jetstream', m_price=33078.84, m_volumeCapacity=10271, m_speed=815, m_currentFuel=500, m_fuelCapacity=1423, fuelUsagePerLightYear=42
 m_cargos=[]} is created...
-SpaceShip{, m_name='Hawk', m_price=38962.85, m_volumeCapacity=2376, m_speed=792, m_currentFuel=500, m_fuelCapacity=1915, fuelUsagePerLightYear=57
+SpaceShip{, m_name='Hawk', m_price=16446.43, m_volumeCapacity=6752, m_speed=486, m_currentFuel=500, m_fuelCapacity=1098, fuelUsagePerLightYear=30
 m_cargos=[]} is created...
-SpaceShip{, m_name='Equinox', m_price=5716.79, m_volumeCapacity=9793, m_speed=114, m_currentFuel=500, m_fuelCapacity=1700, fuelUsagePerLightYear=34
+SpaceShip{, m_name='Equinox', m_price=29485.48, m_volumeCapacity=1611, m_speed=847, m_currentFuel=500, m_fuelCapacity=1827, fuelUsagePerLightYear=54
 m_cargos=[]} is created...
-SpaceShip{, m_name='Dragonfly', m_price=48131.36, m_volumeCapacity=3239, m_speed=1500, m_currentFuel=500, m_fuelCapacity=1868, fuelUsagePerLightYear=36
+SpaceShip{, m_name='Dragonfly', m_price=9728.54, m_volumeCapacity=9965, m_speed=153, m_currentFuel=500, m_fuelCapacity=1601, fuelUsagePerLightYear=48
 m_cargos=[]} is created...
-SpaceShip{, m_name='Cosmic', m_price=10138.75, m_volumeCapacity=6412, m_speed=202, m_currentFuel=500, m_fuelCapacity=1606, fuelUsagePerLightYear=48
+SpaceShip{, m_name='Cosmic', m_price=41137.14, m_volumeCapacity=5018, m_speed=1193, m_currentFuel=500, m_fuelCapacity=1960, fuelUsagePerLightYear=57
 m_cargos=[]} is created...
-SpaceShip{, m_name='Blaze', m_price=18008.94, m_volumeCapacity=2645, m_speed=409, m_currentFuel=500, m_fuelCapacity=1699, fuelUsagePerLightYear=32
-m_cargos=[]} is created...
-SpaceShip{, m_name='Astro', m_price=23814.25, m_volumeCapacity=4534, m_speed=696, m_currentFuel=500, m_fuelCapacity=1584, fuelUsagePerLightYear=45
-m_cargos=[]} is created...
-SpaceShip{, m_name='Zeus', m_price=29560.48, m_volumeCapacity=7111, m_speed=759, m_currentFuel=500, m_fuelCapacity=1400, fuelUsagePerLightYear=42
-m_cargos=[]} is created...
-SpaceShip{, m_name='Yonder', m_price=32667.05, m_volumeCapacity=1137, m_speed=839, m_currentFuel=500, m_fuelCapacity=1577, fuelUsagePerLightYear=30
-m_cargos=[]} is created...
-SpaceShip{, m_name='Xplorer', m_price=30937.9, m_volumeCapacity=10000, m_speed=863, m_currentFuel=500, m_fuelCapacity=1630, fuelUsagePerLightYear=32
+SpaceShip{, m_name='Blaze', m_price=27571.99, m_volumeCapacity=892, m_speed=806, m_currentFuel=500, m_fuelCapacity=1603, fuelUsagePerLightYear=48
 m_cargos=[]} is created...
 
 
 
 
 
-Nuri Can selecting the planet...
-Nuri Can on Tyche
 
 
 Player Nuri Can is prepared for game
----- Current Planet: Planet{m_name='Tyche', m_unitFuelPrice=10.36, m_parkingPricePerTurn=27.41, m_market=Meteorite Store}, SpaceShip: SpaceShip{, m_name='Zero-G', m_price=45853.48, m_volumeCapacity=1527, m_speed=1500, m_currentFuel=500, m_fuelCapacity=1730, fuelUsagePerLightYear=51
+---- Current Planet: Planet{m_name='Varda', m_unitFuelPrice=31.19, m_parkingPricePerTurn=18.81, m_market=Comet Depot}, SpaceShip: SpaceShip{, m_name='Zero-G', m_price=26917.2, m_volumeCapacity=2440, m_speed=809, m_currentFuel=500, m_fuelCapacity=1751, fuelUsagePerLightYear=34
 m_cargos=[]}
 
 
-John selecting the planet...
-John on Varda
 
 
 Player John is prepared for game
----- Current Planet: Planet{m_name='Varda', m_unitFuelPrice=47.89, m_parkingPricePerTurn=27.48, m_market=Comet Depot}, SpaceShip: SpaceShip{, m_name='Yosemite', m_price=24110.8, m_volumeCapacity=7464, m_speed=585, m_currentFuel=500, m_fuelCapacity=1440, fuelUsagePerLightYear=28
+---- Current Planet: Planet{m_name='Gonggong', m_unitFuelPrice=42.55, m_parkingPricePerTurn=21.47, m_market=Stardust Mall}, SpaceShip: SpaceShip{, m_name='Yosemite', m_price=9039.1, m_volumeCapacity=4473, m_speed=102, m_currentFuel=500, m_fuelCapacity=1783, fuelUsagePerLightYear=34
 m_cargos=[]}
 
 
-Anastasia selecting the planet...
-Anastasia on Varda
 
 
 Player Anastasia is prepared for game
----- Current Planet: Planet{m_name='Varda', m_unitFuelPrice=47.89, m_parkingPricePerTurn=27.48, m_market=Comet Depot}, SpaceShip: SpaceShip{, m_name='Xenith', m_price=23836.12, m_volumeCapacity=10953, m_speed=626, m_currentFuel=500, m_fuelCapacity=1447, fuelUsagePerLightYear=28
+---- Current Planet: Planet{m_name='Tyche', m_unitFuelPrice=18.84, m_parkingPricePerTurn=26.5, m_market=Meteorite Store}, SpaceShip: SpaceShip{, m_name='Xenith', m_price=36650.34, m_volumeCapacity=10190, m_speed=778, m_currentFuel=500, m_fuelCapacity=1771, fuelUsagePerLightYear=34
 m_cargos=[]}
-Nuri Can have not enough money for shopping
-Nuri Can buyed some item with 454146.52 money
 
-Anastasia have not enough money for shopping
-Anastasia buyed some item with 476163.88 money
+--------------------SHOPPING--------------------------------
+Nuri Can on shopping on Varda planet with $123082,80
+[Nuri Can] bought something: Rest Of Amount: $46799,83
+Shopping List:
+Cargo{m_commodity=Commodity{m_name='Nitrogen', m_unitVolume=12, m_delayRatio=1.45, m_currentSupplyAmount=14, m_unitBuyPrice=216.77, m_unitSellPrice=116.77000000000001}, quantityOfCommodity=14}
 
-John have not enough money for shopping
-John buyed some item with 475889.2 money
+Cargo{m_commodity=Commodity{m_name='Oxygen', m_unitVolume=12, m_delayRatio=0.88, m_currentSupplyAmount=8, m_unitBuyPrice=223.0, m_unitSellPrice=123.0}, quantityOfCommodity=8}
 
-Nuri Can have not enough money for shopping
-Nuri Can buyed some item with 357893.61 money
+Cargo{m_commodity=Commodity{m_name='Platinum', m_unitVolume=14, m_delayRatio=0.81, m_currentSupplyAmount=23, m_unitBuyPrice=239.25, m_unitSellPrice=139.25}, quantityOfCommodity=23}
 
-John have not enough money for shopping
-John buyed some item with 173178.67 money
+Cargo{m_commodity=Commodity{m_name='Lead', m_unitVolume=9, m_delayRatio=1.31, m_currentSupplyAmount=29, m_unitBuyPrice=283.78, m_unitSellPrice=183.77999999999997}, quantityOfCommodity=29}
 
-Anastasia have not enough money for shopping
-Anastasia buyed some item with 240630.83 money
+Cargo{m_commodity=Commodity{m_name='Tungsten', m_unitVolume=13, m_delayRatio=0.82, m_currentSupplyAmount=15, m_unitBuyPrice=286.01, m_unitSellPrice=186.01}, quantityOfCommodity=15}
 
-John have not enough money for shopping
-Nuri Can have not enough money for shopping
-Nuri Can buyed some item with 57949.82 money
+Cargo{m_commodity=Commodity{m_name='Iron', m_unitVolume=11, m_delayRatio=0.51, m_currentSupplyAmount=18, m_unitBuyPrice=286.96, m_unitSellPrice=186.95999999999998}, quantityOfCommodity=18}
 
-Anastasia have not enough money for shopping
-Anastasia have not enough money for shopping
-John have not enough money for shopping
-Nuri Can have not enough money for shopping
-Nuri Can have not enough money for shopping
-Anastasia have not enough money for shopping
-John have not enough money for shopping
-Nuri Can have not enough money for shopping
+Cargo{m_commodity=Commodity{m_name='Food', m_unitVolume=14, m_delayRatio=0.95, m_currentSupplyAmount=27, m_unitBuyPrice=307.57, m_unitSellPrice=207.57}, quantityOfCommodity=27}
+
+Cargo{m_commodity=Commodity{m_name='Tin', m_unitVolume=8, m_delayRatio=0.78, m_currentSupplyAmount=15, m_unitBuyPrice=337.33, m_unitSellPrice=237.32999999999998}, quantityOfCommodity=15}
+
+Cargo{m_commodity=Commodity{m_name='Uranium', m_unitVolume=13, m_delayRatio=0.96, m_currentSupplyAmount=7, m_unitBuyPrice=374.25, m_unitSellPrice=274.25}, quantityOfCommodity=7}
+
+Cargo{m_commodity=Commodity{m_name='Argon', m_unitVolume=9, m_delayRatio=0.61, m_currentSupplyAmount=5, m_unitBuyPrice=396.52, m_unitSellPrice=296.52}, quantityOfCommodity=5}
+
+Cargo{m_commodity=Commodity{m_name='Cobalt', m_unitVolume=13, m_delayRatio=0.93, m_currentSupplyAmount=5, m_unitBuyPrice=453.58, m_unitSellPrice=353.58}, quantityOfCommodity=5}
+
+Cargo{m_commodity=Commodity{m_name='Thorium', m_unitVolume=5, m_delayRatio=0.79, m_currentSupplyAmount=6, m_unitBuyPrice=539.37, m_unitSellPrice=439.37}, quantityOfCommodity=6}
+
+Cargo{m_commodity=Commodity{m_name='Helium-3', m_unitVolume=9, m_delayRatio=1.33, m_currentSupplyAmount=18, m_unitBuyPrice=547.93, m_unitSellPrice=447.92999999999995}, quantityOfCommodity=18}
+
+Cargo{m_commodity=Commodity{m_name='Lithium', m_unitVolume=12, m_delayRatio=0.72, m_currentSupplyAmount=25, m_unitBuyPrice=571.57, m_unitSellPrice=471.57000000000005}, quantityOfCommodity=25}
+
+Cargo{m_commodity=Commodity{m_name='Water', m_unitVolume=8, m_delayRatio=0.87, m_currentSupplyAmount=27, m_unitBuyPrice=653.59, m_unitSellPrice=553.59}, quantityOfCommodity=1}
+
+--------------------SHOPPING--------------------------------
+
+
+--------------------SHOPPING--------------------------------
+John on shopping on Gonggong planet with $140960,90
+[John] bought something: Rest Of Amount: $13459,98
+Shopping List:
+Cargo{m_commodity=Commodity{m_name='Magnesium', m_unitVolume=12, m_delayRatio=1.07, m_currentSupplyAmount=6, m_unitBuyPrice=164.1, m_unitSellPrice=64.1}, quantityOfCommodity=6}
+
+Cargo{m_commodity=Commodity{m_name='Potassium', m_unitVolume=11, m_delayRatio=0.94, m_currentSupplyAmount=13, m_unitBuyPrice=205.98, m_unitSellPrice=105.97999999999999}, quantityOfCommodity=13}
+
+Cargo{m_commodity=Commodity{m_name='Palladium', m_unitVolume=10, m_delayRatio=1.36, m_currentSupplyAmount=26, m_unitBuyPrice=220.31, m_unitSellPrice=120.31}, quantityOfCommodity=26}
+
+Cargo{m_commodity=Commodity{m_name='Mercury', m_unitVolume=14, m_delayRatio=0.59, m_currentSupplyAmount=29, m_unitBuyPrice=241.41, m_unitSellPrice=141.41}, quantityOfCommodity=29}
+
+Cargo{m_commodity=Commodity{m_name='Fluorine', m_unitVolume=10, m_delayRatio=0.84, m_currentSupplyAmount=18, m_unitBuyPrice=262.25, m_unitSellPrice=162.25}, quantityOfCommodity=18}
+
+Cargo{m_commodity=Commodity{m_name='Nitrogen', m_unitVolume=11, m_delayRatio=1.26, m_currentSupplyAmount=10, m_unitBuyPrice=262.6, m_unitSellPrice=162.60000000000002}, quantityOfCommodity=10}
+
+Cargo{m_commodity=Commodity{m_name='Helium-3', m_unitVolume=11, m_delayRatio=1.05, m_currentSupplyAmount=28, m_unitBuyPrice=287.44, m_unitSellPrice=187.44}, quantityOfCommodity=28}
+
+Cargo{m_commodity=Commodity{m_name='Methane', m_unitVolume=14, m_delayRatio=1.08, m_currentSupplyAmount=16, m_unitBuyPrice=332.06, m_unitSellPrice=232.06}, quantityOfCommodity=16}
+
+Cargo{m_commodity=Commodity{m_name='Iron', m_unitVolume=8, m_delayRatio=1.28, m_currentSupplyAmount=26, m_unitBuyPrice=397.38, m_unitSellPrice=297.38}, quantityOfCommodity=26}
+
+Cargo{m_commodity=Commodity{m_name='Lead', m_unitVolume=13, m_delayRatio=0.85, m_currentSupplyAmount=7, m_unitBuyPrice=405.4, m_unitSellPrice=305.4}, quantityOfCommodity=7}
+
+Cargo{m_commodity=Commodity{m_name='Lithium', m_unitVolume=14, m_delayRatio=1.49, m_currentSupplyAmount=17, m_unitBuyPrice=474.6, m_unitSellPrice=374.6}, quantityOfCommodity=2}
+
+--------------------SHOPPING--------------------------------
+
+
+--------------------SHOPPING--------------------------------
+Anastasia on shopping on Tyche planet with $113349,66
+[Anastasia] bought something: Rest Of Amount: $-14151,26
+Shopping List:
+--------------------SHOPPING--------------------------------
+
+
+--------------------SELL ITEM--------------------------------
+Nuri Can on market for sell something with $46799,83
+[Nuri Can] sold something Rest of Amount: $73270,75
+Sold Items:
+
+Cargo{m_commodity=Commodity{m_name='Nitrogen', m_unitVolume=12, m_delayRatio=1.45, m_currentSupplyAmount=14, m_unitBuyPrice=216.77, m_unitSellPrice=116.77000000000001}, quantityOfCommodity=14}
+
+Cargo{m_commodity=Commodity{m_name='Oxygen', m_unitVolume=12, m_delayRatio=0.88, m_currentSupplyAmount=8, m_unitBuyPrice=223.0, m_unitSellPrice=123.0}, quantityOfCommodity=8}
+
+Cargo{m_commodity=Commodity{m_name='Platinum', m_unitVolume=14, m_delayRatio=0.81, m_currentSupplyAmount=23, m_unitBuyPrice=239.25, m_unitSellPrice=139.25}, quantityOfCommodity=23}
+
+Cargo{m_commodity=Commodity{m_name='Lead', m_unitVolume=9, m_delayRatio=1.31, m_currentSupplyAmount=29, m_unitBuyPrice=283.78, m_unitSellPrice=183.77999999999997}, quantityOfCommodity=29}
+
+Cargo{m_commodity=Commodity{m_name='Tungsten', m_unitVolume=13, m_delayRatio=0.82, m_currentSupplyAmount=15, m_unitBuyPrice=286.01, m_unitSellPrice=186.01}, quantityOfCommodity=15}
+
+Cargo{m_commodity=Commodity{m_name='Iron', m_unitVolume=11, m_delayRatio=0.51, m_currentSupplyAmount=18, m_unitBuyPrice=286.96, m_unitSellPrice=186.95999999999998}, quantityOfCommodity=18}
+
+Cargo{m_commodity=Commodity{m_name='Food', m_unitVolume=14, m_delayRatio=0.95, m_currentSupplyAmount=27, m_unitBuyPrice=307.57, m_unitSellPrice=207.57}, quantityOfCommodity=27}
+
+Cargo{m_commodity=Commodity{m_name='Tin', m_unitVolume=8, m_delayRatio=0.78, m_currentSupplyAmount=15, m_unitBuyPrice=337.33, m_unitSellPrice=237.32999999999998}, quantityOfCommodity=15}
+
+--------------------SELL ITEM--------------------------------
+
+
+--------------------SELL ITEM--------------------------------
+John on market for sell something with $13459,98
+[John] sold something Rest of Amount: $15222,32
+Sold Items:
+
+Cargo{m_commodity=Commodity{m_name='Nitrogen', m_unitVolume=12, m_delayRatio=1.45, m_currentSupplyAmount=14, m_unitBuyPrice=216.77, m_unitSellPrice=116.77000000000001}, quantityOfCommodity=14}
+
+Cargo{m_commodity=Commodity{m_name='Oxygen', m_unitVolume=12, m_delayRatio=0.88, m_currentSupplyAmount=8, m_unitBuyPrice=223.0, m_unitSellPrice=123.0}, quantityOfCommodity=8}
+
+Cargo{m_commodity=Commodity{m_name='Platinum', m_unitVolume=14, m_delayRatio=0.81, m_currentSupplyAmount=23, m_unitBuyPrice=239.25, m_unitSellPrice=139.25}, quantityOfCommodity=23}
+
+Cargo{m_commodity=Commodity{m_name='Lead', m_unitVolume=9, m_delayRatio=1.31, m_currentSupplyAmount=29, m_unitBuyPrice=283.78, m_unitSellPrice=183.77999999999997}, quantityOfCommodity=29}
+
+Cargo{m_commodity=Commodity{m_name='Tungsten', m_unitVolume=13, m_delayRatio=0.82, m_currentSupplyAmount=15, m_unitBuyPrice=286.01, m_unitSellPrice=186.01}, quantityOfCommodity=15}
+
+Cargo{m_commodity=Commodity{m_name='Iron', m_unitVolume=11, m_delayRatio=0.51, m_currentSupplyAmount=18, m_unitBuyPrice=286.96, m_unitSellPrice=186.95999999999998}, quantityOfCommodity=18}
+
+Cargo{m_commodity=Commodity{m_name='Food', m_unitVolume=14, m_delayRatio=0.95, m_currentSupplyAmount=27, m_unitBuyPrice=307.57, m_unitSellPrice=207.57}, quantityOfCommodity=27}
+
+Cargo{m_commodity=Commodity{m_name='Tin', m_unitVolume=8, m_delayRatio=0.78, m_currentSupplyAmount=15, m_unitBuyPrice=337.33, m_unitSellPrice=237.32999999999998}, quantityOfCommodity=15}
+
+Cargo{m_commodity=Commodity{m_name='Magnesium', m_unitVolume=12, m_delayRatio=1.07, m_currentSupplyAmount=6, m_unitBuyPrice=164.1, m_unitSellPrice=64.1}, quantityOfCommodity=6}
+
+Cargo{m_commodity=Commodity{m_name='Potassium', m_unitVolume=11, m_delayRatio=0.94, m_currentSupplyAmount=13, m_unitBuyPrice=205.98, m_unitSellPrice=105.97999999999999}, quantityOfCommodity=13}
+
+--------------------SELL ITEM--------------------------------
+
+
+--------------------SELL ITEM--------------------------------
+Anastasia on market for sell something with $-14151,26
+
+--------------------BUY FUEL--------------------------------
+Nuri Can on fuel station with $73270,75
+Spaceship: Zero-G [500/1751], fuelUsage: 34, unitPrice: $31,19
+[Nuri Can] bought fuel. [1747/1751] Total = $1247, Rest Of Amount: $72023,75
+--------------------BUY FUEL--------------------------------
+
+
+--------------------BUY FUEL--------------------------------
+John on fuel station with $15222,32
+Spaceship: Yosemite [500/1783], fuelUsage: 34, unitPrice: $42,55
+[John] bought fuel. [1776/1783] Total = $1276, Rest Of Amount: $13946,32
+--------------------BUY FUEL--------------------------------
+
+Anastasia on fuel station but who not have enough money!
+
+--------------------SHOPPING--------------------------------
+Nuri Can on shopping on Varda planet with $72023,75
+[Nuri Can] bought something: Rest Of Amount: $-55477,17
+Shopping List:
+--------------------SHOPPING--------------------------------
+
+
+--------------------SHOPPING--------------------------------
+John on shopping on Gonggong planet with $13946,32
+[John] bought something: Rest Of Amount: $-113554,60
+Shopping List:
+--------------------SHOPPING--------------------------------
+
+Anastasia on shopping but who not have enough money!
+
+--------------------SELL ITEM--------------------------------
+Nuri Can on market for sell something with $-55477,17
+[Nuri Can] sold something Rest of Amount: $-47670,70
+Sold Items:
+
+Cargo{m_commodity=Commodity{m_name='Nitrogen', m_unitVolume=12, m_delayRatio=1.45, m_currentSupplyAmount=14, m_unitBuyPrice=216.77, m_unitSellPrice=116.77000000000001}, quantityOfCommodity=14}
+
+Cargo{m_commodity=Commodity{m_name='Oxygen', m_unitVolume=12, m_delayRatio=0.88, m_currentSupplyAmount=8, m_unitBuyPrice=223.0, m_unitSellPrice=123.0}, quantityOfCommodity=8}
+
+Cargo{m_commodity=Commodity{m_name='Platinum', m_unitVolume=14, m_delayRatio=0.81, m_currentSupplyAmount=23, m_unitBuyPrice=239.25, m_unitSellPrice=139.25}, quantityOfCommodity=23}
+
+Cargo{m_commodity=Commodity{m_name='Lead', m_unitVolume=9, m_delayRatio=1.31, m_currentSupplyAmount=29, m_unitBuyPrice=283.78, m_unitSellPrice=183.77999999999997}, quantityOfCommodity=29}
+
+Cargo{m_commodity=Commodity{m_name='Tungsten', m_unitVolume=13, m_delayRatio=0.82, m_currentSupplyAmount=15, m_unitBuyPrice=286.01, m_unitSellPrice=186.01}, quantityOfCommodity=15}
+
+Cargo{m_commodity=Commodity{m_name='Iron', m_unitVolume=11, m_delayRatio=0.51, m_currentSupplyAmount=18, m_unitBuyPrice=286.96, m_unitSellPrice=186.95999999999998}, quantityOfCommodity=18}
+
+Cargo{m_commodity=Commodity{m_name='Food', m_unitVolume=14, m_delayRatio=0.95, m_currentSupplyAmount=27, m_unitBuyPrice=307.57, m_unitSellPrice=207.57}, quantityOfCommodity=27}
+
+Cargo{m_commodity=Commodity{m_name='Tin', m_unitVolume=8, m_delayRatio=0.78, m_currentSupplyAmount=15, m_unitBuyPrice=337.33, m_unitSellPrice=237.32999999999998}, quantityOfCommodity=15}
+
+Cargo{m_commodity=Commodity{m_name='Magnesium', m_unitVolume=12, m_delayRatio=1.07, m_currentSupplyAmount=6, m_unitBuyPrice=164.1, m_unitSellPrice=64.1}, quantityOfCommodity=6}
+
+Cargo{m_commodity=Commodity{m_name='Potassium', m_unitVolume=11, m_delayRatio=0.94, m_currentSupplyAmount=13, m_unitBuyPrice=205.98, m_unitSellPrice=105.97999999999999}, quantityOfCommodity=13}
+
+Cargo{m_commodity=Commodity{m_name='Uranium', m_unitVolume=13, m_delayRatio=0.96, m_currentSupplyAmount=7, m_unitBuyPrice=374.25, m_unitSellPrice=274.25}, quantityOfCommodity=7}
+
+Cargo{m_commodity=Commodity{m_name='Argon', m_unitVolume=9, m_delayRatio=0.61, m_currentSupplyAmount=5, m_unitBuyPrice=396.52, m_unitSellPrice=296.52}, quantityOfCommodity=5}
+
+Cargo{m_commodity=Commodity{m_name='Cobalt', m_unitVolume=13, m_delayRatio=0.93, m_currentSupplyAmount=5, m_unitBuyPrice=453.58, m_unitSellPrice=353.58}, quantityOfCommodity=5}
+
+Cargo{m_commodity=Commodity{m_name='Thorium', m_unitVolume=5, m_delayRatio=0.79, m_currentSupplyAmount=6, m_unitBuyPrice=539.37, m_unitSellPrice=439.37}, quantityOfCommodity=6}
+
+--------------------SELL ITEM--------------------------------
+
+
+--------------------SELL ITEM--------------------------------
+John on market for sell something with $-113554,60
+[John] sold something Rest of Amount: $-92817,87
+Sold Items:
+
+Cargo{m_commodity=Commodity{m_name='Nitrogen', m_unitVolume=12, m_delayRatio=1.45, m_currentSupplyAmount=14, m_unitBuyPrice=216.77, m_unitSellPrice=116.77000000000001}, quantityOfCommodity=14}
+
+Cargo{m_commodity=Commodity{m_name='Oxygen', m_unitVolume=12, m_delayRatio=0.88, m_currentSupplyAmount=8, m_unitBuyPrice=223.0, m_unitSellPrice=123.0}, quantityOfCommodity=8}
+
+Cargo{m_commodity=Commodity{m_name='Platinum', m_unitVolume=14, m_delayRatio=0.81, m_currentSupplyAmount=23, m_unitBuyPrice=239.25, m_unitSellPrice=139.25}, quantityOfCommodity=23}
+
+Cargo{m_commodity=Commodity{m_name='Lead', m_unitVolume=9, m_delayRatio=1.31, m_currentSupplyAmount=29, m_unitBuyPrice=283.78, m_unitSellPrice=183.77999999999997}, quantityOfCommodity=29}
+
+Cargo{m_commodity=Commodity{m_name='Tungsten', m_unitVolume=13, m_delayRatio=0.82, m_currentSupplyAmount=15, m_unitBuyPrice=286.01, m_unitSellPrice=186.01}, quantityOfCommodity=15}
+
+Cargo{m_commodity=Commodity{m_name='Iron', m_unitVolume=11, m_delayRatio=0.51, m_currentSupplyAmount=18, m_unitBuyPrice=286.96, m_unitSellPrice=186.95999999999998}, quantityOfCommodity=18}
+
+Cargo{m_commodity=Commodity{m_name='Food', m_unitVolume=14, m_delayRatio=0.95, m_currentSupplyAmount=27, m_unitBuyPrice=307.57, m_unitSellPrice=207.57}, quantityOfCommodity=27}
+
+Cargo{m_commodity=Commodity{m_name='Tin', m_unitVolume=8, m_delayRatio=0.78, m_currentSupplyAmount=15, m_unitBuyPrice=337.33, m_unitSellPrice=237.32999999999998}, quantityOfCommodity=15}
+
+Cargo{m_commodity=Commodity{m_name='Magnesium', m_unitVolume=12, m_delayRatio=1.07, m_currentSupplyAmount=6, m_unitBuyPrice=164.1, m_unitSellPrice=64.1}, quantityOfCommodity=6}
+
+Cargo{m_commodity=Commodity{m_name='Potassium', m_unitVolume=11, m_delayRatio=0.94, m_currentSupplyAmount=13, m_unitBuyPrice=205.98, m_unitSellPrice=105.97999999999999}, quantityOfCommodity=13}
+
+Cargo{m_commodity=Commodity{m_name='Uranium', m_unitVolume=13, m_delayRatio=0.96, m_currentSupplyAmount=7, m_unitBuyPrice=374.25, m_unitSellPrice=274.25}, quantityOfCommodity=7}
+
+Cargo{m_commodity=Commodity{m_name='Argon', m_unitVolume=9, m_delayRatio=0.61, m_currentSupplyAmount=5, m_unitBuyPrice=396.52, m_unitSellPrice=296.52}, quantityOfCommodity=5}
+
+Cargo{m_commodity=Commodity{m_name='Cobalt', m_unitVolume=13, m_delayRatio=0.93, m_currentSupplyAmount=5, m_unitBuyPrice=453.58, m_unitSellPrice=353.58}, quantityOfCommodity=5}
+
+Cargo{m_commodity=Commodity{m_name='Thorium', m_unitVolume=5, m_delayRatio=0.79, m_currentSupplyAmount=6, m_unitBuyPrice=539.37, m_unitSellPrice=439.37}, quantityOfCommodity=6}
+
+Cargo{m_commodity=Commodity{m_name='Palladium', m_unitVolume=10, m_delayRatio=1.36, m_currentSupplyAmount=26, m_unitBuyPrice=220.31, m_unitSellPrice=120.31}, quantityOfCommodity=26}
+
+Cargo{m_commodity=Commodity{m_name='Mercury', m_unitVolume=14, m_delayRatio=0.59, m_currentSupplyAmount=29, m_unitBuyPrice=241.41, m_unitSellPrice=141.41}, quantityOfCommodity=29}
+
+Cargo{m_commodity=Commodity{m_name='Fluorine', m_unitVolume=10, m_delayRatio=0.84, m_currentSupplyAmount=18, m_unitBuyPrice=262.25, m_unitSellPrice=162.25}, quantityOfCommodity=18}
+
+Cargo{m_commodity=Commodity{m_name='Nitrogen', m_unitVolume=11, m_delayRatio=1.26, m_currentSupplyAmount=10, m_unitBuyPrice=262.6, m_unitSellPrice=162.60000000000002}, quantityOfCommodity=10}
+
+Cargo{m_commodity=Commodity{m_name='Helium-3', m_unitVolume=11, m_delayRatio=1.05, m_currentSupplyAmount=28, m_unitBuyPrice=287.44, m_unitSellPrice=187.44}, quantityOfCommodity=28}
+
+Cargo{m_commodity=Commodity{m_name='Methane', m_unitVolume=14, m_delayRatio=1.08, m_currentSupplyAmount=16, m_unitBuyPrice=332.06, m_unitSellPrice=232.06}, quantityOfCommodity=16}
+
+--------------------SELL ITEM--------------------------------
+
+
+--------------------SELL ITEM--------------------------------
+Anastasia on market for sell something with $-14151,26
+Nuri Can on fuel station but who not have enough money!
+John on fuel station but who not have enough money!
+Anastasia on fuel station but who not have enough money!
+Nuri Can on shopping but who not have enough money!
+John on shopping but who not have enough money!
+Anastasia on shopping but who not have enough money!
+
+--------------------SELL ITEM--------------------------------
+Nuri Can on market for sell something with $-47670,70
+[Nuri Can] sold something Rest of Amount: $-47670,70
+Sold Items:
+
+Cargo{m_commodity=Commodity{m_name='Nitrogen', m_unitVolume=12, m_delayRatio=1.45, m_currentSupplyAmount=14, m_unitBuyPrice=216.77, m_unitSellPrice=116.77000000000001}, quantityOfCommodity=14}
+
+Cargo{m_commodity=Commodity{m_name='Oxygen', m_unitVolume=12, m_delayRatio=0.88, m_currentSupplyAmount=8, m_unitBuyPrice=223.0, m_unitSellPrice=123.0}, quantityOfCommodity=8}
+
+Cargo{m_commodity=Commodity{m_name='Platinum', m_unitVolume=14, m_delayRatio=0.81, m_currentSupplyAmount=23, m_unitBuyPrice=239.25, m_unitSellPrice=139.25}, quantityOfCommodity=23}
+
+Cargo{m_commodity=Commodity{m_name='Lead', m_unitVolume=9, m_delayRatio=1.31, m_currentSupplyAmount=29, m_unitBuyPrice=283.78, m_unitSellPrice=183.77999999999997}, quantityOfCommodity=29}
+
+Cargo{m_commodity=Commodity{m_name='Tungsten', m_unitVolume=13, m_delayRatio=0.82, m_currentSupplyAmount=15, m_unitBuyPrice=286.01, m_unitSellPrice=186.01}, quantityOfCommodity=15}
+
+Cargo{m_commodity=Commodity{m_name='Iron', m_unitVolume=11, m_delayRatio=0.51, m_currentSupplyAmount=18, m_unitBuyPrice=286.96, m_unitSellPrice=186.95999999999998}, quantityOfCommodity=18}
+
+Cargo{m_commodity=Commodity{m_name='Food', m_unitVolume=14, m_delayRatio=0.95, m_currentSupplyAmount=27, m_unitBuyPrice=307.57, m_unitSellPrice=207.57}, quantityOfCommodity=27}
+
+Cargo{m_commodity=Commodity{m_name='Tin', m_unitVolume=8, m_delayRatio=0.78, m_currentSupplyAmount=15, m_unitBuyPrice=337.33, m_unitSellPrice=237.32999999999998}, quantityOfCommodity=15}
+
+Cargo{m_commodity=Commodity{m_name='Magnesium', m_unitVolume=12, m_delayRatio=1.07, m_currentSupplyAmount=6, m_unitBuyPrice=164.1, m_unitSellPrice=64.1}, quantityOfCommodity=6}
+
+Cargo{m_commodity=Commodity{m_name='Potassium', m_unitVolume=11, m_delayRatio=0.94, m_currentSupplyAmount=13, m_unitBuyPrice=205.98, m_unitSellPrice=105.97999999999999}, quantityOfCommodity=13}
+
+Cargo{m_commodity=Commodity{m_name='Uranium', m_unitVolume=13, m_delayRatio=0.96, m_currentSupplyAmount=7, m_unitBuyPrice=374.25, m_unitSellPrice=274.25}, quantityOfCommodity=7}
+
+Cargo{m_commodity=Commodity{m_name='Argon', m_unitVolume=9, m_delayRatio=0.61, m_currentSupplyAmount=5, m_unitBuyPrice=396.52, m_unitSellPrice=296.52}, quantityOfCommodity=5}
+
+Cargo{m_commodity=Commodity{m_name='Cobalt', m_unitVolume=13, m_delayRatio=0.93, m_currentSupplyAmount=5, m_unitBuyPrice=453.58, m_unitSellPrice=353.58}, quantityOfCommodity=5}
+
+Cargo{m_commodity=Commodity{m_name='Thorium', m_unitVolume=5, m_delayRatio=0.79, m_currentSupplyAmount=6, m_unitBuyPrice=539.37, m_unitSellPrice=439.37}, quantityOfCommodity=6}
+
+Cargo{m_commodity=Commodity{m_name='Palladium', m_unitVolume=10, m_delayRatio=1.36, m_currentSupplyAmount=26, m_unitBuyPrice=220.31, m_unitSellPrice=120.31}, quantityOfCommodity=26}
+
+Cargo{m_commodity=Commodity{m_name='Mercury', m_unitVolume=14, m_delayRatio=0.59, m_currentSupplyAmount=29, m_unitBuyPrice=241.41, m_unitSellPrice=141.41}, quantityOfCommodity=29}
+
+Cargo{m_commodity=Commodity{m_name='Fluorine', m_unitVolume=10, m_delayRatio=0.84, m_currentSupplyAmount=18, m_unitBuyPrice=262.25, m_unitSellPrice=162.25}, quantityOfCommodity=18}
+
+Cargo{m_commodity=Commodity{m_name='Nitrogen', m_unitVolume=11, m_delayRatio=1.26, m_currentSupplyAmount=10, m_unitBuyPrice=262.6, m_unitSellPrice=162.60000000000002}, quantityOfCommodity=10}
+
+Cargo{m_commodity=Commodity{m_name='Helium-3', m_unitVolume=11, m_delayRatio=1.05, m_currentSupplyAmount=28, m_unitBuyPrice=287.44, m_unitSellPrice=187.44}, quantityOfCommodity=28}
+
+Cargo{m_commodity=Commodity{m_name='Methane', m_unitVolume=14, m_delayRatio=1.08, m_currentSupplyAmount=16, m_unitBuyPrice=332.06, m_unitSellPrice=232.06}, quantityOfCommodity=16}
+
+--------------------SELL ITEM--------------------------------
+
+
+--------------------SELL ITEM--------------------------------
+John on market for sell something with $-92817,87
+[John] sold something Rest of Amount: $-92817,87
+Sold Items:
+
+Cargo{m_commodity=Commodity{m_name='Nitrogen', m_unitVolume=12, m_delayRatio=1.45, m_currentSupplyAmount=14, m_unitBuyPrice=216.77, m_unitSellPrice=116.77000000000001}, quantityOfCommodity=14}
+
+Cargo{m_commodity=Commodity{m_name='Oxygen', m_unitVolume=12, m_delayRatio=0.88, m_currentSupplyAmount=8, m_unitBuyPrice=223.0, m_unitSellPrice=123.0}, quantityOfCommodity=8}
+
+Cargo{m_commodity=Commodity{m_name='Platinum', m_unitVolume=14, m_delayRatio=0.81, m_currentSupplyAmount=23, m_unitBuyPrice=239.25, m_unitSellPrice=139.25}, quantityOfCommodity=23}
+
+Cargo{m_commodity=Commodity{m_name='Lead', m_unitVolume=9, m_delayRatio=1.31, m_currentSupplyAmount=29, m_unitBuyPrice=283.78, m_unitSellPrice=183.77999999999997}, quantityOfCommodity=29}
+
+Cargo{m_commodity=Commodity{m_name='Tungsten', m_unitVolume=13, m_delayRatio=0.82, m_currentSupplyAmount=15, m_unitBuyPrice=286.01, m_unitSellPrice=186.01}, quantityOfCommodity=15}
+
+Cargo{m_commodity=Commodity{m_name='Iron', m_unitVolume=11, m_delayRatio=0.51, m_currentSupplyAmount=18, m_unitBuyPrice=286.96, m_unitSellPrice=186.95999999999998}, quantityOfCommodity=18}
+
+Cargo{m_commodity=Commodity{m_name='Food', m_unitVolume=14, m_delayRatio=0.95, m_currentSupplyAmount=27, m_unitBuyPrice=307.57, m_unitSellPrice=207.57}, quantityOfCommodity=27}
+
+Cargo{m_commodity=Commodity{m_name='Tin', m_unitVolume=8, m_delayRatio=0.78, m_currentSupplyAmount=15, m_unitBuyPrice=337.33, m_unitSellPrice=237.32999999999998}, quantityOfCommodity=15}
+
+Cargo{m_commodity=Commodity{m_name='Magnesium', m_unitVolume=12, m_delayRatio=1.07, m_currentSupplyAmount=6, m_unitBuyPrice=164.1, m_unitSellPrice=64.1}, quantityOfCommodity=6}
+
+Cargo{m_commodity=Commodity{m_name='Potassium', m_unitVolume=11, m_delayRatio=0.94, m_currentSupplyAmount=13, m_unitBuyPrice=205.98, m_unitSellPrice=105.97999999999999}, quantityOfCommodity=13}
+
+Cargo{m_commodity=Commodity{m_name='Uranium', m_unitVolume=13, m_delayRatio=0.96, m_currentSupplyAmount=7, m_unitBuyPrice=374.25, m_unitSellPrice=274.25}, quantityOfCommodity=7}
+
+Cargo{m_commodity=Commodity{m_name='Argon', m_unitVolume=9, m_delayRatio=0.61, m_currentSupplyAmount=5, m_unitBuyPrice=396.52, m_unitSellPrice=296.52}, quantityOfCommodity=5}
+
+Cargo{m_commodity=Commodity{m_name='Cobalt', m_unitVolume=13, m_delayRatio=0.93, m_currentSupplyAmount=5, m_unitBuyPrice=453.58, m_unitSellPrice=353.58}, quantityOfCommodity=5}
+
+Cargo{m_commodity=Commodity{m_name='Thorium', m_unitVolume=5, m_delayRatio=0.79, m_currentSupplyAmount=6, m_unitBuyPrice=539.37, m_unitSellPrice=439.37}, quantityOfCommodity=6}
+
+Cargo{m_commodity=Commodity{m_name='Palladium', m_unitVolume=10, m_delayRatio=1.36, m_currentSupplyAmount=26, m_unitBuyPrice=220.31, m_unitSellPrice=120.31}, quantityOfCommodity=26}
+
+Cargo{m_commodity=Commodity{m_name='Mercury', m_unitVolume=14, m_delayRatio=0.59, m_currentSupplyAmount=29, m_unitBuyPrice=241.41, m_unitSellPrice=141.41}, quantityOfCommodity=29}
+
+Cargo{m_commodity=Commodity{m_name='Fluorine', m_unitVolume=10, m_delayRatio=0.84, m_currentSupplyAmount=18, m_unitBuyPrice=262.25, m_unitSellPrice=162.25}, quantityOfCommodity=18}
+
+Cargo{m_commodity=Commodity{m_name='Nitrogen', m_unitVolume=11, m_delayRatio=1.26, m_currentSupplyAmount=10, m_unitBuyPrice=262.6, m_unitSellPrice=162.60000000000002}, quantityOfCommodity=10}
+
+Cargo{m_commodity=Commodity{m_name='Helium-3', m_unitVolume=11, m_delayRatio=1.05, m_currentSupplyAmount=28, m_unitBuyPrice=287.44, m_unitSellPrice=187.44}, quantityOfCommodity=28}
+
+Cargo{m_commodity=Commodity{m_name='Methane', m_unitVolume=14, m_delayRatio=1.08, m_currentSupplyAmount=16, m_unitBuyPrice=332.06, m_unitSellPrice=232.06}, quantityOfCommodity=16}
+
+--------------------SELL ITEM--------------------------------
+
+
+--------------------SELL ITEM--------------------------------
+Anastasia on market for sell something with $-14151,26
+Nuri Can on fuel station but who not have enough money!
+John on fuel station but who not have enough money!
+Anastasia on fuel station but who not have enough money!
+Nuri Can on shopping but who not have enough money!
+John on shopping but who not have enough money!
+Anastasia on shopping but who not have enough money!
+
+--------------------SELL ITEM--------------------------------
+Nuri Can on market for sell something with $-47670,70
+[Nuri Can] sold something Rest of Amount: $-27818,71
+Sold Items:
+
+Cargo{m_commodity=Commodity{m_name='Nitrogen', m_unitVolume=12, m_delayRatio=1.45, m_currentSupplyAmount=14, m_unitBuyPrice=216.77, m_unitSellPrice=116.77000000000001}, quantityOfCommodity=14}
+
+Cargo{m_commodity=Commodity{m_name='Oxygen', m_unitVolume=12, m_delayRatio=0.88, m_currentSupplyAmount=8, m_unitBuyPrice=223.0, m_unitSellPrice=123.0}, quantityOfCommodity=8}
+
+Cargo{m_commodity=Commodity{m_name='Platinum', m_unitVolume=14, m_delayRatio=0.81, m_currentSupplyAmount=23, m_unitBuyPrice=239.25, m_unitSellPrice=139.25}, quantityOfCommodity=23}
+
+Cargo{m_commodity=Commodity{m_name='Lead', m_unitVolume=9, m_delayRatio=1.31, m_currentSupplyAmount=29, m_unitBuyPrice=283.78, m_unitSellPrice=183.77999999999997}, quantityOfCommodity=29}
+
+Cargo{m_commodity=Commodity{m_name='Tungsten', m_unitVolume=13, m_delayRatio=0.82, m_currentSupplyAmount=15, m_unitBuyPrice=286.01, m_unitSellPrice=186.01}, quantityOfCommodity=15}
+
+Cargo{m_commodity=Commodity{m_name='Iron', m_unitVolume=11, m_delayRatio=0.51, m_currentSupplyAmount=18, m_unitBuyPrice=286.96, m_unitSellPrice=186.95999999999998}, quantityOfCommodity=18}
+
+Cargo{m_commodity=Commodity{m_name='Food', m_unitVolume=14, m_delayRatio=0.95, m_currentSupplyAmount=27, m_unitBuyPrice=307.57, m_unitSellPrice=207.57}, quantityOfCommodity=27}
+
+Cargo{m_commodity=Commodity{m_name='Tin', m_unitVolume=8, m_delayRatio=0.78, m_currentSupplyAmount=15, m_unitBuyPrice=337.33, m_unitSellPrice=237.32999999999998}, quantityOfCommodity=15}
+
+Cargo{m_commodity=Commodity{m_name='Magnesium', m_unitVolume=12, m_delayRatio=1.07, m_currentSupplyAmount=6, m_unitBuyPrice=164.1, m_unitSellPrice=64.1}, quantityOfCommodity=6}
+
+Cargo{m_commodity=Commodity{m_name='Potassium', m_unitVolume=11, m_delayRatio=0.94, m_currentSupplyAmount=13, m_unitBuyPrice=205.98, m_unitSellPrice=105.97999999999999}, quantityOfCommodity=13}
+
+Cargo{m_commodity=Commodity{m_name='Uranium', m_unitVolume=13, m_delayRatio=0.96, m_currentSupplyAmount=7, m_unitBuyPrice=374.25, m_unitSellPrice=274.25}, quantityOfCommodity=7}
+
+Cargo{m_commodity=Commodity{m_name='Argon', m_unitVolume=9, m_delayRatio=0.61, m_currentSupplyAmount=5, m_unitBuyPrice=396.52, m_unitSellPrice=296.52}, quantityOfCommodity=5}
+
+Cargo{m_commodity=Commodity{m_name='Cobalt', m_unitVolume=13, m_delayRatio=0.93, m_currentSupplyAmount=5, m_unitBuyPrice=453.58, m_unitSellPrice=353.58}, quantityOfCommodity=5}
+
+Cargo{m_commodity=Commodity{m_name='Thorium', m_unitVolume=5, m_delayRatio=0.79, m_currentSupplyAmount=6, m_unitBuyPrice=539.37, m_unitSellPrice=439.37}, quantityOfCommodity=6}
+
+Cargo{m_commodity=Commodity{m_name='Palladium', m_unitVolume=10, m_delayRatio=1.36, m_currentSupplyAmount=26, m_unitBuyPrice=220.31, m_unitSellPrice=120.31}, quantityOfCommodity=26}
+
+Cargo{m_commodity=Commodity{m_name='Mercury', m_unitVolume=14, m_delayRatio=0.59, m_currentSupplyAmount=29, m_unitBuyPrice=241.41, m_unitSellPrice=141.41}, quantityOfCommodity=29}
+
+Cargo{m_commodity=Commodity{m_name='Fluorine', m_unitVolume=10, m_delayRatio=0.84, m_currentSupplyAmount=18, m_unitBuyPrice=262.25, m_unitSellPrice=162.25}, quantityOfCommodity=18}
+
+Cargo{m_commodity=Commodity{m_name='Nitrogen', m_unitVolume=11, m_delayRatio=1.26, m_currentSupplyAmount=10, m_unitBuyPrice=262.6, m_unitSellPrice=162.60000000000002}, quantityOfCommodity=10}
+
+Cargo{m_commodity=Commodity{m_name='Helium-3', m_unitVolume=11, m_delayRatio=1.05, m_currentSupplyAmount=28, m_unitBuyPrice=287.44, m_unitSellPrice=187.44}, quantityOfCommodity=28}
+
+Cargo{m_commodity=Commodity{m_name='Methane', m_unitVolume=14, m_delayRatio=1.08, m_currentSupplyAmount=16, m_unitBuyPrice=332.06, m_unitSellPrice=232.06}, quantityOfCommodity=16}
+
+Cargo{m_commodity=Commodity{m_name='Helium-3', m_unitVolume=9, m_delayRatio=1.33, m_currentSupplyAmount=18, m_unitBuyPrice=547.93, m_unitSellPrice=447.92999999999995}, quantityOfCommodity=18}
+
+Cargo{m_commodity=Commodity{m_name='Lithium', m_unitVolume=12, m_delayRatio=0.72, m_currentSupplyAmount=25, m_unitBuyPrice=571.57, m_unitSellPrice=471.57000000000005}, quantityOfCommodity=25}
+
+--------------------SELL ITEM--------------------------------
+
+
+--------------------SELL ITEM--------------------------------
+John on market for sell something with $-92817,87
+[John] sold something Rest of Amount: $-85085,99
+Sold Items:
+
+Cargo{m_commodity=Commodity{m_name='Nitrogen', m_unitVolume=12, m_delayRatio=1.45, m_currentSupplyAmount=14, m_unitBuyPrice=216.77, m_unitSellPrice=116.77000000000001}, quantityOfCommodity=14}
+
+Cargo{m_commodity=Commodity{m_name='Oxygen', m_unitVolume=12, m_delayRatio=0.88, m_currentSupplyAmount=8, m_unitBuyPrice=223.0, m_unitSellPrice=123.0}, quantityOfCommodity=8}
+
+Cargo{m_commodity=Commodity{m_name='Platinum', m_unitVolume=14, m_delayRatio=0.81, m_currentSupplyAmount=23, m_unitBuyPrice=239.25, m_unitSellPrice=139.25}, quantityOfCommodity=23}
+
+Cargo{m_commodity=Commodity{m_name='Lead', m_unitVolume=9, m_delayRatio=1.31, m_currentSupplyAmount=29, m_unitBuyPrice=283.78, m_unitSellPrice=183.77999999999997}, quantityOfCommodity=29}
+
+Cargo{m_commodity=Commodity{m_name='Tungsten', m_unitVolume=13, m_delayRatio=0.82, m_currentSupplyAmount=15, m_unitBuyPrice=286.01, m_unitSellPrice=186.01}, quantityOfCommodity=15}
+
+Cargo{m_commodity=Commodity{m_name='Iron', m_unitVolume=11, m_delayRatio=0.51, m_currentSupplyAmount=18, m_unitBuyPrice=286.96, m_unitSellPrice=186.95999999999998}, quantityOfCommodity=18}
+
+Cargo{m_commodity=Commodity{m_name='Food', m_unitVolume=14, m_delayRatio=0.95, m_currentSupplyAmount=27, m_unitBuyPrice=307.57, m_unitSellPrice=207.57}, quantityOfCommodity=27}
+
+Cargo{m_commodity=Commodity{m_name='Tin', m_unitVolume=8, m_delayRatio=0.78, m_currentSupplyAmount=15, m_unitBuyPrice=337.33, m_unitSellPrice=237.32999999999998}, quantityOfCommodity=15}
+
+Cargo{m_commodity=Commodity{m_name='Magnesium', m_unitVolume=12, m_delayRatio=1.07, m_currentSupplyAmount=6, m_unitBuyPrice=164.1, m_unitSellPrice=64.1}, quantityOfCommodity=6}
+
+Cargo{m_commodity=Commodity{m_name='Potassium', m_unitVolume=11, m_delayRatio=0.94, m_currentSupplyAmount=13, m_unitBuyPrice=205.98, m_unitSellPrice=105.97999999999999}, quantityOfCommodity=13}
+
+Cargo{m_commodity=Commodity{m_name='Uranium', m_unitVolume=13, m_delayRatio=0.96, m_currentSupplyAmount=7, m_unitBuyPrice=374.25, m_unitSellPrice=274.25}, quantityOfCommodity=7}
+
+Cargo{m_commodity=Commodity{m_name='Argon', m_unitVolume=9, m_delayRatio=0.61, m_currentSupplyAmount=5, m_unitBuyPrice=396.52, m_unitSellPrice=296.52}, quantityOfCommodity=5}
+
+Cargo{m_commodity=Commodity{m_name='Cobalt', m_unitVolume=13, m_delayRatio=0.93, m_currentSupplyAmount=5, m_unitBuyPrice=453.58, m_unitSellPrice=353.58}, quantityOfCommodity=5}
+
+Cargo{m_commodity=Commodity{m_name='Thorium', m_unitVolume=5, m_delayRatio=0.79, m_currentSupplyAmount=6, m_unitBuyPrice=539.37, m_unitSellPrice=439.37}, quantityOfCommodity=6}
+
+Cargo{m_commodity=Commodity{m_name='Palladium', m_unitVolume=10, m_delayRatio=1.36, m_currentSupplyAmount=26, m_unitBuyPrice=220.31, m_unitSellPrice=120.31}, quantityOfCommodity=26}
+
+Cargo{m_commodity=Commodity{m_name='Mercury', m_unitVolume=14, m_delayRatio=0.59, m_currentSupplyAmount=29, m_unitBuyPrice=241.41, m_unitSellPrice=141.41}, quantityOfCommodity=29}
+
+Cargo{m_commodity=Commodity{m_name='Fluorine', m_unitVolume=10, m_delayRatio=0.84, m_currentSupplyAmount=18, m_unitBuyPrice=262.25, m_unitSellPrice=162.25}, quantityOfCommodity=18}
+
+Cargo{m_commodity=Commodity{m_name='Nitrogen', m_unitVolume=11, m_delayRatio=1.26, m_currentSupplyAmount=10, m_unitBuyPrice=262.6, m_unitSellPrice=162.60000000000002}, quantityOfCommodity=10}
+
+Cargo{m_commodity=Commodity{m_name='Helium-3', m_unitVolume=11, m_delayRatio=1.05, m_currentSupplyAmount=28, m_unitBuyPrice=287.44, m_unitSellPrice=187.44}, quantityOfCommodity=28}
+
+Cargo{m_commodity=Commodity{m_name='Methane', m_unitVolume=14, m_delayRatio=1.08, m_currentSupplyAmount=16, m_unitBuyPrice=332.06, m_unitSellPrice=232.06}, quantityOfCommodity=16}
+
+Cargo{m_commodity=Commodity{m_name='Helium-3', m_unitVolume=9, m_delayRatio=1.33, m_currentSupplyAmount=18, m_unitBuyPrice=547.93, m_unitSellPrice=447.92999999999995}, quantityOfCommodity=18}
+
+Cargo{m_commodity=Commodity{m_name='Lithium', m_unitVolume=12, m_delayRatio=0.72, m_currentSupplyAmount=25, m_unitBuyPrice=571.57, m_unitSellPrice=471.57000000000005}, quantityOfCommodity=25}
+
+Cargo{m_commodity=Commodity{m_name='Iron', m_unitVolume=8, m_delayRatio=1.28, m_currentSupplyAmount=26, m_unitBuyPrice=397.38, m_unitSellPrice=297.38}, quantityOfCommodity=26}
+
+--------------------SELL ITEM--------------------------------
+
+
+--------------------SELL ITEM--------------------------------
+Anastasia on market for sell something with $-14151,26
+Nuri Can on fuel station but who not have enough money!
+John on fuel station but who not have enough money!
+Anastasia on fuel station but who not have enough money!
+Nuri Can on shopping but who not have enough money!
+John on shopping but who not have enough money!
+Anastasia on shopping but who not have enough money!
+
+--------------------SELL ITEM--------------------------------
+Nuri Can on market for sell something with $-27818,71
+[Nuri Can] sold something Rest of Amount: $-27818,71
+Sold Items:
+
+Cargo{m_commodity=Commodity{m_name='Nitrogen', m_unitVolume=12, m_delayRatio=1.45, m_currentSupplyAmount=14, m_unitBuyPrice=216.77, m_unitSellPrice=116.77000000000001}, quantityOfCommodity=14}
+
+Cargo{m_commodity=Commodity{m_name='Oxygen', m_unitVolume=12, m_delayRatio=0.88, m_currentSupplyAmount=8, m_unitBuyPrice=223.0, m_unitSellPrice=123.0}, quantityOfCommodity=8}
+
+Cargo{m_commodity=Commodity{m_name='Platinum', m_unitVolume=14, m_delayRatio=0.81, m_currentSupplyAmount=23, m_unitBuyPrice=239.25, m_unitSellPrice=139.25}, quantityOfCommodity=23}
+
+Cargo{m_commodity=Commodity{m_name='Lead', m_unitVolume=9, m_delayRatio=1.31, m_currentSupplyAmount=29, m_unitBuyPrice=283.78, m_unitSellPrice=183.77999999999997}, quantityOfCommodity=29}
+
+Cargo{m_commodity=Commodity{m_name='Tungsten', m_unitVolume=13, m_delayRatio=0.82, m_currentSupplyAmount=15, m_unitBuyPrice=286.01, m_unitSellPrice=186.01}, quantityOfCommodity=15}
+
+Cargo{m_commodity=Commodity{m_name='Iron', m_unitVolume=11, m_delayRatio=0.51, m_currentSupplyAmount=18, m_unitBuyPrice=286.96, m_unitSellPrice=186.95999999999998}, quantityOfCommodity=18}
+
+Cargo{m_commodity=Commodity{m_name='Food', m_unitVolume=14, m_delayRatio=0.95, m_currentSupplyAmount=27, m_unitBuyPrice=307.57, m_unitSellPrice=207.57}, quantityOfCommodity=27}
+
+Cargo{m_commodity=Commodity{m_name='Tin', m_unitVolume=8, m_delayRatio=0.78, m_currentSupplyAmount=15, m_unitBuyPrice=337.33, m_unitSellPrice=237.32999999999998}, quantityOfCommodity=15}
+
+Cargo{m_commodity=Commodity{m_name='Magnesium', m_unitVolume=12, m_delayRatio=1.07, m_currentSupplyAmount=6, m_unitBuyPrice=164.1, m_unitSellPrice=64.1}, quantityOfCommodity=6}
+
+Cargo{m_commodity=Commodity{m_name='Potassium', m_unitVolume=11, m_delayRatio=0.94, m_currentSupplyAmount=13, m_unitBuyPrice=205.98, m_unitSellPrice=105.97999999999999}, quantityOfCommodity=13}
+
+Cargo{m_commodity=Commodity{m_name='Uranium', m_unitVolume=13, m_delayRatio=0.96, m_currentSupplyAmount=7, m_unitBuyPrice=374.25, m_unitSellPrice=274.25}, quantityOfCommodity=7}
+
+Cargo{m_commodity=Commodity{m_name='Argon', m_unitVolume=9, m_delayRatio=0.61, m_currentSupplyAmount=5, m_unitBuyPrice=396.52, m_unitSellPrice=296.52}, quantityOfCommodity=5}
+
+Cargo{m_commodity=Commodity{m_name='Cobalt', m_unitVolume=13, m_delayRatio=0.93, m_currentSupplyAmount=5, m_unitBuyPrice=453.58, m_unitSellPrice=353.58}, quantityOfCommodity=5}
+
+Cargo{m_commodity=Commodity{m_name='Thorium', m_unitVolume=5, m_delayRatio=0.79, m_currentSupplyAmount=6, m_unitBuyPrice=539.37, m_unitSellPrice=439.37}, quantityOfCommodity=6}
+
+Cargo{m_commodity=Commodity{m_name='Palladium', m_unitVolume=10, m_delayRatio=1.36, m_currentSupplyAmount=26, m_unitBuyPrice=220.31, m_unitSellPrice=120.31}, quantityOfCommodity=26}
+
+Cargo{m_commodity=Commodity{m_name='Mercury', m_unitVolume=14, m_delayRatio=0.59, m_currentSupplyAmount=29, m_unitBuyPrice=241.41, m_unitSellPrice=141.41}, quantityOfCommodity=29}
+
+Cargo{m_commodity=Commodity{m_name='Fluorine', m_unitVolume=10, m_delayRatio=0.84, m_currentSupplyAmount=18, m_unitBuyPrice=262.25, m_unitSellPrice=162.25}, quantityOfCommodity=18}
+
+Cargo{m_commodity=Commodity{m_name='Nitrogen', m_unitVolume=11, m_delayRatio=1.26, m_currentSupplyAmount=10, m_unitBuyPrice=262.6, m_unitSellPrice=162.60000000000002}, quantityOfCommodity=10}
+
+Cargo{m_commodity=Commodity{m_name='Helium-3', m_unitVolume=11, m_delayRatio=1.05, m_currentSupplyAmount=28, m_unitBuyPrice=287.44, m_unitSellPrice=187.44}, quantityOfCommodity=28}
+
+Cargo{m_commodity=Commodity{m_name='Methane', m_unitVolume=14, m_delayRatio=1.08, m_currentSupplyAmount=16, m_unitBuyPrice=332.06, m_unitSellPrice=232.06}, quantityOfCommodity=16}
+
+Cargo{m_commodity=Commodity{m_name='Helium-3', m_unitVolume=9, m_delayRatio=1.33, m_currentSupplyAmount=18, m_unitBuyPrice=547.93, m_unitSellPrice=447.92999999999995}, quantityOfCommodity=18}
+
+Cargo{m_commodity=Commodity{m_name='Lithium', m_unitVolume=12, m_delayRatio=0.72, m_currentSupplyAmount=25, m_unitBuyPrice=571.57, m_unitSellPrice=471.57000000000005}, quantityOfCommodity=25}
+
+Cargo{m_commodity=Commodity{m_name='Iron', m_unitVolume=8, m_delayRatio=1.28, m_currentSupplyAmount=26, m_unitBuyPrice=397.38, m_unitSellPrice=297.38}, quantityOfCommodity=26}
+
+--------------------SELL ITEM--------------------------------
+
+
+--------------------SELL ITEM--------------------------------
+John on market for sell something with $-85085,99
+[John] sold something Rest of Amount: $-82948,19
+Sold Items:
+
+Cargo{m_commodity=Commodity{m_name='Nitrogen', m_unitVolume=12, m_delayRatio=1.45, m_currentSupplyAmount=14, m_unitBuyPrice=216.77, m_unitSellPrice=116.77000000000001}, quantityOfCommodity=14}
+
+Cargo{m_commodity=Commodity{m_name='Oxygen', m_unitVolume=12, m_delayRatio=0.88, m_currentSupplyAmount=8, m_unitBuyPrice=223.0, m_unitSellPrice=123.0}, quantityOfCommodity=8}
+
+Cargo{m_commodity=Commodity{m_name='Platinum', m_unitVolume=14, m_delayRatio=0.81, m_currentSupplyAmount=23, m_unitBuyPrice=239.25, m_unitSellPrice=139.25}, quantityOfCommodity=23}
+
+Cargo{m_commodity=Commodity{m_name='Lead', m_unitVolume=9, m_delayRatio=1.31, m_currentSupplyAmount=29, m_unitBuyPrice=283.78, m_unitSellPrice=183.77999999999997}, quantityOfCommodity=29}
+
+Cargo{m_commodity=Commodity{m_name='Tungsten', m_unitVolume=13, m_delayRatio=0.82, m_currentSupplyAmount=15, m_unitBuyPrice=286.01, m_unitSellPrice=186.01}, quantityOfCommodity=15}
+
+Cargo{m_commodity=Commodity{m_name='Iron', m_unitVolume=11, m_delayRatio=0.51, m_currentSupplyAmount=18, m_unitBuyPrice=286.96, m_unitSellPrice=186.95999999999998}, quantityOfCommodity=18}
+
+Cargo{m_commodity=Commodity{m_name='Food', m_unitVolume=14, m_delayRatio=0.95, m_currentSupplyAmount=27, m_unitBuyPrice=307.57, m_unitSellPrice=207.57}, quantityOfCommodity=27}
+
+Cargo{m_commodity=Commodity{m_name='Tin', m_unitVolume=8, m_delayRatio=0.78, m_currentSupplyAmount=15, m_unitBuyPrice=337.33, m_unitSellPrice=237.32999999999998}, quantityOfCommodity=15}
+
+Cargo{m_commodity=Commodity{m_name='Magnesium', m_unitVolume=12, m_delayRatio=1.07, m_currentSupplyAmount=6, m_unitBuyPrice=164.1, m_unitSellPrice=64.1}, quantityOfCommodity=6}
+
+Cargo{m_commodity=Commodity{m_name='Potassium', m_unitVolume=11, m_delayRatio=0.94, m_currentSupplyAmount=13, m_unitBuyPrice=205.98, m_unitSellPrice=105.97999999999999}, quantityOfCommodity=13}
+
+Cargo{m_commodity=Commodity{m_name='Uranium', m_unitVolume=13, m_delayRatio=0.96, m_currentSupplyAmount=7, m_unitBuyPrice=374.25, m_unitSellPrice=274.25}, quantityOfCommodity=7}
+
+Cargo{m_commodity=Commodity{m_name='Argon', m_unitVolume=9, m_delayRatio=0.61, m_currentSupplyAmount=5, m_unitBuyPrice=396.52, m_unitSellPrice=296.52}, quantityOfCommodity=5}
+
+Cargo{m_commodity=Commodity{m_name='Cobalt', m_unitVolume=13, m_delayRatio=0.93, m_currentSupplyAmount=5, m_unitBuyPrice=453.58, m_unitSellPrice=353.58}, quantityOfCommodity=5}
+
+Cargo{m_commodity=Commodity{m_name='Thorium', m_unitVolume=5, m_delayRatio=0.79, m_currentSupplyAmount=6, m_unitBuyPrice=539.37, m_unitSellPrice=439.37}, quantityOfCommodity=6}
+
+Cargo{m_commodity=Commodity{m_name='Palladium', m_unitVolume=10, m_delayRatio=1.36, m_currentSupplyAmount=26, m_unitBuyPrice=220.31, m_unitSellPrice=120.31}, quantityOfCommodity=26}
+
+Cargo{m_commodity=Commodity{m_name='Mercury', m_unitVolume=14, m_delayRatio=0.59, m_currentSupplyAmount=29, m_unitBuyPrice=241.41, m_unitSellPrice=141.41}, quantityOfCommodity=29}
+
+Cargo{m_commodity=Commodity{m_name='Fluorine', m_unitVolume=10, m_delayRatio=0.84, m_currentSupplyAmount=18, m_unitBuyPrice=262.25, m_unitSellPrice=162.25}, quantityOfCommodity=18}
+
+Cargo{m_commodity=Commodity{m_name='Nitrogen', m_unitVolume=11, m_delayRatio=1.26, m_currentSupplyAmount=10, m_unitBuyPrice=262.6, m_unitSellPrice=162.60000000000002}, quantityOfCommodity=10}
+
+Cargo{m_commodity=Commodity{m_name='Helium-3', m_unitVolume=11, m_delayRatio=1.05, m_currentSupplyAmount=28, m_unitBuyPrice=287.44, m_unitSellPrice=187.44}, quantityOfCommodity=28}
+
+Cargo{m_commodity=Commodity{m_name='Methane', m_unitVolume=14, m_delayRatio=1.08, m_currentSupplyAmount=16, m_unitBuyPrice=332.06, m_unitSellPrice=232.06}, quantityOfCommodity=16}
+
+Cargo{m_commodity=Commodity{m_name='Helium-3', m_unitVolume=9, m_delayRatio=1.33, m_currentSupplyAmount=18, m_unitBuyPrice=547.93, m_unitSellPrice=447.92999999999995}, quantityOfCommodity=18}
+
+Cargo{m_commodity=Commodity{m_name='Lithium', m_unitVolume=12, m_delayRatio=0.72, m_currentSupplyAmount=25, m_unitBuyPrice=571.57, m_unitSellPrice=471.57000000000005}, quantityOfCommodity=25}
+
+Cargo{m_commodity=Commodity{m_name='Iron', m_unitVolume=8, m_delayRatio=1.28, m_currentSupplyAmount=26, m_unitBuyPrice=397.38, m_unitSellPrice=297.38}, quantityOfCommodity=26}
+
+Cargo{m_commodity=Commodity{m_name='Lead', m_unitVolume=13, m_delayRatio=0.85, m_currentSupplyAmount=7, m_unitBuyPrice=405.4, m_unitSellPrice=305.4}, quantityOfCommodity=7}
+
+--------------------SELL ITEM--------------------------------
+
+
+--------------------SELL ITEM--------------------------------
+Anastasia on market for sell something with $-14151,26
+Nuri Can on fuel station but who not have enough money!
+John on fuel station but who not have enough money!
+Anastasia on fuel station but who not have enough money!
