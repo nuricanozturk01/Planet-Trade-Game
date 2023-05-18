@@ -113,11 +113,11 @@ public class SellItem implements IAction
     public String toString()
     {
         var sb = new StringBuilder();
-        sb.append("\n----------------------SELL ITEM------------------------------\n");
+        sb.append("\n---------------SELL ITEM [").append(m_player.getName()).append("]---------------\n");
         sb.append(format(START_MESSAGE, m_player.getName(), initialMoney)).append("\n")
                 .append(format(END_MESSAGE, m_player.getName(), m_player.getCurrentMoney()));
         m_sellItems.forEach(sb::append);
-        sb.append("----------------------SELL ITEM------------------------------\n");
+        sb.append("---------------SELL ITEM [").append(m_player.getName()).append("]---------------\n");
         //sb.append(m_player.getName()).append(" ").append(getClass().getSimpleName());
         return sb.toString();
     }

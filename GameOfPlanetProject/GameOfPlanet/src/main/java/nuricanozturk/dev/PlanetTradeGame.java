@@ -1,5 +1,6 @@
 package nuricanozturk.dev;
 
+import nuricanozturk.dev.action.IAction;
 import nuricanozturk.dev.entity.BlackHole;
 import nuricanozturk.dev.entity.Galaxy;
 import nuricanozturk.dev.entity.PlanetTradeGameContext;
@@ -60,7 +61,9 @@ public class PlanetTradeGame implements Game
     {
         if (m_currentTurn == m_turnCount * m_players.size() * actions.size())
             finishGame();
-
+        //((IAction) action).apply(); ???
+        System.out.println(action.getClass().getSimpleName());
+        System.out.println("Current Turn: " + m_currentTurn);
         //action = actions.next();
 
         //m_players.forEach(p -> p.play(m_gameContext));

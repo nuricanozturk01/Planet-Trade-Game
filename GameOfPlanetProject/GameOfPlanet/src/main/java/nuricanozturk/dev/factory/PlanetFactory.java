@@ -24,7 +24,7 @@ public final class PlanetFactory
 
         var planets = IntStream.range(0, count).mapToObj(PlanetFactory::createPlanet).toList();
 
-        IntStream.range(0, planets.size()).forEach(i -> createDistanceBetweenPlanets(planets, planets.get(i)));
+        planets.forEach(p -> createDistanceBetweenPlanets(planets, p));
 
         return planets;
     }

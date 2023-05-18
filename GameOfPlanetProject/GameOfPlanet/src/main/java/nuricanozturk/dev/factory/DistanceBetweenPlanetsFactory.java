@@ -1,9 +1,10 @@
 package nuricanozturk.dev.factory;
 
-import com.sun.source.tree.Tree;
 import nuricanozturk.dev.entity.Planet;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import static nuricanozturk.dev.config.RandomConfig.getRandomInstance;
 
@@ -13,7 +14,7 @@ public final class DistanceBetweenPlanetsFactory
     {
     }
 
-    public static Map<Planet, Integer> createDistances(List<Planet> planets, Planet currentPlanet)
+    private static Map<Planet, Integer> createDistances(List<Planet> planets, Planet currentPlanet)
     {
         return planets.stream()
                 .filter(p -> !p.getName().equals(currentPlanet.getName()))

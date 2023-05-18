@@ -64,7 +64,6 @@ public class PlayerImpl implements Player
     {
         var action = (IAction) actions.Next();
 
-
         action.apply(this, context);
 
         return action;

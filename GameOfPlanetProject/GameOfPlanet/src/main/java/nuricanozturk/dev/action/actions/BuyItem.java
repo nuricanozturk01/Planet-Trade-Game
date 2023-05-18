@@ -150,12 +150,12 @@ public class BuyItem implements IAction
                     .append(m_player.getCurrentPlanet().getName());
         } else
         {
-            sb.append("\n----------------------SHOPPING------------------------------\n");
+            sb.append("\n---------------SHOPPING [").append(m_player.getName()).append("]---------------\n");
             sb.append(format(START_MESSAGE, m_player.getName(), m_player.getCurrentPlanet().getName(),
                     initialMoney)).append("\n");
             sb.append(format(END_MESSAGE, m_player.getName(), m_player.getCurrentMoney())).append("\n");
             m_cargos.stream().map(Cargo::toString).forEach(sb::append);
-            sb.append("----------------------SHOPPING------------------------------\n");
+            sb.append("r---------------SHOPPING [").append(m_player.getName()).append("]---------------\n");
         }
         //sb.append(m_player.getName()).append(" ").append(getClass().getSimpleName());
         return sb.toString();

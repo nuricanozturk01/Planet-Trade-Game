@@ -98,14 +98,14 @@ public final class BuyFuel implements IAction
             sb.append(m_player.getName() + " on fuel station but who not have enough money!").append("\n");
         else
         {
-            sb.append("\n----------------------BUY FUEL------------------------------\n");
+            sb.append("\n---------------BUY FUEL [").append(m_player.getName()).append("]---------------\n");
             sb.append(format(START_MESSAGE, m_player.getName(), initialPlayerMoney, m_spaceship.getName(),
                             initialFuel, m_spaceship.getFuelCapacity(),
                             m_spaceship.getFuelUsagePerLightYear(), m_player.getCurrentPlanet().getUnitFuelPrice()))
                     .append("\n");
             sb.append(format(END_MESSAGE, m_player.getName(), m_spaceship.getCurrentFuel(), m_spaceship.getFuelCapacity(),
                     fuelPrice, m_player.getCurrentMoney())).append("\n");
-            sb.append("----------------------BUY FUEL------------------------------\n");
+            sb.append("---------------BUY FUEL [").append(m_player.getName()).append("]---------------\n");
         }
         //sb.append(m_player.getName()).append(" ").append(getClass().getSimpleName());
 
