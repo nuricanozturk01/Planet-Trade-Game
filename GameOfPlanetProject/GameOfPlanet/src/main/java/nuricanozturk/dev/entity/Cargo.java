@@ -5,7 +5,7 @@ import project.gameengine.base.GameContext;
 public class Cargo implements GameContext
 {
     private final Commodity m_commodity;
-    private final int quantityOfCommodity;
+    private int quantityOfCommodity;
 
     public Cargo(Commodity commodity, int quantityOfCommodity)
     {
@@ -22,6 +22,10 @@ public class Cargo implements GameContext
     public int getQuantityOfCommodity()
     {
         return quantityOfCommodity;
+    }
+
+    public void setQuantityOfCommodity(int quantityOfCommodity) {
+        this.quantityOfCommodity = quantityOfCommodity;
     }
 
     @Override

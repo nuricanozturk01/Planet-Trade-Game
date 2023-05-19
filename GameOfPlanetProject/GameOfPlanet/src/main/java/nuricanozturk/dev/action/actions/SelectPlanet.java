@@ -31,11 +31,10 @@ public class SelectPlanet implements IAction
         logger.log(m_player.getName() + " on " + m_selectedPlanet.getName());
     }
 
-    private void update()
+    public void update()
     {
         m_player.setCurrentPlanet(m_selectedPlanet);
     }
-
 
     @Override
     public String toString()

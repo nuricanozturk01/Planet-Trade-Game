@@ -10,14 +10,11 @@ import static nuricanozturk.dev.util.Constants.*;
 import static nuricanozturk.dev.util.Util.LOGGER;
 import static nuricanozturk.dev.util.Util.getBigFormattedNumber;
 
-public class SpaceshipFactory
-{
-    private SpaceshipFactory()
-    {
+public class SpaceshipFactory {
+    private SpaceshipFactory() {
     }
 
-    public static List<SpaceShip> createSpaceships()
-    {
+    public static List<SpaceShip> createSpaceships() {
         var list = IntStream
                 .range(0, getRandomInstance().nextInt(MIN_SPACESHIP_COUNT, MAX_SPACESHIP_COUNT))
                 .mapToObj(SpaceshipFactory::createSpaceShip)
@@ -28,8 +25,7 @@ public class SpaceshipFactory
         return list;
     }
 
-    private static int createSpeed(double price)
-    {
+    private static int createSpeed(double price) {
         // MIN: 3_500
         // MAX 50_000
         var range1 = MIN_SPACESHIP_COST + 10_000D; // 13_500
@@ -52,13 +48,11 @@ public class SpaceshipFactory
         return MAX_SPEED;
     }
 
-    private static int createFuelUsagePerLightYear(int fuelCapacity)
-    {
-        return (fuelCapacity / 100) * getRandomInstance().nextInt(2, 4);
+    private static int createFuelUsagePerLightYear(int fuelCapacity) {
+        return (fuelCapacity / 100) * getRandomInstance().nextInt(2, 10);
     }
 
-    private static SpaceShip createSpaceShip(int ignore)
-    {
+    private static SpaceShip createSpaceShip(int ignore) {
         var price = getBigFormattedNumber(getRandomInstance().nextDouble(MIN_SPACESHIP_COST, MAX_SPACESHIP_COST));
         var fuelCapacity = getRandomInstance().nextInt(MIN_FUEL_CAPACITY, MAX_FUEL_CAPACITY);
         var speed = createSpeed(price);

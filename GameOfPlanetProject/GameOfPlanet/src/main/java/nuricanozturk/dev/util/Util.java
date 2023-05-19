@@ -8,12 +8,11 @@ import static nuricanozturk.dev.action.ActionGenerator.getActionGeneratorInstanc
 import static nuricanozturk.dev.util.Constants.LOGGER_FILE_NAME;
 import static nuricanozturk.dev.util.logger.Logger.getLoggerInstance;
 
-public class Util
-{
+public class Util {
     public static final ILogger LOGGER = getLoggerInstance(LOGGER_FILE_NAME).getLogger(LoggerType.FILE);
     public static final LinkedList<Action> actions = getActionGeneratorInstance().getActionLinkedList();
-    public static double getBigFormattedNumber(double number)
-    {
+
+    public static double getBigFormattedNumber(double number) {
         return Math.round(number * 100.0) / 100.0;
     }
 }

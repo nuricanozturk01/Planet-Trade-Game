@@ -4,7 +4,6 @@ import nuricanozturk.dev.entity.Commodity;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 import static java.util.stream.Collectors.toCollection;
@@ -33,7 +32,7 @@ public final class CommodityFactory
                 .setUnitVolume(getRandomInstance().nextInt(MIN_UNIT_VOLUME, MAX_UNIT_VOLUME))
                 .setCurrentSupplyAmount(getRandomInstance().nextInt(MIN_CURRENT_SUPPLY_AMOUNT, MAX_CURRENT_SUPPLY_AMOUNT))
                 .setUnitBuyPrice(getBigFormattedNumber(getRandomInstance().nextDouble(MIN_UNIT_BUY_PRICE, MAX_UNIT_BUY_PRICE)))
-                .setDelayRatio(getBigFormattedNumber(getRandomInstance().nextDouble(MIN_DELAY_RATIO, MAX_DELAY_RATIO)))
+                .setDecayRatio(getBigFormattedNumber(getRandomInstance().nextDouble(MIN_DELAY_RATIO, MAX_DELAY_RATIO)))
                 .build();
 
         LOGGER.log(commodity + " is created...");

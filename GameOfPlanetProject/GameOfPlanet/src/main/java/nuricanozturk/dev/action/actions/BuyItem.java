@@ -3,6 +3,7 @@ package nuricanozturk.dev.action.actions;
 import nuricanozturk.dev.action.IAction;
 import nuricanozturk.dev.entity.Cargo;
 import nuricanozturk.dev.entity.Commodity;
+import nuricanozturk.dev.entity.PlanetTradeGameContext;
 import nuricanozturk.dev.entity.PlayerImpl;
 import nuricanozturk.dev.util.logger.ILogger;
 import project.gameengine.base.GameContext;
@@ -35,19 +36,19 @@ public class BuyItem implements IAction
     }
 
 
-    private void startActionLog(ILogger logger)
+    private void startActionLog()
     {
-        logger.log("\n--------------------SHOPPING--------------------------------");
-        logger.log(format(START_MESSAGE, m_player.getName(), m_player.getCurrentPlanet().getName(),
+        LOGGER.log("\n--------------------SHOPPING--------------------------------");
+        LOGGER.log(format(START_MESSAGE, m_player.getName(), m_player.getCurrentPlanet().getName(),
                 m_player.getCurrentMoney()));
     }
 
 
-    private void finishActionLog(ILogger logger)
+    private void finishActionLog()
     {
-        logger.log(format(END_MESSAGE, m_player.getName(), m_player.getCurrentMoney()));
-        m_cargos.stream().map(Cargo::toString).forEach(logger::log);
-        logger.log("--------------------SHOPPING--------------------------------\n");
+        LOGGER.log(format(END_MESSAGE, m_player.getName(), m_player.getCurrentMoney()));
+        m_cargos.stream().map(Cargo::toString).forEach(LOGGER::log);
+        LOGGER.log("--------------------SHOPPING--------------------------------\n");
 
     }
 
@@ -63,7 +64,6 @@ public class BuyItem implements IAction
     public void apply(Player player, GameContext context)
     {
         m_player = (PlayerImpl) player;
-
         playerMoney = m_player.getCurrentMoney();
         initialMoney = m_player.getCurrentMoney();
         if (m_player.getCurrentMoney() <= MIN_UNIT_BUY_PRICE)
@@ -76,7 +76,7 @@ public class BuyItem implements IAction
             LOGGER.log(m_player.getName() + " on shopping but market is empty");
             return;
         }
-        startActionLog(LOGGER);
+        startActionLog();
 
         volumeCapacity = m_player.getSpaceShip().getVolumeCapacity();
         Commodities = m_player.getCurrentPlanet().getMarket().getCommodities();
@@ -89,7 +89,7 @@ public class BuyItem implements IAction
 
         m_cargos = chooseItem(commodities);
         update();
-        finishActionLog(LOGGER);
+        finishActionLog();
     }
 
     private List<Cargo> chooseItem(List<Commodity> commodities)

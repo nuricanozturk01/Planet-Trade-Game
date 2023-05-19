@@ -39,6 +39,8 @@ public class ChangeSpaceship implements IAction
         finishActionLog();
     }
 
+
+
     private void finishActionLog()
     {
         LOGGER.log("----------- CHANGE SPACESIP ACTION -----------");

@@ -44,6 +44,8 @@ public class SellSpaceship implements IAction
         finishActionLog();
     }
 
+
+
     private void sellSpaceship()
     {
         m_currentSpaceship.setIsSold(false);
