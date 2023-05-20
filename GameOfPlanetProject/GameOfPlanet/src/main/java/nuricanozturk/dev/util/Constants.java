@@ -9,6 +9,19 @@ public final class Constants
 {
 
 
+    // ############################## LIVING_CONDITIONS START ##############################
+    public static final double MIN_SPACESHIP_COST = 3_500D;
+    public static final double MAX_SPACESHIP_COST = 30_000D;
+    public static final double MIN_UNIT_FUEL_PRICE = 2D;
+    public static final double MAX_UNIT_FUEL_PRICE = 5D;
+    public static final double MIN_TURN_PARKING_PRICE = 2D;
+    public static final double MAX_TURN_PARKING_PRICE = 10D;
+    public static final double MIN_UNIT_BUY_PRICE = 150D;
+    public static final double MAX_UNIT_BUY_PRICE = 1_500D;
+
+    // ############################## LIVING_CONDITIONS END ##############################
+
+
     // ############################## LOGGER START ##############################
     public static final String LOGGER_FILE_NAME = "log.txt";
     // ############################## LOGGER END ##############################
@@ -23,6 +36,13 @@ public final class Constants
     // ############################## GALAXY END ##############################
 
 
+    // ############################## PLANET DISTANCE START ##############################
+
+    public static int MIN_DISTANCE_BETWEEN_PLANETS = 10;
+    public static int MAX_DISTANCE_BETWEEN_PLANETS = 100;
+    // ############################## PLANET DISTANCE END ##############################
+
+
     // ############################## BLACKHOLE START ##############################
     public static final LinkedList<String> BLACKHOLE_NAMES = new LinkedList<>(
             Arrays.asList("Sagittarius A*", "M87", "Cygnus X-1", "V404 Cygni", "GRO J1655-40", "NGC 1365", "NGC 1277",
@@ -34,7 +54,7 @@ public final class Constants
     // ############################## PLAYER START ##############################
     public static final int MIN_PLAYER = 2;
     public static final int MAX_PLAYER = 5;
-    public static final double PLAYER_INITIAL_MONEY = 1000_000D;
+    public static final double PLAYER_INITIAL_MONEY = 1_000_000D;
     // ############################## PLAYER END ##############################
 
 
@@ -42,14 +62,13 @@ public final class Constants
     public static final int MIN_SPACESHIP_COUNT = 10;
     public static final int MAX_SPACESHIP_COUNT = 30;
     public static final int DEFAULT_INIT_FUEL_CAPACITY = 500;
-    public static final int MIN_FUEL_CAPACITY = 1000;
-    public static final int MAX_FUEL_CAPACITY = 2000;
+    public static final int MIN_FUEL_CAPACITY = 10_000;
+    public static final int MAX_FUEL_CAPACITY = 50_000;
     public static final int MAX_SPEED = 1500;
     public static final int MIN_SPEED = 100;
     public static final int MIN_VOLUME = 500;
     public static final int MAX_VOLUME = 11_000;
-    public static final double MIN_SPACESHIP_COST = 3_500D;
-    public static final double MAX_SPACESHIP_COST = 50_000D;
+
     public static final LinkedList<String> SPACESHIP_NAMES = new LinkedList<>(
             asList("Apollo", "Discovery", "Enterprise", "Falcon", "Galaxy", "Hermes", "Infinity", "Jupiter",
                     "Nova", "Orion", "Pioneer", "Raptor", "Serenity", "Titan", "Voyager", "Zenith", "Aurora",
@@ -69,10 +88,6 @@ public final class Constants
 
     public static final int MAX_PLANET_SIZE = 10;
     public static final int MIN_PLANET_SIZE = 2;
-    public static final double MIN_UNIT_FUEL_PRICE = 5D;
-    public static final double MAX_UNIT_FUEL_PRICE = 50D;
-    public static final double MIN_TURN_PARKING_PRICE = 10D;
-    public static final double MAX_TURN_PARKING_PRICE = 30D;
     public static final LinkedList<String> PLANET_NAMES = new LinkedList<>(
             asList("Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune",
                     "Pluto", "Eris", "Haumea", "Makemake", "Ceres", "Orcus", "Quaoar", "Sedna", "Varuna",
@@ -89,10 +104,8 @@ public final class Constants
     public static final int MAX_UNIT_VOLUME = 15;
     public static final int MIN_CURRENT_SUPPLY_AMOUNT = 150;
     public static final int MAX_CURRENT_SUPPLY_AMOUNT = 300;
-    public static final double MIN_UNIT_BUY_PRICE = 150D;
-    public static final double MAX_UNIT_BUY_PRICE = 1500D;
-    public static final double MAX_DELAY_RATIO = 1.5D;
-    public static final double MIN_DELAY_RATIO = 0.5;
+    public static final double MAX_DECAY_RATIO = .7D;
+    public static final double MIN_DECAY_RATIO = .2D;
     public static final List<String> COMMODITY_NAME = asList("Lithium", "Titanium", "Platinum", "Gold",
             "Silver", "Helium-3", "Water", "Food", "Oxygen", "Hydrogen",
             "Carbon", "Iron", "Copper", "Nickel", "Aluminum", "Tungsten", "Palladium", "Rhodium", "Iridium",

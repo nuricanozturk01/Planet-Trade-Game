@@ -18,7 +18,6 @@ public class PlanetTradeGame implements Game
 {
     public static int PLAYER_COUNT;
     private final int m_turnCount;
-    private int i = 1;
     private PlanetTradeGameContext m_gameContext;
     private List<Player> m_players;
     private int m_currentTurn;
@@ -51,7 +50,6 @@ public class PlanetTradeGame implements Game
         // Each planet create own market and each market creates own commodities
         m_gameContext.init(players);
     }
-
 
     @Override
     public GameContext getContext()

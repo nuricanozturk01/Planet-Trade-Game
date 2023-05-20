@@ -9,10 +9,7 @@ import static nuricanozturk.dev.util.Util.LOGGER;
 
 public final class GalaxyFactory
 {
-
-    private GalaxyFactory()
-    {
-    }
+    private GalaxyFactory() {}
 
     public static Galaxy createGalaxy()
     {

@@ -1,4 +1,4 @@
-package nuricanozturk.dev.factory;
+package nuricanozturk.dev.util.exception;
 
 public class NotCreatedException extends RuntimeException
 {

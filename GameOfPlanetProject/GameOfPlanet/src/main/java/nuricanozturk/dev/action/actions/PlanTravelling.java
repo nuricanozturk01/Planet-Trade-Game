@@ -11,6 +11,7 @@ import project.gameengine.base.Player;
 import java.util.ArrayList;
 import java.util.List;
 
+import static nuricanozturk.dev.config.RandomConfig.getRandomInstance;
 import static nuricanozturk.dev.util.Util.LOGGER;
 
 /*
@@ -27,6 +28,7 @@ public class PlanTravelling implements IAction
     private double currentFuel;
     private Planet m_currentPlanet;
     private List<Planet> m_validPlanetsForTravelling;
+    private GameContext GameContext;
 
     public PlanTravelling()
     {
@@ -36,6 +38,7 @@ public class PlanTravelling implements IAction
     @Override
     public void apply(Player player, GameContext context)
     {
+        GameContext = context;
         m_player = (PlayerImpl) player;
         m_currentPlanet = m_player.getCurrentPlanet();
         m_planets = ((PlanetTradeGameContext) context).getPlanets();
@@ -53,7 +56,8 @@ public class PlanTravelling implements IAction
 
     private void travel()
     {
-        var targetPlanet = m_validPlanetsForTravelling.get(0);
+        var targetPlanet = m_validPlanetsForTravelling.get(
+                getRandomInstance().nextInt(0, m_validPlanetsForTravelling.size()));
 
         var necessaryFuel = m_spaceShip.getFuelUsagePerLightYear() * m_currentPlanet.getDistanceMap().get(targetPlanet);
 
@@ -79,7 +83,13 @@ public class PlanTravelling implements IAction
 
             if (isFuelEnough(targetPlanetDistance))
                 m_validPlanetsForTravelling.add(planet);
+
         }
+        /*IntStream.range(0, currentPlanet.getDistanceMap().size() + 1)
+                .mapToObj(i -> m_planets.get(i))
+                .filter(planet -> !planet.getName().equals(currentPlanet.getName()))
+                .filter(planet -> isFuelEnough(currentPlanet.getDistanceMap().get(planet)))
+                .forEach(m_validPlanetsForTravelling::add);*/
     }
 
     private boolean isFuelEnough(int targetPlanetDistance)
@@ -88,6 +98,7 @@ public class PlanTravelling implements IAction
 
         var usage = m_spaceShip.getFuelUsagePerLightYear();
 
+        System.out.println("Distance: "+ targetPlanetDistance + " Usage: " + usage +" NECESSARY FUEL: " + targetPlanetDistance * usage + " AND CURRENT is: " + currentFuel);
         return targetPlanetDistance * usage <= currentFuel;
     }
 

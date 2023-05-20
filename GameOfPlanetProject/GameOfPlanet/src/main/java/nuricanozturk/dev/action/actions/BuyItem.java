@@ -3,9 +3,7 @@ package nuricanozturk.dev.action.actions;
 import nuricanozturk.dev.action.IAction;
 import nuricanozturk.dev.entity.Cargo;
 import nuricanozturk.dev.entity.Commodity;
-import nuricanozturk.dev.entity.PlanetTradeGameContext;
 import nuricanozturk.dev.entity.PlayerImpl;
-import nuricanozturk.dev.util.logger.ILogger;
 import project.gameengine.base.GameContext;
 import project.gameengine.base.Player;
 
@@ -66,12 +64,13 @@ public class BuyItem implements IAction
         m_player = (PlayerImpl) player;
         playerMoney = m_player.getCurrentMoney();
         initialMoney = m_player.getCurrentMoney();
+
         if (m_player.getCurrentMoney() <= MIN_UNIT_BUY_PRICE)
         {
             LOGGER.log(m_player.getName() + " on shopping but who not have enough money!");
             return;
         }
-        else if (m_player.getCurrentPlanet().getMarket().getCommodities().isEmpty())
+         if (m_player.getCurrentPlanet().getMarket().getCommodities().isEmpty())
         {
             LOGGER.log(m_player.getName() + " on shopping but market is empty");
             return;
@@ -157,7 +156,7 @@ public class BuyItem implements IAction
             m_cargos.stream().map(Cargo::toString).forEach(sb::append);
             sb.append("r---------------SHOPPING [").append(m_player.getName()).append("]---------------\n");
         }
-        //sb.append(m_player.getName()).append(" ").append(getClass().getSimpleName());
+
         return sb.toString();
     }
 }
