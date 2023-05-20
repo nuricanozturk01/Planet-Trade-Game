@@ -33,6 +33,19 @@ public final class ExceptionUtil
     }
 
 
+    public static <T extends Exception> void handleFileException(String msg, IRunnable actionRunnable)
+    {
+        try
+        {
+            actionRunnable.run();
+
+        } catch (Exception e)
+        {
+            throw new RuntimeException(msg);
+        }
+    }
+
+
     public static <T, R extends RuntimeException> T handleException(Supplier<T> supplier, Class<R> cls, String msg)
     {
         T val = null;
