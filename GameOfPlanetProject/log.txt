@@ -28,17 +28,24 @@ Galaxy Cartwheel is created...
 
 -----Planets are creating...
 
-Commodity{m_name='Lithium', m_unitVolume=6, m_decayRatio=0.3, m_currentSupplyAmount=4, m_unitBuyPrice=3382.54, m_unitSellPrice=3282.54} is created...
-Commodity{m_name='Titanium', m_unitVolume=5, m_decayRatio=0.49, m_currentSupplyAmount=3, m_unitBuyPrice=3992.04, m_unitSellPrice=3892.04} is created...
-Commodity{m_name='Platinum', m_unitVolume=5, m_decayRatio=0.29, m_currentSupplyAmount=5, m_unitBuyPrice=4227.43, m_unitSellPrice=4127.43} is created...
-Commodity{m_name='Gold', m_unitVolume=6, m_decayRatio=0.23, m_currentSupplyAmount=5, m_unitBuyPrice=4730.18, m_unitSellPrice=4630.18} is created...
-Commodity{m_name='Silver', m_unitVolume=8, m_decayRatio=0.24, m_currentSupplyAmount=4, m_unitBuyPrice=5039.04, m_unitSellPrice=4939.04} is created...
-Commodity{m_name='Helium-3', m_unitVolume=6, m_decayRatio=0.23, m_currentSupplyAmount=3, m_unitBuyPrice=2071.86, m_unitSellPrice=1971.8600000000001} is created...
-Commodity{m_name='Water', m_unitVolume=6, m_decayRatio=0.64, m_currentSupplyAmount=3, m_unitBuyPrice=2536.6, m_unitSellPrice=2436.6} is created...
-Commodity{m_name='Food', m_unitVolume=9, m_decayRatio=0.39, m_currentSupplyAmount=3, m_unitBuyPrice=5048.35, m_unitSellPrice=4948.35} is created...
-Commodity{m_name='Oxygen', m_unitVolume=5, m_decayRatio=0.65, m_currentSupplyAmount=5, m_unitBuyPrice=1905.84, m_unitSellPrice=1805.84} is created...
-Commodity{m_name='Hydrogen', m_unitVolume=9, m_decayRatio=0.45, m_currentSupplyAmount=5, m_unitBuyPrice=2862.11, m_unitSellPrice=2762.11} is created...
-Commodity{m_name='Carbon', m_unitVolume=9, m_decayRatio=0.66, m_currentSupplyAmount=3, m_unitBuyPrice=5025.05, m_unitSellPrice=4925.05} is created...
+Commodity{m_name='Lithium', m_unitVolume=7, m_decayRatio=0.49, m_currentSupplyAmount=3, m_unitBuyPrice=4387.14, m_unitSellPrice=4287.14} is created...
+Commodity{m_name='Titanium', m_unitVolume=8, m_decayRatio=0.35, m_currentSupplyAmount=5, m_unitBuyPrice=3847.74, m_unitSellPrice=3747.74} is created...
+Commodity{m_name='Platinum', m_unitVolume=6, m_decayRatio=0.62, m_currentSupplyAmount=4, m_unitBuyPrice=1907.69, m_unitSellPrice=1807.69} is created...
+Commodity{m_name='Gold', m_unitVolume=9, m_decayRatio=0.63, m_currentSupplyAmount=3, m_unitBuyPrice=2517.97, m_unitSellPrice=2417.97} is created...
+Commodity{m_name='Silver', m_unitVolume=7, m_decayRatio=0.46, m_currentSupplyAmount=3, m_unitBuyPrice=2675.96, m_unitSellPrice=2575.96} is created...
+Commodity{m_name='Helium-3', m_unitVolume=8, m_decayRatio=0.26, m_currentSupplyAmount=4, m_unitBuyPrice=2845.35, m_unitSellPrice=2745.35} is created...
+Commodity{m_name='Water', m_unitVolume=8, m_decayRatio=0.38, m_currentSupplyAmount=4, m_unitBuyPrice=1580.95, m_unitSellPrice=1480.95} is created...
+Commodity{m_name='Food', m_unitVolume=8, m_decayRatio=0.28, m_currentSupplyAmount=5, m_unitBuyPrice=2864.88, m_unitSellPrice=2764.88} is created...
+Commodity{m_name='Oxygen', m_unitVolume=6, m_decayRatio=0.47, m_currentSupplyAmount=4, m_unitBuyPrice=5279.88, m_unitSellPrice=5179.88} is created...
+Commodity{m_name='Hydrogen', m_unitVolume=8, m_decayRatio=0.65, m_currentSupplyAmount=4, m_unitBuyPrice=1587.21, m_unitSellPrice=1487.21} is created...
+Commodity{m_name='Carbon', m_unitVolume=5, m_decayRatio=0.67, m_currentSupplyAmount=3, m_unitBuyPrice=3749.19, m_unitSellPrice=3649.19} is created...
+Commodity{m_name='Iron', m_unitVolume=9, m_decayRatio=0.27, m_currentSupplyAmount=5, m_unitBuyPrice=3426.06, m_unitSellPrice=3326.06} is created...
+Commodity{m_name='Copper', m_unitVolume=7, m_decayRatio=0.3, m_currentSupplyAmount=3, m_unitBuyPrice=2186.73, m_unitSellPrice=2086.73} is created...
+Commodity{m_name='Nickel', m_unitVolume=6, m_decayRatio=0.52, m_currentSupplyAmount=4, m_unitBuyPrice=3609.25, m_unitSellPrice=3509.25} is created...
+Commodity{m_name='Aluminum', m_unitVolume=5, m_decayRatio=0.62, m_currentSupplyAmount=5, m_unitBuyPrice=5384.08, m_unitSellPrice=5284.08} is created...
+Commodity{m_name='Tungsten', m_unitVolume=9, m_decayRatio=0.33, m_currentSupplyAmount=5, m_unitBuyPrice=4379.21, m_unitSellPrice=4279.21} is created...
+Commodity{m_name='Palladium', m_unitVolume=5, m_decayRatio=0.42, m_currentSupplyAmount=3, m_unitBuyPrice=2554.84, m_unitSellPrice=2454.84} is created...
+Commodity{m_name='Rhodium', m_unitVolume=7, m_decayRatio=0.6, m_currentSupplyAmount=5, m_unitBuyPrice=4652.31, m_unitSellPrice=4552.31} is created...
 
 
 
@@ -46,22 +53,25 @@ Commodity{m_name='Carbon', m_unitVolume=9, m_decayRatio=0.66, m_currentSupplyAmo
 
 Planet Tyche is created...
 
-Commodity{m_name='Lithium', m_unitVolume=5, m_decayRatio=0.62, m_currentSupplyAmount=5, m_unitBuyPrice=5106.67, m_unitSellPrice=5006.67} is created...
-Commodity{m_name='Titanium', m_unitVolume=8, m_decayRatio=0.49, m_currentSupplyAmount=5, m_unitBuyPrice=2704.12, m_unitSellPrice=2604.12} is created...
-Commodity{m_name='Platinum', m_unitVolume=5, m_decayRatio=0.66, m_currentSupplyAmount=4, m_unitBuyPrice=5309.24, m_unitSellPrice=5209.24} is created...
-Commodity{m_name='Gold', m_unitVolume=6, m_decayRatio=0.47, m_currentSupplyAmount=4, m_unitBuyPrice=3924.39, m_unitSellPrice=3824.39} is created...
-Commodity{m_name='Silver', m_unitVolume=7, m_decayRatio=0.2, m_currentSupplyAmount=4, m_unitBuyPrice=2885.46, m_unitSellPrice=2785.46} is created...
-Commodity{m_name='Helium-3', m_unitVolume=5, m_decayRatio=0.35, m_currentSupplyAmount=3, m_unitBuyPrice=2830.16, m_unitSellPrice=2730.16} is created...
-Commodity{m_name='Water', m_unitVolume=7, m_decayRatio=0.48, m_currentSupplyAmount=4, m_unitBuyPrice=4636.34, m_unitSellPrice=4536.34} is created...
-Commodity{m_name='Food', m_unitVolume=5, m_decayRatio=0.65, m_currentSupplyAmount=4, m_unitBuyPrice=1831.74, m_unitSellPrice=1731.74} is created...
-Commodity{m_name='Oxygen', m_unitVolume=8, m_decayRatio=0.64, m_currentSupplyAmount=4, m_unitBuyPrice=4105.09, m_unitSellPrice=4005.09} is created...
-Commodity{m_name='Hydrogen', m_unitVolume=9, m_decayRatio=0.69, m_currentSupplyAmount=4, m_unitBuyPrice=4437.79, m_unitSellPrice=4337.79} is created...
-Commodity{m_name='Carbon', m_unitVolume=8, m_decayRatio=0.31, m_currentSupplyAmount=4, m_unitBuyPrice=4994.82, m_unitSellPrice=4894.82} is created...
-Commodity{m_name='Iron', m_unitVolume=9, m_decayRatio=0.62, m_currentSupplyAmount=4, m_unitBuyPrice=5385.83, m_unitSellPrice=5285.83} is created...
-Commodity{m_name='Copper', m_unitVolume=6, m_decayRatio=0.31, m_currentSupplyAmount=5, m_unitBuyPrice=1512.63, m_unitSellPrice=1412.63} is created...
-Commodity{m_name='Nickel', m_unitVolume=9, m_decayRatio=0.53, m_currentSupplyAmount=3, m_unitBuyPrice=4335.33, m_unitSellPrice=4235.33} is created...
-Commodity{m_name='Aluminum', m_unitVolume=8, m_decayRatio=0.58, m_currentSupplyAmount=4, m_unitBuyPrice=1702.66, m_unitSellPrice=1602.66} is created...
-Commodity{m_name='Tungsten', m_unitVolume=5, m_decayRatio=0.36, m_currentSupplyAmount=3, m_unitBuyPrice=4474.19, m_unitSellPrice=4374.19} is created...
+Commodity{m_name='Lithium', m_unitVolume=6, m_decayRatio=0.59, m_currentSupplyAmount=3, m_unitBuyPrice=3319.0, m_unitSellPrice=3219.0} is created...
+Commodity{m_name='Titanium', m_unitVolume=5, m_decayRatio=0.44, m_currentSupplyAmount=4, m_unitBuyPrice=4607.55, m_unitSellPrice=4507.55} is created...
+Commodity{m_name='Platinum', m_unitVolume=5, m_decayRatio=0.69, m_currentSupplyAmount=3, m_unitBuyPrice=4257.77, m_unitSellPrice=4157.77} is created...
+Commodity{m_name='Gold', m_unitVolume=7, m_decayRatio=0.31, m_currentSupplyAmount=5, m_unitBuyPrice=5003.93, m_unitSellPrice=4903.93} is created...
+Commodity{m_name='Silver', m_unitVolume=7, m_decayRatio=0.2, m_currentSupplyAmount=4, m_unitBuyPrice=5057.71, m_unitSellPrice=4957.71} is created...
+Commodity{m_name='Helium-3', m_unitVolume=5, m_decayRatio=0.34, m_currentSupplyAmount=5, m_unitBuyPrice=2214.77, m_unitSellPrice=2114.77} is created...
+Commodity{m_name='Water', m_unitVolume=8, m_decayRatio=0.57, m_currentSupplyAmount=4, m_unitBuyPrice=2813.69, m_unitSellPrice=2713.69} is created...
+Commodity{m_name='Food', m_unitVolume=6, m_decayRatio=0.53, m_currentSupplyAmount=5, m_unitBuyPrice=4383.04, m_unitSellPrice=4283.04} is created...
+Commodity{m_name='Oxygen', m_unitVolume=6, m_decayRatio=0.39, m_currentSupplyAmount=3, m_unitBuyPrice=1981.47, m_unitSellPrice=1881.47} is created...
+Commodity{m_name='Hydrogen', m_unitVolume=8, m_decayRatio=0.54, m_currentSupplyAmount=3, m_unitBuyPrice=3254.1, m_unitSellPrice=3154.1} is created...
+Commodity{m_name='Carbon', m_unitVolume=7, m_decayRatio=0.28, m_currentSupplyAmount=3, m_unitBuyPrice=3624.94, m_unitSellPrice=3524.94} is created...
+Commodity{m_name='Iron', m_unitVolume=7, m_decayRatio=0.27, m_currentSupplyAmount=3, m_unitBuyPrice=5074.1, m_unitSellPrice=4974.1} is created...
+Commodity{m_name='Copper', m_unitVolume=5, m_decayRatio=0.6, m_currentSupplyAmount=4, m_unitBuyPrice=2227.29, m_unitSellPrice=2127.29} is created...
+Commodity{m_name='Nickel', m_unitVolume=5, m_decayRatio=0.25, m_currentSupplyAmount=3, m_unitBuyPrice=4301.22, m_unitSellPrice=4201.22} is created...
+Commodity{m_name='Aluminum', m_unitVolume=5, m_decayRatio=0.34, m_currentSupplyAmount=3, m_unitBuyPrice=4429.96, m_unitSellPrice=4329.96} is created...
+Commodity{m_name='Tungsten', m_unitVolume=8, m_decayRatio=0.37, m_currentSupplyAmount=3, m_unitBuyPrice=3268.67, m_unitSellPrice=3168.67} is created...
+Commodity{m_name='Palladium', m_unitVolume=5, m_decayRatio=0.44, m_currentSupplyAmount=4, m_unitBuyPrice=1596.46, m_unitSellPrice=1496.46} is created...
+Commodity{m_name='Rhodium', m_unitVolume=8, m_decayRatio=0.37, m_currentSupplyAmount=5, m_unitBuyPrice=4143.36, m_unitSellPrice=4043.3599999999997} is created...
+Commodity{m_name='Iridium', m_unitVolume=6, m_decayRatio=0.57, m_currentSupplyAmount=4, m_unitBuyPrice=1906.06, m_unitSellPrice=1806.06} is created...
 
 
 
@@ -69,20 +79,16 @@ Commodity{m_name='Tungsten', m_unitVolume=5, m_decayRatio=0.36, m_currentSupplyA
 
 Planet Varda is created...
 
-Commodity{m_name='Lithium', m_unitVolume=5, m_decayRatio=0.41, m_currentSupplyAmount=4, m_unitBuyPrice=1678.93, m_unitSellPrice=1578.93} is created...
-Commodity{m_name='Titanium', m_unitVolume=6, m_decayRatio=0.41, m_currentSupplyAmount=5, m_unitBuyPrice=3747.13, m_unitSellPrice=3647.13} is created...
-Commodity{m_name='Platinum', m_unitVolume=7, m_decayRatio=0.55, m_currentSupplyAmount=3, m_unitBuyPrice=3873.01, m_unitSellPrice=3773.01} is created...
-Commodity{m_name='Gold', m_unitVolume=8, m_decayRatio=0.4, m_currentSupplyAmount=4, m_unitBuyPrice=4970.68, m_unitSellPrice=4870.68} is created...
-Commodity{m_name='Silver', m_unitVolume=7, m_decayRatio=0.55, m_currentSupplyAmount=3, m_unitBuyPrice=2198.49, m_unitSellPrice=2098.49} is created...
-Commodity{m_name='Helium-3', m_unitVolume=5, m_decayRatio=0.3, m_currentSupplyAmount=3, m_unitBuyPrice=4152.94, m_unitSellPrice=4052.9399999999996} is created...
-Commodity{m_name='Water', m_unitVolume=5, m_decayRatio=0.28, m_currentSupplyAmount=3, m_unitBuyPrice=3689.54, m_unitSellPrice=3589.54} is created...
-Commodity{m_name='Food', m_unitVolume=8, m_decayRatio=0.43, m_currentSupplyAmount=5, m_unitBuyPrice=5433.84, m_unitSellPrice=5333.84} is created...
-Commodity{m_name='Oxygen', m_unitVolume=6, m_decayRatio=0.38, m_currentSupplyAmount=5, m_unitBuyPrice=1659.64, m_unitSellPrice=1559.64} is created...
-Commodity{m_name='Hydrogen', m_unitVolume=7, m_decayRatio=0.68, m_currentSupplyAmount=3, m_unitBuyPrice=4159.5, m_unitSellPrice=4059.5} is created...
-Commodity{m_name='Carbon', m_unitVolume=5, m_decayRatio=0.3, m_currentSupplyAmount=4, m_unitBuyPrice=2941.68, m_unitSellPrice=2841.68} is created...
-Commodity{m_name='Iron', m_unitVolume=9, m_decayRatio=0.42, m_currentSupplyAmount=4, m_unitBuyPrice=2901.97, m_unitSellPrice=2801.97} is created...
-Commodity{m_name='Copper', m_unitVolume=8, m_decayRatio=0.36, m_currentSupplyAmount=3, m_unitBuyPrice=3592.58, m_unitSellPrice=3492.58} is created...
-Commodity{m_name='Nickel', m_unitVolume=9, m_decayRatio=0.62, m_currentSupplyAmount=4, m_unitBuyPrice=2117.41, m_unitSellPrice=2017.4099999999999} is created...
+Commodity{m_name='Lithium', m_unitVolume=8, m_decayRatio=0.27, m_currentSupplyAmount=4, m_unitBuyPrice=4822.37, m_unitSellPrice=4722.37} is created...
+Commodity{m_name='Titanium', m_unitVolume=8, m_decayRatio=0.23, m_currentSupplyAmount=4, m_unitBuyPrice=3517.52, m_unitSellPrice=3417.52} is created...
+Commodity{m_name='Platinum', m_unitVolume=9, m_decayRatio=0.39, m_currentSupplyAmount=5, m_unitBuyPrice=3422.94, m_unitSellPrice=3322.94} is created...
+Commodity{m_name='Gold', m_unitVolume=7, m_decayRatio=0.56, m_currentSupplyAmount=3, m_unitBuyPrice=4390.04, m_unitSellPrice=4290.04} is created...
+Commodity{m_name='Silver', m_unitVolume=9, m_decayRatio=0.37, m_currentSupplyAmount=3, m_unitBuyPrice=4759.32, m_unitSellPrice=4659.32} is created...
+Commodity{m_name='Helium-3', m_unitVolume=9, m_decayRatio=0.39, m_currentSupplyAmount=4, m_unitBuyPrice=5071.06, m_unitSellPrice=4971.06} is created...
+Commodity{m_name='Water', m_unitVolume=6, m_decayRatio=0.24, m_currentSupplyAmount=3, m_unitBuyPrice=3367.3, m_unitSellPrice=3267.3} is created...
+Commodity{m_name='Food', m_unitVolume=9, m_decayRatio=0.63, m_currentSupplyAmount=3, m_unitBuyPrice=3035.71, m_unitSellPrice=2935.71} is created...
+Commodity{m_name='Oxygen', m_unitVolume=5, m_decayRatio=0.27, m_currentSupplyAmount=3, m_unitBuyPrice=3288.92, m_unitSellPrice=3188.92} is created...
+Commodity{m_name='Hydrogen', m_unitVolume=8, m_decayRatio=0.5, m_currentSupplyAmount=4, m_unitBuyPrice=1706.45, m_unitSellPrice=1606.45} is created...
 
 
 
@@ -90,170 +96,37 @@ Commodity{m_name='Nickel', m_unitVolume=9, m_decayRatio=0.62, m_currentSupplyAmo
 
 Planet Gonggong is created...
 
-Commodity{m_name='Lithium', m_unitVolume=5, m_decayRatio=0.57, m_currentSupplyAmount=3, m_unitBuyPrice=5138.39, m_unitSellPrice=5038.39} is created...
-Commodity{m_name='Titanium', m_unitVolume=7, m_decayRatio=0.37, m_currentSupplyAmount=4, m_unitBuyPrice=1844.16, m_unitSellPrice=1744.16} is created...
-Commodity{m_name='Platinum', m_unitVolume=8, m_decayRatio=0.55, m_currentSupplyAmount=5, m_unitBuyPrice=4299.16, m_unitSellPrice=4199.16} is created...
-Commodity{m_name='Gold', m_unitVolume=9, m_decayRatio=0.4, m_currentSupplyAmount=4, m_unitBuyPrice=4954.01, m_unitSellPrice=4854.01} is created...
-Commodity{m_name='Silver', m_unitVolume=8, m_decayRatio=0.56, m_currentSupplyAmount=4, m_unitBuyPrice=2271.01, m_unitSellPrice=2171.01} is created...
-Commodity{m_name='Helium-3', m_unitVolume=6, m_decayRatio=0.47, m_currentSupplyAmount=4, m_unitBuyPrice=2086.25, m_unitSellPrice=1986.25} is created...
-Commodity{m_name='Water', m_unitVolume=6, m_decayRatio=0.28, m_currentSupplyAmount=3, m_unitBuyPrice=4991.18, m_unitSellPrice=4891.18} is created...
-Commodity{m_name='Food', m_unitVolume=5, m_decayRatio=0.65, m_currentSupplyAmount=4, m_unitBuyPrice=5052.09, m_unitSellPrice=4952.09} is created...
-Commodity{m_name='Oxygen', m_unitVolume=7, m_decayRatio=0.32, m_currentSupplyAmount=4, m_unitBuyPrice=2019.16, m_unitSellPrice=1919.16} is created...
-Commodity{m_name='Hydrogen', m_unitVolume=5, m_decayRatio=0.61, m_currentSupplyAmount=3, m_unitBuyPrice=2477.47, m_unitSellPrice=2377.47} is created...
-Commodity{m_name='Carbon', m_unitVolume=7, m_decayRatio=0.64, m_currentSupplyAmount=5, m_unitBuyPrice=4324.81, m_unitSellPrice=4224.81} is created...
-Commodity{m_name='Iron', m_unitVolume=6, m_decayRatio=0.32, m_currentSupplyAmount=5, m_unitBuyPrice=3506.98, m_unitSellPrice=3406.98} is created...
-Commodity{m_name='Copper', m_unitVolume=8, m_decayRatio=0.22, m_currentSupplyAmount=3, m_unitBuyPrice=3302.45, m_unitSellPrice=3202.45} is created...
-
-
-
----------Market Nebula Shop is created...
-
-Planet Salacia is created...
-
-Commodity{m_name='Lithium', m_unitVolume=5, m_decayRatio=0.45, m_currentSupplyAmount=5, m_unitBuyPrice=4256.11, m_unitSellPrice=4156.11} is created...
-Commodity{m_name='Titanium', m_unitVolume=6, m_decayRatio=0.28, m_currentSupplyAmount=5, m_unitBuyPrice=2964.0, m_unitSellPrice=2864.0} is created...
-Commodity{m_name='Platinum', m_unitVolume=6, m_decayRatio=0.55, m_currentSupplyAmount=3, m_unitBuyPrice=1732.64, m_unitSellPrice=1632.64} is created...
-Commodity{m_name='Gold', m_unitVolume=9, m_decayRatio=0.3, m_currentSupplyAmount=5, m_unitBuyPrice=5347.96, m_unitSellPrice=5247.96} is created...
-Commodity{m_name='Silver', m_unitVolume=8, m_decayRatio=0.68, m_currentSupplyAmount=5, m_unitBuyPrice=3776.87, m_unitSellPrice=3676.87} is created...
-Commodity{m_name='Helium-3', m_unitVolume=6, m_decayRatio=0.24, m_currentSupplyAmount=3, m_unitBuyPrice=2169.03, m_unitSellPrice=2069.03} is created...
-Commodity{m_name='Water', m_unitVolume=5, m_decayRatio=0.7, m_currentSupplyAmount=5, m_unitBuyPrice=2653.91, m_unitSellPrice=2553.91} is created...
-Commodity{m_name='Food', m_unitVolume=7, m_decayRatio=0.4, m_currentSupplyAmount=3, m_unitBuyPrice=3345.78, m_unitSellPrice=3245.78} is created...
-Commodity{m_name='Oxygen', m_unitVolume=5, m_decayRatio=0.59, m_currentSupplyAmount=4, m_unitBuyPrice=3705.83, m_unitSellPrice=3605.83} is created...
-Commodity{m_name='Hydrogen', m_unitVolume=9, m_decayRatio=0.55, m_currentSupplyAmount=3, m_unitBuyPrice=4225.18, m_unitSellPrice=4125.18} is created...
-Commodity{m_name='Carbon', m_unitVolume=6, m_decayRatio=0.37, m_currentSupplyAmount=3, m_unitBuyPrice=4319.25, m_unitSellPrice=4219.25} is created...
-Commodity{m_name='Iron', m_unitVolume=8, m_decayRatio=0.4, m_currentSupplyAmount=5, m_unitBuyPrice=2422.55, m_unitSellPrice=2322.55} is created...
-Commodity{m_name='Copper', m_unitVolume=5, m_decayRatio=0.63, m_currentSupplyAmount=3, m_unitBuyPrice=5287.95, m_unitSellPrice=5187.95} is created...
-Commodity{m_name='Nickel', m_unitVolume=9, m_decayRatio=0.54, m_currentSupplyAmount=4, m_unitBuyPrice=3017.63, m_unitSellPrice=2917.63} is created...
-Commodity{m_name='Aluminum', m_unitVolume=9, m_decayRatio=0.29, m_currentSupplyAmount=3, m_unitBuyPrice=4108.4, m_unitSellPrice=4008.3999999999996} is created...
-Commodity{m_name='Tungsten', m_unitVolume=6, m_decayRatio=0.55, m_currentSupplyAmount=3, m_unitBuyPrice=1740.29, m_unitSellPrice=1640.29} is created...
-
-
-
----------Market Pluto Trade is created...
-
-Planet Huya is created...
-
-Commodity{m_name='Lithium', m_unitVolume=8, m_decayRatio=0.31, m_currentSupplyAmount=3, m_unitBuyPrice=3551.08, m_unitSellPrice=3451.08} is created...
-Commodity{m_name='Titanium', m_unitVolume=6, m_decayRatio=0.67, m_currentSupplyAmount=4, m_unitBuyPrice=3128.79, m_unitSellPrice=3028.79} is created...
-Commodity{m_name='Platinum', m_unitVolume=8, m_decayRatio=0.4, m_currentSupplyAmount=4, m_unitBuyPrice=2853.31, m_unitSellPrice=2753.31} is created...
-Commodity{m_name='Gold', m_unitVolume=8, m_decayRatio=0.41, m_currentSupplyAmount=4, m_unitBuyPrice=3985.73, m_unitSellPrice=3885.73} is created...
-Commodity{m_name='Silver', m_unitVolume=9, m_decayRatio=0.4, m_currentSupplyAmount=3, m_unitBuyPrice=5381.75, m_unitSellPrice=5281.75} is created...
-Commodity{m_name='Helium-3', m_unitVolume=9, m_decayRatio=0.44, m_currentSupplyAmount=5, m_unitBuyPrice=1755.2, m_unitSellPrice=1655.2} is created...
-Commodity{m_name='Water', m_unitVolume=5, m_decayRatio=0.2, m_currentSupplyAmount=5, m_unitBuyPrice=1779.09, m_unitSellPrice=1679.09} is created...
-Commodity{m_name='Food', m_unitVolume=7, m_decayRatio=0.47, m_currentSupplyAmount=4, m_unitBuyPrice=1850.31, m_unitSellPrice=1750.31} is created...
-Commodity{m_name='Oxygen', m_unitVolume=7, m_decayRatio=0.26, m_currentSupplyAmount=3, m_unitBuyPrice=4585.12, m_unitSellPrice=4485.12} is created...
-Commodity{m_name='Hydrogen', m_unitVolume=5, m_decayRatio=0.41, m_currentSupplyAmount=4, m_unitBuyPrice=4855.01, m_unitSellPrice=4755.01} is created...
-Commodity{m_name='Carbon', m_unitVolume=6, m_decayRatio=0.26, m_currentSupplyAmount=5, m_unitBuyPrice=4490.07, m_unitSellPrice=4390.07} is created...
-Commodity{m_name='Iron', m_unitVolume=5, m_decayRatio=0.28, m_currentSupplyAmount=5, m_unitBuyPrice=2374.28, m_unitSellPrice=2274.28} is created...
-
-
-
----------Market Neptune Mart is created...
-
-Planet Nessus is created...
-
-Commodity{m_name='Lithium', m_unitVolume=9, m_decayRatio=0.25, m_currentSupplyAmount=5, m_unitBuyPrice=4388.88, m_unitSellPrice=4288.88} is created...
-Commodity{m_name='Titanium', m_unitVolume=5, m_decayRatio=0.64, m_currentSupplyAmount=4, m_unitBuyPrice=2984.44, m_unitSellPrice=2884.44} is created...
-Commodity{m_name='Platinum', m_unitVolume=7, m_decayRatio=0.3, m_currentSupplyAmount=4, m_unitBuyPrice=4630.52, m_unitSellPrice=4530.52} is created...
-Commodity{m_name='Gold', m_unitVolume=7, m_decayRatio=0.7, m_currentSupplyAmount=3, m_unitBuyPrice=2907.05, m_unitSellPrice=2807.05} is created...
-Commodity{m_name='Silver', m_unitVolume=9, m_decayRatio=0.35, m_currentSupplyAmount=3, m_unitBuyPrice=3460.74, m_unitSellPrice=3360.74} is created...
-Commodity{m_name='Helium-3', m_unitVolume=9, m_decayRatio=0.64, m_currentSupplyAmount=5, m_unitBuyPrice=3422.7, m_unitSellPrice=3322.7} is created...
-Commodity{m_name='Water', m_unitVolume=6, m_decayRatio=0.69, m_currentSupplyAmount=5, m_unitBuyPrice=5224.35, m_unitSellPrice=5124.35} is created...
-Commodity{m_name='Food', m_unitVolume=5, m_decayRatio=0.39, m_currentSupplyAmount=4, m_unitBuyPrice=3717.73, m_unitSellPrice=3617.73} is created...
-Commodity{m_name='Oxygen', m_unitVolume=5, m_decayRatio=0.3, m_currentSupplyAmount=4, m_unitBuyPrice=2728.53, m_unitSellPrice=2628.53} is created...
-Commodity{m_name='Hydrogen', m_unitVolume=7, m_decayRatio=0.38, m_currentSupplyAmount=4, m_unitBuyPrice=2570.5, m_unitSellPrice=2470.5} is created...
-Commodity{m_name='Carbon', m_unitVolume=6, m_decayRatio=0.69, m_currentSupplyAmount=3, m_unitBuyPrice=4329.85, m_unitSellPrice=4229.85} is created...
-Commodity{m_name='Iron', m_unitVolume=8, m_decayRatio=0.37, m_currentSupplyAmount=5, m_unitBuyPrice=4837.69, m_unitSellPrice=4737.69} is created...
-
-
-
----------Market Uranus Bazaar is created...
-
-Planet Chaos is created...
-
-Commodity{m_name='Lithium', m_unitVolume=6, m_decayRatio=0.38, m_currentSupplyAmount=4, m_unitBuyPrice=3173.42, m_unitSellPrice=3073.42} is created...
-Commodity{m_name='Titanium', m_unitVolume=6, m_decayRatio=0.58, m_currentSupplyAmount=4, m_unitBuyPrice=3022.43, m_unitSellPrice=2922.43} is created...
-Commodity{m_name='Platinum', m_unitVolume=5, m_decayRatio=0.32, m_currentSupplyAmount=4, m_unitBuyPrice=3061.5, m_unitSellPrice=2961.5} is created...
-Commodity{m_name='Gold', m_unitVolume=6, m_decayRatio=0.38, m_currentSupplyAmount=3, m_unitBuyPrice=3359.17, m_unitSellPrice=3259.17} is created...
-Commodity{m_name='Silver', m_unitVolume=9, m_decayRatio=0.48, m_currentSupplyAmount=3, m_unitBuyPrice=5109.79, m_unitSellPrice=5009.79} is created...
-Commodity{m_name='Helium-3', m_unitVolume=6, m_decayRatio=0.48, m_currentSupplyAmount=3, m_unitBuyPrice=3338.71, m_unitSellPrice=3238.71} is created...
-Commodity{m_name='Water', m_unitVolume=8, m_decayRatio=0.45, m_currentSupplyAmount=3, m_unitBuyPrice=1854.42, m_unitSellPrice=1754.42} is created...
-Commodity{m_name='Food', m_unitVolume=8, m_decayRatio=0.31, m_currentSupplyAmount=4, m_unitBuyPrice=5463.02, m_unitSellPrice=5363.02} is created...
-Commodity{m_name='Oxygen', m_unitVolume=5, m_decayRatio=0.7, m_currentSupplyAmount=5, m_unitBuyPrice=3063.62, m_unitSellPrice=2963.62} is created...
-Commodity{m_name='Hydrogen', m_unitVolume=7, m_decayRatio=0.28, m_currentSupplyAmount=5, m_unitBuyPrice=2457.4, m_unitSellPrice=2357.4} is created...
-Commodity{m_name='Carbon', m_unitVolume=9, m_decayRatio=0.5, m_currentSupplyAmount=3, m_unitBuyPrice=1731.07, m_unitSellPrice=1631.07} is created...
-
-
-
----------Market Saturn Market is created...
-
-Planet Ixion is created...
-
-Commodity{m_name='Lithium', m_unitVolume=8, m_decayRatio=0.56, m_currentSupplyAmount=5, m_unitBuyPrice=2044.9, m_unitSellPrice=1944.9} is created...
-Commodity{m_name='Titanium', m_unitVolume=6, m_decayRatio=0.69, m_currentSupplyAmount=5, m_unitBuyPrice=1735.68, m_unitSellPrice=1635.68} is created...
-Commodity{m_name='Platinum', m_unitVolume=6, m_decayRatio=0.6, m_currentSupplyAmount=5, m_unitBuyPrice=5186.54, m_unitSellPrice=5086.54} is created...
-Commodity{m_name='Gold', m_unitVolume=6, m_decayRatio=0.58, m_currentSupplyAmount=5, m_unitBuyPrice=1526.62, m_unitSellPrice=1426.62} is created...
-Commodity{m_name='Silver', m_unitVolume=8, m_decayRatio=0.63, m_currentSupplyAmount=4, m_unitBuyPrice=4804.06, m_unitSellPrice=4704.06} is created...
-Commodity{m_name='Helium-3', m_unitVolume=9, m_decayRatio=0.22, m_currentSupplyAmount=3, m_unitBuyPrice=2639.1, m_unitSellPrice=2539.1} is created...
-Commodity{m_name='Water', m_unitVolume=7, m_decayRatio=0.67, m_currentSupplyAmount=4, m_unitBuyPrice=5207.51, m_unitSellPrice=5107.51} is created...
-Commodity{m_name='Food', m_unitVolume=5, m_decayRatio=0.38, m_currentSupplyAmount=4, m_unitBuyPrice=3442.87, m_unitSellPrice=3342.87} is created...
-Commodity{m_name='Oxygen', m_unitVolume=6, m_decayRatio=0.5, m_currentSupplyAmount=3, m_unitBuyPrice=4306.48, m_unitSellPrice=4206.48} is created...
-Commodity{m_name='Hydrogen', m_unitVolume=6, m_decayRatio=0.55, m_currentSupplyAmount=3, m_unitBuyPrice=4268.43, m_unitSellPrice=4168.43} is created...
-Commodity{m_name='Carbon', m_unitVolume=9, m_decayRatio=0.56, m_currentSupplyAmount=3, m_unitBuyPrice=3742.17, m_unitSellPrice=3642.17} is created...
-Commodity{m_name='Iron', m_unitVolume=6, m_decayRatio=0.65, m_currentSupplyAmount=3, m_unitBuyPrice=3599.86, m_unitSellPrice=3499.86} is created...
-Commodity{m_name='Copper', m_unitVolume=9, m_decayRatio=0.38, m_currentSupplyAmount=5, m_unitBuyPrice=3950.72, m_unitSellPrice=3850.72} is created...
-Commodity{m_name='Nickel', m_unitVolume=8, m_decayRatio=0.27, m_currentSupplyAmount=4, m_unitBuyPrice=3979.19, m_unitSellPrice=3879.19} is created...
-Commodity{m_name='Aluminum', m_unitVolume=7, m_decayRatio=0.55, m_currentSupplyAmount=3, m_unitBuyPrice=4438.26, m_unitSellPrice=4338.26} is created...
-
-
-
----------Market Jupiter Store is created...
-
-Planet Varuna is created...
-
-SpaceShip{, m_name='Zero-G', m_price=4886.32, m_volumeCapacity=8096, m_speed=133, m_currentFuel=500, m_fuelCapacity=48544, fuelUsagePerLightYear=11
+SpaceShip{, m_name='Zero-G', m_price=17137.26, m_volumeCapacity=4367, m_speed=338, m_currentFuel=500, m_fuelCapacity=47253, fuelUsagePerLightYear=15
 m_cargos=[]} is created...
-SpaceShip{, m_name='Yosemite', m_price=9442.37, m_volumeCapacity=6604, m_speed=113, m_currentFuel=500, m_fuelCapacity=19311, fuelUsagePerLightYear=13
+SpaceShip{, m_name='Yosemite', m_price=25791.2, m_volumeCapacity=7821, m_speed=1500, m_currentFuel=500, m_fuelCapacity=33926, fuelUsagePerLightYear=14
 m_cargos=[]} is created...
-SpaceShip{, m_name='Xenith', m_price=25913.62, m_volumeCapacity=7150, m_speed=1500, m_currentFuel=500, m_fuelCapacity=15469, fuelUsagePerLightYear=12
+SpaceShip{, m_name='Xenith', m_price=24059.76, m_volumeCapacity=6924, m_speed=1247, m_currentFuel=500, m_fuelCapacity=26272, fuelUsagePerLightYear=13
 m_cargos=[]} is created...
-SpaceShip{, m_name='Warp', m_price=18246.99, m_volumeCapacity=5935, m_speed=310, m_currentFuel=500, m_fuelCapacity=30504, fuelUsagePerLightYear=14
+SpaceShip{, m_name='Warp', m_price=11454.43, m_volumeCapacity=3829, m_speed=270, m_currentFuel=500, m_fuelCapacity=38488, fuelUsagePerLightYear=15
 m_cargos=[]} is created...
-SpaceShip{, m_name='Vortex', m_price=13686.91, m_volumeCapacity=4515, m_speed=448, m_currentFuel=500, m_fuelCapacity=36620, fuelUsagePerLightYear=17
+SpaceShip{, m_name='Vortex', m_price=14811.99, m_volumeCapacity=4609, m_speed=468, m_currentFuel=500, m_fuelCapacity=33965, fuelUsagePerLightYear=16
 m_cargos=[]} is created...
-SpaceShip{, m_name='Traverse', m_price=13583.77, m_volumeCapacity=3890, m_speed=369, m_currentFuel=500, m_fuelCapacity=48961, fuelUsagePerLightYear=12
+SpaceShip{, m_name='Traverse', m_price=10991.58, m_volumeCapacity=5016, m_speed=295, m_currentFuel=500, m_fuelCapacity=25847, fuelUsagePerLightYear=12
 m_cargos=[]} is created...
-SpaceShip{, m_name='Stellar', m_price=10656.55, m_volumeCapacity=4284, m_speed=219, m_currentFuel=500, m_fuelCapacity=17080, fuelUsagePerLightYear=18
+SpaceShip{, m_name='Stellar', m_price=24158.37, m_volumeCapacity=7153, m_speed=990, m_currentFuel=500, m_fuelCapacity=39051, fuelUsagePerLightYear=10
 m_cargos=[]} is created...
-SpaceShip{, m_name='Rocket', m_price=22522.5, m_volumeCapacity=5190, m_speed=371, m_currentFuel=500, m_fuelCapacity=37710, fuelUsagePerLightYear=17
+SpaceShip{, m_name='Rocket', m_price=3762.25, m_volumeCapacity=4315, m_speed=274, m_currentFuel=500, m_fuelCapacity=39962, fuelUsagePerLightYear=16
 m_cargos=[]} is created...
-SpaceShip{, m_name='Quasar', m_price=14465.41, m_volumeCapacity=7960, m_speed=348, m_currentFuel=500, m_fuelCapacity=24182, fuelUsagePerLightYear=11
+SpaceShip{, m_name='Quasar', m_price=10509.13, m_volumeCapacity=5349, m_speed=275, m_currentFuel=500, m_fuelCapacity=46146, fuelUsagePerLightYear=14
 m_cargos=[]} is created...
-SpaceShip{, m_name='Pulsar', m_price=22518.84, m_volumeCapacity=7050, m_speed=342, m_currentFuel=500, m_fuelCapacity=24312, fuelUsagePerLightYear=13
+SpaceShip{, m_name='Pulsar', m_price=20482.78, m_volumeCapacity=5782, m_speed=370, m_currentFuel=500, m_fuelCapacity=22700, fuelUsagePerLightYear=17
 m_cargos=[]} is created...
-SpaceShip{, m_name='Orbit', m_price=7806.97, m_volumeCapacity=6642, m_speed=221, m_currentFuel=500, m_fuelCapacity=38942, fuelUsagePerLightYear=17
+SpaceShip{, m_name='Orbit', m_price=25406.0, m_volumeCapacity=8072, m_speed=1500, m_currentFuel=500, m_fuelCapacity=45983, fuelUsagePerLightYear=13
 m_cargos=[]} is created...
-SpaceShip{, m_name='Nebula', m_price=20801.08, m_volumeCapacity=3849, m_speed=328, m_currentFuel=500, m_fuelCapacity=27403, fuelUsagePerLightYear=10
+SpaceShip{, m_name='Nebula', m_price=24775.69, m_volumeCapacity=7878, m_speed=969, m_currentFuel=500, m_fuelCapacity=27043, fuelUsagePerLightYear=14
 m_cargos=[]} is created...
-SpaceShip{, m_name='Meteorite', m_price=20961.95, m_volumeCapacity=6605, m_speed=308, m_currentFuel=500, m_fuelCapacity=35487, fuelUsagePerLightYear=10
+SpaceShip{, m_name='Meteorite', m_price=15538.65, m_volumeCapacity=4878, m_speed=385, m_currentFuel=500, m_fuelCapacity=46158, fuelUsagePerLightYear=13
 m_cargos=[]} is created...
-SpaceShip{, m_name='Lunar', m_price=22876.77, m_volumeCapacity=4260, m_speed=321, m_currentFuel=500, m_fuelCapacity=37097, fuelUsagePerLightYear=19
+SpaceShip{, m_name='Lunar', m_price=4590.94, m_volumeCapacity=7721, m_speed=179, m_currentFuel=500, m_fuelCapacity=14461, fuelUsagePerLightYear=13
 m_cargos=[]} is created...
-SpaceShip{, m_name='Jetstream', m_price=7981.78, m_volumeCapacity=4775, m_speed=161, m_currentFuel=500, m_fuelCapacity=39279, fuelUsagePerLightYear=11
+SpaceShip{, m_name='Jetstream', m_price=24025.46, m_volumeCapacity=6276, m_speed=1468, m_currentFuel=500, m_fuelCapacity=24050, fuelUsagePerLightYear=17
 m_cargos=[]} is created...
-SpaceShip{, m_name='Hawk', m_price=25723.54, m_volumeCapacity=6242, m_speed=1500, m_currentFuel=500, m_fuelCapacity=26169, fuelUsagePerLightYear=14
-m_cargos=[]} is created...
-SpaceShip{, m_name='Equinox', m_price=23615.46, m_volumeCapacity=5832, m_speed=1190, m_currentFuel=500, m_fuelCapacity=24815, fuelUsagePerLightYear=15
-m_cargos=[]} is created...
-SpaceShip{, m_name='Dragonfly', m_price=11457.91, m_volumeCapacity=5371, m_speed=245, m_currentFuel=500, m_fuelCapacity=15669, fuelUsagePerLightYear=18
-m_cargos=[]} is created...
-SpaceShip{, m_name='Cosmic', m_price=9255.16, m_volumeCapacity=5280, m_speed=263, m_currentFuel=500, m_fuelCapacity=33649, fuelUsagePerLightYear=18
-m_cargos=[]} is created...
-SpaceShip{, m_name='Blaze', m_price=27572.63, m_volumeCapacity=7320, m_speed=1500, m_currentFuel=500, m_fuelCapacity=45818, fuelUsagePerLightYear=19
-m_cargos=[]} is created...
-SpaceShip{, m_name='Astro', m_price=17664.94, m_volumeCapacity=5729, m_speed=399, m_currentFuel=500, m_fuelCapacity=48397, fuelUsagePerLightYear=10
-m_cargos=[]} is created...
-SpaceShip{, m_name='Zeus', m_price=16964.81, m_volumeCapacity=6955, m_speed=366, m_currentFuel=500, m_fuelCapacity=18204, fuelUsagePerLightYear=17
+SpaceShip{, m_name='Hawk', m_price=27173.36, m_volumeCapacity=7822, m_speed=1500, m_currentFuel=500, m_fuelCapacity=18887, fuelUsagePerLightYear=15
 m_cargos=[]} is created...
 
 
@@ -263,264 +136,130 @@ m_cargos=[]} is created...
 
 
 Player Nuri Can is prepared for game
----- Current Planet: Planet{m_name='Gonggong', m_unitFuelPrice=2.2, m_parkingPricePerTurn=9.7, m_market=Stardust Mall}, SpaceShip: SpaceShip{, m_name='Zero-G', m_price=4886.32, m_volumeCapacity=8096, m_speed=133, m_currentFuel=500, m_fuelCapacity=48544, fuelUsagePerLightYear=11
+---- Current Planet: Planet{m_name='Tyche', m_unitFuelPrice=4.05, m_parkingPricePerTurn=7.34, m_market=Meteorite Store}, SpaceShip: SpaceShip{, m_name='Zero-G', m_price=17137.26, m_volumeCapacity=4367, m_speed=338, m_currentFuel=500, m_fuelCapacity=47253, fuelUsagePerLightYear=15
 m_cargos=[]}
 
 
 
 
 Player John is prepared for game
----- Current Planet: Planet{m_name='Nessus', m_unitFuelPrice=3.99, m_parkingPricePerTurn=4.93, m_market=Neptune Mart}, SpaceShip: SpaceShip{, m_name='Yosemite', m_price=9442.37, m_volumeCapacity=6604, m_speed=113, m_currentFuel=500, m_fuelCapacity=19311, fuelUsagePerLightYear=13
+---- Current Planet: Planet{m_name='Tyche', m_unitFuelPrice=4.05, m_parkingPricePerTurn=7.34, m_market=Meteorite Store}, SpaceShip: SpaceShip{, m_name='Yosemite', m_price=25791.2, m_volumeCapacity=7821, m_speed=1500, m_currentFuel=500, m_fuelCapacity=33926, fuelUsagePerLightYear=14
 m_cargos=[]}
 
 
 
 
 Player Anastasia is prepared for game
----- Current Planet: Planet{m_name='Nessus', m_unitFuelPrice=3.99, m_parkingPricePerTurn=4.93, m_market=Neptune Mart}, SpaceShip: SpaceShip{, m_name='Xenith', m_price=25913.62, m_volumeCapacity=7150, m_speed=1500, m_currentFuel=500, m_fuelCapacity=15469, fuelUsagePerLightYear=12
+---- Current Planet: Planet{m_name='Varda', m_unitFuelPrice=4.07, m_parkingPricePerTurn=9.53, m_market=Comet Depot}, SpaceShip: SpaceShip{, m_name='Xenith', m_price=24059.76, m_volumeCapacity=6924, m_speed=1247, m_currentFuel=500, m_fuelCapacity=26272, fuelUsagePerLightYear=13
 m_cargos=[]}
 
 --------------------SHOPPING--------------------------------
-Nuri Can on shopping on Gonggong planet with $55113,68
-[Nuri Can] bought something: Rest Of Amount: $1660,05
+Nuri Can on shopping on Tyche planet with $42862.74
+[Nuri Can] bought something: Rest Of Amount: $780.72
 Shopping List:
-Cargo{m_commodity=Commodity{m_name='Oxygen', m_unitVolume=6, m_decayRatio=0.38, m_currentSupplyAmount=5, m_unitBuyPrice=1659.64, m_unitSellPrice=1559.64}, quantityOfCommodity=5}
+Cargo{m_commodity=Commodity{m_name='Water', m_unitVolume=8, m_decayRatio=0.38, m_currentSupplyAmount=4, m_unitBuyPrice=1580.95, m_unitSellPrice=1480.95}, quantityOfCommodity=4}
 
-Cargo{m_commodity=Commodity{m_name='Lithium', m_unitVolume=5, m_decayRatio=0.41, m_currentSupplyAmount=4, m_unitBuyPrice=1678.93, m_unitSellPrice=1578.93}, quantityOfCommodity=4}
+Cargo{m_commodity=Commodity{m_name='Hydrogen', m_unitVolume=8, m_decayRatio=0.65, m_currentSupplyAmount=4, m_unitBuyPrice=1587.21, m_unitSellPrice=1487.21}, quantityOfCommodity=4}
 
-Cargo{m_commodity=Commodity{m_name='Nickel', m_unitVolume=9, m_decayRatio=0.62, m_currentSupplyAmount=4, m_unitBuyPrice=2117.41, m_unitSellPrice=2017.4099999999999}, quantityOfCommodity=4}
+Cargo{m_commodity=Commodity{m_name='Platinum', m_unitVolume=6, m_decayRatio=0.62, m_currentSupplyAmount=4, m_unitBuyPrice=1907.69, m_unitSellPrice=1807.69}, quantityOfCommodity=4}
 
-Cargo{m_commodity=Commodity{m_name='Silver', m_unitVolume=7, m_decayRatio=0.55, m_currentSupplyAmount=3, m_unitBuyPrice=2198.49, m_unitSellPrice=2098.49}, quantityOfCommodity=3}
+Cargo{m_commodity=Commodity{m_name='Copper', m_unitVolume=7, m_decayRatio=0.3, m_currentSupplyAmount=3, m_unitBuyPrice=2186.73, m_unitSellPrice=2086.73}, quantityOfCommodity=3}
 
-Cargo{m_commodity=Commodity{m_name='Iron', m_unitVolume=9, m_decayRatio=0.42, m_currentSupplyAmount=4, m_unitBuyPrice=2901.97, m_unitSellPrice=2801.97}, quantityOfCommodity=4}
+Cargo{m_commodity=Commodity{m_name='Gold', m_unitVolume=9, m_decayRatio=0.63, m_currentSupplyAmount=3, m_unitBuyPrice=2517.97, m_unitSellPrice=2417.97}, quantityOfCommodity=3}
 
-Cargo{m_commodity=Commodity{m_name='Carbon', m_unitVolume=5, m_decayRatio=0.3, m_currentSupplyAmount=4, m_unitBuyPrice=2941.68, m_unitSellPrice=2841.68}, quantityOfCommodity=4}
-
---------------------SHOPPING--------------------------------
-
+Cargo{m_commodity=Commodity{m_name='Palladium', m_unitVolume=5, m_decayRatio=0.42, m_currentSupplyAmount=3, m_unitBuyPrice=2554.84, m_unitSellPrice=2454.84}, quantityOfCommodity=3}
 
 --------------------SHOPPING--------------------------------
-John on shopping on Nessus planet with $50557,63
-[John] bought something: Rest Of Amount: $2200,30
+
+
+--------------------SHOPPING--------------------------------
+John on shopping on Tyche planet with $34208.80
+[John] bought something: Rest Of Amount: $2309.27
 Shopping List:
-Cargo{m_commodity=Commodity{m_name='Helium-3', m_unitVolume=9, m_decayRatio=0.44, m_currentSupplyAmount=5, m_unitBuyPrice=1755.2, m_unitSellPrice=1655.2}, quantityOfCommodity=5}
+Cargo{m_commodity=Commodity{m_name='Water', m_unitVolume=8, m_decayRatio=0.38, m_currentSupplyAmount=4, m_unitBuyPrice=1580.95, m_unitSellPrice=1480.95}, quantityOfCommodity=4}
 
-Cargo{m_commodity=Commodity{m_name='Water', m_unitVolume=5, m_decayRatio=0.2, m_currentSupplyAmount=5, m_unitBuyPrice=1779.09, m_unitSellPrice=1679.09}, quantityOfCommodity=5}
+Cargo{m_commodity=Commodity{m_name='Hydrogen', m_unitVolume=8, m_decayRatio=0.65, m_currentSupplyAmount=4, m_unitBuyPrice=1587.21, m_unitSellPrice=1487.21}, quantityOfCommodity=4}
 
-Cargo{m_commodity=Commodity{m_name='Food', m_unitVolume=7, m_decayRatio=0.47, m_currentSupplyAmount=4, m_unitBuyPrice=1850.31, m_unitSellPrice=1750.31}, quantityOfCommodity=4}
+Cargo{m_commodity=Commodity{m_name='Platinum', m_unitVolume=6, m_decayRatio=0.62, m_currentSupplyAmount=4, m_unitBuyPrice=1907.69, m_unitSellPrice=1807.69}, quantityOfCommodity=4}
 
-Cargo{m_commodity=Commodity{m_name='Iron', m_unitVolume=5, m_decayRatio=0.28, m_currentSupplyAmount=5, m_unitBuyPrice=2374.28, m_unitSellPrice=2274.28}, quantityOfCommodity=5}
+Cargo{m_commodity=Commodity{m_name='Copper', m_unitVolume=7, m_decayRatio=0.3, m_currentSupplyAmount=3, m_unitBuyPrice=2186.73, m_unitSellPrice=2086.73}, quantityOfCommodity=3}
 
-Cargo{m_commodity=Commodity{m_name='Platinum', m_unitVolume=8, m_decayRatio=0.4, m_currentSupplyAmount=4, m_unitBuyPrice=2853.31, m_unitSellPrice=2753.31}, quantityOfCommodity=4}
-
---------------------SHOPPING--------------------------------
-
+Cargo{m_commodity=Commodity{m_name='Gold', m_unitVolume=9, m_decayRatio=0.63, m_currentSupplyAmount=1, m_unitBuyPrice=2517.97, m_unitSellPrice=2417.97}, quantityOfCommodity=2}
 
 --------------------SHOPPING--------------------------------
-Anastasia on shopping on Nessus planet with $34086,38
-[Anastasia] bought something: Rest Of Amount: $1890,85
+
+
+--------------------SHOPPING--------------------------------
+Anastasia on shopping on Varda planet with $35940.24
+[Anastasia] bought something: Rest Of Amount: $457.32
 Shopping List:
-Cargo{m_commodity=Commodity{m_name='Helium-3', m_unitVolume=9, m_decayRatio=0.44, m_currentSupplyAmount=5, m_unitBuyPrice=1755.2, m_unitSellPrice=1655.2}, quantityOfCommodity=5}
+Cargo{m_commodity=Commodity{m_name='Palladium', m_unitVolume=5, m_decayRatio=0.44, m_currentSupplyAmount=4, m_unitBuyPrice=1596.46, m_unitSellPrice=1496.46}, quantityOfCommodity=4}
 
-Cargo{m_commodity=Commodity{m_name='Water', m_unitVolume=5, m_decayRatio=0.2, m_currentSupplyAmount=5, m_unitBuyPrice=1779.09, m_unitSellPrice=1679.09}, quantityOfCommodity=5}
+Cargo{m_commodity=Commodity{m_name='Iridium', m_unitVolume=6, m_decayRatio=0.57, m_currentSupplyAmount=4, m_unitBuyPrice=1906.06, m_unitSellPrice=1806.06}, quantityOfCommodity=4}
 
-Cargo{m_commodity=Commodity{m_name='Food', m_unitVolume=7, m_decayRatio=0.47, m_currentSupplyAmount=4, m_unitBuyPrice=1850.31, m_unitSellPrice=1750.31}, quantityOfCommodity=4}
+Cargo{m_commodity=Commodity{m_name='Oxygen', m_unitVolume=6, m_decayRatio=0.39, m_currentSupplyAmount=3, m_unitBuyPrice=1981.47, m_unitSellPrice=1881.47}, quantityOfCommodity=3}
 
-Cargo{m_commodity=Commodity{m_name='Iron', m_unitVolume=5, m_decayRatio=0.28, m_currentSupplyAmount=2, m_unitBuyPrice=2374.28, m_unitSellPrice=2274.28}, quantityOfCommodity=3}
+Cargo{m_commodity=Commodity{m_name='Helium-3', m_unitVolume=5, m_decayRatio=0.34, m_currentSupplyAmount=5, m_unitBuyPrice=2214.77, m_unitSellPrice=2114.77}, quantityOfCommodity=5}
 
---------------------SHOPPING--------------------------------
-
-
---------------------SELL ITEM--------------------------------
-Nuri Can on market for sell something with $1660,05
-[Nuri Can] sold something Rest of Amount: $1660,05
-Sold Items:
-
---------------------SELL ITEM--------------------------------
-
-
---------------------SELL ITEM--------------------------------
-John on market for sell something with $2200,30
-[John] sold something Rest of Amount: $32860,94
-Sold Items:
-
-Cargo{m_commodity=Commodity{m_name='Iron', m_unitVolume=5, m_decayRatio=0.28, m_currentSupplyAmount=5, m_unitBuyPrice=2374.28, m_unitSellPrice=2274.28}, quantityOfCommodity=5}
-
-Cargo{m_commodity=Commodity{m_name='Platinum', m_unitVolume=8, m_decayRatio=0.4, m_currentSupplyAmount=4, m_unitBuyPrice=2853.31, m_unitSellPrice=2753.31}, quantityOfCommodity=4}
-
-Cargo{m_commodity=Commodity{m_name='Helium-3', m_unitVolume=9, m_decayRatio=0.44, m_currentSupplyAmount=5, m_unitBuyPrice=1755.2, m_unitSellPrice=1655.2}, quantityOfCommodity=5}
-
---------------------SELL ITEM--------------------------------
-
-
---------------------SELL ITEM--------------------------------
-Anastasia on market for sell something with $1890,85
-[Anastasia] sold something Rest of Amount: $15714,93
-Sold Items:
-
-Cargo{m_commodity=Commodity{m_name='Food', m_unitVolume=7, m_decayRatio=0.47, m_currentSupplyAmount=4, m_unitBuyPrice=1850.31, m_unitSellPrice=1750.31}, quantityOfCommodity=4}
-
-Cargo{m_commodity=Commodity{m_name='Iron', m_unitVolume=5, m_decayRatio=0.28, m_currentSupplyAmount=3, m_unitBuyPrice=2374.28, m_unitSellPrice=2274.28}, quantityOfCommodity=3}
-
---------------------SELL ITEM--------------------------------
-
-
---------------------BUY FUEL--------------------------------
-Nuri Can on fuel station with $1660,05
-Spaceship: Zero-G [500/48544], fuelUsage: 11, unitPrice: $2,20
-[Nuri Can] bought fuel. [2158/48544] Total = $1658, Rest Of Amount: $2,05
---------------------BUY FUEL--------------------------------
-
-
---------------------BUY FUEL--------------------------------
-John on fuel station with $32860,94
-Spaceship: Yosemite [500/19311], fuelUsage: 13, unitPrice: $3,99
-[John] bought fuel. [19308/19311] Total = $18808, Rest Of Amount: $14052,94
---------------------BUY FUEL--------------------------------
-
-
---------------------BUY FUEL--------------------------------
-Anastasia on fuel station with $15714,93
-Spaceship: Xenith [500/15469], fuelUsage: 12, unitPrice: $3,99
-[Anastasia] bought fuel. [15466/15469] Total = $14966, Rest Of Amount: $748,93
---------------------BUY FUEL--------------------------------
-
-Nuri Can on shopping but who not have enough money!
-
---------------------SHOPPING--------------------------------
-John on shopping on Chaos planet with $14052,94
-[John] bought something: Rest Of Amount: $1042,41
-Shopping List:
-Cargo{m_commodity=Commodity{m_name='Water', m_unitVolume=5, m_decayRatio=0.2, m_currentSupplyAmount=5, m_unitBuyPrice=1779.09, m_unitSellPrice=1679.09}, quantityOfCommodity=5}
-
-Cargo{m_commodity=Commodity{m_name='Food', m_unitVolume=7, m_decayRatio=0.47, m_currentSupplyAmount=4, m_unitBuyPrice=1850.31, m_unitSellPrice=1750.31}, quantityOfCommodity=4}
-
-Cargo{m_commodity=Commodity{m_name='Hydrogen', m_unitVolume=7, m_decayRatio=0.38, m_currentSupplyAmount=4, m_unitBuyPrice=2570.5, m_unitSellPrice=2470.5}, quantityOfCommodity=4}
-
-Cargo{m_commodity=Commodity{m_name='Oxygen', m_unitVolume=5, m_decayRatio=0.3, m_currentSupplyAmount=3, m_unitBuyPrice=2728.53, m_unitSellPrice=2628.53}, quantityOfCommodity=1}
+Cargo{m_commodity=Commodity{m_name='Copper', m_unitVolume=5, m_decayRatio=0.6, m_currentSupplyAmount=2, m_unitBuyPrice=2227.29, m_unitSellPrice=2127.29}, quantityOfCommodity=2}
 
 --------------------SHOPPING--------------------------------
 
-Anastasia on shopping but who not have enough money!
 
 --------------------SELL ITEM--------------------------------
-Nuri Can on market for sell something with $2,05
-[Nuri Can] sold something Rest of Amount: $2,05
+Nuri Can on market for sell something with $780.72
+[Nuri Can] sold something Rest of Amount: $20329.23
 Sold Items:
 
+Cargo{m_commodity=Commodity{m_name='Water', m_unitVolume=8, m_decayRatio=0.38, m_currentSupplyAmount=4, m_unitBuyPrice=1580.95, m_unitSellPrice=1480.95}, quantityOfCommodity=4}
+
+Cargo{m_commodity=Commodity{m_name='Palladium', m_unitVolume=5, m_decayRatio=0.42, m_currentSupplyAmount=3, m_unitBuyPrice=2554.84, m_unitSellPrice=2454.84}, quantityOfCommodity=3}
+
+Cargo{m_commodity=Commodity{m_name='Copper', m_unitVolume=7, m_decayRatio=0.3, m_currentSupplyAmount=3, m_unitBuyPrice=2186.73, m_unitSellPrice=2086.73}, quantityOfCommodity=3}
+
 --------------------SELL ITEM--------------------------------
 
 
 --------------------SELL ITEM--------------------------------
-John on market for sell something with $1042,41
-[John] sold something Rest of Amount: $19067,63
+John on market for sell something with $2309.27
+[John] sold something Rest of Amount: $15800.22
 Sold Items:
 
-Cargo{m_commodity=Commodity{m_name='Oxygen', m_unitVolume=5, m_decayRatio=0.3, m_currentSupplyAmount=1, m_unitBuyPrice=2728.53, m_unitSellPrice=2628.53}, quantityOfCommodity=1}
+Cargo{m_commodity=Commodity{m_name='Platinum', m_unitVolume=6, m_decayRatio=0.62, m_currentSupplyAmount=4, m_unitBuyPrice=1907.69, m_unitSellPrice=1807.69}, quantityOfCommodity=4}
 
-Cargo{m_commodity=Commodity{m_name='Food', m_unitVolume=7, m_decayRatio=0.47, m_currentSupplyAmount=4, m_unitBuyPrice=1850.31, m_unitSellPrice=1750.31}, quantityOfCommodity=4}
-
-Cargo{m_commodity=Commodity{m_name='Water', m_unitVolume=5, m_decayRatio=0.2, m_currentSupplyAmount=5, m_unitBuyPrice=1779.09, m_unitSellPrice=1679.09}, quantityOfCommodity=5}
+Cargo{m_commodity=Commodity{m_name='Copper', m_unitVolume=7, m_decayRatio=0.3, m_currentSupplyAmount=3, m_unitBuyPrice=2186.73, m_unitSellPrice=2086.73}, quantityOfCommodity=3}
 
 --------------------SELL ITEM--------------------------------
 
 
 --------------------SELL ITEM--------------------------------
-Anastasia on market for sell something with $748,93
-[Anastasia] sold something Rest of Amount: $748,93
+Anastasia on market for sell something with $457.32
+[Anastasia] sold something Rest of Amount: $7681.56
 Sold Items:
 
---------------------SELL ITEM--------------------------------
-
-
---------------------BUY FUEL--------------------------------
-Nuri Can on fuel station with $2,05
-Spaceship: Zero-G [1520/48544], fuelUsage: 11, unitPrice: $3,69
-[Nuri Can] bought fuel. [1520/48544] Total = $0, Rest Of Amount: $2,05
---------------------BUY FUEL--------------------------------
-
-
---------------------BUY FUEL--------------------------------
-John on fuel station with $19067,63
-Spaceship: Yosemite [18931/19311], fuelUsage: 13, unitPrice: $3,69
-[John] bought fuel. [19307/19311] Total = $376, Rest Of Amount: $18691,63
---------------------BUY FUEL--------------------------------
-
-
---------------------BUY FUEL--------------------------------
-Anastasia on fuel station with $748,93
-Spaceship: Xenith [14734/15469], fuelUsage: 12, unitPrice: $3,36
-[Anastasia] bought fuel. [15466/15469] Total = $732, Rest Of Amount: $16,93
---------------------BUY FUEL--------------------------------
-
-Nuri Can on shopping but who not have enough money!
-
---------------------SHOPPING--------------------------------
-John on shopping on Nessus planet with $18691,63
-[John] bought something: Rest Of Amount: $1020,18
-Shopping List:
-Cargo{m_commodity=Commodity{m_name='Hydrogen', m_unitVolume=7, m_decayRatio=0.38, m_currentSupplyAmount=4, m_unitBuyPrice=2570.5, m_unitSellPrice=2470.5}, quantityOfCommodity=4}
-
-Cargo{m_commodity=Commodity{m_name='Helium-3', m_unitVolume=9, m_decayRatio=0.44, m_currentSupplyAmount=5, m_unitBuyPrice=1755.2, m_unitSellPrice=1655.2}, quantityOfCommodity=5}
-
-Cargo{m_commodity=Commodity{m_name='Water', m_unitVolume=5, m_decayRatio=0.2, m_currentSupplyAmount=5, m_unitBuyPrice=1779.09, m_unitSellPrice=1679.09}, quantityOfCommodity=5}
-
---------------------SHOPPING--------------------------------
-
-Anastasia on shopping but who not have enough money!
-
---------------------SELL ITEM--------------------------------
-Nuri Can on market for sell something with $2,05
-[Nuri Can] sold something Rest of Amount: $44739,96
-Sold Items:
-
-Cargo{m_commodity=Commodity{m_name='Nickel', m_unitVolume=9, m_decayRatio=0.62, m_currentSupplyAmount=4, m_unitBuyPrice=2117.41, m_unitSellPrice=2017.4099999999999}, quantityOfCommodity=4}
-
-Cargo{m_commodity=Commodity{m_name='Silver', m_unitVolume=7, m_decayRatio=0.55, m_currentSupplyAmount=3, m_unitBuyPrice=2198.49, m_unitSellPrice=2098.49}, quantityOfCommodity=3}
-
-Cargo{m_commodity=Commodity{m_name='Carbon', m_unitVolume=5, m_decayRatio=0.3, m_currentSupplyAmount=4, m_unitBuyPrice=2941.68, m_unitSellPrice=2841.68}, quantityOfCommodity=4}
-
-Cargo{m_commodity=Commodity{m_name='Iron', m_unitVolume=9, m_decayRatio=0.42, m_currentSupplyAmount=4, m_unitBuyPrice=2901.97, m_unitSellPrice=2801.97}, quantityOfCommodity=4}
-
-Cargo{m_commodity=Commodity{m_name='Oxygen', m_unitVolume=6, m_decayRatio=0.38, m_currentSupplyAmount=5, m_unitBuyPrice=1659.64, m_unitSellPrice=1559.64}, quantityOfCommodity=5}
-
---------------------SELL ITEM--------------------------------
-
-
---------------------SELL ITEM--------------------------------
-John on market for sell something with $1020,18
-[John] sold something Rest of Amount: $1020,18
-Sold Items:
-
---------------------SELL ITEM--------------------------------
-
-
---------------------SELL ITEM--------------------------------
-Anastasia on market for sell something with $16,93
-[Anastasia] sold something Rest of Amount: $16,93
-Sold Items:
+Cargo{m_commodity=Commodity{m_name='Iridium', m_unitVolume=6, m_decayRatio=0.57, m_currentSupplyAmount=4, m_unitBuyPrice=1906.06, m_unitSellPrice=1806.06}, quantityOfCommodity=4}
 
 --------------------SELL ITEM--------------------------------
 
 
 --------------------BUY FUEL--------------------------------
-Nuri Can on fuel station with $44739,96
-Spaceship: Zero-G [1003/48544], fuelUsage: 11, unitPrice: $3,26
-[Nuri Can] bought fuel. [45739/48544] Total = $44736, Rest Of Amount: $3,96
+Nuri Can on fuel station with $20329.23
+Spaceship: Zero-G [500/47253], fuelUsage: 15, unitPrice: $4.05
+[Nuri Can] bought fuel. [20826/47253] Total = $20326, Rest Of Amount: $3.23
 --------------------BUY FUEL--------------------------------
 
 
 --------------------BUY FUEL--------------------------------
-John on fuel station with $1020,18
-Spaceship: Yosemite [18020/19311], fuelUsage: 13, unitPrice: $3,99
-[John] bought fuel. [19037/19311] Total = $1017, Rest Of Amount: $3,18
+John on fuel station with $15800.22
+Spaceship: Yosemite [500/33926], fuelUsage: 14, unitPrice: $4.05
+[John] bought fuel. [16299/33926] Total = $15799, Rest Of Amount: $1.22
 --------------------BUY FUEL--------------------------------
 
 
 --------------------BUY FUEL--------------------------------
-Anastasia on fuel station with $16,93
-Spaceship: Xenith [14674/15469], fuelUsage: 12, unitPrice: $3,26
-[Anastasia] bought fuel. [14690/15469] Total = $16, Rest Of Amount: $0,93
+Anastasia on fuel station with $7681.56
+Spaceship: Xenith [500/26272], fuelUsage: 13, unitPrice: $4.07
+[Anastasia] bought fuel. [8180/26272] Total = $7680, Rest Of Amount: $1.56
 --------------------BUY FUEL--------------------------------
 
 Nuri Can on shopping but who not have enough money!
@@ -528,108 +267,204 @@ John on shopping but who not have enough money!
 Anastasia on shopping but who not have enough money!
 
 --------------------SELL ITEM--------------------------------
-Nuri Can on market for sell something with $3,96
-[Nuri Can] sold something Rest of Amount: $3,96
+Nuri Can on market for sell something with $3.23
+[Nuri Can] sold something Rest of Amount: $13182.83
+Sold Items:
+
+Cargo{m_commodity=Commodity{m_name='Hydrogen', m_unitVolume=8, m_decayRatio=0.65, m_currentSupplyAmount=4, m_unitBuyPrice=1587.21, m_unitSellPrice=1487.21}, quantityOfCommodity=4}
+
+Cargo{m_commodity=Commodity{m_name='Platinum', m_unitVolume=6, m_decayRatio=0.62, m_currentSupplyAmount=4, m_unitBuyPrice=1907.69, m_unitSellPrice=1807.69}, quantityOfCommodity=4}
+
+--------------------SELL ITEM--------------------------------
+
+
+--------------------SELL ITEM--------------------------------
+John on market for sell something with $1.22
+[John] sold something Rest of Amount: $1.22
 Sold Items:
 
 --------------------SELL ITEM--------------------------------
 
 
 --------------------SELL ITEM--------------------------------
-John on market for sell something with $3,18
-[John] sold something Rest of Amount: $3,18
+Anastasia on market for sell something with $1.56
+[Anastasia] sold something Rest of Amount: $16219.82
 Sold Items:
 
---------------------SELL ITEM--------------------------------
+Cargo{m_commodity=Commodity{m_name='Oxygen', m_unitVolume=6, m_decayRatio=0.39, m_currentSupplyAmount=3, m_unitBuyPrice=1981.47, m_unitSellPrice=1881.47}, quantityOfCommodity=3}
 
-
---------------------SELL ITEM--------------------------------
-Anastasia on market for sell something with $0,93
-[Anastasia] sold something Rest of Amount: $8396,38
-Sold Items:
-
-Cargo{m_commodity=Commodity{m_name='Water', m_unitVolume=5, m_decayRatio=0.2, m_currentSupplyAmount=5, m_unitBuyPrice=1779.09, m_unitSellPrice=1679.09}, quantityOfCommodity=5}
+Cargo{m_commodity=Commodity{m_name='Helium-3', m_unitVolume=5, m_decayRatio=0.34, m_currentSupplyAmount=5, m_unitBuyPrice=2214.77, m_unitSellPrice=2114.77}, quantityOfCommodity=5}
 
 --------------------SELL ITEM--------------------------------
 
 
 --------------------BUY FUEL--------------------------------
-Nuri Can on fuel station with $3,96
-Spaceship: Zero-G [45046/48544], fuelUsage: 11, unitPrice: $2,18
-[Nuri Can] bought fuel. [45048/48544] Total = $2, Rest Of Amount: $1,96
+Nuri Can on fuel station with $13182.83
+Spaceship: Zero-G [20166/47253], fuelUsage: 15, unitPrice: $2.56
+[Nuri Can] bought fuel. [33347/47253] Total = $13181, Rest Of Amount: $1.83
 --------------------BUY FUEL--------------------------------
 
 
 --------------------BUY FUEL--------------------------------
-John on fuel station with $3,18
-Spaceship: Yosemite [18621/19311], fuelUsage: 13, unitPrice: $4,98
-[John] bought fuel. [18621/19311] Total = $0, Rest Of Amount: $3,18
+John on fuel station with $1.22
+Spaceship: Yosemite [15683/33926], fuelUsage: 14, unitPrice: $2.56
+[John] bought fuel. [15683/33926] Total = $0, Rest Of Amount: $1.22
 --------------------BUY FUEL--------------------------------
 
 
 --------------------BUY FUEL--------------------------------
-Anastasia on fuel station with $8396,38
-Spaceship: Xenith [13934/15469], fuelUsage: 12, unitPrice: $2,18
-[Anastasia] bought fuel. [15468/15469] Total = $1534, Rest Of Amount: $6862,38
+Anastasia on fuel station with $16219.82
+Spaceship: Xenith [7153/26272], fuelUsage: 13, unitPrice: $2.56
+[Anastasia] bought fuel. [23370/26272] Total = $16217, Rest Of Amount: $2.82
 --------------------BUY FUEL--------------------------------
 
 Nuri Can on shopping but who not have enough money!
 John on shopping but who not have enough money!
-
---------------------SHOPPING--------------------------------
-Anastasia on shopping on Nessus planet with $6862,38
-[Anastasia] bought something: Rest Of Amount: $1596,78
-Shopping List:
-Cargo{m_commodity=Commodity{m_name='Helium-3', m_unitVolume=9, m_decayRatio=0.44, m_currentSupplyAmount=2, m_unitBuyPrice=1755.2, m_unitSellPrice=1655.2}, quantityOfCommodity=5}
-
-Cargo{m_commodity=Commodity{m_name='Helium-3', m_unitVolume=9, m_decayRatio=0.44, m_currentSupplyAmount=2, m_unitBuyPrice=1755.2, m_unitSellPrice=1655.2}, quantityOfCommodity=3}
-
---------------------SHOPPING--------------------------------
-
+Anastasia on shopping but who not have enough money!
 
 --------------------SELL ITEM--------------------------------
-Nuri Can on market for sell something with $1,96
-[Nuri Can] sold something Rest of Amount: $1,96
+Nuri Can on market for sell something with $1.83
+[Nuri Can] sold something Rest of Amount: $1.83
 Sold Items:
 
 --------------------SELL ITEM--------------------------------
 
 
 --------------------SELL ITEM--------------------------------
-John on market for sell something with $3,18
-[John] sold something Rest of Amount: $8279,18
+John on market for sell something with $1.22
+[John] sold something Rest of Amount: $10786.00
 Sold Items:
 
-Cargo{m_commodity=Commodity{m_name='Helium-3', m_unitVolume=9, m_decayRatio=0.44, m_currentSupplyAmount=5, m_unitBuyPrice=1755.2, m_unitSellPrice=1655.2}, quantityOfCommodity=5}
+Cargo{m_commodity=Commodity{m_name='Hydrogen', m_unitVolume=8, m_decayRatio=0.65, m_currentSupplyAmount=4, m_unitBuyPrice=1587.21, m_unitSellPrice=1487.21}, quantityOfCommodity=4}
+
+Cargo{m_commodity=Commodity{m_name='Gold', m_unitVolume=9, m_decayRatio=0.63, m_currentSupplyAmount=2, m_unitBuyPrice=2517.97, m_unitSellPrice=2417.97}, quantityOfCommodity=2}
 
 --------------------SELL ITEM--------------------------------
 
 
 --------------------SELL ITEM--------------------------------
-Anastasia on market for sell something with $1596,78
-[Anastasia] sold something Rest of Amount: $1596,78
+Anastasia on market for sell something with $2.82
+[Anastasia] sold something Rest of Amount: $2.82
 Sold Items:
 
 --------------------SELL ITEM--------------------------------
 
 
 --------------------BUY FUEL--------------------------------
-Nuri Can on fuel station with $1,96
-Spaceship: Zero-G [44751/48544], fuelUsage: 11, unitPrice: $3,26
-[Nuri Can] bought fuel. [44751/48544] Total = $0, Rest Of Amount: $1,96
+Nuri Can on fuel station with $1.83
+Spaceship: Zero-G [32987/47253], fuelUsage: 15, unitPrice: $4.07
+[Nuri Can] bought fuel. [32987/47253] Total = $0, Rest Of Amount: $1.83
 --------------------BUY FUEL--------------------------------
 
 
 --------------------BUY FUEL--------------------------------
-John on fuel station with $8279,18
-Spaceship: Yosemite [18491/19311], fuelUsage: 13, unitPrice: $2,20
-[John] bought fuel. [19309/19311] Total = $818, Rest Of Amount: $7461,18
+John on fuel station with $10786.00
+Spaceship: Yosemite [14759/33926], fuelUsage: 14, unitPrice: $4.05
+[John] bought fuel. [25544/33926] Total = $10785, Rest Of Amount: $1.00
 --------------------BUY FUEL--------------------------------
 
 
 --------------------BUY FUEL--------------------------------
-Anastasia on fuel station with $1596,78
-Spaceship: Xenith [14328/15469], fuelUsage: 12, unitPrice: $3,99
-[Anastasia] bought fuel. [15465/15469] Total = $1137, Rest Of Amount: $459,78
+Anastasia on fuel station with $2.82
+Spaceship: Xenith [23058/26272], fuelUsage: 13, unitPrice: $4.07
+[Anastasia] bought fuel. [23058/26272] Total = $0, Rest Of Amount: $2.82
+--------------------BUY FUEL--------------------------------
+
+Nuri Can on shopping but who not have enough money!
+John on shopping but who not have enough money!
+Anastasia on shopping but who not have enough money!
+
+--------------------SELL ITEM--------------------------------
+Nuri Can on market for sell something with $1.83
+[Nuri Can] sold something Rest of Amount: $1.83
+Sold Items:
+
+--------------------SELL ITEM--------------------------------
+
+
+--------------------SELL ITEM--------------------------------
+John on market for sell something with $1.00
+[John] sold something Rest of Amount: $1.00
+Sold Items:
+
+--------------------SELL ITEM--------------------------------
+
+
+--------------------SELL ITEM--------------------------------
+Anastasia on market for sell something with $2.82
+[Anastasia] sold something Rest of Amount: $4257.40
+Sold Items:
+
+Cargo{m_commodity=Commodity{m_name='Copper', m_unitVolume=5, m_decayRatio=0.6, m_currentSupplyAmount=2, m_unitBuyPrice=2227.29, m_unitSellPrice=2127.29}, quantityOfCommodity=2}
+
+--------------------SELL ITEM--------------------------------
+
+
+--------------------BUY FUEL--------------------------------
+Nuri Can on fuel station with $1.83
+Spaceship: Zero-G [32687/47253], fuelUsage: 15, unitPrice: $4.05
+[Nuri Can] bought fuel. [32687/47253] Total = $0, Rest Of Amount: $1.83
+--------------------BUY FUEL--------------------------------
+
+
+--------------------BUY FUEL--------------------------------
+John on fuel station with $1.00
+Spaceship: Yosemite [24312/33926], fuelUsage: 14, unitPrice: $4.07
+[John] bought fuel. [24312/33926] Total = $0, Rest Of Amount: $1.00
+--------------------BUY FUEL--------------------------------
+
+
+--------------------BUY FUEL--------------------------------
+Anastasia on fuel station with $4257.40
+Spaceship: Xenith [22798/26272], fuelUsage: 13, unitPrice: $4.05
+[Anastasia] bought fuel. [26268/26272] Total = $3470, Rest Of Amount: $787.40
+--------------------BUY FUEL--------------------------------
+
+Nuri Can on shopping but who not have enough money!
+John on shopping but who not have enough money!
+Anastasia on shopping but who not have enough money!
+
+--------------------SELL ITEM--------------------------------
+Nuri Can on market for sell something with $1.83
+[Nuri Can] sold something Rest of Amount: $1.83
+Sold Items:
+
+--------------------SELL ITEM--------------------------------
+
+
+--------------------SELL ITEM--------------------------------
+John on market for sell something with $1.00
+[John] sold something Rest of Amount: $1.00
+Sold Items:
+
+--------------------SELL ITEM--------------------------------
+
+
+--------------------SELL ITEM--------------------------------
+Anastasia on market for sell something with $787.40
+[Anastasia] sold something Rest of Amount: $787.40
+Sold Items:
+
+--------------------SELL ITEM--------------------------------
+
+
+--------------------BUY FUEL--------------------------------
+Nuri Can on fuel station with $1.83
+Spaceship: Zero-G [32027/47253], fuelUsage: 15, unitPrice: $2.56
+[Nuri Can] bought fuel. [32027/47253] Total = $0, Rest Of Amount: $1.83
+--------------------BUY FUEL--------------------------------
+
+
+--------------------BUY FUEL--------------------------------
+John on fuel station with $1.00
+Spaceship: Yosemite [23206/33926], fuelUsage: 14, unitPrice: $2.56
+[John] bought fuel. [23206/33926] Total = $0, Rest Of Amount: $1.00
+--------------------BUY FUEL--------------------------------
+
+
+--------------------BUY FUEL--------------------------------
+Anastasia on fuel station with $787.40
+Spaceship: Xenith [25124/26272], fuelUsage: 13, unitPrice: $4.07
+[Anastasia] bought fuel. [25909/26272] Total = $785, Rest Of Amount: $2.40
 --------------------BUY FUEL--------------------------------
 

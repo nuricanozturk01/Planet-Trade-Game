@@ -94,8 +94,6 @@ public class BuyItem implements IAction
     private void buyMaxItems()
     {
         Commodities.stream().sorted(comparingDouble(Commodity::getUnitBuyPrice)).forEach(this::buy);
-        System.out.println(
-                "CM: " + m_player.getCurrentMoney() + " V: " + m_spaceship.getCurrentVolume() + "/" + m_spaceship.getVolumeCapacity());
     }
 
 
@@ -104,8 +102,8 @@ public class BuyItem implements IAction
         if (totalCost >= initialMoney || totalVolume >= m_spaceship.getVolumeCapacity() || commodity.getCurrentSupplyAmount() < 0)
             return;
 
-        int quantity = (int) (m_player.getCurrentMoney() / commodity.getUnitBuyPrice()); // how many can be bought
-
+        //int quantity = (int) (m_player.getCurrentMoney() / commodity.getUnitBuyPrice()); // how many can be bought
+        var quantity = (int) (m_player.getCurrentMoney() / commodity.getUnitBuyPrice());
         if (quantity == 0)
             return;
 
@@ -121,7 +119,7 @@ public class BuyItem implements IAction
                 totalVolume + currentVolume > m_spaceship.getVolumeCapacity() &&
                 quantity > 0)
         {
-            quantity /= 2;
+            quantity = quantity / 2;
             currentCost = quantity * commodity.getUnitBuyPrice();
             currentVolume = quantity * commodity.getUnitVolume();
         }
@@ -133,7 +131,6 @@ public class BuyItem implements IAction
 
         update(currentCost, currentVolume);
     }
-
 
     @Override
     public String toString()
@@ -155,9 +152,6 @@ public class BuyItem implements IAction
             m_cargos.stream().map(Cargo::toString).forEach(sb::append);
             sb.append("---------------SHOPPING [").append(m_player.getName()).append("]---------------\n");
 
-            sb.append("REMOVED ARE: \n");
-            _removedCommodities.forEach(c -> sb.append(c).append("\n"));
-            sb.append("------------\n");
         }
 
         return sb.toString();

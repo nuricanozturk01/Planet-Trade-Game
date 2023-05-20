@@ -70,7 +70,7 @@ public class PlayerImpl implements Player
         return action;
     }
 
-    private void buySpaceship(GameContext context)
+    protected void buySpaceship(GameContext context)
     {
         var action = (IAction) getActionGeneratorInstance().getBuySpacehipAction();
 
@@ -100,7 +100,7 @@ public class PlayerImpl implements Player
         LOGGER.log("---- Current Planet: " + m_currentPlanet + ", SpaceShip: " + m_spaceShip);
     }
 
-    private void selectPlanet(GameContext context)
+    protected void selectPlanet(GameContext context)
     {
         var setPlanetAction = (IAction) getActionGeneratorInstance().getSelectPlanetAction();
         setPlanetAction.apply(this, context);
