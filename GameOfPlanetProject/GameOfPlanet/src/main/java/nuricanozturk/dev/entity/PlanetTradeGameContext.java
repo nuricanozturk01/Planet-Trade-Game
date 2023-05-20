@@ -38,10 +38,11 @@ public class PlanetTradeGameContext implements GameContext {
 
     public void updateTurn()
     {
-        updateCargos();
+        System.out.println("UPDATED TURN");
+       /* updateCargos();
         changeSupplyPricesOnMarkets();
         changeSupplyAmountOnMarkets();
-        addRandomSuppliesToMarkets();
+        addRandomSuppliesToMarkets();*/
     }
 
     private void addRandomSuppliesToMarkets()

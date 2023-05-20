@@ -45,7 +45,6 @@ public class SellSpaceship implements IAction
     }
 
 
-
     private void sellSpaceship()
     {
         m_currentSpaceship.setIsSold(false);
@@ -58,13 +57,13 @@ public class SellSpaceship implements IAction
     {
         var sb = new StringBuilder();
 
-        if (m_currentSpaceship == null)
-            sb.append(m_player.getName()).append(" has not spaceship...").append("\n");
+        if (m_currentSpaceship == null) sb.append(m_player.getName()).append(" has not spaceship...").append("\n");
         else
         {
             sb.append(format(START_MESSAGE, m_player.getName(), m_playerInitialMoney)).append("\n")
                     .append(format(END_MESSAGE, m_player.getName(), m_player.getCurrentMoney())).append("\n");
         }
+
 
         return sb.toString();
     }

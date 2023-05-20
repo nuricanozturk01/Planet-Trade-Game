@@ -24,7 +24,8 @@ public class Cargo implements GameContext
         return quantityOfCommodity;
     }
 
-    public void setQuantityOfCommodity(int quantityOfCommodity) {
+    public void setQuantityOfCommodity(int quantityOfCommodity)
+    {
         this.quantityOfCommodity = quantityOfCommodity;
     }
 
