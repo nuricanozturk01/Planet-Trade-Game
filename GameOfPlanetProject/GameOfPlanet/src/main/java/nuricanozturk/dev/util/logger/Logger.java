@@ -12,7 +12,7 @@ public class Logger
 
     private Logger(String fileName)
     {
-        handleFileException("File does not exists!", () -> Files.deleteIfExists(Path.of(fileName)));
+        handleFileException("File does not exists!", () -> Files.delete(Path.of(fileName)));
         m_fileLogger = new FileLogger();
     }
 
@@ -21,10 +21,16 @@ public class Logger
         return ms_logger == null ? new Logger(fileName) : ms_logger;
     }
 
+    public ILogger getDefaultLogger()
+    {
+        return m_fileLogger;
+    }
+
     public ILogger getLogger(LoggerType loggerType)
     {
         return switch (loggerType)
         {
+            //....
             default -> m_fileLogger;
         };
     }
