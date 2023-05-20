@@ -13,6 +13,7 @@ public class SpaceShip implements ISpaceship, GameContext
     private String m_name;
     private double m_price;
     private int m_volumeCapacity;
+    private int m_currentVolume;
     private int m_speed;
     private int m_currentFuel;
     private int m_fuelCapacity;
@@ -66,11 +67,6 @@ public class SpaceShip implements ISpaceship, GameContext
         return m_volumeCapacity;
     }
 
-    public void setVolumeCapacity(int volumeCapacity)
-    {
-        m_volumeCapacity = volumeCapacity;
-    }
-
     public int getSpeed()
     {
         return m_speed;
@@ -84,6 +80,16 @@ public class SpaceShip implements ISpaceship, GameContext
     public int getCurrentFuel()
     {
         return m_currentFuel;
+    }
+
+    public int getCurrentVolume()
+    {
+        return m_currentVolume;
+    }
+
+    public void setCurrentVolume(int m_currentVolume)
+    {
+        this.m_currentVolume = m_currentVolume;
     }
 
     public void setCurrentFuel(int currentFuel)
@@ -186,6 +192,11 @@ public class SpaceShip implements ISpaceship, GameContext
         public Builder setCurrentFuel(int currentFuel)
         {
             m_spaceShip.m_currentFuel = currentFuel;
+            return this;
+        }
+        private Builder setCurrentVolume(int currentVolume)
+        {
+            m_spaceShip.m_currentVolume = 0;
             return this;
         }
 

@@ -4,11 +4,12 @@ import nuricanozturk.dev.action.IAction;
 import nuricanozturk.dev.entity.Cargo;
 import nuricanozturk.dev.entity.Commodity;
 import nuricanozturk.dev.entity.PlayerImpl;
+import nuricanozturk.dev.entity.SpaceShip;
 import project.gameengine.base.GameContext;
 import project.gameengine.base.Player;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.IntStream;
 
 import static java.lang.String.format;
 import static java.util.Comparator.comparingDouble;
@@ -22,11 +23,12 @@ public class BuyItem implements IAction
     private PlayerImpl m_player;
     private List<Cargo> m_cargos;
     private List<Commodity> Commodities;
+    private List<Commodity> _removedCommodities;
     private int totalVolume = 0;
-    private int volumeCapacity;
-    private double playerMoney;
     private double initialMoney;
     private double totalCost = 0D;
+
+    private SpaceShip m_spaceship;
 
     public BuyItem()
     {
@@ -51,88 +53,85 @@ public class BuyItem implements IAction
     }
 
 
-    private void update()
+    private void update(double currentCost, int currentVolume)
     {
-        m_player.getSpaceShip().addAllCargo(m_cargos);
-        m_player.setCurrentMoney(m_player.getCurrentMoney() - totalCost);
-        m_player.getSpaceShip().setVolumeCapacity(volumeCapacity - totalVolume);
+        totalCost += currentCost;
+        totalVolume += currentVolume;
+        m_player.setCurrentMoney(m_player.getCurrentMoney() - currentCost);
+        m_spaceship.setCurrentVolume(m_spaceship.getCurrentVolume() + currentVolume);
     }
 
     @Override
     public void apply(Player player, GameContext context)
     {
         m_player = (PlayerImpl) player;
-        playerMoney = m_player.getCurrentMoney();
         initialMoney = m_player.getCurrentMoney();
+        m_spaceship = m_player.getSpaceShip();
+        _removedCommodities = new ArrayList<>();
+        totalVolume = 0;
+        totalCost = 0;
 
-        if (m_player.getCurrentMoney() <= MIN_UNIT_BUY_PRICE)
+        if (initialMoney <= MIN_UNIT_BUY_PRICE)
         {
             LOGGER.log(m_player.getName() + " on shopping but who not have enough money!");
-            return;
-        }
-         if (m_player.getCurrentPlanet().getMarket().getCommodities().isEmpty())
+        } else if (m_player.getCurrentPlanet().getMarket().getCommodities().isEmpty())
         {
             LOGGER.log(m_player.getName() + " on shopping but market is empty");
-            return;
+        } else
+        {
+            startActionLog();
+
+            m_cargos = m_player.getSpaceShip().getCargos();
+
+            Commodities = m_player.getCurrentPlanet().getMarket().getCommodities();
+
+            buyMaxItems();
+
+            finishActionLog();
         }
-        startActionLog();
-
-        volumeCapacity = m_player.getSpaceShip().getVolumeCapacity();
-        Commodities = m_player.getCurrentPlanet().getMarket().getCommodities();
-
-        // Sorted by unit buy price
-        var commodities = Commodities.stream()
-                .filter(c -> c.getCurrentSupplyAmount() > 0)
-                .sorted(comparingDouble(Commodity::getUnitBuyPrice))
-                .toList();
-
-        m_cargos = chooseItem(commodities);
-        update();
-        finishActionLog();
     }
 
-    private List<Cargo> chooseItem(List<Commodity> commodities)
+    private void buyMaxItems()
     {
-        return commodities.stream()
-                .map(this::createCargo)
-                .filter(c -> c.getQuantityOfCommodity() != 0)
-                .toList();
+        Commodities.stream().sorted(comparingDouble(Commodity::getUnitBuyPrice)).forEach(this::buy);
+        System.out.println(
+                "CM: " + m_player.getCurrentMoney() + " V: " + m_spaceship.getCurrentVolume() + "/" + m_spaceship.getVolumeCapacity());
     }
 
-    private boolean findQuantity(int i, double unitBuyPrice, int unitVolume, int amount)
+
+    private void buy(Commodity commodity)
     {
-        return totalCost + unitBuyPrice <= playerMoney && totalVolume + unitVolume <= volumeCapacity && i <= amount;
-    }
+        if (totalCost >= initialMoney || totalVolume >= m_spaceship.getVolumeCapacity() || commodity.getCurrentSupplyAmount() < 0)
+            return;
 
-    private Cargo createCargo(Commodity commodity)
-    {
-        var quantityAmount = getQuantityAmount(commodity);
-        var cargo = new Cargo(commodity, quantityAmount);
+        int quantity = (int) (m_player.getCurrentMoney() / commodity.getUnitBuyPrice()); // how many can be bought
 
-        if (quantityAmount == commodity.getCurrentSupplyAmount())
-            Commodities.remove(commodity);
+        if (quantity == 0)
+            return;
 
-        else commodity.setCurrentSupplyAmount(commodity.getCurrentSupplyAmount() - quantityAmount);
+        if (quantity < commodity.getCurrentSupplyAmount())
+            commodity.setCurrentSupplyAmount(commodity.getCurrentSupplyAmount() - quantity);
 
-        return cargo;
-    }
+        else quantity = commodity.getCurrentSupplyAmount();
 
-    private int getQuantityAmount(Commodity commodity)
-    {
-        var unitPrice = commodity.getUnitBuyPrice();
-        var unitVolume = commodity.getUnitVolume();
-        var amount = commodity.getCurrentSupplyAmount();
+        var currentCost = quantity * commodity.getUnitBuyPrice();
+        var currentVolume = quantity * commodity.getUnitVolume();
 
-        return (int) IntStream.rangeClosed(1, commodity.getCurrentSupplyAmount())
-                .takeWhile(i -> findQuantity(i, unitPrice, unitVolume, amount))
-                .peek(i -> updateCostAndVolume(i, unitPrice, unitVolume))
-                .count();
-    }
+        while (totalCost + currentCost > m_player.getCurrentMoney() &&
+                totalVolume + currentVolume > m_spaceship.getVolumeCapacity() &&
+                quantity > 0)
+        {
+            quantity /= 2;
+            currentCost = quantity * commodity.getUnitBuyPrice();
+            currentVolume = quantity * commodity.getUnitVolume();
+        }
 
-    private void updateCostAndVolume(int ignored, double unitBuyPrice, int unitVolume)
-    {
-        totalCost += unitBuyPrice;
-        totalVolume += unitVolume;
+        m_cargos.add(new Cargo(commodity, quantity));
+
+        if (quantity >= commodity.getCurrentSupplyAmount())
+            _removedCommodities.add(commodity);
+
+        update(currentCost, currentVolume);
     }
 
 
@@ -154,7 +153,11 @@ public class BuyItem implements IAction
                     initialMoney)).append("\n");
             sb.append(format(END_MESSAGE, m_player.getName(), m_player.getCurrentMoney())).append("\n");
             m_cargos.stream().map(Cargo::toString).forEach(sb::append);
-            sb.append("r---------------SHOPPING [").append(m_player.getName()).append("]---------------\n");
+            sb.append("---------------SHOPPING [").append(m_player.getName()).append("]---------------\n");
+
+            sb.append("REMOVED ARE: \n");
+            _removedCommodities.forEach(c -> sb.append(c).append("\n"));
+            sb.append("------------\n");
         }
 
         return sb.toString();

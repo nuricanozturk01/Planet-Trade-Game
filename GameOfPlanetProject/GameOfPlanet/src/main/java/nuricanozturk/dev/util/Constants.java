@@ -16,8 +16,8 @@ public final class Constants
     public static final double MAX_UNIT_FUEL_PRICE = 5D;
     public static final double MIN_TURN_PARKING_PRICE = 2D;
     public static final double MAX_TURN_PARKING_PRICE = 10D;
-    public static final double MIN_UNIT_BUY_PRICE = 150D;
-    public static final double MAX_UNIT_BUY_PRICE = 1_500D;
+    public static final double MIN_UNIT_BUY_PRICE = 1500D;
+    public static final double MAX_UNIT_BUY_PRICE = 5_500D;
 
     // ############################## LIVING_CONDITIONS END ##############################
 
@@ -52,9 +52,9 @@ public final class Constants
 
 
     // ############################## PLAYER START ##############################
-    public static final int MIN_PLAYER = 2;
+    public static final int MIN_PLAYER = 1;
     public static final int MAX_PLAYER = 5;
-    public static final double PLAYER_INITIAL_MONEY = 1_000_000D;
+    public static final double PLAYER_INITIAL_MONEY = 60_000D;
     // ############################## PLAYER END ##############################
 
 
@@ -66,8 +66,8 @@ public final class Constants
     public static final int MAX_FUEL_CAPACITY = 50_000;
     public static final int MAX_SPEED = 1500;
     public static final int MIN_SPEED = 100;
-    public static final int MIN_VOLUME = 500;
-    public static final int MAX_VOLUME = 11_000;
+    public static final int MIN_VOLUME = 3500;
+    public static final int MAX_VOLUME = 8500;
 
     public static final LinkedList<String> SPACESHIP_NAMES = new LinkedList<>(
             asList("Apollo", "Discovery", "Enterprise", "Falcon", "Galaxy", "Hermes", "Infinity", "Jupiter",
@@ -98,12 +98,12 @@ public final class Constants
 
     // ############################## COMMODITY START ##############################
 
-    public static final int MIN_COMMODITY_COUNT = 50;
-    public static final int MAX_COMMODITY_COUNT = 90;
+    public static final int MIN_COMMODITY_COUNT = 10;
+    public static final int MAX_COMMODITY_COUNT = 20;
     public static final int MIN_UNIT_VOLUME = 5;
-    public static final int MAX_UNIT_VOLUME = 15;
-    public static final int MIN_CURRENT_SUPPLY_AMOUNT = 150;
-    public static final int MAX_CURRENT_SUPPLY_AMOUNT = 300;
+    public static final int MAX_UNIT_VOLUME = 10;
+    public static final int MIN_CURRENT_SUPPLY_AMOUNT = 3;
+    public static final int MAX_CURRENT_SUPPLY_AMOUNT = 6;
     public static final double MAX_DECAY_RATIO = .7D;
     public static final double MIN_DECAY_RATIO = .2D;
     public static final List<String> COMMODITY_NAME = asList("Lithium", "Titanium", "Platinum", "Gold",

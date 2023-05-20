@@ -10,16 +10,11 @@ import project.gameengine.base.Player;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.IntStream;
 
 import static nuricanozturk.dev.config.RandomConfig.getRandomInstance;
 import static nuricanozturk.dev.util.Util.LOGGER;
 
-/*
-
-Başka bir gezegene yolculuk planlayın. Bu bir turda yapılırsa, uzay gemisinde uzay gemisinin yakıt kullanımı ve
-gezegenler arasındaki mesafe ile hesaplanan yeterli miktarda yakıt varsa, oyuncu bir sonraki turda hedef gezegende olacaktır.
- Aksi takdirde oyuncu aynı gezegende kalır ve mevcut gezegenin park fiyatıyla mevcut parada bir düşüşe neden olur.
- */
 public class PlanTravelling implements IAction
 {
     private PlayerImpl m_player;
@@ -28,7 +23,6 @@ public class PlanTravelling implements IAction
     private double currentFuel;
     private Planet m_currentPlanet;
     private List<Planet> m_validPlanetsForTravelling;
-    private GameContext GameContext;
 
     public PlanTravelling()
     {
@@ -38,7 +32,7 @@ public class PlanTravelling implements IAction
     @Override
     public void apply(Player player, GameContext context)
     {
-        GameContext = context;
+
         m_player = (PlayerImpl) player;
         m_currentPlanet = m_player.getCurrentPlanet();
         m_planets = ((PlanetTradeGameContext) context).getPlanets();
@@ -70,26 +64,11 @@ public class PlanTravelling implements IAction
     {
         m_validPlanetsForTravelling = new ArrayList<>();
 
-        var map = currentPlanet.getDistanceMap();
-
-        for (int i = 0; i < map.size() + 1; i++)
-        {
-            var planet = m_planets.get(i);
-
-            if (planet.getName().equals(currentPlanet.getName()))
-                continue;
-
-            int targetPlanetDistance = map.get(planet);
-
-            if (isFuelEnough(targetPlanetDistance))
-                m_validPlanetsForTravelling.add(planet);
-
-        }
-        /*IntStream.range(0, currentPlanet.getDistanceMap().size() + 1)
+        IntStream.range(0, currentPlanet.getDistanceMap().size() + 1)
                 .mapToObj(i -> m_planets.get(i))
                 .filter(planet -> !planet.getName().equals(currentPlanet.getName()))
                 .filter(planet -> isFuelEnough(currentPlanet.getDistanceMap().get(planet)))
-                .forEach(m_validPlanetsForTravelling::add);*/
+                .forEach(m_validPlanetsForTravelling::add);
     }
 
     private boolean isFuelEnough(int targetPlanetDistance)
@@ -97,8 +76,7 @@ public class PlanTravelling implements IAction
         var currentFuel = m_spaceShip.getCurrentFuel();
 
         var usage = m_spaceShip.getFuelUsagePerLightYear();
-
-        System.out.println("Distance: "+ targetPlanetDistance + " Usage: " + usage +" NECESSARY FUEL: " + targetPlanetDistance * usage + " AND CURRENT is: " + currentFuel);
+        //System.out.println("Distance: " + targetPlanetDistance + " Usage: " + usage + " NECESSARY FUEL: " + targetPlanetDistance * usage + " AND CURRENT is: " + currentFuel);
         return targetPlanetDistance * usage <= currentFuel;
     }
 

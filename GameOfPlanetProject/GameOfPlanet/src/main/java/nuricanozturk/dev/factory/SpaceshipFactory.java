@@ -52,18 +52,12 @@ public class SpaceshipFactory
         return MAX_SPEED;
     }
 
-    private static int createFuelUsagePerLightYear(int fuelCapacity)
-    {
-        return (fuelCapacity / 100) * getRandomInstance().nextInt(2, 10);
-    }
-
     private static SpaceShip createSpaceShip(int ignore)
     {
         var price = getBigFormattedNumber(getRandomInstance().nextDouble(MIN_SPACESHIP_COST, MAX_SPACESHIP_COST));
         var fuelCapacity = getRandomInstance().nextInt(MIN_FUEL_CAPACITY, MAX_FUEL_CAPACITY);
         var speed = createSpeed(price);
 
-        var fuelUsagePerLightYear = createFuelUsagePerLightYear(fuelCapacity);
         var volumeCapacity = getRandomInstance().nextInt(MIN_VOLUME, MAX_VOLUME);
 
         var spaceShip = new SpaceShip.Builder()

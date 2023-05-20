@@ -1,49 +1,47 @@
-package nuricanozturk.dev.util.exception;/*----------------------------------------------------------------------
-    FILE        : ExceptionUtil.java
-    AUTHOR      : Oğuz Karan
-    LAST UPDATE : 19.09.2021
-
-    ExceptionUtil class for exception managing
-
-    Copyleft (c) 1993 by C and System Programmers Association (CSD)
-    All Rights Free
------------------------------------------------------------------------*/
+package nuricanozturk.dev.util.exception;
 
 import java.io.Closeable;
 import java.lang.reflect.InvocationTargetException;
 import java.util.function.Consumer;
 import java.util.function.Function;
 
-public final class ExceptionUtil {
+public final class ExceptionUtil
+{
+    private ExceptionUtil()
+    {
+    }
+
     private static <T extends RuntimeException> void throwException(String msg, Class<T> cls, Throwable ex)
     {
-        try {
+        try
+        {
             throw cls.getConstructor(String.class, Throwable.class).newInstance(msg, ex);
-        }
-        catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException | InstantiationException e) {
+        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException | InstantiationException e)
+        {
             throw new UnsupportedOperationException("Fault for exception class");
         }
     }
 
-    private ExceptionUtil()
-    {}
-
     public static <T extends RuntimeException> void doForRunnable(IRunnable actionCallback, String msg, Class<T> cls)
     {
-        try {
+        try
+        {
             actionCallback.run();
-        }
-        catch (Throwable ex) {
+        } catch (Throwable ex)
+        {
             throwException(msg, cls, ex);
         }
     }
 
-    public static <T extends RuntimeException> void doForRunnable(IRunnable actionCallback, Consumer<Throwable> consumer, String msg, Class<T> cls)
+    public static <T extends RuntimeException> void doForRunnable(IRunnable actionCallback,
+                                                                  Consumer<Throwable> consumer, String msg,
+                                                                  Class<T> cls)
     {
-        try {
+        try
+        {
             actionCallback.run();
-        }
-        catch (Throwable ex) {
+        } catch (Throwable ex)
+        {
             consumer.accept(ex);
             throwException(msg, cls, ex);
         }
@@ -53,24 +51,27 @@ public final class ExceptionUtil {
     {
         R result = null;
 
-        try {
+        try
+        {
             result = supplier.get();
-        }
-        catch (Throwable ex) {
+        } catch (Throwable ex)
+        {
             throwException(msg, cls, ex);
         }
 
         return result;
     }
 
-    public static <T extends RuntimeException, R> R doForSupplier(ISupplier<R> supplier, Consumer<Throwable>  consumer, String msg, Class<T> cls)
+    public static <T extends RuntimeException, R> R doForSupplier(ISupplier<R> supplier, Consumer<Throwable> consumer,
+                                                                  String msg, Class<T> cls)
     {
         R result = null;
 
-        try {
+        try
+        {
             result = supplier.get();
-        }
-        catch (Throwable ex) {
+        } catch (Throwable ex)
+        {
             consumer.accept(ex);
             throwException(msg, cls, ex);
         }
@@ -80,112 +81,124 @@ public final class ExceptionUtil {
 
     public static <R> R doForRuntimeException(ISupplier<R> supplier, String msg)
     {
-        try {
+        try
+        {
             return supplier.get();
-        }
-        catch (Throwable ex) {
+        } catch (Throwable ex)
+        {
             throw new RuntimeException(msg, ex);
         }
     }
 
     public static void doForRuntimeException(IRunnable actionCallback, String msg)
     {
-        try {
+        try
+        {
             actionCallback.run();
-        }
-        catch (Throwable ex) {
+        } catch (Throwable ex)
+        {
             throw new RuntimeException(msg, ex);
         }
     }
 
     public static <R> R subscribe(ISupplier<R> supplier, Function<Throwable, R> function)
     {
-        try {
+        try
+        {
             return supplier.get();
-        }
-        catch (Throwable ex) {
+        } catch (Throwable ex)
+        {
             return function.apply(ex);
         }
     }
 
     public static void subscribeRunnable(IRunnable actionCallback, Consumer<Throwable> consumer)
     {
-        try {
+        try
+        {
             actionCallback.run();
-        }
-        catch (Throwable ex) {
+        } catch (Throwable ex)
+        {
             consumer.accept(ex);
         }
     }
 
     public static <R> R subscribe(ISupplier<R> supplier, Function<Throwable, R> function, Runnable runnableCompleted)
     {
-        try {
+        try
+        {
             return supplier.get();
-        }
-        catch (Throwable ex) {
+        } catch (Throwable ex)
+        {
             return function.apply(ex);
-        }
-        finally {
+        } finally
+        {
             runnableCompleted.run();
         }
     }
 
-    public static void subscribeRunnable(IRunnable actionCallback, Consumer<Throwable> consumer, Runnable runnableCompleted)
+    public static void subscribeRunnable(IRunnable runnable, Consumer<Throwable> consumer, Runnable runnableFinally)
     {
-        try {
-            actionCallback.run();
-        }
-        catch (Throwable ex) {
+        try
+        {
+            runnable.run();
+        } catch (Throwable ex)
+        {
             consumer.accept(ex);
-        }
-        finally {
-            runnableCompleted.run();
+        } finally
+        {
+            runnableFinally.run();
         }
     }
 
-    public static <R> R subscribe(ISupplier<R> supplier, Closeable closeable, Function<Throwable, R> function, Runnable runnableCompleted)
+    public static <R> R subscribe(ISupplier<R> supplier, Closeable closeable, Function<Throwable, R> function,
+                                  Runnable runnableCompleted)
     {
-        try (closeable) {
+        try (closeable)
+        {
             return supplier.get();
-        }
-        catch (Throwable ex) {
+        } catch (Throwable ex)
+        {
             return function.apply(ex);
-        }
-        finally {
+        } finally
+        {
             runnableCompleted.run();
         }
     }
 
-    public static void subscribeRunnable(IRunnable actionCallback, Closeable closeable, Consumer<Throwable> consumer, Runnable runnableCompleted)
+    public static void subscribeRunnable(IRunnable actionCallback, Closeable closeable, Consumer<Throwable> consumer,
+                                         Runnable runnableCompleted)
     {
-        try (closeable) {
+        try (closeable)
+        {
             actionCallback.run();
-        }
-        catch (Throwable ex) {
+        } catch (Throwable ex)
+        {
             consumer.accept(ex);
-        }
-        finally {
+        } finally
+        {
             runnableCompleted.run();
         }
     }
 
     public static <R> R subscribe(ISupplier<R> supplier, Closeable closeable, Function<Throwable, R> function)
     {
-        try (closeable) {
+        try (closeable)
+        {
             return supplier.get();
-        }
-        catch (Throwable ex) {
+        } catch (Throwable ex)
+        {
             return function.apply(ex);
         }
     }
 
     public static void subscribeRunnable(IRunnable actionCallback, Closeable closeable, Consumer<Throwable> consumer)
     {
-        try (closeable) {
+        try (closeable)
+        {
             actionCallback.run();
-        }
-        catch (Throwable ex) {
+        } catch (Throwable ex)
+        {
             consumer.accept(ex);
         }
     }
