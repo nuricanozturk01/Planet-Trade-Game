@@ -1,7 +1,7 @@
 package nuricanozturk.dev.util.exception;
 
 @FunctionalInterface
-public interface ISupplier<R>
+public interface ISupplier<T>
 {
-    R get() throws Exception;
+    T get() throws Exception;
 }

@@ -1,11 +1,12 @@
 package nuricanozturk.dev.util.logger;
 
+import nuricanozturk.dev.util.exception.ExceptionUtil;
 import nuricanozturk.dev.util.exception.NotCreatedException;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import static nuricanozturk.dev.util.exception.ExceptionUtil.doForRunnable;
+import static nuricanozturk.dev.util.exception.ExceptionUtil.handleException;
 
 public class Logger
 {
@@ -14,7 +15,7 @@ public class Logger
 
     private Logger(String fileName)
     {
-        doForRunnable(() -> Files.deleteIfExists(Path.of(fileName)), "File does not exists!",
+        ExceptionUtil.handleException(() -> Files.deleteIfExists(Path.of(fileName)), "File does not exists!",
                 NotCreatedException.class);
 
         m_fileLogger = new FileLogger();

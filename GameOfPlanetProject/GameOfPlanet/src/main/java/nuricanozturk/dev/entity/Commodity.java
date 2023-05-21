@@ -45,9 +45,19 @@ public class Commodity implements GameContext, Comparable<Commodity>
         return m_unitBuyPrice;
     }
 
+    public void setUnitBuyPrice(double m_unitBuyPrice)
+    {
+        this.m_unitBuyPrice = m_unitBuyPrice;
+    }
+
     public double getUnitSellPrice()
     {
         return m_unitSellPrice;
+    }
+
+    public void setUnitSellPrice(double m_unitSellPrice)
+    {
+        this.m_unitSellPrice = m_unitSellPrice;
     }
 
     @Override

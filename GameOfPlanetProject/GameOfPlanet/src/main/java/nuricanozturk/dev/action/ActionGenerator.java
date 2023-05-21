@@ -1,7 +1,6 @@
 package nuricanozturk.dev.action;
 
 import nuricanozturk.dev.action.actions.*;
-import nuricanozturk.dev.util.LinkedList;
 import project.gameengine.base.Action;
 
 import static nuricanozturk.dev.config.RandomConfig.getRandomInstance;
@@ -15,9 +14,9 @@ public final class ActionGenerator
     private final static Action m_soldItemAction = new SellItem();
     private final static Action m_planTravellingAction = new PlanTravelling();
     private final static Action m_selectPlanetAction = new SelectPlanet();
-    private final static Action m_sellSpaceshipAction = new SellSpaceship();
     private final static Action m_changeSpaceshipAction = new ChangeSpaceship();
     private static ActionGenerator m_actionGenerator;
+
     private final ActionType[] m_actionTypes;
 
     private ActionGenerator()
@@ -31,20 +30,25 @@ public final class ActionGenerator
         return m_actionGenerator == null ? new ActionGenerator() : m_actionGenerator;
     }
 
-    public static Action getSellSpaceshipAction()
-    {
-        return m_sellSpaceshipAction;
-    }
-
     public static Action getBuySpaceshipAction()
     {
         return m_buySpaceShipAction;
+    }
+
+    public Action getActionByActionType(ActionType actionType)
+    {
+        return getAction(actionType);
     }
 
     //------------------------------------------------------------------------------------------
     private ActionType getRandomActionType()
     {
         return m_actionTypes[getRandomInstance().nextInt(0, m_actionTypes.length)];
+    }
+
+    public Action getChangeSpaceshipAction()
+    {
+        return m_changeSpaceshipAction;
     }
 
     public Action getRandomAction()
@@ -62,19 +66,6 @@ public final class ActionGenerator
         return m_selectPlanetAction;
     }
 
-
-    public LinkedList<Action> getActionLinkedList()
-    {
-        var actionLinkedList = new LinkedList<Action>();
-
-        actionLinkedList.insertFirst(m_planTravellingAction);
-        actionLinkedList.insertFirst(m_buyFuelAction);
-        actionLinkedList.insertFirst(m_soldItemAction);
-        actionLinkedList.insertFirst(m_buyItemAction);
-
-        return actionLinkedList;
-    }
-
     public Action getAction(ActionType actionType)
     {
         return switch (actionType)
@@ -82,6 +73,7 @@ public final class ActionGenerator
             case BUY_FUEL -> m_buyFuelAction;
             case BUY_ITEM -> m_buyItemAction;
             case SOLD_ITEM -> m_soldItemAction;
+            case CHANGE_SPACESHIP -> m_changeSpaceshipAction;
 
             default -> m_planTravellingAction;
         };

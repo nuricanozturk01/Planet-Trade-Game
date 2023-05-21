@@ -18,9 +18,9 @@ import static nuricanozturk.dev.util.Util.LOGGER;
 
 public class SellItem implements IAction
 {
-    private List<Cargo> m_sellItems;
     private final String START_MESSAGE = "%s on market for sell something with $%.2f";
     private final String END_MESSAGE = "[%s] sold something Rest of Amount: $%.2f\nSold Items:\n";
+    private List<Cargo> m_sellItems;
     private Market m_market;
     private PlayerImpl m_player;
     private List<Cargo> m_cargos; // on spaceship
@@ -97,7 +97,8 @@ public class SellItem implements IAction
         m_sellItems.add(cargo);
         m_cargos.remove(cargo);
         var ss = m_player.getSpaceShip();
-        ss.setCurrentVolume(ss.getCurrentVolume() - (cargo.getQuantityOfCommodity() * cargo.getCommodity().getUnitVolume()));
+        ss.setCurrentVolume(
+                ss.getCurrentVolume() - (cargo.getQuantityOfCommodity() * cargo.getCommodity().getUnitVolume()));
         updatePlayer(cargo.getQuantityOfCommodity() * cargo.getCommodity().getUnitSellPrice());
     }
 
@@ -120,7 +121,9 @@ public class SellItem implements IAction
         sb.append("\n---------------SELL ITEM [").append(m_player.getName()).append("]---------------\n");
         sb.append(format(START_MESSAGE, m_player.getName(), initialMoney)).append("\n")
                 .append(format(END_MESSAGE, m_player.getName(), m_player.getCurrentMoney()));
-        m_sellItems.forEach(sb::append);
+        if (m_sellItems == null)
+            sb.append("You cannot sell anything because your cargos are empty!\n");
+        else m_sellItems.forEach(sb::append);
         sb.append("---------------SELL ITEM [").append(m_player.getName()).append("]---------------\n");
         return sb.toString();
     }

@@ -82,6 +82,11 @@ public class SpaceShip implements ISpaceship, GameContext
         return m_currentFuel;
     }
 
+    public void setCurrentFuel(int currentFuel)
+    {
+        m_currentFuel = currentFuel;
+    }
+
     public int getCurrentVolume()
     {
         return m_currentVolume;
@@ -90,11 +95,6 @@ public class SpaceShip implements ISpaceship, GameContext
     public void setCurrentVolume(int m_currentVolume)
     {
         this.m_currentVolume = m_currentVolume;
-    }
-
-    public void setCurrentFuel(int currentFuel)
-    {
-        m_currentFuel = currentFuel;
     }
 
     public int getFuelCapacity()
@@ -194,6 +194,7 @@ public class SpaceShip implements ISpaceship, GameContext
             m_spaceShip.m_currentFuel = currentFuel;
             return this;
         }
+
         private Builder setCurrentVolume(int currentVolume)
         {
             m_spaceShip.m_currentVolume = 0;

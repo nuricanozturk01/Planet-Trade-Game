@@ -5,6 +5,8 @@ import project.gameengine.base.GameContext;
 import java.util.HashMap;
 import java.util.Map;
 
+import static nuricanozturk.dev.util.Constants.UNIT_FUEL_PRICE_INCREASE_RATE;
+
 public class Planet implements GameContext
 {
     private String m_name;
@@ -57,6 +59,11 @@ public class Planet implements GameContext
                 ", m_parkingPricePerTurn=" + m_parkingPricePerTurn +
                 ", m_market=" + m_market +
                 '}';
+    }
+
+    public void changePrice()
+    {
+        m_unitFuelPrice += (m_unitFuelPrice * UNIT_FUEL_PRICE_INCREASE_RATE);
     }
 
     public static class Builder

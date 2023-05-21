@@ -12,7 +12,7 @@ import java.util.List;
 
 import static nuricanozturk.dev.factory.SpaceshipFactory.createSpaceships;
 import static nuricanozturk.dev.util.Constants.*;
-import static nuricanozturk.dev.util.Util.actions;
+
 
 public class PlanetTradeGame implements Game
 {
@@ -21,7 +21,7 @@ public class PlanetTradeGame implements Game
     private PlanetTradeGameContext m_gameContext;
     private List<Player> m_players;
     private int m_currentTurn;
-    private boolean isOver; // default false
+    private boolean isOver;
 
 
     public PlanetTradeGame(int turnCount)
@@ -64,12 +64,10 @@ public class PlanetTradeGame implements Game
     @Override
     public void update(Action action)
     {
-
-        if (m_currentTurn % (actions.size() * m_players.size()) == 0) // each turn
-            m_gameContext.updateTurn();
-
-        if (m_currentTurn == m_turnCount * m_players.size() * actions.size())
+        if (m_currentTurn == m_turnCount * m_players.size())
             finishGame();
+
+        m_gameContext.updateGame();
 
         m_currentTurn++;
     }

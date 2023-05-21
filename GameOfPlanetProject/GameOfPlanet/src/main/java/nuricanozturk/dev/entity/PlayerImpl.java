@@ -1,6 +1,7 @@
 package nuricanozturk.dev.entity;
 
 import nuricanozturk.dev.action.IAction;
+import project.gameengine.NullAction;
 import project.gameengine.base.Action;
 import project.gameengine.base.GameContext;
 import project.gameengine.base.Player;
@@ -63,7 +64,7 @@ public class PlayerImpl implements Player
     public Action play(GameContext context)
     {
 
-        var action = (IAction) actions.Next();
+        var action = (IAction) getActionGeneratorInstance().getRandomAction();
 
         action.apply(this, context);
 
@@ -83,8 +84,8 @@ public class PlayerImpl implements Player
         return "PlayerImpl{" +
                 "m_name='" + m_name + '\'' +
                 ", m_currentMoney=" + m_currentMoney +
-                "\nm_spaceShip=" + m_spaceShip +
-                "\nm_currentPlanet=" + m_currentPlanet +
+                "m_spaceShip=" + m_spaceShip +
+                "m_currentPlanet=" + m_currentPlanet +
                 '}';
     }
 

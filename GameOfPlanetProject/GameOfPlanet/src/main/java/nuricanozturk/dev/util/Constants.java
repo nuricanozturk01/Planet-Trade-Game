@@ -10,14 +10,15 @@ public final class Constants
 
 
     // ############################## LIVING_CONDITIONS START ##############################
+    public static final double UNIT_FUEL_PRICE_INCREASE_RATE = .05;
     public static final double MIN_SPACESHIP_COST = 3_500D;
     public static final double MAX_SPACESHIP_COST = 30_000D;
     public static final double MIN_UNIT_FUEL_PRICE = 2D;
     public static final double MAX_UNIT_FUEL_PRICE = 5D;
     public static final double MIN_TURN_PARKING_PRICE = 2D;
     public static final double MAX_TURN_PARKING_PRICE = 10D;
-    public static final double MIN_UNIT_BUY_PRICE = 1500D;
-    public static final double MAX_UNIT_BUY_PRICE = 5_500D;
+    public static final double MIN_COMMODITY_UNIT_BUY_PRICE = 1500D;
+    public static final double MAX_COMMODITY_BUY_PRICE = 5_500D;
 
     // ############################## LIVING_CONDITIONS END ##############################
 
@@ -37,30 +38,21 @@ public final class Constants
 
 
     // ############################## PLANET DISTANCE START ##############################
-
-    public static int MIN_DISTANCE_BETWEEN_PLANETS = 10;
-    public static int MAX_DISTANCE_BETWEEN_PLANETS = 100;
-    // ############################## PLANET DISTANCE END ##############################
-
-
     // ############################## BLACKHOLE START ##############################
     public static final LinkedList<String> BLACKHOLE_NAMES = new LinkedList<>(
             Arrays.asList("Sagittarius A*", "M87", "Cygnus X-1", "V404 Cygni", "GRO J1655-40", "NGC 1365", "NGC 1277",
                     "A0620-00", "IC 310", "PKS B1424-418")
     );
-    // ############################## BLACKHOLE END ##############################
-
-
     // ############################## PLAYER START ##############################
     public static final int MIN_PLAYER = 1;
+    // ############################## PLANET DISTANCE END ##############################
     public static final int MAX_PLAYER = 5;
+    // ############################## BLACKHOLE END ##############################
     public static final double PLAYER_INITIAL_MONEY = 60_000D;
-    // ############################## PLAYER END ##############################
-
-
     // ############################## SPACESHIP START ##############################
     public static final int MIN_SPACESHIP_COUNT = 10;
     public static final int MAX_SPACESHIP_COUNT = 30;
+    // ############################## PLAYER END ##############################
     public static final int DEFAULT_INIT_FUEL_CAPACITY = 500;
     public static final int MIN_FUEL_CAPACITY = 10_000;
     public static final int MAX_FUEL_CAPACITY = 50_000;
@@ -68,7 +60,6 @@ public final class Constants
     public static final int MIN_SPEED = 100;
     public static final int MIN_VOLUME = 3500;
     public static final int MAX_VOLUME = 8500;
-
     public static final LinkedList<String> SPACESHIP_NAMES = new LinkedList<>(
             asList("Apollo", "Discovery", "Enterprise", "Falcon", "Galaxy", "Hermes", "Infinity", "Jupiter",
                     "Nova", "Orion", "Pioneer", "Raptor", "Serenity", "Titan", "Voyager", "Zenith", "Aurora",
@@ -81,29 +72,27 @@ public final class Constants
                     "Cosmic", "Dragonfly", "Equinox", "Hawk", "Jetstream", "Lunar", "Meteorite", "Nebula",
                     "Orbit", "Pulsar", "Quasar", "Rocket", "Stellar", "Traverse", "Vortex", "Warp", "Xenith",
                     "Yosemite", "Zero-G"));
+    public static final int MAX_PLANET_SIZE = 10;
+    public static final int MIN_PLANET_SIZE = 2;
     // ############################## SPACESHIP END ##############################
 
 
     // ############################## PLANET START ##############################
-
-    public static final int MAX_PLANET_SIZE = 10;
-    public static final int MIN_PLANET_SIZE = 2;
     public static final LinkedList<String> PLANET_NAMES = new LinkedList<>(
             asList("Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune",
                     "Pluto", "Eris", "Haumea", "Makemake", "Ceres", "Orcus", "Quaoar", "Sedna", "Varuna",
                     "Ixion", "Chaos", "Nessus", "Huya", "Salacia", "Gonggong", "Varda", "Tyche"));
+    // ############################## COMMODITY START ##############################
+    public static final int MIN_COMMODITY_INCREASE = 2;
+    public static final int MAX_COMMODITY_INCREASE = 5;
 
     // ############################## PLANET END ##############################
-
-
-    // ############################## COMMODITY START ##############################
-
     public static final int MIN_COMMODITY_COUNT = 10;
     public static final int MAX_COMMODITY_COUNT = 20;
-    public static final int MIN_UNIT_VOLUME = 5;
-    public static final int MAX_UNIT_VOLUME = 10;
-    public static final int MIN_CURRENT_SUPPLY_AMOUNT = 3;
-    public static final int MAX_CURRENT_SUPPLY_AMOUNT = 6;
+    public static final int MIN_UNIT_VOLUME = 50;
+    public static final int MAX_UNIT_VOLUME = 100;
+    public static final int MIN_CURRENT_SUPPLY_AMOUNT = 5;
+    public static final int MAX_CURRENT_SUPPLY_AMOUNT = 20;
     public static final double MAX_DECAY_RATIO = .7D;
     public static final double MIN_DECAY_RATIO = .2D;
     public static final List<String> COMMODITY_NAME = asList("Lithium", "Titanium", "Platinum", "Gold",
@@ -124,10 +113,6 @@ public final class Constants
             "Tantalum", "Niobium",
             "Rhenium", "Osmium", "Ruthenium", "Technetium", "Molybdenum", "Boron Nitride", "Graphene",
             "Fullerenes", "Carbon Nanotubes", "Quantum Dots");
-
-    // ############################## COMMODITY END ##############################
-
-
     // ############################## MARKET START ##############################
     public static final LinkedList<String> MARKET_NAMES = new LinkedList<>(
             asList("Alpha Market", "Beta Bazaar", "Gamma Mart", "Delta Trade", "Epsilon Emporium", "Zeta Shop",
@@ -147,6 +132,10 @@ public final class Constants
                     "Mercury Shop", "Venus Mall", "Mars Depot", "Jupiter Store", "Saturn Market", "Uranus Bazaar",
                     "Neptune Mart", "Pluto Trade", "Nebula Shop", "Stardust Mall", "Comet Depot", "Meteorite Store")
     );
+    public static int MIN_DISTANCE_BETWEEN_PLANETS = 10;
+
+    // ############################## COMMODITY END ##############################
+    public static int MAX_DISTANCE_BETWEEN_PLANETS = 100;
 
     // ############################## MARKET END ##############################
 

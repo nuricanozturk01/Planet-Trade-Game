@@ -10,7 +10,9 @@ public final class RandomConfig
 {
     private static final Random m_secureRandom = new SecureRandom();
 
-    private RandomConfig() {}
+    private RandomConfig()
+    {
+    }
 
     public static Random getRandomInstance()
     {

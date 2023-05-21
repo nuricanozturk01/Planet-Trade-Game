@@ -76,7 +76,7 @@ public class PlanTravelling implements IAction
         var currentFuel = m_spaceShip.getCurrentFuel();
 
         var usage = m_spaceShip.getFuelUsagePerLightYear();
-        //System.out.println("Distance: " + targetPlanetDistance + " Usage: " + usage + " NECESSARY FUEL: " + targetPlanetDistance * usage + " AND CURRENT is: " + currentFuel);
+
         return targetPlanetDistance * usage <= currentFuel;
     }
 

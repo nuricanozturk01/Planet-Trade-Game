@@ -12,7 +12,9 @@ import static nuricanozturk.dev.util.Constants.MIN_DISTANCE_BETWEEN_PLANETS;
 
 public final class DistanceBetweenPlanetsFactory
 {
-    private DistanceBetweenPlanetsFactory() {}
+    private DistanceBetweenPlanetsFactory()
+    {
+    }
 
     private static Map<Planet, Integer> createDistances(List<Planet> planets, Planet currentPlanet)
     {

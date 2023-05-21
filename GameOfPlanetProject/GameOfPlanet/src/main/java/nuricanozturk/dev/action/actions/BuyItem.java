@@ -11,9 +11,11 @@ import project.gameengine.base.Player;
 import java.util.ArrayList;
 import java.util.List;
 
+import static java.lang.Math.min;
 import static java.lang.String.format;
 import static java.util.Comparator.comparingDouble;
-import static nuricanozturk.dev.util.Constants.MIN_UNIT_BUY_PRICE;
+import static nuricanozturk.dev.util.Constants.MIN_COMMODITY_COUNT;
+import static nuricanozturk.dev.util.Constants.MIN_COMMODITY_UNIT_BUY_PRICE;
 import static nuricanozturk.dev.util.Util.LOGGER;
 
 public class BuyItem implements IAction
@@ -21,14 +23,13 @@ public class BuyItem implements IAction
     private final String START_MESSAGE = "%s on shopping on %s planet with $%.2f";
     private final String END_MESSAGE = "[%s] bought something: Rest Of Amount: $%.2f\nShopping List:";
     private PlayerImpl m_player;
+    private SpaceShip m_spaceship;
     private List<Cargo> m_cargos;
     private List<Commodity> Commodities;
     private List<Commodity> _removedCommodities;
     private int totalVolume = 0;
     private double initialMoney;
     private double totalCost = 0D;
-
-    private SpaceShip m_spaceship;
 
     public BuyItem()
     {
@@ -71,14 +72,11 @@ public class BuyItem implements IAction
         totalVolume = 0;
         totalCost = 0;
 
-        if (initialMoney <= MIN_UNIT_BUY_PRICE)
-        {
+        if (initialMoney <= MIN_COMMODITY_UNIT_BUY_PRICE) {
             LOGGER.log(m_player.getName() + " on shopping but who not have enough money!");
-        } else if (m_player.getCurrentPlanet().getMarket().getCommodities().isEmpty())
-        {
+        } else if (m_player.getCurrentPlanet().getMarket().getCommodities().isEmpty()) {
             LOGGER.log(m_player.getName() + " on shopping but market is empty");
-        } else
-        {
+        } else {
             startActionLog();
 
             m_cargos = m_player.getSpaceShip().getCargos();
@@ -97,29 +95,29 @@ public class BuyItem implements IAction
     }
 
 
+    // in line quantity = MIN_COMMODITY_COUNT >= 100 ? quantity / 2 : quantity - 1; may chage from user
+    @SuppressWarnings("all")
     private void buy(Commodity commodity)
     {
         if (totalCost >= initialMoney || totalVolume >= m_spaceship.getVolumeCapacity() || commodity.getCurrentSupplyAmount() < 0)
             return;
 
-        //int quantity = (int) (m_player.getCurrentMoney() / commodity.getUnitBuyPrice()); // how many can be bought
-        var quantity = (int) (m_player.getCurrentMoney() / commodity.getUnitBuyPrice());
+        int quantity = min((int) (m_player.getCurrentMoney() / commodity.getUnitBuyPrice()),
+                commodity.getCurrentSupplyAmount());
+
         if (quantity == 0)
             return;
 
-        if (quantity < commodity.getCurrentSupplyAmount())
-            commodity.setCurrentSupplyAmount(commodity.getCurrentSupplyAmount() - quantity);
-
-        else quantity = commodity.getCurrentSupplyAmount();
+        commodity.setCurrentSupplyAmount(commodity.getCurrentSupplyAmount() - quantity);
 
         var currentCost = quantity * commodity.getUnitBuyPrice();
         var currentVolume = quantity * commodity.getUnitVolume();
 
-        while (totalCost + currentCost > m_player.getCurrentMoney() &&
-                totalVolume + currentVolume > m_spaceship.getVolumeCapacity() &&
-                quantity > 0)
+        while (totalCost + currentCost > m_player.getCurrentMoney() && totalVolume + currentVolume > m_spaceship.getVolumeCapacity())
         {
-            quantity = quantity / 2;
+
+            quantity = MIN_COMMODITY_COUNT >= 100 ? quantity / 2 : quantity - 1;
+
             currentCost = quantity * commodity.getUnitBuyPrice();
             currentVolume = quantity * commodity.getUnitVolume();
         }
@@ -132,12 +130,13 @@ public class BuyItem implements IAction
         update(currentCost, currentVolume);
     }
 
+
     @Override
     public String toString()
     {
         var sb = new StringBuilder();
 
-        if (initialMoney <= MIN_UNIT_BUY_PRICE)
+        if (initialMoney <= MIN_COMMODITY_UNIT_BUY_PRICE)
             sb.append(m_player.getName()).append(" on shopping but who not have enough money!");
         else if (m_player.getCurrentPlanet().getMarket().getCommodities().isEmpty())
         {
@@ -152,6 +151,9 @@ public class BuyItem implements IAction
             m_cargos.stream().map(Cargo::toString).forEach(sb::append);
             sb.append("---------------SHOPPING [").append(m_player.getName()).append("]---------------\n");
 
+            sb.append("REMOVED ARE: \n");
+            _removedCommodities.forEach(c -> sb.append(c).append("\n"));
+            sb.append("------------\n");
         }
 
         return sb.toString();

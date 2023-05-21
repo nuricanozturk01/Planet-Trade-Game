@@ -31,7 +31,7 @@ public final class CommodityFactory
                 .setName(COMMODITY_NAME.get(i))
                 .setUnitVolume(getRandomInstance().nextInt(MIN_UNIT_VOLUME, MAX_UNIT_VOLUME))
                 .setCurrentSupplyAmount(getRandomInstance().nextInt(MIN_CURRENT_SUPPLY_AMOUNT, MAX_CURRENT_SUPPLY_AMOUNT))
-                .setUnitBuyPrice(getBigFormattedNumber(getRandomInstance().nextDouble(MIN_UNIT_BUY_PRICE, MAX_UNIT_BUY_PRICE)))
+                .setUnitBuyPrice(getBigFormattedNumber(getRandomInstance().nextDouble(MIN_COMMODITY_UNIT_BUY_PRICE, MAX_COMMODITY_BUY_PRICE)))
                 .setDecayRatio(getBigFormattedNumber(getRandomInstance().nextDouble(MIN_DECAY_RATIO, MAX_DECAY_RATIO)))
                 .build();
 

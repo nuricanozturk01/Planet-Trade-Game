@@ -5,29 +5,20 @@ import project.gameengine.base.GameContext;
 import java.util.ArrayList;
 import java.util.List;
 
-import static nuricanozturk.dev.util.Util.LOGGER;
-
 public class Galaxy implements IGalaxy, GameContext
 {
     private final String m_name;
     private final List<Planet> m_planets;
-    private final int m_planetCount;
 
-    public Galaxy(String name, int planetCount)
+    public Galaxy(String name)
     {
         m_name = name;
         m_planets = new ArrayList<>();
-        m_planetCount = planetCount;
     }
 
     public String getName()
     {
         return m_name;
-    }
-
-    public int getPlanetCount()
-    {
-        return m_planetCount;
     }
 
     @Override
@@ -40,6 +31,4 @@ public class Galaxy implements IGalaxy, GameContext
     {
         return m_planets;
     }
-
-
 }
