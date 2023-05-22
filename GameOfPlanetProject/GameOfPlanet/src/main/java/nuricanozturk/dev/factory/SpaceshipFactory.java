@@ -30,15 +30,13 @@ public class SpaceshipFactory
 
     private static int createSpeed(double price)
     {
-        // MIN: 3_500
-        // MAX 50_000
-        var range1 = MIN_SPACESHIP_COST + 10_000D; // 13_500
-        var range2 = MIN_SPACESHIP_COST + 20_000D; // 23_500
-        var range3 = (MIN_SPACESHIP_COST + MAX_SPACESHIP_COST) / 2; // 26_750
-        var range4 = MAX_SPACESHIP_COST - 10_000D; // 40_000
-        var range5 = MAX_SPACESHIP_COST - 5_000D; // 45_000
+        var range1 = MIN_SPACESHIP_COST + 10_000D;
+        var range2 = MIN_SPACESHIP_COST + 20_000D;
+        var range3 = (MIN_SPACESHIP_COST + MAX_SPACESHIP_COST) / 2;
+        var range4 = MAX_SPACESHIP_COST - 10_000D;
+        var range5 = MAX_SPACESHIP_COST - 5_000D;
 
-        if (price <= range1) // price < 13_500
+        if (price <= range1)
             return getRandomInstance().nextInt(MIN_SPEED, MIN_SPEED + 200);
         if (price <= range2)
             return getRandomInstance().nextInt(MIN_SPEED + 200, MIN_SPEED + 400);

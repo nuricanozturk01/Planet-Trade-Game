@@ -17,22 +17,17 @@ Galaxy Cartwheel is created...
 
 -----Planets are creating...
 
-Commodity{m_name='Lithium', m_unitVolume=67, m_decayRatio=0.58, m_currentSupplyAmount=18, m_unitBuyPrice=4008.15, m_unitSellPrice=3908.15} is created...
-Commodity{m_name='Titanium', m_unitVolume=84, m_decayRatio=0.24, m_currentSupplyAmount=16, m_unitBuyPrice=2376.41, m_unitSellPrice=2276.41} is created...
-Commodity{m_name='Platinum', m_unitVolume=63, m_decayRatio=0.21, m_currentSupplyAmount=10, m_unitBuyPrice=2029.45, m_unitSellPrice=1929.45} is created...
-Commodity{m_name='Gold', m_unitVolume=58, m_decayRatio=0.24, m_currentSupplyAmount=17, m_unitBuyPrice=4374.34, m_unitSellPrice=4274.34} is created...
-Commodity{m_name='Silver', m_unitVolume=60, m_decayRatio=0.62, m_currentSupplyAmount=8, m_unitBuyPrice=4812.85, m_unitSellPrice=4712.85} is created...
-Commodity{m_name='Helium-3', m_unitVolume=64, m_decayRatio=0.64, m_currentSupplyAmount=10, m_unitBuyPrice=2459.43, m_unitSellPrice=2359.43} is created...
-Commodity{m_name='Water', m_unitVolume=67, m_decayRatio=0.51, m_currentSupplyAmount=11, m_unitBuyPrice=1532.97, m_unitSellPrice=1432.97} is created...
-Commodity{m_name='Food', m_unitVolume=83, m_decayRatio=0.44, m_currentSupplyAmount=6, m_unitBuyPrice=2841.38, m_unitSellPrice=2741.38} is created...
-Commodity{m_name='Oxygen', m_unitVolume=56, m_decayRatio=0.29, m_currentSupplyAmount=10, m_unitBuyPrice=2180.2, m_unitSellPrice=2080.2} is created...
-Commodity{m_name='Hydrogen', m_unitVolume=85, m_decayRatio=0.32, m_currentSupplyAmount=8, m_unitBuyPrice=3311.87, m_unitSellPrice=3211.87} is created...
-Commodity{m_name='Carbon', m_unitVolume=78, m_decayRatio=0.28, m_currentSupplyAmount=6, m_unitBuyPrice=2856.79, m_unitSellPrice=2756.79} is created...
-Commodity{m_name='Iron', m_unitVolume=76, m_decayRatio=0.57, m_currentSupplyAmount=17, m_unitBuyPrice=4520.44, m_unitSellPrice=4420.44} is created...
-Commodity{m_name='Copper', m_unitVolume=77, m_decayRatio=0.6, m_currentSupplyAmount=8, m_unitBuyPrice=2577.83, m_unitSellPrice=2477.83} is created...
-Commodity{m_name='Nickel', m_unitVolume=82, m_decayRatio=0.22, m_currentSupplyAmount=16, m_unitBuyPrice=2236.95, m_unitSellPrice=2136.95} is created...
-Commodity{m_name='Aluminum', m_unitVolume=86, m_decayRatio=0.21, m_currentSupplyAmount=19, m_unitBuyPrice=2736.67, m_unitSellPrice=2636.67} is created...
-Commodity{m_name='Tungsten', m_unitVolume=53, m_decayRatio=0.55, m_currentSupplyAmount=5, m_unitBuyPrice=5233.08, m_unitSellPrice=5133.08} is created...
+Commodity{m_name='Lithium', m_unitVolume=57, m_decayRatio=0.36, m_currentSupplyAmount=16, m_unitBuyPrice=2290.08, m_unitSellPrice=2190.08} is created...
+Commodity{m_name='Titanium', m_unitVolume=88, m_decayRatio=0.4, m_currentSupplyAmount=5, m_unitBuyPrice=2920.64, m_unitSellPrice=2820.64} is created...
+Commodity{m_name='Platinum', m_unitVolume=50, m_decayRatio=0.57, m_currentSupplyAmount=12, m_unitBuyPrice=1949.88, m_unitSellPrice=1849.88} is created...
+Commodity{m_name='Gold', m_unitVolume=75, m_decayRatio=0.2, m_currentSupplyAmount=10, m_unitBuyPrice=3489.28, m_unitSellPrice=3389.28} is created...
+Commodity{m_name='Silver', m_unitVolume=79, m_decayRatio=0.58, m_currentSupplyAmount=13, m_unitBuyPrice=2826.93, m_unitSellPrice=2726.93} is created...
+Commodity{m_name='Helium-3', m_unitVolume=60, m_decayRatio=0.4, m_currentSupplyAmount=16, m_unitBuyPrice=2721.86, m_unitSellPrice=2621.86} is created...
+Commodity{m_name='Water', m_unitVolume=60, m_decayRatio=0.48, m_currentSupplyAmount=19, m_unitBuyPrice=3397.14, m_unitSellPrice=3297.14} is created...
+Commodity{m_name='Food', m_unitVolume=81, m_decayRatio=0.32, m_currentSupplyAmount=16, m_unitBuyPrice=2965.93, m_unitSellPrice=2865.93} is created...
+Commodity{m_name='Oxygen', m_unitVolume=52, m_decayRatio=0.68, m_currentSupplyAmount=13, m_unitBuyPrice=2487.87, m_unitSellPrice=2387.87} is created...
+Commodity{m_name='Hydrogen', m_unitVolume=73, m_decayRatio=0.22, m_currentSupplyAmount=6, m_unitBuyPrice=3943.8, m_unitSellPrice=3843.8} is created...
+Commodity{m_name='Carbon', m_unitVolume=80, m_decayRatio=0.2, m_currentSupplyAmount=8, m_unitBuyPrice=2264.11, m_unitSellPrice=2164.11} is created...
 
 
 
@@ -40,24 +35,24 @@ Commodity{m_name='Tungsten', m_unitVolume=53, m_decayRatio=0.55, m_currentSupply
 
 Planet Tyche is created...
 
-Commodity{m_name='Lithium', m_unitVolume=91, m_decayRatio=0.21, m_currentSupplyAmount=16, m_unitBuyPrice=3044.12, m_unitSellPrice=2944.12} is created...
-Commodity{m_name='Titanium', m_unitVolume=62, m_decayRatio=0.24, m_currentSupplyAmount=18, m_unitBuyPrice=4947.32, m_unitSellPrice=4847.32} is created...
-Commodity{m_name='Platinum', m_unitVolume=84, m_decayRatio=0.62, m_currentSupplyAmount=9, m_unitBuyPrice=5496.01, m_unitSellPrice=5396.01} is created...
-Commodity{m_name='Gold', m_unitVolume=67, m_decayRatio=0.31, m_currentSupplyAmount=12, m_unitBuyPrice=2311.49, m_unitSellPrice=2211.49} is created...
-Commodity{m_name='Silver', m_unitVolume=76, m_decayRatio=0.53, m_currentSupplyAmount=9, m_unitBuyPrice=4273.57, m_unitSellPrice=4173.57} is created...
-Commodity{m_name='Helium-3', m_unitVolume=87, m_decayRatio=0.27, m_currentSupplyAmount=14, m_unitBuyPrice=4901.85, m_unitSellPrice=4801.85} is created...
-Commodity{m_name='Water', m_unitVolume=70, m_decayRatio=0.43, m_currentSupplyAmount=13, m_unitBuyPrice=4744.02, m_unitSellPrice=4644.02} is created...
-Commodity{m_name='Food', m_unitVolume=84, m_decayRatio=0.69, m_currentSupplyAmount=18, m_unitBuyPrice=5100.76, m_unitSellPrice=5000.76} is created...
-Commodity{m_name='Oxygen', m_unitVolume=72, m_decayRatio=0.36, m_currentSupplyAmount=15, m_unitBuyPrice=4196.6, m_unitSellPrice=4096.6} is created...
-Commodity{m_name='Hydrogen', m_unitVolume=50, m_decayRatio=0.46, m_currentSupplyAmount=14, m_unitBuyPrice=3655.82, m_unitSellPrice=3555.82} is created...
-Commodity{m_name='Carbon', m_unitVolume=99, m_decayRatio=0.48, m_currentSupplyAmount=10, m_unitBuyPrice=4781.47, m_unitSellPrice=4681.47} is created...
-Commodity{m_name='Iron', m_unitVolume=73, m_decayRatio=0.31, m_currentSupplyAmount=12, m_unitBuyPrice=1818.04, m_unitSellPrice=1718.04} is created...
-Commodity{m_name='Copper', m_unitVolume=71, m_decayRatio=0.54, m_currentSupplyAmount=14, m_unitBuyPrice=2344.95, m_unitSellPrice=2244.95} is created...
-Commodity{m_name='Nickel', m_unitVolume=75, m_decayRatio=0.27, m_currentSupplyAmount=15, m_unitBuyPrice=4154.79, m_unitSellPrice=4054.79} is created...
-Commodity{m_name='Aluminum', m_unitVolume=60, m_decayRatio=0.41, m_currentSupplyAmount=17, m_unitBuyPrice=2812.4, m_unitSellPrice=2712.4} is created...
-Commodity{m_name='Tungsten', m_unitVolume=76, m_decayRatio=0.65, m_currentSupplyAmount=18, m_unitBuyPrice=2794.37, m_unitSellPrice=2694.37} is created...
-Commodity{m_name='Palladium', m_unitVolume=50, m_decayRatio=0.42, m_currentSupplyAmount=16, m_unitBuyPrice=4848.69, m_unitSellPrice=4748.69} is created...
-Commodity{m_name='Rhodium', m_unitVolume=98, m_decayRatio=0.55, m_currentSupplyAmount=15, m_unitBuyPrice=2211.78, m_unitSellPrice=2111.78} is created...
+Commodity{m_name='Lithium', m_unitVolume=67, m_decayRatio=0.43, m_currentSupplyAmount=14, m_unitBuyPrice=2303.51, m_unitSellPrice=2203.51} is created...
+Commodity{m_name='Titanium', m_unitVolume=98, m_decayRatio=0.3, m_currentSupplyAmount=6, m_unitBuyPrice=2357.41, m_unitSellPrice=2257.41} is created...
+Commodity{m_name='Platinum', m_unitVolume=95, m_decayRatio=0.38, m_currentSupplyAmount=16, m_unitBuyPrice=3712.88, m_unitSellPrice=3612.88} is created...
+Commodity{m_name='Gold', m_unitVolume=65, m_decayRatio=0.66, m_currentSupplyAmount=15, m_unitBuyPrice=4242.7, m_unitSellPrice=4142.7} is created...
+Commodity{m_name='Silver', m_unitVolume=74, m_decayRatio=0.51, m_currentSupplyAmount=6, m_unitBuyPrice=2457.21, m_unitSellPrice=2357.21} is created...
+Commodity{m_name='Helium-3', m_unitVolume=65, m_decayRatio=0.29, m_currentSupplyAmount=13, m_unitBuyPrice=5283.27, m_unitSellPrice=5183.27} is created...
+Commodity{m_name='Water', m_unitVolume=69, m_decayRatio=0.32, m_currentSupplyAmount=9, m_unitBuyPrice=4929.86, m_unitSellPrice=4829.86} is created...
+Commodity{m_name='Food', m_unitVolume=53, m_decayRatio=0.55, m_currentSupplyAmount=12, m_unitBuyPrice=5270.39, m_unitSellPrice=5170.39} is created...
+Commodity{m_name='Oxygen', m_unitVolume=51, m_decayRatio=0.6, m_currentSupplyAmount=5, m_unitBuyPrice=5279.32, m_unitSellPrice=5179.32} is created...
+Commodity{m_name='Hydrogen', m_unitVolume=50, m_decayRatio=0.55, m_currentSupplyAmount=13, m_unitBuyPrice=3996.49, m_unitSellPrice=3896.49} is created...
+Commodity{m_name='Carbon', m_unitVolume=81, m_decayRatio=0.6, m_currentSupplyAmount=11, m_unitBuyPrice=2448.51, m_unitSellPrice=2348.51} is created...
+Commodity{m_name='Iron', m_unitVolume=71, m_decayRatio=0.62, m_currentSupplyAmount=13, m_unitBuyPrice=5273.28, m_unitSellPrice=5173.28} is created...
+Commodity{m_name='Copper', m_unitVolume=63, m_decayRatio=0.2, m_currentSupplyAmount=6, m_unitBuyPrice=2210.92, m_unitSellPrice=2110.92} is created...
+Commodity{m_name='Nickel', m_unitVolume=64, m_decayRatio=0.38, m_currentSupplyAmount=14, m_unitBuyPrice=2314.97, m_unitSellPrice=2214.97} is created...
+Commodity{m_name='Aluminum', m_unitVolume=74, m_decayRatio=0.33, m_currentSupplyAmount=11, m_unitBuyPrice=5359.95, m_unitSellPrice=5259.95} is created...
+Commodity{m_name='Tungsten', m_unitVolume=76, m_decayRatio=0.5, m_currentSupplyAmount=19, m_unitBuyPrice=2541.64, m_unitSellPrice=2441.64} is created...
+Commodity{m_name='Palladium', m_unitVolume=61, m_decayRatio=0.66, m_currentSupplyAmount=14, m_unitBuyPrice=3388.07, m_unitSellPrice=3288.07} is created...
+Commodity{m_name='Rhodium', m_unitVolume=92, m_decayRatio=0.66, m_currentSupplyAmount=16, m_unitBuyPrice=1811.42, m_unitSellPrice=1711.42} is created...
 
 
 
@@ -65,39 +60,73 @@ Commodity{m_name='Rhodium', m_unitVolume=98, m_decayRatio=0.55, m_currentSupplyA
 
 Planet Varda is created...
 
-SpaceShip{, m_name='Zero-G', m_price=7457.02, m_volumeCapacity=5241, m_speed=139, m_currentFuel=500, m_fuelCapacity=42739, fuelUsagePerLightYear=13
+Commodity{m_name='Lithium', m_unitVolume=63, m_decayRatio=0.28, m_currentSupplyAmount=15, m_unitBuyPrice=1811.98, m_unitSellPrice=1711.98} is created...
+Commodity{m_name='Titanium', m_unitVolume=72, m_decayRatio=0.23, m_currentSupplyAmount=11, m_unitBuyPrice=3528.25, m_unitSellPrice=3428.25} is created...
+Commodity{m_name='Platinum', m_unitVolume=59, m_decayRatio=0.39, m_currentSupplyAmount=5, m_unitBuyPrice=3687.09, m_unitSellPrice=3587.09} is created...
+Commodity{m_name='Gold', m_unitVolume=98, m_decayRatio=0.51, m_currentSupplyAmount=8, m_unitBuyPrice=1833.7, m_unitSellPrice=1733.7} is created...
+Commodity{m_name='Silver', m_unitVolume=84, m_decayRatio=0.67, m_currentSupplyAmount=14, m_unitBuyPrice=2139.08, m_unitSellPrice=2039.08} is created...
+Commodity{m_name='Helium-3', m_unitVolume=66, m_decayRatio=0.61, m_currentSupplyAmount=19, m_unitBuyPrice=2553.85, m_unitSellPrice=2453.85} is created...
+Commodity{m_name='Water', m_unitVolume=52, m_decayRatio=0.68, m_currentSupplyAmount=5, m_unitBuyPrice=4386.19, m_unitSellPrice=4286.19} is created...
+Commodity{m_name='Food', m_unitVolume=51, m_decayRatio=0.28, m_currentSupplyAmount=10, m_unitBuyPrice=5246.81, m_unitSellPrice=5146.81} is created...
+Commodity{m_name='Oxygen', m_unitVolume=56, m_decayRatio=0.68, m_currentSupplyAmount=9, m_unitBuyPrice=3552.27, m_unitSellPrice=3452.27} is created...
+Commodity{m_name='Hydrogen', m_unitVolume=61, m_decayRatio=0.57, m_currentSupplyAmount=6, m_unitBuyPrice=2414.33, m_unitSellPrice=2314.33} is created...
+Commodity{m_name='Carbon', m_unitVolume=61, m_decayRatio=0.36, m_currentSupplyAmount=19, m_unitBuyPrice=1744.67, m_unitSellPrice=1644.67} is created...
+
+
+
+---------Market Stardust Mall is created...
+
+Planet Gonggong is created...
+
+SpaceShip{, m_name='Zero-G', m_price=26753.99, m_volumeCapacity=4794, m_speed=1500, m_currentFuel=500, m_fuelCapacity=35165, fuelUsagePerLightYear=10
 m_cargos=[]} is created...
-SpaceShip{, m_name='Yosemite', m_price=17004.56, m_volumeCapacity=4262, m_speed=400, m_currentFuel=500, m_fuelCapacity=35556, fuelUsagePerLightYear=19
+SpaceShip{, m_name='Yosemite', m_price=23463.76, m_volumeCapacity=7371, m_speed=330, m_currentFuel=500, m_fuelCapacity=20695, fuelUsagePerLightYear=18
 m_cargos=[]} is created...
-SpaceShip{, m_name='Xenith', m_price=29415.2, m_volumeCapacity=6871, m_speed=1500, m_currentFuel=500, m_fuelCapacity=41575, fuelUsagePerLightYear=11
+SpaceShip{, m_name='Xenith', m_price=17498.0, m_volumeCapacity=7229, m_speed=304, m_currentFuel=500, m_fuelCapacity=47934, fuelUsagePerLightYear=13
 m_cargos=[]} is created...
-SpaceShip{, m_name='Warp', m_price=15739.41, m_volumeCapacity=5082, m_speed=476, m_currentFuel=500, m_fuelCapacity=28063, fuelUsagePerLightYear=15
+SpaceShip{, m_name='Warp', m_price=4442.84, m_volumeCapacity=6841, m_speed=280, m_currentFuel=500, m_fuelCapacity=29907, fuelUsagePerLightYear=11
 m_cargos=[]} is created...
-SpaceShip{, m_name='Vortex', m_price=14386.84, m_volumeCapacity=3532, m_speed=400, m_currentFuel=500, m_fuelCapacity=28967, fuelUsagePerLightYear=11
+SpaceShip{, m_name='Vortex', m_price=22292.17, m_volumeCapacity=5874, m_speed=429, m_currentFuel=500, m_fuelCapacity=31106, fuelUsagePerLightYear=16
 m_cargos=[]} is created...
-SpaceShip{, m_name='Traverse', m_price=27487.89, m_volumeCapacity=4909, m_speed=1500, m_currentFuel=500, m_fuelCapacity=36153, fuelUsagePerLightYear=16
+SpaceShip{, m_name='Traverse', m_price=26095.33, m_volumeCapacity=8310, m_speed=1500, m_currentFuel=500, m_fuelCapacity=48779, fuelUsagePerLightYear=10
 m_cargos=[]} is created...
-SpaceShip{, m_name='Stellar', m_price=12773.86, m_volumeCapacity=6401, m_speed=108, m_currentFuel=500, m_fuelCapacity=43206, fuelUsagePerLightYear=15
+SpaceShip{, m_name='Stellar', m_price=12233.94, m_volumeCapacity=3971, m_speed=288, m_currentFuel=500, m_fuelCapacity=48873, fuelUsagePerLightYear=19
 m_cargos=[]} is created...
-SpaceShip{, m_name='Rocket', m_price=28302.22, m_volumeCapacity=7300, m_speed=1500, m_currentFuel=500, m_fuelCapacity=28297, fuelUsagePerLightYear=13
+SpaceShip{, m_name='Rocket', m_price=4150.4, m_volumeCapacity=5350, m_speed=205, m_currentFuel=500, m_fuelCapacity=23589, fuelUsagePerLightYear=15
 m_cargos=[]} is created...
-SpaceShip{, m_name='Quasar', m_price=17268.89, m_volumeCapacity=7952, m_speed=318, m_currentFuel=500, m_fuelCapacity=16728, fuelUsagePerLightYear=10
+SpaceShip{, m_name='Quasar', m_price=9789.62, m_volumeCapacity=5495, m_speed=154, m_currentFuel=500, m_fuelCapacity=41266, fuelUsagePerLightYear=12
 m_cargos=[]} is created...
-SpaceShip{, m_name='Pulsar', m_price=12736.56, m_volumeCapacity=7934, m_speed=269, m_currentFuel=500, m_fuelCapacity=49764, fuelUsagePerLightYear=19
+SpaceShip{, m_name='Pulsar', m_price=12156.47, m_volumeCapacity=3882, m_speed=104, m_currentFuel=500, m_fuelCapacity=31025, fuelUsagePerLightYear=12
 m_cargos=[]} is created...
-SpaceShip{, m_name='Orbit', m_price=19661.6, m_volumeCapacity=8097, m_speed=379, m_currentFuel=500, m_fuelCapacity=14205, fuelUsagePerLightYear=15
+SpaceShip{, m_name='Orbit', m_price=16134.55, m_volumeCapacity=6566, m_speed=477, m_currentFuel=500, m_fuelCapacity=24477, fuelUsagePerLightYear=10
 m_cargos=[]} is created...
-SpaceShip{, m_name='Nebula', m_price=15203.81, m_volumeCapacity=3848, m_speed=382, m_currentFuel=500, m_fuelCapacity=28158, fuelUsagePerLightYear=10
+SpaceShip{, m_name='Nebula', m_price=29148.26, m_volumeCapacity=5234, m_speed=1500, m_currentFuel=500, m_fuelCapacity=46552, fuelUsagePerLightYear=17
 m_cargos=[]} is created...
-SpaceShip{, m_name='Meteorite', m_price=18850.52, m_volumeCapacity=6229, m_speed=376, m_currentFuel=500, m_fuelCapacity=43854, fuelUsagePerLightYear=17
+SpaceShip{, m_name='Meteorite', m_price=27484.77, m_volumeCapacity=8354, m_speed=1500, m_currentFuel=500, m_fuelCapacity=44009, fuelUsagePerLightYear=17
 m_cargos=[]} is created...
-SpaceShip{, m_name='Lunar', m_price=17253.87, m_volumeCapacity=4968, m_speed=465, m_currentFuel=500, m_fuelCapacity=49158, fuelUsagePerLightYear=14
+SpaceShip{, m_name='Lunar', m_price=21071.6, m_volumeCapacity=4156, m_speed=446, m_currentFuel=500, m_fuelCapacity=37258, fuelUsagePerLightYear=12
 m_cargos=[]} is created...
-SpaceShip{, m_name='Jetstream', m_price=22763.56, m_volumeCapacity=5438, m_speed=452, m_currentFuel=500, m_fuelCapacity=37503, fuelUsagePerLightYear=15
+SpaceShip{, m_name='Jetstream', m_price=9325.39, m_volumeCapacity=7090, m_speed=275, m_currentFuel=500, m_fuelCapacity=46756, fuelUsagePerLightYear=10
 m_cargos=[]} is created...
-SpaceShip{, m_name='Hawk', m_price=15302.51, m_volumeCapacity=6203, m_speed=443, m_currentFuel=500, m_fuelCapacity=40671, fuelUsagePerLightYear=16
+SpaceShip{, m_name='Hawk', m_price=10835.1, m_volumeCapacity=4891, m_speed=216, m_currentFuel=500, m_fuelCapacity=42279, fuelUsagePerLightYear=14
 m_cargos=[]} is created...
-SpaceShip{, m_name='Equinox', m_price=22986.95, m_volumeCapacity=5109, m_speed=475, m_currentFuel=500, m_fuelCapacity=14046, fuelUsagePerLightYear=18
+SpaceShip{, m_name='Equinox', m_price=17643.2, m_volumeCapacity=5939, m_speed=418, m_currentFuel=500, m_fuelCapacity=19010, fuelUsagePerLightYear=16
+m_cargos=[]} is created...
+SpaceShip{, m_name='Dragonfly', m_price=8239.63, m_volumeCapacity=5097, m_speed=190, m_currentFuel=500, m_fuelCapacity=43764, fuelUsagePerLightYear=16
+m_cargos=[]} is created...
+SpaceShip{, m_name='Cosmic', m_price=13929.45, m_volumeCapacity=7921, m_speed=447, m_currentFuel=500, m_fuelCapacity=27396, fuelUsagePerLightYear=12
+m_cargos=[]} is created...
+SpaceShip{, m_name='Blaze', m_price=11694.43, m_volumeCapacity=6009, m_speed=110, m_currentFuel=500, m_fuelCapacity=14435, fuelUsagePerLightYear=16
+m_cargos=[]} is created...
+SpaceShip{, m_name='Astro', m_price=5555.38, m_volumeCapacity=5320, m_speed=167, m_currentFuel=500, m_fuelCapacity=39661, fuelUsagePerLightYear=16
+m_cargos=[]} is created...
+SpaceShip{, m_name='Zeus', m_price=17133.61, m_volumeCapacity=7504, m_speed=495, m_currentFuel=500, m_fuelCapacity=35320, fuelUsagePerLightYear=10
+m_cargos=[]} is created...
+SpaceShip{, m_name='Yonder', m_price=4071.99, m_volumeCapacity=4763, m_speed=283, m_currentFuel=500, m_fuelCapacity=20098, fuelUsagePerLightYear=13
+m_cargos=[]} is created...
+SpaceShip{, m_name='Xplorer', m_price=15987.47, m_volumeCapacity=3528, m_speed=442, m_currentFuel=500, m_fuelCapacity=34020, fuelUsagePerLightYear=17
+m_cargos=[]} is created...
+SpaceShip{, m_name='Warp', m_price=18725.24, m_volumeCapacity=5057, m_speed=408, m_currentFuel=500, m_fuelCapacity=32419, fuelUsagePerLightYear=13
 m_cargos=[]} is created...
 
 
@@ -113,29 +142,31 @@ Action: Select Planet created...
 
 
 Player Nuri Can is prepared for game
----- Current Planet: Planet{m_name='Tyche', m_unitFuelPrice=2.51, m_parkingPricePerTurn=7.5, m_market=Meteorite Store}, SpaceShip: SpaceShip{, m_name='Zero-G', m_price=7457.02, m_volumeCapacity=5241, m_speed=139, m_currentFuel=500, m_fuelCapacity=42739, fuelUsagePerLightYear=13
+---- Current Planet: Planet{m_name='Tyche', m_unitFuelPrice=4.43, m_parkingPricePerTurn=4.99, m_market=Meteorite Store}, SpaceShip: SpaceShip{, m_name='Zero-G', m_price=26753.99, m_volumeCapacity=4794, m_speed=1500, m_currentFuel=500, m_fuelCapacity=35165, fuelUsagePerLightYear=10
 m_cargos=[]}
 
 
 
 
 Player John is prepared for game
----- Current Planet: Planet{m_name='Tyche', m_unitFuelPrice=2.51, m_parkingPricePerTurn=7.5, m_market=Meteorite Store}, SpaceShip: SpaceShip{, m_name='Yosemite', m_price=17004.56, m_volumeCapacity=4262, m_speed=400, m_currentFuel=500, m_fuelCapacity=35556, fuelUsagePerLightYear=19
+---- Current Planet: Planet{m_name='Varda', m_unitFuelPrice=2.01, m_parkingPricePerTurn=6.82, m_market=Comet Depot}, SpaceShip: SpaceShip{, m_name='Yosemite', m_price=23463.76, m_volumeCapacity=7371, m_speed=330, m_currentFuel=500, m_fuelCapacity=20695, fuelUsagePerLightYear=18
 m_cargos=[]}
 
 
 
 
 Player Anastasia is prepared for game
----- Current Planet: Planet{m_name='Tyche', m_unitFuelPrice=2.51, m_parkingPricePerTurn=7.5, m_market=Meteorite Store}, SpaceShip: SpaceShip{, m_name='Xenith', m_price=29415.2, m_volumeCapacity=6871, m_speed=1500, m_currentFuel=500, m_fuelCapacity=41575, fuelUsagePerLightYear=11
+---- Current Planet: Planet{m_name='Varda', m_unitFuelPrice=2.01, m_parkingPricePerTurn=6.82, m_market=Comet Depot}, SpaceShip: SpaceShip{, m_name='Xenith', m_price=17498.0, m_volumeCapacity=7229, m_speed=304, m_currentFuel=500, m_fuelCapacity=47934, fuelUsagePerLightYear=13
 m_cargos=[]}
 
 
 Intelligent Player Demo Player is prepared for game
----- Current Planet: Planet{m_name='Varda', m_unitFuelPrice=2.28, m_parkingPricePerTurn=6.86, m_market=Comet Depot}, SpaceShip: SpaceShip{, m_name='Warp', m_price=15739.41, m_volumeCapacity=5082, m_speed=476, m_currentFuel=500, m_fuelCapacity=28063, fuelUsagePerLightYear=15
+---- Current Planet: Planet{m_name='Varda', m_unitFuelPrice=2.01, m_parkingPricePerTurn=6.82, m_market=Comet Depot}, SpaceShip: SpaceShip{, m_name='Warp', m_price=4442.84, m_volumeCapacity=6841, m_speed=280, m_currentFuel=500, m_fuelCapacity=29907, fuelUsagePerLightYear=11
 m_cargos=[]}
 
 
+Nuri Can on hangar who is change spaceship with $33246,01 and current spaceship: Zero-G
+[Nuri Can] on hangar who is changed spaceship to Vortex and has $37707,83
 
 
 ---------------------------GAME UPDATE---------------------------
@@ -144,134 +175,19 @@ Supply prices are changed.....
 Unit Fuel Prices are changed...
 
 -------- NEW PRICES OF FUEL --------
-Planet [Tyche] unit fuel price changed $2,51 to $2,64
-Planet [Varda] unit fuel price changed $2,28 to $2,39
+Planet [Tyche] unit fuel price changed $4,43 to $4,65
+Planet [Varda] unit fuel price changed $2,01 to $2,11
+Planet [Gonggong] unit fuel price changed $3,17 to $3,33
 -------- NEW PRICES OF FUEL --------
 
 Added random supplies to markets.....
 updated supply amounts cause of decay.....
 
 -------- PLAYER STATUS --------
-Name: Nuri Can, CurrentMoney: $52535,48, Spaceship: Zero-G [0/5241], Current Planet: Tyche
-Name: John, CurrentMoney: $42995,44, Spaceship: Yosemite [0/4262], Current Planet: Tyche
-Name: Anastasia, CurrentMoney: $30584,80, Spaceship: Xenith [0/6871], Current Planet: Tyche
-Name: Demo Player, CurrentMoney: $44260,59, Spaceship: Warp [0/5082], Current Planet: Varda
-
--------- PLAYER STATUS --------
-
----------------------------GAME UPDATE"---------------------------
-
-
-
-
-
-
----------------------------GAME UPDATE---------------------------
-Supply amounts are changed.....
-Supply prices are changed.....
-Unit Fuel Prices are changed...
-
--------- NEW PRICES OF FUEL --------
-Planet [Tyche] unit fuel price changed $2,64 to $2,77
-Planet [Varda] unit fuel price changed $2,39 to $2,51
--------- NEW PRICES OF FUEL --------
-
-Added random supplies to markets.....
-updated supply amounts cause of decay.....
-
--------- PLAYER STATUS --------
-Name: Nuri Can, CurrentMoney: $52535,48, Spaceship: Zero-G [0/5241], Current Planet: Tyche
-Name: John, CurrentMoney: $42987,94, Spaceship: Yosemite [0/4262], Current Planet: Tyche
-Name: Anastasia, CurrentMoney: $30584,80, Spaceship: Xenith [0/6871], Current Planet: Tyche
-Name: Demo Player, CurrentMoney: $44260,59, Spaceship: Warp [0/5082], Current Planet: Varda
-
--------- PLAYER STATUS --------
-
----------------------------GAME UPDATE"---------------------------
-
-
-
-
-
-
----------------------------GAME UPDATE---------------------------
-Supply amounts are changed.....
-Supply prices are changed.....
-Unit Fuel Prices are changed...
-
--------- NEW PRICES OF FUEL --------
-Planet [Tyche] unit fuel price changed $2,77 to $2,91
-Planet [Varda] unit fuel price changed $2,51 to $2,64
--------- NEW PRICES OF FUEL --------
-
-Added random supplies to markets.....
-updated supply amounts cause of decay.....
-
--------- PLAYER STATUS --------
-Name: Nuri Can, CurrentMoney: $52535,48, Spaceship: Zero-G [0/5241], Current Planet: Tyche
-Name: John, CurrentMoney: $42987,94, Spaceship: Yosemite [0/4262], Current Planet: Tyche
-Name: Anastasia, CurrentMoney: $30577,30, Spaceship: Xenith [0/6871], Current Planet: Tyche
-Name: Demo Player, CurrentMoney: $44260,59, Spaceship: Warp [0/5082], Current Planet: Varda
-
--------- PLAYER STATUS --------
-
----------------------------GAME UPDATE"---------------------------
-
-
-
-
-Demo Player on hangar who is change spaceship with $44260,59 and current spaceship: Warp
-[Demo Player] on hangar who is changed spaceship to Vortex and has $45613,16
-
-
----------------------------GAME UPDATE---------------------------
-Supply amounts are changed.....
-Supply prices are changed.....
-Unit Fuel Prices are changed...
-
--------- NEW PRICES OF FUEL --------
-Planet [Tyche] unit fuel price changed $2,91 to $3,05
-Planet [Varda] unit fuel price changed $2,64 to $2,77
--------- NEW PRICES OF FUEL --------
-
-Added random supplies to markets.....
-updated supply amounts cause of decay.....
-
--------- PLAYER STATUS --------
-Name: Nuri Can, CurrentMoney: $52535,48, Spaceship: Zero-G [0/5241], Current Planet: Tyche
-Name: John, CurrentMoney: $42987,94, Spaceship: Yosemite [0/4262], Current Planet: Tyche
-Name: Anastasia, CurrentMoney: $30577,30, Spaceship: Xenith [0/6871], Current Planet: Tyche
-Name: Demo Player, CurrentMoney: $45613,16, Spaceship: Vortex [0/3532], Current Planet: Varda
-
--------- PLAYER STATUS --------
-
----------------------------GAME UPDATE"---------------------------
-
-
-
-
-Nuri Can on hangar who is change spaceship with $52535,48 and current spaceship: Zero-G
-[Nuri Can] on hangar who is changed spaceship to Traverse and has $32504,61
-
-
----------------------------GAME UPDATE---------------------------
-Supply amounts are changed.....
-Supply prices are changed.....
-Unit Fuel Prices are changed...
-
--------- NEW PRICES OF FUEL --------
-Planet [Tyche] unit fuel price changed $3,05 to $3,20
-Planet [Varda] unit fuel price changed $2,77 to $2,91
--------- NEW PRICES OF FUEL --------
-
-Added random supplies to markets.....
-updated supply amounts cause of decay.....
-
--------- PLAYER STATUS --------
-Name: Nuri Can, CurrentMoney: $32504,61, Spaceship: Traverse [0/4909], Current Planet: Tyche
-Name: John, CurrentMoney: $42987,94, Spaceship: Yosemite [0/4262], Current Planet: Tyche
-Name: Anastasia, CurrentMoney: $30577,30, Spaceship: Xenith [0/6871], Current Planet: Tyche
-Name: Demo Player, CurrentMoney: $45613,16, Spaceship: Vortex [0/3532], Current Planet: Varda
+Name: Nuri Can, CurrentMoney: $37707,83, Spaceship: Vortex [0/5874], Current Planet: Tyche
+Name: John, CurrentMoney: $36536,24, Spaceship: Yosemite [0/7371], Current Planet: Varda
+Name: Anastasia, CurrentMoney: $42502,00, Spaceship: Xenith [0/7229], Current Planet: Varda
+Name: Demo Player, CurrentMoney: $55557,16, Spaceship: Warp [0/6841], Current Planet: Varda
 
 -------- PLAYER STATUS --------
 
@@ -282,7 +198,7 @@ Name: Demo Player, CurrentMoney: $45613,16, Spaceship: Vortex [0/3532], Current 
 
 
 --------------------SELL ITEM--------------------------------
-John on market for sell something with $42987,94
+John on market for sell something with $36536,24
 
 
 ---------------------------GAME UPDATE---------------------------
@@ -291,46 +207,19 @@ Supply prices are changed.....
 Unit Fuel Prices are changed...
 
 -------- NEW PRICES OF FUEL --------
-Planet [Tyche] unit fuel price changed $3,20 to $3,36
-Planet [Varda] unit fuel price changed $2,91 to $3,06
+Planet [Tyche] unit fuel price changed $4,65 to $4,88
+Planet [Varda] unit fuel price changed $2,11 to $2,22
+Planet [Gonggong] unit fuel price changed $3,33 to $3,49
 -------- NEW PRICES OF FUEL --------
 
 Added random supplies to markets.....
 updated supply amounts cause of decay.....
 
 -------- PLAYER STATUS --------
-Name: Nuri Can, CurrentMoney: $32504,61, Spaceship: Traverse [0/4909], Current Planet: Tyche
-Name: John, CurrentMoney: $42987,94, Spaceship: Yosemite [0/4262], Current Planet: Tyche
-Name: Anastasia, CurrentMoney: $30577,30, Spaceship: Xenith [0/6871], Current Planet: Tyche
-Name: Demo Player, CurrentMoney: $45613,16, Spaceship: Vortex [0/3532], Current Planet: Varda
-
--------- PLAYER STATUS --------
-
----------------------------GAME UPDATE"---------------------------
-
-
-
-
-
-
----------------------------GAME UPDATE---------------------------
-Supply amounts are changed.....
-Supply prices are changed.....
-Unit Fuel Prices are changed...
-
--------- NEW PRICES OF FUEL --------
-Planet [Tyche] unit fuel price changed $3,36 to $3,53
-Planet [Varda] unit fuel price changed $3,06 to $3,21
--------- NEW PRICES OF FUEL --------
-
-Added random supplies to markets.....
-updated supply amounts cause of decay.....
-
--------- PLAYER STATUS --------
-Name: Nuri Can, CurrentMoney: $32504,61, Spaceship: Traverse [0/4909], Current Planet: Tyche
-Name: John, CurrentMoney: $42987,94, Spaceship: Yosemite [0/4262], Current Planet: Tyche
-Name: Anastasia, CurrentMoney: $30569,80, Spaceship: Xenith [0/6871], Current Planet: Tyche
-Name: Demo Player, CurrentMoney: $45613,16, Spaceship: Vortex [0/3532], Current Planet: Varda
+Name: Nuri Can, CurrentMoney: $37707,83, Spaceship: Vortex [0/5874], Current Planet: Tyche
+Name: John, CurrentMoney: $36536,24, Spaceship: Yosemite [0/7371], Current Planet: Varda
+Name: Anastasia, CurrentMoney: $42502,00, Spaceship: Xenith [0/7229], Current Planet: Varda
+Name: Demo Player, CurrentMoney: $55557,16, Spaceship: Warp [0/6841], Current Planet: Varda
 
 -------- PLAYER STATUS --------
 
@@ -341,12 +230,12 @@ Name: Demo Player, CurrentMoney: $45613,16, Spaceship: Vortex [0/3532], Current 
 
 
 --------------------SHOPPING--------------------------------
-Demo Player on shopping on Varda planet with $45613,16
-[Demo Player] bought something: Rest Of Amount: $1678,88
+Anastasia on shopping on Varda planet with $42502,00
+[Anastasia] bought something: Rest Of Amount: $253,76
 Shopping List:
-Cargo{m_commodity=Commodity{m_name='Iron', m_unitVolume=73, m_decayRatio=0.31, m_currentSupplyAmount=0, m_unitBuyPrice=1818.04, m_unitSellPrice=1718.04}, quantityOfCommodity=12}
+Cargo{m_commodity=Commodity{m_name='Rhodium', m_unitVolume=92, m_decayRatio=0.66, m_currentSupplyAmount=0, m_unitBuyPrice=1811.42, m_unitSellPrice=1711.42}, quantityOfCommodity=16}
 
-Cargo{m_commodity=Commodity{m_name='Rhodium', m_unitVolume=98, m_decayRatio=0.55, m_currentSupplyAmount=5, m_unitBuyPrice=2211.78, m_unitSellPrice=2111.78}, quantityOfCommodity=10}
+Cargo{m_commodity=Commodity{m_name='Copper', m_unitVolume=63, m_decayRatio=0.2, m_currentSupplyAmount=0, m_unitBuyPrice=2210.92, m_unitSellPrice=2110.92}, quantityOfCommodity=6}
 
 --------------------SHOPPING--------------------------------
 
@@ -358,18 +247,19 @@ Supply prices are changed.....
 Unit Fuel Prices are changed...
 
 -------- NEW PRICES OF FUEL --------
-Planet [Tyche] unit fuel price changed $3,53 to $3,71
-Planet [Varda] unit fuel price changed $3,21 to $3,37
+Planet [Tyche] unit fuel price changed $4,88 to $5,13
+Planet [Varda] unit fuel price changed $2,22 to $2,33
+Planet [Gonggong] unit fuel price changed $3,49 to $3,67
 -------- NEW PRICES OF FUEL --------
 
 Added random supplies to markets.....
 updated supply amounts cause of decay.....
 
 -------- PLAYER STATUS --------
-Name: Nuri Can, CurrentMoney: $32504,61, Spaceship: Traverse [0/4909], Current Planet: Tyche
-Name: John, CurrentMoney: $42987,94, Spaceship: Yosemite [0/4262], Current Planet: Tyche
-Name: Anastasia, CurrentMoney: $30569,80, Spaceship: Xenith [0/6871], Current Planet: Tyche
-Name: Demo Player, CurrentMoney: $1678,88, Spaceship: Vortex [1856/3532], Current Planet: Varda
+Name: Nuri Can, CurrentMoney: $37707,83, Spaceship: Vortex [0/5874], Current Planet: Tyche
+Name: John, CurrentMoney: $36536,24, Spaceship: Yosemite [0/7371], Current Planet: Varda
+Name: Anastasia, CurrentMoney: $253,76, Spaceship: Xenith [1850/7229], Current Planet: Varda
+Name: Demo Player, CurrentMoney: $55557,16, Spaceship: Warp [0/6841], Current Planet: Varda
 
 -------- PLAYER STATUS --------
 
@@ -379,6 +269,21 @@ Name: Demo Player, CurrentMoney: $1678,88, Spaceship: Vortex [1856/3532], Curren
 
 
 
+--------------------SHOPPING--------------------------------
+Demo Player on shopping on Varda planet with $55557,16
+[Demo Player] bought something: Rest Of Amount: $777,30
+Shopping List:
+Cargo{m_commodity=Commodity{m_name='Rhodium', m_unitVolume=92, m_decayRatio=0.66, m_currentSupplyAmount=0, m_unitBuyPrice=1811.42, m_unitSellPrice=1711.42}, quantityOfCommodity=5}
+
+Cargo{m_commodity=Commodity{m_name='Copper', m_unitVolume=63, m_decayRatio=0.2, m_currentSupplyAmount=0, m_unitBuyPrice=2210.92, m_unitSellPrice=2110.92}, quantityOfCommodity=4}
+
+Cargo{m_commodity=Commodity{m_name='Lithium', m_unitVolume=67, m_decayRatio=0.43, m_currentSupplyAmount=0, m_unitBuyPrice=2303.51, m_unitSellPrice=2203.51}, quantityOfCommodity=14}
+
+Cargo{m_commodity=Commodity{m_name='Nickel', m_unitVolume=64, m_decayRatio=0.38, m_currentSupplyAmount=12, m_unitBuyPrice=2314.97, m_unitSellPrice=2214.97}, quantityOfCommodity=2}
+
+--------------------SHOPPING--------------------------------
+
+
 
 ---------------------------GAME UPDATE---------------------------
 Supply amounts are changed.....
@@ -386,18 +291,59 @@ Supply prices are changed.....
 Unit Fuel Prices are changed...
 
 -------- NEW PRICES OF FUEL --------
-Planet [Tyche] unit fuel price changed $3,71 to $3,89
-Planet [Varda] unit fuel price changed $3,37 to $3,54
+Planet [Tyche] unit fuel price changed $5,13 to $5,38
+Planet [Varda] unit fuel price changed $2,33 to $2,44
+Planet [Gonggong] unit fuel price changed $3,67 to $3,85
 -------- NEW PRICES OF FUEL --------
 
 Added random supplies to markets.....
 updated supply amounts cause of decay.....
 
 -------- PLAYER STATUS --------
-Name: Nuri Can, CurrentMoney: $32497,11, Spaceship: Traverse [0/4909], Current Planet: Tyche
-Name: John, CurrentMoney: $42987,94, Spaceship: Yosemite [0/4262], Current Planet: Tyche
-Name: Anastasia, CurrentMoney: $30569,80, Spaceship: Xenith [0/6871], Current Planet: Tyche
-Name: Demo Player, CurrentMoney: $1678,88, Spaceship: Vortex [1856/3532], Current Planet: Varda
+Name: Nuri Can, CurrentMoney: $37707,83, Spaceship: Vortex [0/5874], Current Planet: Tyche
+Name: John, CurrentMoney: $36536,24, Spaceship: Yosemite [0/7371], Current Planet: Varda
+Name: Anastasia, CurrentMoney: $253,76, Spaceship: Xenith [1850/7229], Current Planet: Varda
+Name: Demo Player, CurrentMoney: $777,30, Spaceship: Warp [1778/6841], Current Planet: Varda
+
+-------- PLAYER STATUS --------
+
+---------------------------GAME UPDATE"---------------------------
+
+
+
+
+
+--------------------SHOPPING--------------------------------
+Nuri Can on shopping on Tyche planet with $37707,83
+[Nuri Can] bought something: Rest Of Amount: $724,61
+Shopping List:
+Cargo{m_commodity=Commodity{m_name='Platinum', m_unitVolume=50, m_decayRatio=0.57, m_currentSupplyAmount=0, m_unitBuyPrice=1949.88, m_unitSellPrice=1849.88}, quantityOfCommodity=12}
+
+Cargo{m_commodity=Commodity{m_name='Carbon', m_unitVolume=80, m_decayRatio=0.2, m_currentSupplyAmount=2, m_unitBuyPrice=2264.11, m_unitSellPrice=2164.11}, quantityOfCommodity=6}
+
+--------------------SHOPPING--------------------------------
+
+
+
+---------------------------GAME UPDATE---------------------------
+Supply amounts are changed.....
+Supply prices are changed.....
+Unit Fuel Prices are changed...
+
+-------- NEW PRICES OF FUEL --------
+Planet [Tyche] unit fuel price changed $5,38 to $5,65
+Planet [Varda] unit fuel price changed $2,44 to $2,57
+Planet [Gonggong] unit fuel price changed $3,85 to $4,05
+-------- NEW PRICES OF FUEL --------
+
+Added random supplies to markets.....
+updated supply amounts cause of decay.....
+
+-------- PLAYER STATUS --------
+Name: Nuri Can, CurrentMoney: $724,61, Spaceship: Vortex [1080/5874], Current Planet: Tyche
+Name: John, CurrentMoney: $36536,24, Spaceship: Yosemite [0/7371], Current Planet: Varda
+Name: Anastasia, CurrentMoney: $253,76, Spaceship: Xenith [1850/7229], Current Planet: Varda
+Name: Demo Player, CurrentMoney: $777,30, Spaceship: Warp [1778/6841], Current Planet: Varda
 
 -------- PLAYER STATUS --------
 
@@ -408,7 +354,7 @@ Name: Demo Player, CurrentMoney: $1678,88, Spaceship: Vortex [1856/3532], Curren
 
 
 --------------------SELL ITEM--------------------------------
-John on market for sell something with $42987,94
+John on market for sell something with $36536,24
 
 
 ---------------------------GAME UPDATE---------------------------
@@ -417,18 +363,19 @@ Supply prices are changed.....
 Unit Fuel Prices are changed...
 
 -------- NEW PRICES OF FUEL --------
-Planet [Tyche] unit fuel price changed $3,89 to $4,09
-Planet [Varda] unit fuel price changed $3,54 to $3,71
+Planet [Tyche] unit fuel price changed $5,65 to $5,94
+Planet [Varda] unit fuel price changed $2,57 to $2,69
+Planet [Gonggong] unit fuel price changed $4,05 to $4,25
 -------- NEW PRICES OF FUEL --------
 
 Added random supplies to markets.....
 updated supply amounts cause of decay.....
 
 -------- PLAYER STATUS --------
-Name: Nuri Can, CurrentMoney: $32497,11, Spaceship: Traverse [0/4909], Current Planet: Tyche
-Name: John, CurrentMoney: $42987,94, Spaceship: Yosemite [0/4262], Current Planet: Tyche
-Name: Anastasia, CurrentMoney: $30569,80, Spaceship: Xenith [0/6871], Current Planet: Tyche
-Name: Demo Player, CurrentMoney: $1678,88, Spaceship: Vortex [1856/3532], Current Planet: Varda
+Name: Nuri Can, CurrentMoney: $724,61, Spaceship: Vortex [1080/5874], Current Planet: Tyche
+Name: John, CurrentMoney: $36536,24, Spaceship: Yosemite [0/7371], Current Planet: Varda
+Name: Anastasia, CurrentMoney: $253,76, Spaceship: Xenith [1850/7229], Current Planet: Varda
+Name: Demo Player, CurrentMoney: $777,30, Spaceship: Warp [1778/6841], Current Planet: Varda
 
 -------- PLAYER STATUS --------
 
@@ -439,9 +386,9 @@ Name: Demo Player, CurrentMoney: $1678,88, Spaceship: Vortex [1856/3532], Curren
 
 
 --------------------BUY FUEL--------------------------------
-Anastasia on fuel station with $30569,80
-Spaceship: Xenith [500/41575], fuelUsage: 11, unitPrice: $4,09
-[Anastasia] bought fuel. [31065/41575] Total = $30565, Rest Of Amount: $4,80
+Anastasia on fuel station with $253,76
+Spaceship: Xenith [500/47934], fuelUsage: 13, unitPrice: $2,69
+[Anastasia] bought fuel. [753/47934] Total = $253, Rest Of Amount: $0,76
 --------------------BUY FUEL--------------------------------
 
 
@@ -452,18 +399,19 @@ Supply prices are changed.....
 Unit Fuel Prices are changed...
 
 -------- NEW PRICES OF FUEL --------
-Planet [Tyche] unit fuel price changed $4,09 to $4,29
-Planet [Varda] unit fuel price changed $3,71 to $3,90
+Planet [Tyche] unit fuel price changed $5,94 to $6,23
+Planet [Varda] unit fuel price changed $2,69 to $2,83
+Planet [Gonggong] unit fuel price changed $4,25 to $4,46
 -------- NEW PRICES OF FUEL --------
 
 Added random supplies to markets.....
 updated supply amounts cause of decay.....
 
 -------- PLAYER STATUS --------
-Name: Nuri Can, CurrentMoney: $32497,11, Spaceship: Traverse [0/4909], Current Planet: Tyche
-Name: John, CurrentMoney: $42987,94, Spaceship: Yosemite [0/4262], Current Planet: Tyche
-Name: Anastasia, CurrentMoney: $4,80, Spaceship: Xenith [0/6871], Current Planet: Tyche
-Name: Demo Player, CurrentMoney: $1678,88, Spaceship: Vortex [1856/3532], Current Planet: Varda
+Name: Nuri Can, CurrentMoney: $724,61, Spaceship: Vortex [1080/5874], Current Planet: Tyche
+Name: John, CurrentMoney: $36536,24, Spaceship: Yosemite [0/7371], Current Planet: Varda
+Name: Anastasia, CurrentMoney: $0,76, Spaceship: Xenith [1850/7229], Current Planet: Varda
+Name: Demo Player, CurrentMoney: $777,30, Spaceship: Warp [1778/6841], Current Planet: Varda
 
 -------- PLAYER STATUS --------
 
@@ -473,13 +421,63 @@ Name: Demo Player, CurrentMoney: $1678,88, Spaceship: Vortex [1856/3532], Curren
 
 
 
---------------------SHOPPING--------------------------------
-Demo Player on shopping on Varda planet with $1678,88
-[Demo Player] bought something: Rest Of Amount: $1678,88
-Shopping List:
-Cargo{m_commodity=Commodity{m_name='Iron', m_unitVolume=73, m_decayRatio=0.31, m_currentSupplyAmount=2, m_unitBuyPrice=1818.04, m_unitSellPrice=1718.04}, quantityOfCommodity=2}
 
---------------------SHOPPING--------------------------------
+---------------------------GAME UPDATE---------------------------
+Supply amounts are changed.....
+Supply prices are changed.....
+Unit Fuel Prices are changed...
+
+-------- NEW PRICES OF FUEL --------
+Planet [Tyche] unit fuel price changed $6,23 to $6,55
+Planet [Varda] unit fuel price changed $2,83 to $2,97
+Planet [Gonggong] unit fuel price changed $4,46 to $4,68
+-------- NEW PRICES OF FUEL --------
+
+Added random supplies to markets.....
+updated supply amounts cause of decay.....
+
+-------- PLAYER STATUS --------
+Name: Nuri Can, CurrentMoney: $724,61, Spaceship: Vortex [1080/5874], Current Planet: Tyche
+Name: John, CurrentMoney: $36536,24, Spaceship: Yosemite [0/7371], Current Planet: Varda
+Name: Anastasia, CurrentMoney: $0,76, Spaceship: Xenith [1850/7229], Current Planet: Varda
+Name: Demo Player, CurrentMoney: $777,30, Spaceship: Warp [1778/6841], Current Planet: Gonggong
+
+-------- PLAYER STATUS --------
+
+---------------------------GAME UPDATE"---------------------------
+
+
+
+
+Nuri Can on shopping but who not have enough money!
+
+
+---------------------------GAME UPDATE---------------------------
+Supply amounts are changed.....
+Supply prices are changed.....
+Unit Fuel Prices are changed...
+
+-------- NEW PRICES OF FUEL --------
+Planet [Tyche] unit fuel price changed $6,55 to $6,87
+Planet [Varda] unit fuel price changed $2,97 to $3,12
+Planet [Gonggong] unit fuel price changed $4,68 to $4,92
+-------- NEW PRICES OF FUEL --------
+
+Added random supplies to markets.....
+updated supply amounts cause of decay.....
+
+-------- PLAYER STATUS --------
+Name: Nuri Can, CurrentMoney: $724,61, Spaceship: Vortex [1080/5874], Current Planet: Tyche
+Name: John, CurrentMoney: $36536,24, Spaceship: Yosemite [0/7371], Current Planet: Varda
+Name: Anastasia, CurrentMoney: $0,76, Spaceship: Xenith [1850/7229], Current Planet: Varda
+Name: Demo Player, CurrentMoney: $777,30, Spaceship: Warp [1778/6841], Current Planet: Gonggong
+
+-------- PLAYER STATUS --------
+
+---------------------------GAME UPDATE"---------------------------
+
+
+
 
 
 
@@ -489,18 +487,106 @@ Supply prices are changed.....
 Unit Fuel Prices are changed...
 
 -------- NEW PRICES OF FUEL --------
-Planet [Tyche] unit fuel price changed $4,29 to $4,51
-Planet [Varda] unit fuel price changed $3,90 to $4,09
+Planet [Tyche] unit fuel price changed $6,87 to $7,22
+Planet [Varda] unit fuel price changed $3,12 to $3,27
+Planet [Gonggong] unit fuel price changed $4,92 to $5,16
 -------- NEW PRICES OF FUEL --------
 
 Added random supplies to markets.....
 updated supply amounts cause of decay.....
 
 -------- PLAYER STATUS --------
-Name: Nuri Can, CurrentMoney: $32497,11, Spaceship: Traverse [0/4909], Current Planet: Tyche
-Name: John, CurrentMoney: $42987,94, Spaceship: Yosemite [0/4262], Current Planet: Tyche
-Name: Anastasia, CurrentMoney: $4,80, Spaceship: Xenith [0/6871], Current Planet: Tyche
-Name: Demo Player, CurrentMoney: $1678,88, Spaceship: Vortex [1856/3532], Current Planet: Varda
+Name: Nuri Can, CurrentMoney: $724,61, Spaceship: Vortex [1080/5874], Current Planet: Tyche
+Name: John, CurrentMoney: $36536,24, Spaceship: Yosemite [0/7371], Current Planet: Tyche
+Name: Anastasia, CurrentMoney: $0,76, Spaceship: Xenith [1850/7229], Current Planet: Varda
+Name: Demo Player, CurrentMoney: $777,30, Spaceship: Warp [1778/6841], Current Planet: Gonggong
+
+-------- PLAYER STATUS --------
+
+---------------------------GAME UPDATE"---------------------------
+
+
+
+
+
+
+---------------------------GAME UPDATE---------------------------
+Supply amounts are changed.....
+Supply prices are changed.....
+Unit Fuel Prices are changed...
+
+-------- NEW PRICES OF FUEL --------
+Planet [Tyche] unit fuel price changed $7,22 to $7,58
+Planet [Varda] unit fuel price changed $3,27 to $3,44
+Planet [Gonggong] unit fuel price changed $5,16 to $5,42
+-------- NEW PRICES OF FUEL --------
+
+Added random supplies to markets.....
+updated supply amounts cause of decay.....
+
+-------- PLAYER STATUS --------
+Name: Nuri Can, CurrentMoney: $724,61, Spaceship: Vortex [1080/5874], Current Planet: Tyche
+Name: John, CurrentMoney: $36536,24, Spaceship: Yosemite [0/7371], Current Planet: Tyche
+Name: Anastasia, CurrentMoney: $0,76, Spaceship: Xenith [1850/7229], Current Planet: Tyche
+Name: Demo Player, CurrentMoney: $777,30, Spaceship: Warp [1778/6841], Current Planet: Gonggong
+
+-------- PLAYER STATUS --------
+
+---------------------------GAME UPDATE"---------------------------
+
+
+
+
+
+
+---------------------------GAME UPDATE---------------------------
+Supply amounts are changed.....
+Supply prices are changed.....
+Unit Fuel Prices are changed...
+
+-------- NEW PRICES OF FUEL --------
+Planet [Tyche] unit fuel price changed $7,58 to $7,96
+Planet [Varda] unit fuel price changed $3,44 to $3,61
+Planet [Gonggong] unit fuel price changed $5,42 to $5,69
+-------- NEW PRICES OF FUEL --------
+
+Added random supplies to markets.....
+updated supply amounts cause of decay.....
+
+-------- PLAYER STATUS --------
+Name: Nuri Can, CurrentMoney: $724,61, Spaceship: Vortex [1080/5874], Current Planet: Tyche
+Name: John, CurrentMoney: $36536,24, Spaceship: Yosemite [0/7371], Current Planet: Tyche
+Name: Anastasia, CurrentMoney: $0,76, Spaceship: Xenith [1850/7229], Current Planet: Tyche
+Name: Demo Player, CurrentMoney: $770,08, Spaceship: Warp [1778/6841], Current Planet: Gonggong
+
+-------- PLAYER STATUS --------
+
+---------------------------GAME UPDATE"---------------------------
+
+
+
+
+
+
+---------------------------GAME UPDATE---------------------------
+Supply amounts are changed.....
+Supply prices are changed.....
+Unit Fuel Prices are changed...
+
+-------- NEW PRICES OF FUEL --------
+Planet [Tyche] unit fuel price changed $7,96 to $8,35
+Planet [Varda] unit fuel price changed $3,61 to $3,79
+Planet [Gonggong] unit fuel price changed $5,69 to $5,98
+-------- NEW PRICES OF FUEL --------
+
+Added random supplies to markets.....
+updated supply amounts cause of decay.....
+
+-------- PLAYER STATUS --------
+Name: Nuri Can, CurrentMoney: $724,61, Spaceship: Vortex [1080/5874], Current Planet: Varda
+Name: John, CurrentMoney: $36536,24, Spaceship: Yosemite [0/7371], Current Planet: Tyche
+Name: Anastasia, CurrentMoney: $0,76, Spaceship: Xenith [1850/7229], Current Planet: Tyche
+Name: Demo Player, CurrentMoney: $770,08, Spaceship: Warp [1778/6841], Current Planet: Gonggong
 
 -------- PLAYER STATUS --------
 
@@ -511,7 +597,7 @@ Name: Demo Player, CurrentMoney: $1678,88, Spaceship: Vortex [1856/3532], Curren
 
 
 --------------------SELL ITEM--------------------------------
-Nuri Can on market for sell something with $32497,11
+John on market for sell something with $36536,24
 
 
 ---------------------------GAME UPDATE---------------------------
@@ -520,83 +606,19 @@ Supply prices are changed.....
 Unit Fuel Prices are changed...
 
 -------- NEW PRICES OF FUEL --------
-Planet [Tyche] unit fuel price changed $4,51 to $4,73
-Planet [Varda] unit fuel price changed $4,09 to $4,30
+Planet [Tyche] unit fuel price changed $8,35 to $8,77
+Planet [Varda] unit fuel price changed $3,79 to $3,98
+Planet [Gonggong] unit fuel price changed $5,98 to $6,28
 -------- NEW PRICES OF FUEL --------
 
 Added random supplies to markets.....
 updated supply amounts cause of decay.....
 
 -------- PLAYER STATUS --------
-Name: Nuri Can, CurrentMoney: $32497,11, Spaceship: Traverse [0/4909], Current Planet: Tyche
-Name: John, CurrentMoney: $42987,94, Spaceship: Yosemite [0/4262], Current Planet: Tyche
-Name: Anastasia, CurrentMoney: $4,80, Spaceship: Xenith [0/6871], Current Planet: Tyche
-Name: Demo Player, CurrentMoney: $1678,88, Spaceship: Vortex [1856/3532], Current Planet: Varda
-
--------- PLAYER STATUS --------
-
----------------------------GAME UPDATE"---------------------------
-
-
-
-
-John on hangar who is change spaceship with $42987,94 and current spaceship: Yosemite
-[John] on hangar who is changed spaceship to Stellar and has $47218,64
-
-
----------------------------GAME UPDATE---------------------------
-Supply amounts are changed.....
-Supply prices are changed.....
-Unit Fuel Prices are changed...
-
--------- NEW PRICES OF FUEL --------
-Planet [Tyche] unit fuel price changed $4,73 to $4,97
-Planet [Varda] unit fuel price changed $4,30 to $4,51
--------- NEW PRICES OF FUEL --------
-
-Added random supplies to markets.....
-updated supply amounts cause of decay.....
-
--------- PLAYER STATUS --------
-Name: Nuri Can, CurrentMoney: $32497,11, Spaceship: Traverse [0/4909], Current Planet: Tyche
-Name: John, CurrentMoney: $47218,64, Spaceship: Stellar [0/6401], Current Planet: Tyche
-Name: Anastasia, CurrentMoney: $4,80, Spaceship: Xenith [0/6871], Current Planet: Tyche
-Name: Demo Player, CurrentMoney: $1678,88, Spaceship: Vortex [1856/3532], Current Planet: Varda
-
--------- PLAYER STATUS --------
-
----------------------------GAME UPDATE"---------------------------
-
-
-
-
-
---------------------BUY FUEL--------------------------------
-Anastasia on fuel station with $4,80
-Spaceship: Xenith [31065/41575], fuelUsage: 11, unitPrice: $4,97
-[Anastasia] bought fuel. [31065/41575] Total = $0, Rest Of Amount: $4,80
---------------------BUY FUEL--------------------------------
-
-
-
----------------------------GAME UPDATE---------------------------
-Supply amounts are changed.....
-Supply prices are changed.....
-Unit Fuel Prices are changed...
-
--------- NEW PRICES OF FUEL --------
-Planet [Tyche] unit fuel price changed $4,97 to $5,22
-Planet [Varda] unit fuel price changed $4,51 to $4,74
--------- NEW PRICES OF FUEL --------
-
-Added random supplies to markets.....
-updated supply amounts cause of decay.....
-
--------- PLAYER STATUS --------
-Name: Nuri Can, CurrentMoney: $32497,11, Spaceship: Traverse [0/4909], Current Planet: Tyche
-Name: John, CurrentMoney: $47218,64, Spaceship: Stellar [0/6401], Current Planet: Tyche
-Name: Anastasia, CurrentMoney: $4,80, Spaceship: Xenith [0/6871], Current Planet: Tyche
-Name: Demo Player, CurrentMoney: $1678,88, Spaceship: Vortex [1856/3532], Current Planet: Varda
+Name: Nuri Can, CurrentMoney: $724,61, Spaceship: Vortex [1080/5874], Current Planet: Varda
+Name: John, CurrentMoney: $36536,24, Spaceship: Yosemite [0/7371], Current Planet: Tyche
+Name: Anastasia, CurrentMoney: $0,76, Spaceship: Xenith [1850/7229], Current Planet: Tyche
+Name: Demo Player, CurrentMoney: $770,08, Spaceship: Warp [1778/6841], Current Planet: Gonggong
 
 -------- PLAYER STATUS --------
 
@@ -613,18 +635,19 @@ Supply prices are changed.....
 Unit Fuel Prices are changed...
 
 -------- NEW PRICES OF FUEL --------
-Planet [Tyche] unit fuel price changed $5,22 to $5,48
-Planet [Varda] unit fuel price changed $4,74 to $4,98
+Planet [Tyche] unit fuel price changed $8,77 to $9,21
+Planet [Varda] unit fuel price changed $3,98 to $4,18
+Planet [Gonggong] unit fuel price changed $6,28 to $6,59
 -------- NEW PRICES OF FUEL --------
 
 Added random supplies to markets.....
 updated supply amounts cause of decay.....
 
 -------- PLAYER STATUS --------
-Name: Nuri Can, CurrentMoney: $32497,11, Spaceship: Traverse [0/4909], Current Planet: Tyche
-Name: John, CurrentMoney: $47218,64, Spaceship: Stellar [0/6401], Current Planet: Tyche
-Name: Anastasia, CurrentMoney: $4,80, Spaceship: Xenith [0/6871], Current Planet: Tyche
-Name: Demo Player, CurrentMoney: $1678,88, Spaceship: Vortex [1856/3532], Current Planet: Tyche
+Name: Nuri Can, CurrentMoney: $724,61, Spaceship: Vortex [1080/5874], Current Planet: Varda
+Name: John, CurrentMoney: $36536,24, Spaceship: Yosemite [0/7371], Current Planet: Tyche
+Name: Anastasia, CurrentMoney: $0,76, Spaceship: Xenith [1850/7229], Current Planet: Varda
+Name: Demo Player, CurrentMoney: $770,08, Spaceship: Warp [1778/6841], Current Planet: Gonggong
 
 -------- PLAYER STATUS --------
 
@@ -641,18 +664,80 @@ Supply prices are changed.....
 Unit Fuel Prices are changed...
 
 -------- NEW PRICES OF FUEL --------
-Planet [Tyche] unit fuel price changed $5,48 to $5,75
-Planet [Varda] unit fuel price changed $4,98 to $5,23
+Planet [Tyche] unit fuel price changed $9,21 to $9,67
+Planet [Varda] unit fuel price changed $4,18 to $4,39
+Planet [Gonggong] unit fuel price changed $6,59 to $6,92
 -------- NEW PRICES OF FUEL --------
 
 Added random supplies to markets.....
 updated supply amounts cause of decay.....
 
 -------- PLAYER STATUS --------
-Name: Nuri Can, CurrentMoney: $32489,61, Spaceship: Traverse [0/4909], Current Planet: Tyche
-Name: John, CurrentMoney: $47218,64, Spaceship: Stellar [0/6401], Current Planet: Tyche
-Name: Anastasia, CurrentMoney: $4,80, Spaceship: Xenith [0/6871], Current Planet: Tyche
-Name: Demo Player, CurrentMoney: $1678,88, Spaceship: Vortex [1856/3532], Current Planet: Tyche
+Name: Nuri Can, CurrentMoney: $724,61, Spaceship: Vortex [1080/5874], Current Planet: Varda
+Name: John, CurrentMoney: $36536,24, Spaceship: Yosemite [0/7371], Current Planet: Tyche
+Name: Anastasia, CurrentMoney: $0,76, Spaceship: Xenith [1850/7229], Current Planet: Varda
+Name: Demo Player, CurrentMoney: $762,86, Spaceship: Warp [1778/6841], Current Planet: Gonggong
+
+-------- PLAYER STATUS --------
+
+---------------------------GAME UPDATE"---------------------------
+
+
+
+
+Nuri Can on shopping but who not have enough money!
+
+
+---------------------------GAME UPDATE---------------------------
+Supply amounts are changed.....
+Supply prices are changed.....
+Unit Fuel Prices are changed...
+
+-------- NEW PRICES OF FUEL --------
+Planet [Tyche] unit fuel price changed $9,67 to $10,15
+Planet [Varda] unit fuel price changed $4,39 to $4,61
+Planet [Gonggong] unit fuel price changed $6,92 to $7,27
+-------- NEW PRICES OF FUEL --------
+
+Added random supplies to markets.....
+updated supply amounts cause of decay.....
+
+-------- PLAYER STATUS --------
+Name: Nuri Can, CurrentMoney: $724,61, Spaceship: Vortex [1080/5874], Current Planet: Varda
+Name: John, CurrentMoney: $36536,24, Spaceship: Yosemite [0/7371], Current Planet: Tyche
+Name: Anastasia, CurrentMoney: $0,76, Spaceship: Xenith [1850/7229], Current Planet: Varda
+Name: Demo Player, CurrentMoney: $762,86, Spaceship: Warp [1778/6841], Current Planet: Gonggong
+
+-------- PLAYER STATUS --------
+
+---------------------------GAME UPDATE"---------------------------
+
+
+
+
+John on hangar who is change spaceship with $36536,24 and current spaceship: Yosemite
+[John] on hangar who is changed spaceship to Traverse and has $33904,67
+
+
+---------------------------GAME UPDATE---------------------------
+Supply amounts are changed.....
+Supply prices are changed.....
+Unit Fuel Prices are changed...
+
+-------- NEW PRICES OF FUEL --------
+Planet [Tyche] unit fuel price changed $10,15 to $10,66
+Planet [Varda] unit fuel price changed $4,61 to $4,84
+Planet [Gonggong] unit fuel price changed $7,27 to $7,63
+-------- NEW PRICES OF FUEL --------
+
+Added random supplies to markets.....
+updated supply amounts cause of decay.....
+
+-------- PLAYER STATUS --------
+Name: Nuri Can, CurrentMoney: $724,61, Spaceship: Vortex [1080/5874], Current Planet: Varda
+Name: John, CurrentMoney: $33904,67, Spaceship: Traverse [0/8310], Current Planet: Tyche
+Name: Anastasia, CurrentMoney: $0,76, Spaceship: Xenith [1850/7229], Current Planet: Varda
+Name: Demo Player, CurrentMoney: $762,86, Spaceship: Warp [1778/6841], Current Planet: Gonggong
 
 -------- PLAYER STATUS --------
 
@@ -669,18 +754,19 @@ Supply prices are changed.....
 Unit Fuel Prices are changed...
 
 -------- NEW PRICES OF FUEL --------
-Planet [Tyche] unit fuel price changed $5,75 to $6,04
-Planet [Varda] unit fuel price changed $5,23 to $5,49
+Planet [Tyche] unit fuel price changed $10,66 to $11,19
+Planet [Varda] unit fuel price changed $4,84 to $5,08
+Planet [Gonggong] unit fuel price changed $7,63 to $8,01
 -------- NEW PRICES OF FUEL --------
 
 Added random supplies to markets.....
 updated supply amounts cause of decay.....
 
 -------- PLAYER STATUS --------
-Name: Nuri Can, CurrentMoney: $32489,61, Spaceship: Traverse [0/4909], Current Planet: Tyche
-Name: John, CurrentMoney: $47211,14, Spaceship: Stellar [0/6401], Current Planet: Tyche
-Name: Anastasia, CurrentMoney: $4,80, Spaceship: Xenith [0/6871], Current Planet: Tyche
-Name: Demo Player, CurrentMoney: $1678,88, Spaceship: Vortex [1856/3532], Current Planet: Tyche
+Name: Nuri Can, CurrentMoney: $724,61, Spaceship: Vortex [1080/5874], Current Planet: Varda
+Name: John, CurrentMoney: $33904,67, Spaceship: Traverse [0/8310], Current Planet: Tyche
+Name: Anastasia, CurrentMoney: $0,76, Spaceship: Xenith [1850/7229], Current Planet: Tyche
+Name: Demo Player, CurrentMoney: $762,86, Spaceship: Warp [1778/6841], Current Planet: Gonggong
 
 -------- PLAYER STATUS --------
 
@@ -688,41 +774,4 @@ Name: Demo Player, CurrentMoney: $1678,88, Spaceship: Vortex [1856/3532], Curren
 
 
 
-
-
-
----------------------------GAME UPDATE---------------------------
-Supply amounts are changed.....
-Supply prices are changed.....
-Unit Fuel Prices are changed...
-
--------- NEW PRICES OF FUEL --------
-Planet [Tyche] unit fuel price changed $6,04 to $6,34
-Planet [Varda] unit fuel price changed $5,49 to $5,76
--------- NEW PRICES OF FUEL --------
-
-Added random supplies to markets.....
-updated supply amounts cause of decay.....
-
--------- PLAYER STATUS --------
-Name: Nuri Can, CurrentMoney: $32489,61, Spaceship: Traverse [0/4909], Current Planet: Tyche
-Name: John, CurrentMoney: $47211,14, Spaceship: Stellar [0/6401], Current Planet: Tyche
-Name: Anastasia, CurrentMoney: $4,80, Spaceship: Xenith [0/6871], Current Planet: Varda
-Name: Demo Player, CurrentMoney: $1678,88, Spaceship: Vortex [1856/3532], Current Planet: Tyche
-
--------- PLAYER STATUS --------
-
----------------------------GAME UPDATE"---------------------------
-
-
-
-
-
---------------------SHOPPING--------------------------------
-Demo Player on shopping on Tyche planet with $1678,88
-[Demo Player] bought something: Rest Of Amount: $145,91
-Shopping List:
-Cargo{m_commodity=Commodity{m_name='Water', m_unitVolume=67, m_decayRatio=0.51, m_currentSupplyAmount=10, m_unitBuyPrice=1532.97, m_unitSellPrice=1432.97}, quantityOfCommodity=1}
-
---------------------SHOPPING--------------------------------
 
