@@ -57,10 +57,6 @@ public class PlanetTradeGame implements Game
         return m_gameContext;
     }
 
-    /*
-        Each turn following these actions: Buy Item (Shopping), Sell Item, Buy Fuel, Plan Travelling
-        each turn players must do these actions
-     */
     @Override
     public void update(Action action)
     {
